@@ -2,6 +2,7 @@ package com.harmonengineering.emailList;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class emailID
 {
@@ -29,18 +30,48 @@ public class emailID
     public static class User
     {
         boolean m_userQuit ;
+        boolean m_userCommand ;
         Scanner m_scanner ;
         public User()
         {
             m_userQuit = false ;
+            m_userCommand = false ;
             m_scanner = new Scanner( System.in ) ;
+        }
+        public boolean Validate( String input )
+        {
+
+            String emailpattern_alphanum  = "(([a-zA-Z]*|[0-9]*|(-|_)*)*)" ;
+            String emailpattern_dot_alphanum = "(."+emailpattern_alphanum+")*" ;
+            String emailpattern = emailpattern_alphanum+"@"+emailpattern_dot_alphanum ;
+
+            m_userQuit = false ;
+            m_userCommand = false ;
+            boolean valid = false ;
+            if ( input.equals("list") || input.equals( "exit"))
+            {
+                m_userCommand = true ;
+                if ( input.equals( "exit" )) m_userQuit = true ;
+                valid = true  ;
+            }
+            else
+            {
+                m_userCommand = false ;
+                if ( Pattern.matches( emailpattern, input ) )
+                    valid = true ;
+            }
+            if( m_userCommand == false ) System.out.println(( valid ? "validated" : "invalid") ) ;
+            return valid  ;
         }
         public String getEmail()
         {
             String input = new String() ;
-            System.out.print( "Enter email:> " ) ;
-            input = m_scanner.next() ;
-            if ( input.equals( "exit" )) m_userQuit = true ;
+            do
+            {
+                System.out.print( "Enter email:> " ) ;
+                input = m_scanner.next() ;
+            }
+            while ( !Validate( input )) ;
             return ( input ) ;
         }
         public boolean isQuit() { return m_userQuit ; }
