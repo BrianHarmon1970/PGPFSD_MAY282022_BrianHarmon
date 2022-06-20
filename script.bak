@@ -1,0 +1,12 @@
+create file01.txt
+create file02.txt
+create file03.txt
+write file01.txt newtext
+append file02.txt oneline
+append file02.txt twolines
+write file03.txt this is a long message with spaces
+show file01.txt
+show file02.txt
+show file03.txt
+show script.txt
+

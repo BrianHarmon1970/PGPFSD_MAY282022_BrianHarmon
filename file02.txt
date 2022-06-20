@@ -1,0 +1,5 @@
+./file02.txt
+initial text
+appended text
+final text
+onelinetwolinesonelinetwolinesonelinetwolinesonelinetwolines
