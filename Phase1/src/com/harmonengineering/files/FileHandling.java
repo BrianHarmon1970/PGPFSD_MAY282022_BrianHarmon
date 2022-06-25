@@ -1,9 +1,12 @@
 package com.harmonengineering.files;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.*;
+import java.sql.Time;
+import java.time.*;
+import java.util.Date;
 import java.util.StringTokenizer;
+import java.util.TimeZone;
 
 class FileHandle
 {
@@ -11,11 +14,28 @@ class FileHandle
     String m_strFileName ;
     FileHandle( String filename ) throws IOException
     {
+        construct( filename, false ) ;
+    }
+    FileHandle( String filename, boolean create ) throws IOException
+    {
+        construct( filename, create ) ;
+        //m_strFileName = new String( filename ) ;
+        //m_file = new File( m_strFileName ) ;
+        //if (!m_file.exists()) {
+        //    createFile() ;
+        //}
+    }
+    void construct( String filename, boolean  create ) throws IOException
+    {
         m_strFileName = new String( filename ) ;
         m_file = new File( m_strFileName ) ;
-        if (!m_file.exists()) {
+        if (!m_file.exists() && create ) {
             createFile() ;
         }
+    }
+    public String getPath()
+    {
+        return m_file.getPath() ;
     }
     public File File() { return m_file ; }
     public void deleteFile() throws IOException
@@ -31,13 +51,6 @@ class FileHandle
         System.out.println("Create File: " + m_strFileName ) ;
         return m_file.createNewFile();//createFile( m_strFileName ) ;
     }
-    /*
-    public boolean createFile( String filename ) throws IOException
-    {
-        m_strFileName = filename ;
-        //m_file = new File( filename ) ;
-        return m_file.createNewFile() ;
-    }*/
     public String getFileName() { return m_strFileName ;  }
 }
 class FileHandler
@@ -46,15 +59,34 @@ class FileHandler
     FileReader m_reader ;
     BufferedReader m_bufferedReader ;
     FileHandle m_FileHandle ;
-
+    FileHandler( String fname, boolean create ) throws IOException
+    {
+        m_FileHandle = new FileHandle( fname ) ;
+        construct( create ) ;
+    }
+    FileHandler( String fname ) throws  IOException
+    {
+        m_FileHandle = new FileHandle( fname ) ;
+        construct( false );
+    }
     FileHandler( FileHandle fh ) throws IOException
     {
         m_FileHandle = fh ;
-        m_reader = new FileReader( m_FileHandle.getFileName() ) ;
-        m_bufferedReader = new BufferedReader( m_reader ) ;
-        if (!m_FileHandle.Exists()) {
+        construct( false ) ;
+    }
+    void construct( boolean create ) throws  IOException
+    {
+        if (!m_FileHandle.Exists() && (create)) {
             m_FileHandle.createFile() ;
         }
+        if ( m_FileHandle.Exists() ) {
+            m_reader = new FileReader(m_FileHandle.getFileName());
+            m_bufferedReader = new BufferedReader(m_reader);
+        }
+    }
+    public FileHandle getHandle( )
+    {
+        return m_FileHandle ;
     }
     public void Delete() throws IOException
     {
@@ -66,7 +98,7 @@ class FileHandler
     public void ShowFile(  ) throws IOException
     {
         int linecount = 0 ;
-        System.out.println( "<===[ " + m_FileHandle.getFileName() + " ]===>" ) ;
+        System.out.println( "<===[ " + m_FileHandle.getPath() + " ]===>" ) ;
 
         String readline = m_bufferedReader.readLine() ;
         while ( readline != null )
@@ -81,7 +113,6 @@ class FileHandler
         if (!m_FileHandle.Exists()) {
             m_FileHandle.createFile() ;
         }
-
         m_writer = new FileWriter( m_FileHandle.getFileName(), true ) ;
         m_writer.write( text ); ;
         //m_writer.write( "\n" ); ;
@@ -91,8 +122,88 @@ class FileHandler
     {
         m_writer = new FileWriter( m_FileHandle.getFileName(), false ) ;
         m_writer.write( text ) ;
-        m_writer.write( "\n" ) ;
+        //m_writer.write( "\n" ) ;
         m_writer.close();
+    }
+    void CloseWriter() throws IOException
+    {
+        m_writer.close();
+        m_writer = null ;
+    }
+    void ShowDetail() throws IOException
+    {
+        //final Path path = FileSystems.getDefault().getPath(m_FileHandle.getFileName());
+        final Path path  = m_FileHandle.File().toPath() ;
+        System.out.println( " Name: " + m_FileHandle.File().getName() + " Size: " + Files.size( path )) ;
+        System.out.println( "Path: " + m_FileHandle.File().getPath() ) ;
+        System.out.println( "Absolute Path: " + m_FileHandle.File().getAbsolutePath() ) ;
+        System.out.println( "length: " + m_FileHandle.File().length() );
+        System.out.println( "Parent: " + m_FileHandle.File().getParent());
+
+        Date d = new Date( m_FileHandle.File().lastModified() ) ;
+        System.out.println( "Last Modified: " + d ) ;
+    }
+    void RunScript() throws IOException
+    {
+        String line ; //= reader.readLine() ;
+        //BufferedReader scriptreader = new BufferedReader( new FileReader( "./script.txt" )) ;
+        BufferedReader scriptreader = m_bufferedReader ;
+        line = scriptreader.readLine() ;
+        FileWriter writer = m_writer ;
+        while ( line != null ) {
+            //System.out.println(line);
+            StringTokenizer stringReader = new StringTokenizer( line ) ;
+            while ( stringReader.hasMoreTokens() ) {
+                String token = stringReader.nextToken();
+                String fileName = new String() ;
+
+                if ( token.equals("Create" ))
+                {
+                    fileName = "./" + stringReader.nextToken();
+
+                    File f = new File(fileName);
+                    f.createNewFile();
+                    FileHandle file = new FileHandle( fileName ) ;
+
+                    file.createFile() ;
+                    FileHandler fh = new FileHandler( file ) ;
+                    fh.WriteText( fileName ) ;
+                    fh.AppendText("initial text\n");
+                    fh.AppendText("appended text\n");
+                    fh.AppendText("final text\n");
+                }
+                else if ( token.equals("Write"))
+                {
+                    fileName = "./" + stringReader.nextToken();
+
+                    //FileHandle fh = new FileHandle( fileName ) ;
+                    FileHandler handler = new FileHandler( fileName ) ;
+                    handler.WriteText( stringReader.nextToken("\n" ).trim()) ;
+                   // handler.CloseWriter();
+                }
+                else if ( token.equals( "Append" ))
+                {
+                    fileName = "./" + stringReader.nextToken();
+                    FileHandler handler = new FileHandler( fileName, true ) ;
+                    handler.AppendText( stringReader.nextToken("\n" ).trim()+"\n") ;
+                }
+                else if ( token.equals("Show" ))
+                {
+                    fileName = "./" + stringReader.nextToken();
+                    FileHandle fh = new FileHandle( fileName ) ;
+                    FileHandler handler = new FileHandler( fh ) ;
+                    handler.ShowFile() ;
+                }
+                else if ( token.equals("Delete"))
+                {
+                    fileName = "./" + stringReader.nextToken();
+                    FileHandler fh = new FileHandler( new FileHandle(fileName) ) ;
+                    //FileHandle file = new FileHandle(fileName) ;
+                    fh.Delete();
+                }
+            }
+            line = scriptreader.readLine();
+        }
     }
 }
 public class FileHandling
@@ -102,112 +213,25 @@ public class FileHandling
         //File file = new File("newfile.dat" )  ;
         try
         {
-            //BufferedReader reader = new BufferedReader( new FileReader( "test.dat" )) ;
-            String line ; //= reader.readLine() ;
-            BufferedReader scriptreader = new BufferedReader( new FileReader( "./script.txt" )) ;
-            line = scriptreader.readLine() ;
-            FileWriter writer  ;
-            while ( line != null ) {
-                //System.out.println(line);
-                StringTokenizer stringReader = new StringTokenizer( line ) ;
-                while ( stringReader.hasMoreTokens() ) {
-                    String token = stringReader.nextToken();
-                    String fileName = new String() ;
+            FileHandler fh = new FileHandler( "./script.txt" , false) ;
+            if ( fh.getHandle().Exists())
+                fh.RunScript() ;
 
-                    if (token.equals("create")) {
-                        fileName = "./" + stringReader.nextToken();
-                        File f = new File(fileName);
-                        f.createNewFile();
-                        writer = new FileWriter(fileName);
-                        writer.write(fileName + "\n");
-                        writer.write("initial text\n");
-                        writer.append("appended text\n");
-                        writer.write("final text\n");
-                        writer.close();
-                    }
-                    else if ( token.equals("Create" ))
-                    {
-                        fileName = "./" + stringReader.nextToken();
+            FileHandler fhWrite = new FileHandler( new FileHandle("./WriteFile.txt" )) ;
+            fhWrite.WriteText( "11111111111\n");
+            fhWrite.AppendText("22222222222\n");
+            fhWrite.AppendText("33333333333\n");
+            fhWrite.AppendText("44444444444\n");
+            fhWrite.AppendText("5555555555\n");
+            fhWrite.AppendText("66666666666\n");
+            fhWrite.AppendText("77777777777\n");
 
+            FileHandler fhAppend = new FileHandler( "./AppendFile.txt", true ) ;
+            fhAppend.AppendText( "XXXOOOXXX\n") ;
+            fhAppend.AppendText( "OOOXXXOOO\n") ;
 
-                        File f = new File(fileName);
-                        f.createNewFile();
-                        FileHandle file = new FileHandle( fileName ) ;
-
-                        file.createFile() ;
-                        FileHandler fh = new FileHandler( file ) ;
-                        fh.WriteText( fileName ) ;
-                        fh.AppendText("initial text\n");
-                        fh.AppendText("appended text\n");
-                        fh.AppendText("final text\n");
-                    }
-                    else if ( token.equals("write"))
-                    {
-                        fileName = "./" + stringReader.nextToken();
-                        File f = new File(fileName);
-                        f.createNewFile();
-                        writer = new FileWriter( fileName ) ;
-                        writer.write( stringReader.nextToken("\n").trim()) ;
-                        writer.write( "\n" ) ;
-                        writer.close();
-                    }
-                    else if ( token.equals("Write"))
-                    {
-                        fileName = "./" + stringReader.nextToken();
-
-                        FileHandle fh = new FileHandle( fileName ) ;
-                        FileHandler handler = new FileHandler( fh ) ;
-                        handler.WriteText( stringReader.nextToken("\n" ).trim()) ;
-                    }
-                    else if ( token.equals( "append" ))
-                    {
-                        fileName = "./" + stringReader.nextToken();
-                        writer = new FileWriter( fileName ) ;
-                        writer.append( stringReader.nextToken("\n" ).trim()) ;
-                        //writer.write( "\nextra line text") ;
-                        writer.write( "\n" ); ;
-                        writer.flush() ;
-                        writer.close() ;
-                    }
-                    else if ( token.equals( "Append" ))
-                    {
-                        fileName = "./" + stringReader.nextToken();
-                        //FileHandle fh = new FileHandle( fileName ) ;
-                        FileHandler handler = new FileHandler( new FileHandle(fileName)) ;
-                        handler.AppendText( stringReader.nextToken("\n" ).trim()) ;
-                    }
-                    else if ( token.equals("show" ))
-                    {
-                        int linecount = 0 ;
-                        fileName = "./" + stringReader.nextToken();
-                        System.out.println( "<===[ " + fileName + " ]===>" ) ;
-                        BufferedReader showReader = new BufferedReader( new FileReader( fileName )) ;
-                        String readline = showReader.readLine() ;
-
-                        while ( readline != null ) {
-                            ++linecount ;
-                            System.out.println(linecount + " " +readline);
-                            readline = showReader.readLine();
-                        }
-                        System.out.println("") ;
-                    }
-                    else if ( token.equals("Show" ))
-                    {
-                        fileName = "./" + stringReader.nextToken();
-                        FileHandle fh = new FileHandle( fileName ) ;
-                        FileHandler handler = new FileHandler( fh ) ;
-                        handler.ShowFile() ;
-                    }
-                    else if ( token.equals("Delete"))
-                    {
-                        fileName = "./" + stringReader.nextToken();
-                        FileHandler fh = new FileHandler( new FileHandle(fileName) ) ;
-                        //FileHandle file = new FileHandle(fileName) ;
-                        fh.Delete();
-                    }
-                }
-                line = scriptreader.readLine();
-            }
+            fhWrite.ShowFile() ; fhWrite.ShowDetail();
+            fhAppend.ShowFile() ; fhAppend.ShowDetail();
         }
         catch ( IOException e )
         {
