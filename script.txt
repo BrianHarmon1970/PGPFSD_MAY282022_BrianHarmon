@@ -10,4 +10,3 @@ Show file01.txt
 Show file02.txt
 Show file03.txt
 Show script.txt
-Show script.txt
