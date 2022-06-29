@@ -1,4 +1,4 @@
-package com.harmonengineering.collections;
+package com.harmonengineering.datastructures;
 public class Stack
 {
     static final int MAX = 1000;

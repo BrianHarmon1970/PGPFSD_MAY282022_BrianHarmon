@@ -1,4 +1,4 @@
-package com.harmonengineering.collections;
+package com.harmonengineering.datastructures;
 
 import java.util.*;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package com.harmonengineering.collections;
+package com.harmonengineering.datastructures;
 public class RangeQueries
 {
     static int k = 16;

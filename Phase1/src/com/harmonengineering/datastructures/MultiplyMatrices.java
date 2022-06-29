@@ -1,4 +1,4 @@
-package com.harmonengineering.collections;
+package com.harmonengineering.datastructures;
 public class MultiplyMatrices
 {
     public static void main(String[] args)

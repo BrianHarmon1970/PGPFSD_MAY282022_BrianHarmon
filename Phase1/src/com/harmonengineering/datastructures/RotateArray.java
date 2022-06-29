@@ -1,4 +1,4 @@
-package com.harmonengineering.collections;
+package com.harmonengineering.datastructures;
 
 class RotateArray {
     public void rotate(int[] nums, int k) {

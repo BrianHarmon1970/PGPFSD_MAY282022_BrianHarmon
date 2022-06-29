@@ -1,5 +1,5 @@
-package com.harmonengineering.collections;
-import java.io.*;
+package com.harmonengineering.datastructures;
+
 public class LinkedList
 {
     Node head; // head of list

@@ -1,4 +1,4 @@
-package com.harmonengineering.collections;
+package com.harmonengineering.datastructures;
 class KthSmallst
 {
     int kthSmallest(int[] arr, int l, int r, int k)
