@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1dd55a-c1a2-475c-a80f-dcea0b16ec3e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+   <list default="true" id="746605ff-9c35-4985-b381-8ed15886e17a" name="Changes" comment="" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,15 +21,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="ProjectId" id="2BZhNiOWNgRddfkSpZMcvxe58yX" />
+  <component name="ProjectId" id="2BZZ1yUUlGe5JTEJcptqnLEwxBV" />
+
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,118 +31,46 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Extra\FarrellJava\src\main\java\exercises\chapter02" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Extra\FarrellJava\src\main\java\debug_exercises" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="exercises.chapter01" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Lottery">
-    <configuration name="Lottery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GameZone.Lottery" />
-      <module name="FarrellJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GameZone.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Application.BeerSong">
+    <configuration name="BeerSong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BeerSong" />
+      <module name="HeadFirst" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomGuess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GameZone.RandomGuess" />
-      <module name="FarrellJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GameZone.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RandomGuess2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GameZone.RandomGuess2" />
-      <module name="FarrellJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GameZone.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDogs2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="YouDoIt.chapter05.TestDogs2" />
-      <module name="FarrellJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="YouDoIt.chapter05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDogs3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="YouDoIt.chapter05.TestDogs3" />
-      <module name="FarrellJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="YouDoIt.chapter05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="MyFirstApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyFirstApp" />
+      <module name="HeadFirst" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lottery" />
-        <item itemvalue="Application.RandomGuess" />
-        <item itemvalue="Application.RandomGuess2" />
-        <item itemvalue="Application.TestDogs3" />
-        <item itemvalue="Application.TestDogs2" />
+        <item itemvalue="Application.BeerSong" />
+        <item itemvalue="Application.MyFirstApp" />
+
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fd1dd55a-c1a2-475c-a80f-dcea0b16ec3e" name="Changes" comment="" />
-      <created>1657119476680</created>
+      <changelist id="746605ff-9c35-4985-b381-8ed15886e17a" name="Changes" comment="" />
+      <created>1657115373356</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1657119476680</updated>
-      <workItem from="1657119478174" duration="7553000" />
-      <workItem from="1657137396007" duration="129851000" />
-      <workItem from="1657471395617" duration="147933000" />
-      <workItem from="1657677796375" duration="42842000" />
-      <workItem from="1657791464330" duration="19976000" />
-      <workItem from="1657898346324" duration="18476000" />
-      <workItem from="1658003087939" duration="37231000" />
-      <workItem from="1658080596562" duration="20081000" />
-      <workItem from="1658113572572" duration="50000" />
-      <workItem from="1658184452630" duration="135000" />
+      <updated>1657115373356</updated>
+      <workItem from="1657115377275" duration="2770000" />
+
     </task>
     <servers />
   </component>
