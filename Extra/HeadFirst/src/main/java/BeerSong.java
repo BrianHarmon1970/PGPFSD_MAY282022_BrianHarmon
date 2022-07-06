@@ -7,14 +7,16 @@ public class BeerSong
 
         while ( bottlesOfBeer > 0 )
         {
-            if ( bottlesOfBeer == 1 )
-                word = "bottle" ;
 
             System.out.println( bottlesOfBeer + " " + word + " of beer on the wall," ) ;
             System.out.println( bottlesOfBeer + " " + word + " of beer." ) ;
-            System.out.println( bottlesOfBeer + " Take one down, pass it around, " ) ;
+            System.out.println( " Take one down, pass it around, " ) ;
 
             bottlesOfBeer = bottlesOfBeer - 1 ;
+            if ( bottlesOfBeer == 1 ) // bug fix - moved from prior to bottlesOfBeer value change
+                word = "bottle" ;
+            else word = "bottles" ;  // for zero bottles
+
             System.out.println( bottlesOfBeer + " " + word + " of beer on the wall." ) ;
         }
     }

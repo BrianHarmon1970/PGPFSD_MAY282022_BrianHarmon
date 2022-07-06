@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-   <list default="true" id="746605ff-9c35-4985-b381-8ed15886e17a" name="Changes" comment="" />
-
-=======
     <list default="true" id="fd1dd55a-c1a2-475c-a80f-dcea0b16ec3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HeadFirst/src/main/java/BeerSong.java" beforeDir="false" afterPath="$PROJECT_DIR$/HeadFirst/src/main/java/BeerSong.java" afterDir="false" />
     </list>
->>>>>>> 847aedb (HeadFirst: MyFirstApp.jave & BeerSong.java)
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +24,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-<<<<<<< HEAD
-  <component name="ProjectId" id="2BZZ1yUUlGe5JTEJcptqnLEwxBV" />
-
-=======
   <component name="ProjectId" id="2BZhNiOWNgRddfkSpZMcvxe58yX" />
->>>>>>> 847aedb (HeadFirst: MyFirstApp.jave & BeerSong.java)
+
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -76,14 +68,9 @@
       <created>1657119476680</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1657115373356</updated>
-      <workItem from="1657115377275" duration="2770000" />
-
-=======
       <updated>1657119476680</updated>
-      <workItem from="1657119478174" duration="562000" />
->>>>>>> 847aedb (HeadFirst: MyFirstApp.jave & BeerSong.java)
+      <workItem from="1657119478174" duration="864000" />
+
     </task>
     <servers />
   </component>
