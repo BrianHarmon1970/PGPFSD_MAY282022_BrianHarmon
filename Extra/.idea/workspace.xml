@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fd1dd55a-c1a2-475c-a80f-dcea0b16ec3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HeadFirst/src/main/java/BeerSong.java" beforeDir="false" afterPath="$PROJECT_DIR$/HeadFirst/src/main/java/BeerSong.java" afterDir="false" />
     </list>
 
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +35,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Application.BeerSong">
+  <component name="RunManager" selected="Application.GameLauncher">
     <configuration name="BeerSong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BeerSong" />
       <module name="HeadFirst" />
 
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GameLauncher" />
+      <module name="HeadFirst" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTestDrive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MovieTestDrive" />
+      <module name="HeadFirst" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -53,8 +66,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PhraseOMatic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PhraseOMatic" />
+      <module name="HeadFirst" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GameLauncher" />
+        <item itemvalue="Application.MovieTestDrive" />
+        <item itemvalue="Application.PhraseOMatic" />
         <item itemvalue="Application.BeerSong" />
         <item itemvalue="Application.MyFirstApp" />
 
@@ -69,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657119476680</updated>
-      <workItem from="1657119478174" duration="864000" />
+      <workItem from="1657119478174" duration="6756000" />
 
     </task>
     <servers />
