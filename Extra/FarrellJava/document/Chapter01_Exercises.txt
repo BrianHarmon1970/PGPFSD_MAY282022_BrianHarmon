@@ -1,0 +1,89 @@
+// Java - Joyce Farrell
+//      Chapter 1 Exercises
+
+1. Is each of the following class identifiers (a) legal nad conventional (b) legal but
+   unconventional, or (c) illegal
+a. myClass -            b, legal but unconventional.
+b. void -               c, illegal
+c. Golden Retriever -   c, illegal
+d. invoice# -           c, illegal
+e. 365422ipCode -       c, illegal
+f. Apartment -          a, legal and conventional
+g. Fruit    -           a, legal and conventional
+h. 8888     -           c, illegal
+i. displayTotal()   -   c, illegal
+j. Accounts_Receivable() - c, illegal
+
+2. Is each of the following method identifiers (a) legal and conventional (b) legal
+   but unconventional, or (c) illegal
+
+a. associationRules() - a, legal and conventional
+b. void() -             c, illegal
+c. Golden Retriever() - c, illegal
+d. invoice#() -         c, illegal
+e. 36542ZipCode() -     c, illegal
+f. PayrollApp() -       b, legal but unconventional
+g. getReady() -         a, legal and conventional
+h. 911() -              c, illegal
+i. displayTotal() -     a, legal and conventional
+j. Accounts_Receivable() -  b, legal but unconventional
+
+3. Name at least three attributes that might be appropriate for each of the following
+    classes.
+
+    a. RealEstateListing    - value, locationl, type
+    b. Vacation             - location, begin date, end date, cost
+    c. CreditCardBill       - limit, minimum payment, total balance, credit available
+
+4. Name at least three real-life objects that are instances of each of the following
+    classes:
+
+    a. Song             - 'Star Spangled Banner', 'Jump' by Van Halen, 'Thank you' by Led Zeppelin
+    b. CollegeCourse    - Physics 101, Calculus III, Sex Education
+    c. Musician         - Amadeus Mozart, Jaco Pastorious, Allen Holdsworth
+
+5. Name at least three classes for which each of the following might belong
+
+    a. myGrandmothersBrooch - Antique, Heirloom, Jewelry
+    b. eggsBenedict         - Food, Breakfast, eggs
+    c. cookieMonster        - Muppet, Monster, BlueThings
+
+6. Write compile and test a class that displays the first few lines of the lyrics of your
+    favorite song. Save the class as SongLyrics.java
+    --- see SongLyrics (in project directory)
+
+7. Write compile and test a class that displays your favorit move quite. The movie
+    it comes from, the character who said it, and the year of the movie. Save the clasa as
+    MovieQuoteInfo.java
+    -- see project
+
+8. Write, compile and test a class that displays the pattern shown in Fig 1-25. Save
+    the class as TableAndChairs.java
+    -- see project
+
+9. Write, compile and test a class that displays the pattern shown in Fig 1-26. Save
+    the class as Triangle.java
+    -- see project
+
+10. Write, compile, and test a class that usese the command window to display the following
+    statement about comments:
+    Programming comments are nonexecuting statements you add to a file for documentation
+    Save the class as Comments.java
+
+11. Modify the Comments.java in Exercise 10 so that the statement is displayed in a dialog box
+    save the class as CommentsDialog.java
+
+12. From 1925 throu 1963, Burma Shave advertising signs appeared next to highways all across the Unites States.
+    There were always four or five signs in a row containing pieces of a rhyme., followed by a final sign that
+    read "Burma Shave."
+    For example one set of signs reads as follows:
+
+    Shaving brushes
+    You'll soon see 'em
+    On a shelf
+    In some museum
+    Burma Shave
+
+    Find a classic Burma Shave rhyme on the Web. Write, compiile and test a class
+    that produce aa series of four dialog boxes so that each display one line fo a Burma Shave slogn in turn.
+    Save the class as BurmaShave.java

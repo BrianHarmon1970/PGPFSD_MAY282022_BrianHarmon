@@ -1,0 +1,67 @@
+// Java - Joyce Farrell
+//          Chapter 1 review
+
+1. The most basic circuitry-level computer language is
+a. machine code
+
+2. Languages that let you us an easily understood vocabulary of descriptive terms
+such as read, write, or add are known as ________ languages.
+b. high level
+
+3. The rules of a programming language consititute its _______
+a. syntax
+
+4. A ________ translates high-level language statement into machine code.
+c. compiler
+
+5. Named co9mputer memory locations are called _______.
+b. variables
+
+6. The individual operations used in a computer program are often grouped inot
+logical units called _________.
+a. procedures
+
+7. Envisioning program components as objects that are similar to concrete objects
+in the real world is the hallmark of ________.
+c. object-oriented programming
+
+8. The values of an ojbect's attributes are known as its _______.
+a. state
+
+9. An instance of a class is a(n)
+c. object
+
+10. Java is architecturally _______.
+a. neutral
+
+11. You must compile classes written in Java into ________.
+a. bytecode
+
+12. All Java programming statements must end with a _______.
+d. semicolon
+
+13. Arguments to methods always appear within ________.
+a. parentheses
+
+14. In a Java program, you must use ______ to separate classes, objects and
+methods.
+a. commas
+
+15. All Java applications must have a method named _____.
+b. main()
+
+16. Non-executing program statements that provide documentation are called
+c. comments
+
+17. Java supports three types of comments: ________, ________, and javadoc.
+d. single, multiple (line)
+
+18. Which of the following is not necessary to do before you can run a Java program?
+c. debugging
+
+19. The command to execute a compled Java application is ________.
+d. java
+
+20. You save text files containing Java source code using the file extension
+________.
+a. .java
