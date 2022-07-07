@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fd1dd55a-c1a2-475c-a80f-dcea0b16ec3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Chapter01_Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/document/Chapter01_Exercises.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/BurmaShave.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/BurmaShave.java" afterDir="false" />
     </list>
 
     <option name="SHOW_DIALOG" value="false" />
@@ -48,9 +50,9 @@
       <recent name="exercises.chapter01" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SammysMotto2">
-    <configuration name="CarlysMotto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.chapter01.CarlysMotto" />
+  <component name="RunManager" selected="Application.Dog">
+    <configuration name="BurmaShave" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.chapter01.BurmaShave" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
@@ -76,15 +78,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomGuess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.chapter01.RandomGuess" />
-      <module name="FarrellJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercises.chapter01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="Dog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dog" />
+      <module name="HeadFirst" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,12 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Dog" />
+        <item itemvalue="Application.BurmaShave" />
         <item itemvalue="Application.SammysMotto2" />
         <item itemvalue="Application.SammysMotto" />
         <item itemvalue="Application.CarlysMotto2" />
-        <item itemvalue="Application.CarlysMotto" />
-        <item itemvalue="Application.RandomGuess" />
-
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657119476680</updated>
       <workItem from="1657119478174" duration="7553000" />
-      <workItem from="1657137396007" duration="17491000" />
+      <workItem from="1657137396007" duration="22744000" />
 
     </task>
     <servers />

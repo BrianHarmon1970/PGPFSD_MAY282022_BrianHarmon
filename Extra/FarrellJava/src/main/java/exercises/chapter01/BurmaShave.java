@@ -3,7 +3,7 @@ package exercises.chapter01;
 import javax.swing.*;
 
 /*
-12. From 1925 throu 1963, Burma Shave advertising signs appeared next to highways all across the Unites States.
+12. From 1925 through 1963, Burma Shave advertising signs appeared next to highways all across the Unites States.
     There were always four or five signs in a row containing pieces of a rhyme., followed by a final sign that
     read "Burma Shave."
     For example one set of signs reads as follows:

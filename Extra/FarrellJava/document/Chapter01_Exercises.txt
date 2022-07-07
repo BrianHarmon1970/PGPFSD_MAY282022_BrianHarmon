@@ -31,7 +31,7 @@ j. Accounts_Receivable() -  b, legal but unconventional
 3. Name at least three attributes that might be appropriate for each of the following
     classes.
 
-    a. RealEstateListing    - value, locationl, type
+    a. RealEstateListing    - value, location, type
     b. Vacation             - location, begin date, end date, cost
     c. CreditCardBill       - limit, minimum payment, total balance, credit available
 
@@ -52,8 +52,8 @@ j. Accounts_Receivable() -  b, legal but unconventional
     favorite song. Save the class as SongLyrics.java
     --- see SongLyrics (in project directory)
 
-7. Write compile and test a class that displays your favorit move quite. The movie
-    it comes from, the character who said it, and the year of the movie. Save the clasa as
+7. Write compile and test a class that displays your favorite movie quote. The movie
+    it comes from, the character who said it, and the year of the movie. Save the class as
     MovieQuoteInfo.java
     -- see project
 
@@ -65,15 +65,15 @@ j. Accounts_Receivable() -  b, legal but unconventional
     the class as Triangle.java
     -- see project
 
-10. Write, compile, and test a class that usese the command window to display the following
+10. Write, compile, and test a class that uses the command window to display the following
     statement about comments:
-    Programming comments are nonexecuting statements you add to a file for documentation
+    Programming comments are non-executing statements you add to a file for documentation
     Save the class as Comments.java
 
 11. Modify the Comments.java in Exercise 10 so that the statement is displayed in a dialog box
     save the class as CommentsDialog.java
 
-12. From 1925 throu 1963, Burma Shave advertising signs appeared next to highways all across the Unites States.
+12. From 1925 through 1963, Burma Shave advertising signs appeared next to highways all across the Unites States.
     There were always four or five signs in a row containing pieces of a rhyme., followed by a final sign that
     read "Burma Shave."
     For example one set of signs reads as follows:
@@ -84,6 +84,6 @@ j. Accounts_Receivable() -  b, legal but unconventional
     In some museum
     Burma Shave
 
-    Find a classic Burma Shave rhyme on the Web. Write, compiile and test a class
+    Find a classic Burma Shave rhyme on the Web. Write, compile and test a class
     that produce aa series of four dialog boxes so that each display one line fo a Burma Shave slogn in turn.
     Save the class as BurmaShave.java
