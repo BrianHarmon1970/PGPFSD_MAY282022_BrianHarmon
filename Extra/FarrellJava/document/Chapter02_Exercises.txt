@@ -1,0 +1,131 @@
+// Java Programming, by Joyce Farrell
+// Chapter 2 Exercises
+
+1. What is the numeric value of each of the following expressions as evaluated by Java ?
+a. 4+6*2            16
+b. 10/5+8           8
+c. 12/4+16/2        11
+d. 17/2             8
+e. 22/3             7
+f. 30/10            3
+g. 19%(2+3)         4
+h. 3+4*20/3         29
+i. 36%(6+2)         4
+j. 8%2*0            8
+
+2. What is the value of each of the following boolean expressions?
+a. 15 < 13          false
+b. 8 <= (2+6)       true
+c. 15 == 15         true
+d. 3 >= 3           true
+e. 4*2 == 2*4       true
+f. 5 < 8-3          false
+g. 7 != 7           false
+h. 8 != (2+5)       true
+i. 10-20 == -10     true
+j. 3+2*6 == 30      false
+
+3. Choose the best data type for each of the following so that any reasonable
+   value is accommodated but no memory storage is wasted. Give an example of a
+   typical value that would be held by the variable, and explain why you chose the
+   type you did.
+
+a. the number of siblings you have
+    byte - typically 1-15 - byte can have value up to 127 and is 1 byte only in memory
+
+b. your final grade in this class
+    byte - typically 100 - byte can have value up to 127 and grade will not exceed this
+                            with only 1 byte of memory consumed
+
+c. the population of Earth
+    int - typically 8 billion - int can have value up to about 4 trillion and uses 4 bytes of memory
+
+d. the population of U.S. country
+    int - typically 250 million - int can have value up to about 4 trillion and uses 4 bytes of memory
+                                  a short int consumes only 2 bytes but is limited to max 32K in value.
+
+e. the number of passengers on a bus
+    byte - typically 50 - can have value to 127 and consumes only one byte
+
+f. one player's score ina Scrabble game
+    short int - typically 100 or more possibly greater than 200 - byte is too limited while short int
+            can have value up to 32,000, well above a typical scrabble score consuming only 2 bytes.
+
+g. one team's score in a Major League Baseball game
+    byte - typically less than 100 - value to 127 max.. consumes only 1 byte of memory
+
+h. the year an historical even occurred
+    short int - typically 0-2000 - short can have value to 32,000.
+
+i. the number of legs on an animal
+    byte - typically 2-8 - byte can easily deal this with only one byte consumed in memory.
+
+j. the price of an automobile
+    float or double - typically 30,000.00 to 150000.00 - precision is low... at 2 decimals and a
+        float will consume 4 bytes while a double consumes 8 bytes.
+        alternatively an int could be used with an understood fixed precision of 2 decimal places,
+        this will also require 4 bytes of data, however.
+
+4.  Write a program that declares a named constant to hold the n umber of quarts in
+    a gallon (4). Also declare a variable to represent the number of quarts needed for
+    a painting job, and assign an appropriate value -- for example, 18. Compute and
+    display  the number of gallons and quarts needed for the job. Display explanatory
+    text with the values--for example, "A job that needs 18 quarts requires 4 gallons
+    plus 2 quarts". Save the program as QuartsToGallons.java.
+
+5. Convert the QuartsToGallons program to an interactive application. Instead
+    of assigning a value to the number of quarts, accept the value from th user as
+    input. Save the revised program as QuartsToGallonsInteractive.java.
+
+6. Write a program that declares named constants to represent the number of
+    inches, feet, and yard in a mile. Also declare a variable to represent a number
+    of miles and assign a value to it. Compute and display, with explanatory text, the
+    value in inches, feet and yards. Save the program as MilesConversions.java.
+
+7.  Convert the MileConversion program to be an interactive application. Instead of
+    assigning a value to the miles variable, accept it from the user as input. Save the
+    revised program as MilesConversionsInteractive.java.
+
+8.  Write a program that declares a variable named inches, which holds a length
+    in inches, and assign a value . Display the value in feet and inches; for example,
+    86 inches becomes 7 feet and 2 inches. Be sure to use a named constant where
+    appropriate. Save the program InchesToFeet.java
+
+9. Write an interactive version of the InchesToFeet class that accepts the inches
+    value from a user. Save the class as InchesToFeetInteractive.java.
+
+10. Write a program tht declares variables to hold your three initials. Display the
+    three initials with a period following each one, as in J.M.F. Save the program as
+    Initials.java.
+
+11. Meadowdale Dairy Farm sells organic brown eggs to local customers. IT charges
+    $3.25 for a dozen eggs, or 45 cents for individual eggs that are not part of a
+    dozen. Write a program that prompts a user for teh number of eggs in the
+    order and then display the amount owed with a full explanation. For example,
+    typical output might be, Your ordered 27 eggs. That's 2 dozen at $3.25 per
+    dozen and 3 loose eggs at 45 cents each for a total of $7.85. Save the program
+    as Eggs.java.
+
+12. The Huntington Boys and Girls Club is conducting a fundraiser by selling chili
+    dinners to go. The price is $7 for an adult meal and $4 for child's meal. Write a
+    program that accepts the number of each type of meal ordered and display the
+    total money collected for adult meals, children's meals, and all meals. Save the
+    total money collected for adult meals, children's meals , and all meals. Save the
+    program as ChiliToGo.java.
+
+13. In the ChiliToGo program in EExercise 12, the costs to produce an adult meal and
+    a child's meal are $4.35 and #3.10, respectively. Modify the ChiliToGo program to
+    display the total profit for each type of meal as well as the grand total profit. Save
+    teh program as ChiliToGoProfit.java
+
+14. Write a program that calculates and display the converts of an entered number
+    of dollars into currency denominations - 20s, 10s, 5s, and 1s. Save the program as
+    Dollars.java.
+
+15. Write a program that accepts a number of minutes and converts it both to hours
+    and days. For example, 6,000 minutes equals 100 hours and equals 4.167 days.
+    Save the program as MinutesConversion.java.
+
+16. Write a program that accepts the names fo three political parties and the number
+    of votes each received in the last mayoral election. Display teh percentage of the
+    vote each party received. Save the program as ElectionStatistics.java.

@@ -5,6 +5,6 @@ public class HelloNameDialog
    {
       String result;
       result = JOptionPane.showInputDialog("What is your name?");
-      JOptionPane.showMessageDialog(null, "Hello, " + result + "!");
+      JOptionPane.showMessageDialog(null, "YouDoIt.chapter01.Hello, " + result + "!");
    }
 }

@@ -1,0 +1,32 @@
+// Java Programming, Joyce Farrell
+// Chapter 2 Game Zone
+
+1.  Mad Libs is a children's game in which they provide a few words that are then
+    incorporated into a silly story. The game helps children understand different
+    parts of speech because they are asked to provide specific typs of words. For
+    example, you might ask a child for a noun, another nmoun, and adjective , and a
+    past tense verb. The child might reply with such answers as tabler, book, silly,
+    and studied. The newly crated Mad LIb might be:
+
+    Mary had a little table
+    Its book was silly as snow
+    And everywhere that Mary studied
+    The table was sure to go.
+
+2.  Create a Mad Libs program that asks the user to provide at least four or five
+    words, and then create and display a short story or nursery rhyme that uses them.
+    Save the file as MadLib.java.
+
+3.  In the "Game Zone" section in Chapter 1, you learned how to obtain a random
+    number. For example, the following statement generates a random number
+    between the constants MIN and MAX inclusive and assigns it to a variable named
+    random:
+
+    random = MIN + (int)(Math.random() * MAX) ;
+
+    Write a program that selects a random number between 1 and 5 and asks
+    the user to guess the number. Display a message that indicates the difference
+    between the random number and the user's guess. Display another message that
+    displays the random number and the boolean value true or false depending
+    on whether the user's guess equals the random number. Save the file as
+    RandomGuessMatch.java

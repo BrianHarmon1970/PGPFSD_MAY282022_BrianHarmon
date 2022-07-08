@@ -12,7 +12,7 @@ public class JHelloFrame extends JFrame implements ActionListener
    final int HEIGHT = 225;
    public JHelloFrame()
    {
-      super("Hello Frame");
+      super("YouDoIt.chapter01.Hello Frame");
       setSize(WIDTH, HEIGHT);
       setLayout(new FlowLayout());
       question.setFont(bigFont);
@@ -28,7 +28,7 @@ public class JHelloFrame extends JFrame implements ActionListener
    public void actionPerformed(ActionEvent e)
    {
        String name = answer.getText();
-       String greet = "Hello, " + name;
+       String greet = "YouDoIt.chapter01.Hello, " + name;
        greeting.setText(greet);
    }
 }

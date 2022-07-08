@@ -10,7 +10,7 @@ public class JFrame6
       aFrame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
       aFrame.setVisible(true);
       aFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      JLabel greeting = new JLabel("Hello");
+      JLabel greeting = new JLabel("YouDoIt.chapter01.Hello");
       JLabel greeting2 = new JLabel("Who are you?");
       aFrame.setLayout(new FlowLayout());
       aFrame.add(greeting);

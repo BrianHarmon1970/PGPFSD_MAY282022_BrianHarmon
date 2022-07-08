@@ -1,4 +1,4 @@
-Programming Java, Joyce Farrell
+Java Programming, Joyce Farrell
 Chapter 1 Case Problems
 
 1. Cathy's Catering provides meals for parties and special events. Write a program

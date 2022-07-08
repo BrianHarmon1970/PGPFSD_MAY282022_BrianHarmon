@@ -16,6 +16,6 @@ public class VirtualKeyboardDemo
        String name;
        System.out.print("Enter name >> ");
        name = input.nextLine();
-       System.out.println("Hello, " + name + "!");
+       System.out.println("YouDoIt.chapter01.Hello, " + name + "!");
    }
 }

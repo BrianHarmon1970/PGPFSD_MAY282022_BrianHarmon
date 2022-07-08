@@ -1,0 +1,46 @@
+// Java Programming, by Joyce Farrell
+// Chapter 2 Review
+
+1.  When data cannot be changed after a class is compiled, the data is ________
+        b. constant
+2.  Which of the following is not a primitive data type in Java?
+        c. sector
+3.  Which of the following is not required in a variable declaration?
+        c. an assigned value
+4.  The assignment operator in Java is __________.
+        a. =
+5.  Assuming you have declared shoeSize to be a variable of type int, which of the
+    following is a valid assignment statement in Java?
+        a. shoeSize = 9 ;
+6.  Which of the following data types can store the value 0 using the least amount of memory?
+        d. byte
+7.  A boolean variable can hold _________
+        d. the value true or false
+8.  the value of 137.68 can be held by a variable of type _________.
+        d. tow of these are correct -- ( b. and c. - float and double )
+9.  An escape sequence always begins with a(n) ________.
+        d. backslash
+10. Which Java statement produces w on one line and xyz on the next line?
+    c. System.out.println( "w\nxyz" ) ;
+11. The remainder operator __________.
+        d. is none of these
+12. According to the rules of operator precedence, when division occurs in the same
+    arithmetic statement as _________, the division operation always takes place
+    first.
+        c. subtraction
+13. The equal to relational operator is ________.
+        b. ==
+14. When you perform arithmetic with values of different types, Java _________.
+        b. implicitly converts the values to a unifying type
+15. If you attempt to add a float, an int, and a byte, the result will be a(n) ________.
+        a. float
+16. You use a _________ to explicitly override an implicit type.
+        b. type cast
+17. In Java, what is the value of 3+7*4+2
+        b. 33
+18. Which assignment is correct in Java?
+        c. double value = 2.12 ;
+19. Which assignment is correct in Java?
+        d. All of the above are correct
+20. Which assignment is correct in Java?
+        c. char aChar = '*' ;

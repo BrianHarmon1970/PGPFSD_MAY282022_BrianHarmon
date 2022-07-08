@@ -18,6 +18,6 @@ public class DebugThree3
    }
    public static displayGreeting(String name)
    {
-      System.outprintln("Hello, " + name + "!");
+      System.outprintln("YouDoIt.chapter01.Hello, " + name + "!");
    }
 }

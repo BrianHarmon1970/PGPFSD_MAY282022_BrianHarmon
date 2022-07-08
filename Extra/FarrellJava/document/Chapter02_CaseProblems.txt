@@ -1,0 +1,21 @@
+Java Programming, Joyce Farrell
+Chapter 2 Case Problems
+
+1.  Carly's Catering provides meals for parties and special events.
+    Write a program that prompts the user for the number of guests attending an event and then
+    computes teh total price, which is $35 pre person. Display the company motto
+    with the border that you created in the CarlysMotto2 class in Chapter 1,
+    and then display the number of guest, pricer pre guest, and total price. Also
+    display  a message that indicates true or false depending on whether the job
+    is classified as a large event -- and event with 50 or more guests. Save the file as
+    CarlysEventPrice.java.
+
+2.  Sammy's Seashore Supplies rents beach equipment such as kayaks, canoes, beach
+    chairs, and umbrellas to tourist. Write a program that prompts the user for the
+    number of minutes  he rented a piece of sports equipment. Compute the rental
+    cost as %50 pre hour plus %1 per additional minute. ( YOu might have surmised
+    already taht this rate has a logical flaw, but for no, calculate rates as described
+    here. YOu can fix the problem after you read teh chapter on decision making.)
+    Display Sammy's motto with the border that you created in th SammysMotto2
+    class in Chapter 1. Then display the hours, minutes, and total price. Save the file
+    as SammysRentalPrice.java.
