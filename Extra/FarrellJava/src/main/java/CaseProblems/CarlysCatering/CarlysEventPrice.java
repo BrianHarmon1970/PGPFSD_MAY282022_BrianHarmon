@@ -1,4 +1,9 @@
 package CaseProblems.CarlysCatering;
+
+import java.util.Scanner;
+
+import static java.lang.System.in;
+
 /*
 1.  Carly's Catering provides meals for parties and special events.
     Write a program that prompts the user for the number of guests attending an event and then
@@ -12,8 +17,22 @@ package CaseProblems.CarlysCatering;
  */
 public class CarlysEventPrice
 {
-    public static void main( String[] args )
-    {
 
+    public static void main(String[] args )
+    {
+        double PRICE_PER_PERSON = 35.0 ;
+        int NumberOfGuests =  0 ;
+        double TotalPrice ;
+        Scanner input = new Scanner( in ) ;
+
+
+        System.out.print( "How many guests will be attending> " ) ;
+        NumberOfGuests = input.nextInt() ;
+        TotalPrice = NumberOfGuests * PRICE_PER_PERSON ;
+
+        CarlysMotto2.main( new String[0] ) ;
+        System.out.println( NumberOfGuests + " guests will be attending at $" +
+                PRICE_PER_PERSON + " / Person for a total of $" + TotalPrice ) ;
+        System.out.println( "This is a large event: " + ( NumberOfGuests >= 50 )) ;
     }
 }

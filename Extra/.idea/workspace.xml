@@ -6,21 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fd1dd55a-c1a2-475c-a80f-dcea0b16ec3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Chapter01_CaseProblems.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/document/Chapter01_CaseProblems.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/CarlysEventPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/CarlysEventPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/GameZone/RandomGuessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/GameZone/RandomGuessMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/Hello2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter01/Hello2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/ArithmeticDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/ArithmeticDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/ArithmeticDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/ArithmeticDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/CharDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/CharDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/DataDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/DataDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/IntegerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/IntegerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/IntegerDemoInteractiveWithName.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/IntegerDemoInteractiveWithName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/CarlysMotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/CarlysMotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/CarlysMotto2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/CarlysMotto2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/RandomGuess.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/GameZone/RandomGuess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/SammysMotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/SammysMotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/SammysMotto2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/SammysMotto2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/SammysRentalPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/SammysRentalPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/CaseProblems/CarlysCatering/CarlysEventPrice.class" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/target/classes/CaseProblems/CarlysCatering/CarlysEventPrice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/CaseProblems/SammysRentals/SammysRentalPrice.class" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/target/classes/CaseProblems/SammysRentals/SammysRentalPrice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/HelloDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/HelloErrors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/YouDoIt/chapter01/Hello2.class" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/target/classes/YouDoIt/chapter01/Hello2.class" afterDir="false" />
     </list>
 
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -69,9 +63,9 @@
       <recent name="exercises.chapter01" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Hello2">
-    <configuration name="ChiliToGoProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.chapter02.ChiliToGoProfit" />
+  <component name="RunManager" selected="Application.CarlysEventPrice">
+    <configuration name="CarlysEventPrice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CaseProblems.CarlysCatering.CarlysEventPrice" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
@@ -80,19 +74,6 @@
         </pattern>
       </extension>
 
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElectionStatistics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.chapter02.ElectionStatistics" />
-      <module name="FarrellJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CaseProblems.CarlysCatering.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,7 +100,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,17 +113,31 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SammysRentalPrice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CaseProblems.SammysRentals.SammysRentalPrice" />
+      <module name="FarrellJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CaseProblems.SammysRentals.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CarlysEventPrice" />
+        <item itemvalue="Application.SammysRentalPrice" />
         <item itemvalue="Application.Hello2" />
         <item itemvalue="Application.MadLib" />
         <item itemvalue="Application.RandomGuessMatch" />
-        <item itemvalue="Application.ChiliToGoProfit" />
-        <item itemvalue="Application.ElectionStatistics" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657119476680</updated>
       <workItem from="1657119478174" duration="7553000" />
-      <workItem from="1657137396007" duration="65615000" />
+      <workItem from="1657137396007" duration="68417000" />
 
     </task>
     <servers />
