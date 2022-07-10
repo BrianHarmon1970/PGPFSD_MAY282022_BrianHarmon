@@ -27,9 +27,5 @@ public class ArithmeticDemo
         System.out.println( firstNumber + " + " + secondNumber +" = " + sum ) ;
         System.out.println( firstNumber + " - " + secondNumber + " = " + difference ) ;
         System.out.println( "The average of " + firstNumber +" and " + secondNumber + " is " + average ) ;
-
-
-
-
     }
 }

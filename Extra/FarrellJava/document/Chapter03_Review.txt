@@ -1,0 +1,77 @@
+// Java Programming, by Joyce Farrell
+// Chapter 3 Review
+
+1.  In Java, methods must include all of th following except __________.
+        a. a call to another method
+
+2.  All method declarations contain ________.
+        c. parentheses
+
+3.  A public static method named computeSum() is located in ClassA. To call the
+    method from within ClassB, use the statement ________.
+        a. ClassA.computeSum() ;
+
+4.  Which of the following method declarations is correct for a static method
+    named displayFacts() if the method receives an int argument?
+        c. public static void displayFacts( int data ) ;
+
+5.  The method with the declaration public static int aMethod( double d) is a
+    method type of ________.
+        b. int
+
+6.  Which of the following is a correct call to a method declared as public static
+    void aMethod( char code ) ?
+        d. aMethod( 'Q' ) ;
+
+7.  A method is declared as public static void showResults( doouble d, int i ) .
+    Which of the following is a correct method call?
+        b. showResults( 12.2, 67 ) ;
+
+8.  The methods with the declaration public static char procedure( double d )
+    has a method type of _______.
+        c. char
+
+9.  The method public static boolean testValue( int response ) returns
+    ________.
+        c. a boolean value
+
+10. Which of the following could be the last legally coded line of a method declared
+    as public static int getVal( double lsum )?
+        b. return 77 ;
+
+11. The nonstatic data components of a class often are referred to as the
+    _______ of the class.
+        b. instance variables
+
+12. An object's data items are also known as _________.
+        a. fields
+
+13. You send messages or information to an object through its ________.
+        b. methods
+
+14. A program or class that instantiates objects of another pre-written class is a(n)
+    _________.
+        a. class client
+
+15. The body of a class is always written ________.
+        c. between curly braces
+
+16. Most class data fields are _________.
+        a. private
+
+17. The concept of allowing a class's private data to be changed only by a class's own
+    methods is known as ________.
+        c. information hiding
+
+18. Suppose you declare an object as Book myJournal; Before you store data in
+    myJournal, you _________.
+        a. also must explicitly allocate memory for it.
+
+19. If a class is named Student, the class constructor name is ________.
+        d. Student()
+
+20. If  you use the automatically supplied default constructor when you create an
+    object, ________.
+        a. numeric fields are set to 0 (zero)
+
+

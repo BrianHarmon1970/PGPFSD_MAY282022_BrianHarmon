@@ -1,0 +1,126 @@
+Java Programming, Joyce Farrell
+Chapter 3 Case Problems
+
+1.  a.  Carly's Catering provides meals for parties and special events. In Chapter 2, you
+        wrote an application that prompts the user for the number of guests attending
+        an event, displays the company motto with a border, and then displays the price
+        of the event and whether the event is a large one. Now modify the program so
+        that the main() method contains only three executable statements that each
+        call a method as follows:
+
+            The first executable statement calls a public static int method that
+            prompts the user for the number of guests and returns the values to the
+            main() method.
+
+            The second executable statement calls a public static void method
+            that displays the company motto with the border.
+
+            The last executable statement passes the number of guests to a public
+            static void method that computes the price of the event, displays the
+            price, and displays whether the event is a large event.
+
+       Save the file as CarlysEventPriceWithMethods.java.
+
+    b.  Create a class to h old Event data for Carly's Catering. The class contains:
+
+            Two public final static fields that hold the price per guest ($35) and
+            the cutoff value for a large event (50 guests)
+
+            Three private fields that hold an event number, number of guests for
+            the event, and the price. The event n umber is stored as a String because
+            Carly plans to assign event numbers such as M312.
+
+            Two public set methods that set the event number (setEventNumber())
+            and the number of guests (setGuests()). The price does not have a set
+            method because the setGuests() method will calculate the price as the
+            number of guests multiplied by the price per guest every time the number
+            of guests is set.
+
+            Three public get methods that return teh values in the three nonstatic
+            fields.
+
+        Save the file as Event.java
+    c.  Use the CarlysEventPriceWithMethods class you created in Step 1a as a
+        starting point for a program that demonstrates the Event class you created in
+        Step 1b, but make the following changes:
+
+            You already have a method that gets a number of guests from a user, now
+            add a method that gets an event number. The main() method should
+            declare an Event object, call the two data entry methods, and use their
+            returned values to set the fields in the Event object.
+
+            Call the method from teh CarlysEventPriceWithMethods class that
+            displays the company motto with border, The method is accessible
+            because it is public, but you must fully qualify the name because it is in
+            another class.
+
+            Revise the method that displays the event details so that it accepts
+            the newly created Event object. The method should display the event
+            number, and it should  still display the number of guests, the price per
+            guest, the total price, and whether the event is a large event.
+
+        Save the program as EventDemo.java
+
+2.  a.  Sammy's Seashore Supplies rents beach equipment such as kayaks, canoes,
+        beach chairs, and umbrellas to tourists.  In Chapter 2, you wrote an application
+        that prompts the user for the number of minutes a piece of sports equipment
+        was rented, displays the company motto with a border, and displays the price
+        for the rental. Now modify the program so that the main()  method contains
+        only three executable statements that each call a method as follows:
+
+            The firs executable statement calls a method that prompts the user for
+            the rental time in minutes and returns the value to the main() method.
+
+            The second executable statement calls a method that displays the
+            company motto with the border.
+
+            The last executable statement passes the number of minutes to a method
+            that computes the hours, extra minutes and price for the rental, and then
+            displays all the details.
+
+        Save the file as SammysRentalPriceWithMethods.java.
+
+    b.  Create a class to hold Rental data for Sammy's Seashore Supplies. The class
+        contains:
+
+            Two public final static fields that hold the number of minutes in an
+            hour and the hourly rental rate ($40)
+
+            Four private fields that hold a contract number,  number of hours for
+            the rental, number of minutes over an hour, and the price. The contract
+            number is stores as a String because Sammy plans to assign contract
+            numbers such as K681.
+
+            Two public set methods. One sets the contract number
+            (setContractNumber()). The other is named setHoursAndMinutes(),
+            and it accepts the number of minutes for the rental and then sets the
+            hours, extra minutes over an hour, ahd the total price. Recall from
+            Chapter 2 that the price is $40 per hour plus $1 for every extra minute.
+
+            Four public get methods that return the values in the four nonstatic
+            fields.
+        Save the file as Rental.java.
+
+    c. Use the SammysRentalPriceWithMethods class you created in Step 2a as a
+        starting point for a program that demonstrates the Rental class you created
+        in Step 2b, but make the following changes:
+
+        You already have a method that gets a number of minutes from a user;
+        now add a method that gets a contract number. The main() method s
+        should declare a Rental object, call the two data entry methods, and use
+        their returned values to set the fields in the Rental object.
+
+        From the SammysRentalPriceWithMethods class, call the REntalDemo
+        method that displays the company motto with the border. The method
+        is accessible because it is public. but you must fully qualify the
+        name because it is in another class.
+
+        Revise the method that displays the rental details so that it accepts the
+        newly created Rental object. The method should display the contract
+        number, and it still should display the hours and minutes, the hourly rate,
+        and the total price.
+
+    Save the program as RentalDemo.java
+
+
+
