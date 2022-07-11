@@ -1,0 +1,94 @@
+// Java Programming, by Joyce Farrell
+// Chapter 4 Review
+
+1.  The code between a pair of curly braces in a method is a ________.
+        c. block
+
+2.  When a block exists within another block, the blocks are _________.
+        d. nested
+
+3.  The portion of a program within which you can reference a variable is the
+    variable's ________.
+        a. scope
+
+4.  You can declare variables with the same name multiple times ________.
+        c. within a method
+
+5.  If you declare a variable as an instance variable within a class, and you declare
+    and use the same variable name within a method of the class, then within the
+    method, ________.
+        a. the variable used inside the method takes precedence.
+
+6.  A method variable ________ a class variable with the same name.
+        c. overrides
+
+7.  Non-ambiguous, overloaded methods must have the same ________.
+        d. name
+
+8.  If a method is written to receive a double parameter, and you pass an integer to
+    the method, then the method will __________.
+        a. work correctly; the integer will be promoted to a double.
+
+9.  A constructor ________ parameters.
+        a. can receive
+
+10. A constructor ________ overloaded.
+        a. must be - ( unless  you do not define a constructor, in which case
+                        the automatic default constructor is used. )
+            by definition a constructor uses the name of the class as its own
+            and therefore, any constructor that is not the only constructor must overload.
+        d. is always automatically - as long as you create any constructor
+            the automatic default is overloaded. ( unless the compiler absolutely
+            does not provide automatic default in the case where you create the default
+            constructor yourself. supposing then that you do and there is no other constructor,
+            in this case the answer is
+
+            c. can be... but this implies that it does not have to be which is in general not
+            true at all, as in every other case of constructor construction.
+            if and only if there is one and only one constructor supplied (whether by user or by compiler)
+            as the default parameterless constructor is this true.
+            ( you don't have to overload the constructor if you do not create one - if you supply the default one
+                yourself, you are not overloading but rather replacing the compiler supplied default).
+        not -
+            b. cannot be
+            I may as well mention it by now. if it's not overloading on the class name it can't be a constructor
+            of the class. this is the only answer that is clearly not true.
+
+11. Usually, you want each instantiation of a class to have its own copy of
+    ________.
+        a. the data fields
+
+12. If you create a class that contains one method, and instantiate two objects, you
+    usually store ________ for use with the objects.
+        d. data only ( the methods are not stored. )
+
+13. The this reference ________.
+        a. can be used implicitly
+
+14. Methods that you reference with individual objects are ________.
+        d. nonstatic
+
+15  Variables that are shared by every instantiation of a class are ________.
+        a. class variables
+
+16. The keyword final used with a variable declaration indicates ________.
+        c. a symbolic constant
+
+17. Java classes are stored in a folder or ________.
+        c. package
+
+18  Which of the following statements determines the square root of a number and
+    assigns it to the variable s?
+        b. s = Math.sqrt( number ) ;
+
+19. A LocalDate object ________.
+        d. all of the above -
+            can be displayed as a String,
+            contains static fields with data such as the current year
+            is created using a public default constructor
+
+20. Which of the following expressions correctly returns an integer that represents
+    the month of a LocalDate object named hireDate?
+        c. hireDate.getMonthValue() ;
+
+

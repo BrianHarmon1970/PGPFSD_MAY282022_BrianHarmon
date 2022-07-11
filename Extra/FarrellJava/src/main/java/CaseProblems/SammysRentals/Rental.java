@@ -22,6 +22,39 @@ package CaseProblems.SammysRentals;
         Save the file as Rental.java.
 
  */
+/*
+
+2.  a.  Sammy's Seashore Supplies rents beach equipment such as kayaks, canoes,
+        beach chairs, and umbrellas to tourists. In Chapter 3, you created a Rental
+        class for the company. The Rental class contains two public final static
+        fields that hold the n umber of minutes in an hour and the hourly rental rate
+        ($40), and four private fields that hold a contract number, number of hours
+        for the rental, number of minutes over an hour, and teh price. It also contains
+        two public set methods and four public get methods.
+
+        Now, modify the Rental class to contain two overloaded constructors.
+        One constructor accepts a contract number and number of minutes
+
+        as parameters. Pass these values to the setContractNumber() and
+        setHoursAndMinutes() methods, respectively. The setHoursAndMinutes()
+        method will automatically calculate the hours, extra minutes, and price.
+
+        The other constructor is a default constructor that passes "A000" and 0 to the
+        two-parameter constructor.
+
+        Save the file as Rental.java
+
+    b.  In Chapter 3, you also created a REntalDemo class to demonstrate a REntal
+        object. Now, modify that class to instantiate two REntal objects.
+
+        Instantiate on object to retain the constructor default values.
+
+        Accept user data for the contract number and minutes fields and use this data
+        set to instantiate th second object. Display all the details for both objects.
+
+        Save the file as RentalDemo.java.
+
+ */
 public class Rental
 {
     public static final double HOUR_RATE = 50.00 ;
@@ -35,6 +68,15 @@ public class Rental
 
     private double TotalPrice ;
 
+    public Rental()
+    {
+        this( "A001" , 0 ) ;
+    }
+    public Rental( String contractNumber, int minutesRented )
+    {
+        setContractNumber( contractNumber ) ;
+        setHoursAndMinutes( minutesRented ) ;
+    }
     public void setContractNumber(String contractNumber) { ContractNumber = contractNumber; }
     public void setHoursAndMinutes(int minutes_rented )
     {

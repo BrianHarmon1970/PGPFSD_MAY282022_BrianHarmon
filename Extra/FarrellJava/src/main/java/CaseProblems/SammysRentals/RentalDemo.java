@@ -28,6 +28,18 @@ import static java.lang.System.in;
     Save the program as RentalDemo.java
 
  */
+/*
+    b.  In Chapter 3, you also created a RentalDemo class to demonstrate a Rental
+        object. Now, modify that class to instantiate two Rental objects.
+
+        Instantiate on object to retain the constructor default values.
+
+        Accept user data for the contract number and minutes fields and use this data
+        set to instantiate th second object. Display all the details for both objects.
+
+        Save the file as RentalDemo.java.
+
+ */
 public class RentalDemo
 {
     public static void main( String[] args )
@@ -38,6 +50,19 @@ public class RentalDemo
         SammysRentalPriceWithMethods.printMottoWithBorders();
         printInvoice( r ) ;
 
+        printInvoice( new Rental() ) ;
+        printInvoice( getUserRental() ) ;
+
+    }
+    static Rental getUserRental( )
+    {
+        return new Rental( getUserContractNumber(), getUserMinutes() ) ;
+    }
+    static String getUserContractNumber()
+    {
+        Scanner input = new Scanner( in ) ;
+        System.out.print( "Enter contract number>" ) ;
+        return input.nextLine() ;
     }
     static void printMottoWithBorders()
     {
@@ -67,5 +92,6 @@ public class RentalDemo
                 hours + " hours @ $" + Rental.HOUR_RATE + "/hr and " +
                 minutes + " additional minutes @ $" + Rental.MINUTE_RATE+ "/min " +
                 "for a total price of $" + TotalPrice ) ;
+        System.out.println() ;
     }
 }

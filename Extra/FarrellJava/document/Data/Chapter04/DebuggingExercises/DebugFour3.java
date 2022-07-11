@@ -1,4 +1,4 @@
-// This class uses a DebugBox class to instantiate two Box objects
+// This class uses a debug_exercises.chapter04.DebugBox class to instantiate two Box objects
 public class DebugFour3
 {
    public static void main(String args[])

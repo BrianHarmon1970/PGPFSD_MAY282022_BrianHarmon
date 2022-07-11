@@ -6,283 +6,63 @@
   <component name="ChangeListManager">
     <list default="true" id="fd1dd55a-c1a2-475c-a80f-dcea0b16ec3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/ConversionCharacterExamples.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/DecimalFormatTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/Employee2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/FloatingPointTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/NumberList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/NumberList2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/RoundingDemo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/RoundingDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/SomeRandomNumbers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/SomeRandomNumbers2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Appendices/CodeInFigures/SomeRandomNumbers3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/CodeInFigures/AreaCodeDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/CodeInFigures/ErrorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/CodeInFigures/First.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/CodeInFigures/FirstBadOutput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/CodeInFigures/FirstDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/CodeInFigures/FirstWithMissingSemicolon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/CodeInFigures/HelloErrors.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/CodeInFigures/AreaCodeDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/CodeInFigures/ErrorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/CodeInFigures/First.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/CodeInFigures/FirstBadOutput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/CodeInFigures/FirstDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/CodeInFigures/FirstWithMissingSemicolon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/CodeInFigures/HelloErrors.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/DebugOne1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/DebugOne2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/DebugOne3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter01/DebuggingExercises/DebugOne4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/AirlineDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/AreaCodeDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/ConfirmDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/GetUserInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/GetUserInfo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/GetUserInfo3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/HelloNameDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/HelloThereNewLine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/HelloTherePrintlnTwice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/ImprecisionDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/NumbersDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/NumbersPrintln.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/CodeInFigures/SalaryDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/DebuggingExercises/DebugTwo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/DebuggingExercises/DebugTwo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/DebuggingExercises/DebugTwo3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter02/DebuggingExercises/DebugTwo4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/CodeInFigures/DeclareTwoEmployees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/CodeInFigures/DemoGrossPay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/CodeInFigures/DemoGrossPay2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/CodeInFigures/DemoGrossPay3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/CodeInFigures/DemoGrossPay4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/CodeInFigures/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/CodeInFigures/First.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/CodeInFigures/MethodsThatUseAnEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/DebuggingExercises/DebugThree1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/DebuggingExercises/DebugThree2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/DebuggingExercises/DebugThree3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter03/DebuggingExercises/DebugThree4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/BaseballPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/CallSimpleMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/CallSimpleMethodAgain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/DeliveryDate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/LocalDateDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/NameAndAddress.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/OverridingVariable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/RealEstateListing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/School.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/SchoolDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/TestEmployeeMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/TestMethodWithNestedBlocks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/TestPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/CodeInFigures/TestStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/DebuggingExercises/DebugBox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/DebuggingExercises/DebugFour1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/DebuggingExercises/DebugFour2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/DebuggingExercises/DebugFour3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter04/DebuggingExercises/DebugFour4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter05/CodeInFigures/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter05/CodeInFigures/Payroll.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter05/DebuggingExercises/DebugFive1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter05/DebuggingExercises/DebugFive2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter05/DebuggingExercises/DebugFive3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter05/DebuggingExercises/DebugFive4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/CodeInFigures/BankBalance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/CodeInFigures/BankBalance2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/CodeInFigures/BankBalanceByRateAndYear.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/CodeInFigures/Clock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/CodeInFigures/CompareLoopTimes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/CodeInFigures/EnterSmallValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/CodeInFigures/PrefixPostfixDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/DebuggingExercises/DebugSix1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/DebuggingExercises/DebugSix2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/DebuggingExercises/DebugSix3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter06/DebuggingExercises/DebugSix4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter07/CodeInFigures/BusinessLetter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter07/CodeInFigures/CharacterInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter07/CodeInFigures/CompareStrings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter07/CodeInFigures/ConcatenationTimeComparison.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter07/CodeInFigures/StringBuilderDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter07/CodeInFigures/TryToCompareStrings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter07/DebuggingExercises/DebugSeven1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter07/DebuggingExercises/DebugSeven2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter07/DebuggingExercises/DebugSeven3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter07/DebuggingExercises/DebugSeven4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter08/CodeInFigures/AverageOfQuizzes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter08/CodeInFigures/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter08/CodeInFigures/FindDiscount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter08/CodeInFigures/FindPrice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter08/CodeInFigures/PassArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter08/CodeInFigures/PassArrayElement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter08/DebuggingExercises/DebugEight1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter08/DebuggingExercises/DebugEight2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter08/DebuggingExercises/DebugEight3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter08/DebuggingExercises/DebugEight4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/CodeInFigures/ArrayListDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/CodeInFigures/ArrayListDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/CodeInFigures/ArraysDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/CodeInFigures/DisplayRents.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/CodeInFigures/EnumDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/CodeInFigures/EnumDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/CodeInFigures/FindRent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/CodeInFigures/VerifyCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/Debugging/DebugNine1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/Debugging/DebugNine2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/Debugging/DebugNine3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/Debugging/DebugNine4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter09/Debugging/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/ASubClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/ASuperClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/BaseballPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/BasketballPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/DemoConstructors.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/EmployeeWithTerritory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/HideAndGoSeekPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/PreferredCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/ProfessionalBaseballPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/ProfessionalBasketballPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/ProfessionalHideAndGoSeekPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/TestCustomers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/CodeInFigures/TestProPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugCustomerMakingPurchase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugExtendedVacation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugMusical.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugPhoneBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugPlay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugTen1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugTen2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugTen3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugTen4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter10/Debugging/DebugVacation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/AnimalArrayDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/AnimalReference.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/BankAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/CompareAccounts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/Cow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/DemoAnonymousClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/DemoLambda.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/DemoWorkingDogs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/DisplayDog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/Dog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/PizzaConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/PizzaDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/Snake.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/TalkingAnimalDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/TestBankAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/UseAnimals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/Worker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/CodeInFigures/WorkingDog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/DebuggingExercises/DebugBoat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/DebuggingExercises/DebugEleven1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/DebuggingExercises/DebugEleven2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/DebuggingExercises/DebugEleven3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/DebuggingExercises/DebugEleven4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/DebuggingExercises/DebugOceanLiner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter11/DebuggingExercises/DebugRowboat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/CustomerAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/DemoStackTrace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/DemoStackTrace2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/Division.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/Division2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/DivisionMistakeCaught.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/DivisionMistakeCaught2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/DivisionMistakeCaught3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/DivisionMistakeCaught4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/EnteringIntegers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/EvenOdd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/HighBalanceException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/PriceList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/PriceListApplication1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/PriceListApplication2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/UninitializedVariableTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/UseCustomerAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/CodeInFigures/VirtualKeyboardDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/DebuggingExercises/DebugEmployeeIDException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/DebuggingExercises/DebugTwelve1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/DebuggingExercises/DebugTwelve2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/DebuggingExercises/DebugTwelve3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter12/DebuggingExercises/DebugTwelve4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/CreateEmployeesRandomFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/CreateEmptyEmployeesFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/CreateOneRandomAccessRecord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/FileOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/PathDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/PathDemo2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/PathDemo3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/PathDemo4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/PathDemo5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/PathDemo6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/RandomAccessTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/ReadEmployeeFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/ReadEmployeeFile2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/ReadEmployeesRandomly.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/ReadEmployeesSequentially.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/ReadFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/ScreenOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/CodeInFigures/WriteEmployeeFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/DebuggingExercises/DebugData1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/DebuggingExercises/DebugData2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/DebuggingExercises/DebugData3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/DebuggingExercises/DebugData4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/DebuggingExercises/DebugThirteen1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/DebuggingExercises/DebugThirteen2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/DebuggingExercises/DebugThirteen3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter13/DebuggingExercises/DebugThirteen4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/CheckBoxDemonstration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/ComboBoxDemonstration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/ComponentDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/CreateTwoJMyFrameObjects.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JFrame1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JFrame2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JFrame3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JFrame4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JFrame5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JFrame6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JFrameWithManyComponents.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JHelloDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JHelloFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JMyFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/CodeInFigures/JTwoButtons.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/DebuggingExercises/DebugFourteen1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/DebuggingExercises/DebugFourteen2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/DebuggingExercises/DebugFourteen3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter14/DebuggingExercises/DebugFourteen4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter15/StudentData/CodeInFigures/LifeCycleDemo.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter15/StudentData/CodeInFigures/MyFirstJavaFXApp.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter15/StudentData/DebuggingExercises/DebugFifteen1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter15/StudentData/DebuggingExercises/DebugFifteen2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter15/StudentData/DebuggingExercises/DebugFifteen3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/1337397075_605775/Data Files/Chapter15/StudentData/DebuggingExercises/DebugFifteen4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/ArithmeticDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/YouDoIt/chapter02/ArithmeticDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/DebugOne1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/DebugOne2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/DebugOne3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/DebugOne4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/FixDebugOne1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/FixDebugOne2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/FixDebugOne3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter01/FixDebugOne4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02/DebugTwo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02/DebugTwo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02/DebugTwo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02/DebugTwo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02/fixDebugTwo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02/fixDebugTwo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02/fixDebugTwo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02/fixDebugTwo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/YouDoIt/chapter02/ArithmeticDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/target/classes/YouDoIt/chapter02/ArithmeticDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Data/Chapter04/DebuggingExercises/DebugBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter04/DebugBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Data/Chapter04/DebuggingExercises/DebugFour1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter04/DebugFour1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Data/Chapter04/DebuggingExercises/DebugFour2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter04/DebugFour2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Data/Chapter04/DebuggingExercises/DebugFour3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter04/DebugFour3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Data/Chapter04/DebuggingExercises/DebugFour4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter04/DebugFour4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/EventDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/EventDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/Rental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/RentalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/RentalDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/DebugOne1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/DebugOne2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/DebugOne3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/DebugOne4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugThree1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/DebugThree1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugThree2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/DebugThree2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugThree3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/DebugThree3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugThree4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/DebugThree4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/DebugTwo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/DebugTwo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/DebugTwo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/DebugTwo4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/FixDebugOne1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/FixDebugOne2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/FixDebugOne3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/FixDebugOne4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugThree1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/fixDebugThree1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugThree2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/fixDebugThree2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugThree3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/fixDebugThree3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugThree4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/fixDebugThree4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/fixDebugTwo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/fixDebugTwo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/fixDebugTwo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/fixDebugTwo4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/DebugOne2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/DebugThree1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/DebugThree2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/DebugThree3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/DebugThree4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/fixDebugThree1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/fixDebugThree2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/fixDebugThree3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/fixDebugThree4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/DebugOne1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/DebugOne3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/DebugOne4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/FixDebugOne1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/FixDebugOne2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/FixDebugOne3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/FixDebugOne4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/DebugTwo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/DebugTwo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/DebugTwo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/DebugTwo4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/fixDebugTwo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/fixDebugTwo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/fixDebugTwo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/fixDebugTwo4.class" beforeDir="false" />
     </list>
 
     <option name="SHOW_DIALOG" value="false" />
@@ -328,13 +108,16 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Extra\FarrellJava\src\main\java\exercises\chapter02" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Extra\FarrellJava\src\main\java\debug_exercises" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="exercises.chapter01" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RentalDemo">
-    <configuration name="CarlysEventPriceWithMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CaseProblems.CarlysCatering.CarlysEventPriceWithMethods" />
+  <component name="RunManager" selected="Application.TestWedding">
+    <configuration name="EventDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CaseProblems.CarlysCatering.EventDemo" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
@@ -347,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EventDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CaseProblems.CarlysCatering.EventDemo" />
+    <configuration name="FiveDice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GameZone.FiveDice" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CaseProblems.CarlysCatering.*" />
+          <option name="PATTERN" value="GameZone.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -373,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SammysRentalPriceWithMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CaseProblems.SammysRentals.SammysRentalPriceWithMethods" />
+    <configuration name="TestWedding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.chapter04.TestWedding" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CaseProblems.SammysRentals.*" />
+          <option name="PATTERN" value="exercises.chapter04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -387,8 +170,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GameZone.TwoCharacters" />
+    <configuration name="TwoDice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GameZone.TwoDice" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
@@ -402,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestWedding" />
         <item itemvalue="Application.RentalDemo" />
         <item itemvalue="Application.EventDemo" />
-        <item itemvalue="Application.SammysRentalPriceWithMethods" />
-        <item itemvalue="Application.CarlysEventPriceWithMethods" />
-        <item itemvalue="Application.TwoCharacters" />
+        <item itemvalue="Application.FiveDice" />
+        <item itemvalue="Application.TwoDice" />
       </list>
     </recent_temporary>
   </component>
@@ -420,6 +203,7 @@
       <updated>1657119476680</updated>
       <workItem from="1657119478174" duration="7553000" />
       <workItem from="1657137396007" duration="129851000" />
+      <workItem from="1657471395617" duration="63416000" />
 
     </task>
     <servers />
