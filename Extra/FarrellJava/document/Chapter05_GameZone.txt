@@ -1,0 +1,76 @@
+// Java Programming, Joyce Farrell
+// Chapter 5 Game Zone
+
+1.  In Chapter 1 , you created a class classed RandomGuess. In this game, players guess
+    a number, the application generates a random number, and players determine
+    whether they were correct. Now that you can make decisions, modify the
+    application so that it allows a player to enter a guess before the random number is
+    displayed, and then displays a message indicating whether the player's guess was
+    correct, too high, or too low. Save the file as RandomGuess2.java. (After you
+    finish Chapter 6, you will be able to modify the application so that the user can
+    continue to guess until the correct answer is entered.)
+
+2.  Create a lottery game application. Generate three random numbers (see
+    Appendix D for help in doing so), each between 0 and 9. Allow the user to guess
+    three numbers. Compare each of the user's guesses to the three random numbers
+    and display a message that includes the user's guess, the randomly determined
+    three-digit number, and the amount of money the user has won as follows:
+    -----------------------------------------
+    Matching Numbers                Award($)
+    -----------------------------------------
+    Any one matching                       10
+    Two matching                          100
+    Three matching, not in order        1,000
+    Three matching in exact order   1,000,000
+    No matches                              0
+    -----------------------------------------
+    Make certain that your application accommodates repeating digits. For exampl,
+    if a user guesses 1, 2, and 3, and the randomly generated digits are 1, 1, and 1,
+    do not give the user credit for three correct guesses--just one. Save teh file as
+    Lottery.java
+
+3.  In Chapter 3, you created a Card class. Modify the Card class so the setValue()
+    method does not allow a Card's value to be less than 1 or higher than 13. If the
+    argument to setValue() is out of range, assign 1 to the Card's value.
+
+    IN Chapter 3, you also created a PickTwoCards application that randomly selects
+    two playing cards and displays their values. IN that application , all Card objects
+    arbitrarily were assigned a suit represented by a single character, but they could
+    have different values, and teh player observed which of two Card objects had
+    the higher value. Now modify teh application so both the suit and the value are
+    chosen randomly. Using two Card objects, play a very simope version of the card
+    game Ware. Deal two Cards - one for the computer and onn for the player - and
+    determine the higher card, then display a message indicating whether the cards
+    are equal, the computer won or the player won. (Playing cards are considered equal
+    when they have the same value, no matter what their suit is.) For this game,
+    assume the Ace(value )1 ) is low. Make sure that the two Cards dealt are not the
+    same Card. For example, a deck cannot contain more than one Card representing
+    the 2 of Spades. If two cards are chosen to have the same value, change the suit
+    for one of them. Save the application as War.java. (After you study the chapter
+    "Arrays", you will be able to create a more sophisticated War gam in which you
+    use an entire deck without repeating cards.)
+
+4.  In Chapter 4, you created a Die class from which you could instantiate an object
+    containing a random value from 1 through 6. You also wrote an application that
+    randomly "throws" two dice and displays their values. Modify the application so that
+    it determines whether the two dice and displays their values. Modify the application so
+    that it determines whether the two dice are the same, the first has a higher value, or
+    the second has a higher value. Save the application as TWoDice2.java.
+
+5.  In the game Rock Paper Scissors, two players simultaneously choose one of three
+    options: rock, paper, or scissors. If both players choose the same option, then the
+    result is a tie. However, if they choose differently, the winner is determined as
+    follows:
+
+            Rock beats scissors, because a rock can break a pair of scissors.
+            Scissor beats paper, because scissors can cut paper.
+            Paper beats rock, because a piece of paper can cover a rock.
+
+    Creat a game in which the computer randomly chooses rock, paper, or scissors.
+    Let the user enter a number 1, 2, or 3, each representing one of the three choices.
+    Then, determine the winner. Save the application as RockPaperScissors.java.
+    (In the chapter "Characters, Strings, and the StringBuilder", ypu will modify the
+    game so that the user enters a string for rock, paper, and scissors, rather than just
+    entering a number.)
+
+

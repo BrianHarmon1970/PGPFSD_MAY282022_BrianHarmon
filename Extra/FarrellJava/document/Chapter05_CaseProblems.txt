@@ -1,0 +1,78 @@
+// Java Programming, Joyce Farrell
+// Chapter 4 Case Problems
+1.  a.  Carly's Catering provides meals for parties and special events. In Chapters 3
+        and 4, you created an Event class for the company. Now ake the following
+        changes to the class:
+        Currently, the class contains a field that holds the price for an Event. Now
+        add another field that holds the price per guest, and add a public method
+        to return its value.
+
+        Currently, the class contains a field that holds the price for an Event. Now
+        add another field that holds the price per guest, and add a public method
+        to return its value.
+
+        Currently, the class contains a constant for the price per guest. Replace
+        that field with two fields -- a lower price per guest that is $32, and a higher
+        price per guest that is $35.
+
+        Add a new method named isLargeEvent() that returns true if the
+        number of guests is 50 or greater and otherwise returns false .
+
+        Modify the method that sets the number of guests so that a large Event
+        (more than 50 guests) uses the lower price per guest to set the new
+        pricePerGuest field and calculate the total Event price. A small Event
+        uses the higher price.
+
+    Save the file as Event.java.
+
+    b.  In Chapter 4, you modified the EventDemo class to demonstrate two Event
+        objects. Now modify that class again as follows:
+
+        Instantiate three Event objects, and prompt the user for values for each
+        object.
+
+        Change the method that displays Event details to use the new
+        isLargeEvent() method and the new price per guest value. Use the
+        display method with all three objects.
+
+        Create a method that accepts two Event objects and returns the larger
+        one based on number of guests. (If the Events have the same number of
+        guests, you can return either object.) Call this method three times -- once
+        with each pair of instantiated Events -- and display the event nu mber and
+        number of guests for each argument as well as the event number and
+        number of guests for the larger Event
+
+    Save the file as EventDemo.java
+
+2.  a.  Sammy's Seashore Supplies rents beach equipment such as kayaks, canoes,
+        beach chairs, and umbrellas to tourists. IN Chapters 3 and 4, you created a
+        Rental class for the company.
+
+    Now, make the following change to the class:
+
+        Currently, a rental price is calculated as $40 per hour plus $1 for each
+        minute over a full hour. This means that a customer who rents equipment
+        for 41 or more minutes past an hour pay more than a customer who
+        waits until the next hour to return the equipment. Change the price
+        calculation so that customer pays $40 for each full hour and $ ore each extra
+        minute up to and including 40 minutes.
+
+    Save teh file as Rental.java
+    b.  In Chapter 4, you modified the RentalDemo class to demonstrate a Rental
+    object. Now modify that class again as follows:
+
+        Instantiate three Rental objects, and prompt the user for values for each
+        object. Display the details for each object to verify that the new price
+        calculation works correctly.
+
+        Create a method that accepts two Rental objects and returns the one
+        with the longer rental time. (IF the Rentals have the same time, you can
+        return either object.) Call this method three times -- once with each pair
+        of instantiated Rentals -- and display the contract number and time in
+        hours and minutes for each argument as well as the contract number of
+        the longer Rental.
+
+        Save the file as RentalDemo.java
+
+
+

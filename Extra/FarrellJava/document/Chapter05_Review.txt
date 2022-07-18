@@ -1,0 +1,100 @@
+// Java Programming, by Joyce Farrell
+// Chapter 5 Review
+
+1.  The logical structure in which one instruction occurs after another with no
+    branching is a ________.
+        a. sequence
+
+2.  Which of the following is typically used in flowchart to indicate a decision?
+        d. diamond
+
+3.  Which of the following is not a type of if statement?
+        c. reverse
+
+4.  A decision is based on a(n) ________ value.
+        a. boolean
+
+5.  In Java, the value of (14 > 7) is _________.
+        a. true
+
+6.  Assuming the variable score has been assigned the value 9, which of the
+    following statements displays XXX?
+        a.  if(score <= 9 ) System.out.println("XXX") ;
+                and
+        c.  if( score > 0 ) System.out.println("XXX") ;
+
+7.  What is the output of the following code segment?
+    t = 10 ;
+    if( t > 7 )
+    {
+        System.out.print("AAA") ;
+        System.out.print("BBB") ;
+    }
+    c. AAABBB
+
+8.  What is the output of the following code segment?
+    t = 0 ;
+    if( t > 7 )
+        System.out.print( "AAA" ) ;
+        System.out.print( "BBB" ) ;
+
+    b. BBB
+
+9.  What is the output of the following code segment?
+    t = 7 ;
+    if( t > 7 )
+    {
+        System.out.print( "AAA" ) ;
+        System.out.print( "BBB" ) ;
+    }
+
+    d. nothing
+
+10. When you code an if statement within another if statement, the statements are
+    ________.
+        b. nested
+
+11. The operator that combines two conditions into a single Boolean value that is
+    true only when both of the conditions are true is __________.
+        b. &&
+
+12. The operator that combines two conditions into a single Boolean value that is
+    true when at least one of the conditions is true is _________.
+        a. ||
+
+13. Assuming a variable f has been initialized to 5, which of the following statements
+    sets g to 0?
+        d. all of the above statements set g to 0
+
+14. Which of the following has the lowest precedence?
+        b. ==
+
+15. Which of the following statements correctly outputs the names of voters who live
+    in district 6 and all voters who live in district 7?
+        b. if ( district == 6 || district == 7 )
+
+16. Which of the following displays Error when a student ID is less than 1000 or
+    more than 9999?
+        c.  if( stuId < 1000)
+                System.out.println( "Error" ) ;
+            else
+                if ( stuId > 9999 )
+                    System.out.println( "Error" ) ;
+
+17. You can use the _________ statement to terminate a switch statement.
+        b. break
+
+18. Which of the following cannot be the argument tested in a switch statement?
+        d. double
+
+19. Assuming a variable w has been assigned the value 15, what does the following
+    statement do?
+
+        w == 15 ? x = 2 : x = 0
+
+        b. assigns 2 to x
+
+20. Assuming a variable y has been assigned the value 6, the value of ! ( y < 7 ) is
+    ________.
+        d. false
+

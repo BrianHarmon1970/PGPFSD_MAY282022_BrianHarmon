@@ -19,6 +19,7 @@ import static java.lang.System.in;
     displays the random number and the boolean value true or false depending
     on whether the user's guess equals the random number. Save the file as
     RandomGuessMatch.java
+
  */
 public class RandomGuessMatch
 {
@@ -26,7 +27,7 @@ public class RandomGuessMatch
     {
         int number = 1 + (int)(Math.random() * 5 ) ;
         int guess ;
-        Scanner input = new Scanner( in ) ;
+        Scanner input = new Scanner( System.in ) ;
         System.out.println( "I have selected a number between 1 and 5" ) ;
         System.out.print( "Enter your guess>" ) ;
         guess = input.nextInt() ;

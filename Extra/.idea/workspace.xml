@@ -6,63 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fd1dd55a-c1a2-475c-a80f-dcea0b16ec3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Data/Chapter04/DebuggingExercises/DebugBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter04/DebugBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Data/Chapter04/DebuggingExercises/DebugFour1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter04/DebugFour1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Data/Chapter04/DebuggingExercises/DebugFour2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter04/DebugFour2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Data/Chapter04/DebuggingExercises/DebugFour3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter04/DebugFour3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/document/Data/Chapter04/DebuggingExercises/DebugFour4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter04/DebugFour4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/EventDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/CarlysCatering/EventDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/Rental.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/RentalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/CaseProblems/SammysRentals/RentalDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/DebugOne1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/DebugOne2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/DebugOne3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugOne4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/DebugOne4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugThree1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/DebugThree1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugThree2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/DebugThree2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugThree3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/DebugThree3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugThree4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/DebugThree4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/DebugTwo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/DebugTwo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/DebugTwo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/DebugTwo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/DebugTwo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/FixDebugOne1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/FixDebugOne2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/FixDebugOne3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/FixDebugOne4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter01/FixDebugOne4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugThree1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/fixDebugThree1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugThree2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/fixDebugThree2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugThree3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/fixDebugThree3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugThree4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter03/fixDebugThree4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/fixDebugTwo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/fixDebugTwo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/fixDebugTwo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/fixDebugTwo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/debug_exercises/chapter02/fixDebugTwo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/DebugOne2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/DebugThree1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/DebugThree2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/DebugThree3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/DebugThree4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/fixDebugThree1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/fixDebugThree2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/fixDebugThree3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/debug_exercises/fixDebugThree4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/DebugOne1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/DebugOne3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/DebugOne4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/FixDebugOne1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/FixDebugOne2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/FixDebugOne3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter01/FixDebugOne4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/DebugTwo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/DebugTwo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/DebugTwo3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/DebugTwo4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/fixDebugTwo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/fixDebugTwo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/fixDebugTwo3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/exercises/chapter02/fixDebugTwo4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/src/main/java/GameZone/RandomGuessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/src/main/java/GameZone/RandomGuessMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FarrellJava/target/classes/GameZone/RandomGuessMatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/FarrellJava/target/classes/GameZone/RandomGuessMatch.class" afterDir="false" />
     </list>
 
     <option name="SHOW_DIALOG" value="false" />
@@ -99,10 +44,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/FarrellJava/src/main/java/exercises/chapter02" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -115,13 +61,13 @@
       <recent name="exercises.chapter01" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestWedding">
-    <configuration name="EventDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CaseProblems.CarlysCatering.EventDemo" />
+  <component name="RunManager" selected="Application.Lottery">
+    <configuration name="Lottery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GameZone.Lottery" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CaseProblems.CarlysCatering.*" />
+          <option name="PATTERN" value="GameZone.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,8 +76,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FiveDice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GameZone.FiveDice" />
+    <configuration name="RandomGuess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GameZone.RandomGuess" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
@@ -143,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RentalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CaseProblems.SammysRentals.RentalDemo" />
+    <configuration name="RandomGuess2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GameZone.RandomGuess2" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CaseProblems.SammysRentals.*" />
+          <option name="PATTERN" value="GameZone.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestWedding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.chapter04.TestWedding" />
+    <configuration name="TestDogs2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="YouDoIt.chapter05.TestDogs2" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercises.chapter04.*" />
+          <option name="PATTERN" value="YouDoIt.chapter05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoDice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GameZone.TwoDice" />
+    <configuration name="TestDogs3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="YouDoIt.chapter05.TestDogs3" />
       <module name="FarrellJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GameZone.*" />
+          <option name="PATTERN" value="YouDoIt.chapter05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestWedding" />
-        <item itemvalue="Application.RentalDemo" />
-        <item itemvalue="Application.EventDemo" />
-        <item itemvalue="Application.FiveDice" />
-        <item itemvalue="Application.TwoDice" />
+        <item itemvalue="Application.Lottery" />
+        <item itemvalue="Application.RandomGuess" />
+        <item itemvalue="Application.RandomGuess2" />
+        <item itemvalue="Application.TestDogs3" />
+        <item itemvalue="Application.TestDogs2" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +149,12 @@
       <updated>1657119476680</updated>
       <workItem from="1657119478174" duration="7553000" />
       <workItem from="1657137396007" duration="129851000" />
-      <workItem from="1657471395617" duration="63416000" />
+      <workItem from="1657471395617" duration="147933000" />
+      <workItem from="1657677796375" duration="42842000" />
+      <workItem from="1657791464330" duration="19976000" />
+      <workItem from="1657898346324" duration="18476000" />
+      <workItem from="1658003087939" duration="37231000" />
+      <workItem from="1658080596562" duration="19487000" />
 
     </task>
     <servers />
