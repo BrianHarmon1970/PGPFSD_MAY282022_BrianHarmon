@@ -204,5 +204,34 @@
     </servlet-mapping>
 
 
+    <!-- exercise 1.10 -->
+    <servlet>
+        <servlet-name>LoginServlet10</servlet-name>
+        <servlet-class>com.harmonengineering.LoginLogout.LoginServlet10</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dashboard10</servlet-name>
+        <servlet-class>com.harmonengineering.LoginLogout.Dashboard10</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.harmonengineering.LoginLogout.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/LoginLogout/logout</url-pattern>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet10</servlet-name>
+        <url-pattern>/LoginLogout/login10</url-pattern>
+        <url-pattern>/login10</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Dashboard10</servlet-name>
+        <url-pattern>/LoginLogout/dashboard10</url-pattern>
+        <url-pattern>/dashboard10</url-pattern>
+    </servlet-mapping>
+
 </web-app>
 
