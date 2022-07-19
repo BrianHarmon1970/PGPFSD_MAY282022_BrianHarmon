@@ -130,4 +130,25 @@
         <url-pattern>/CookieTrackingDemo/login</url-pattern>
     </servlet-mapping>
 
+<!-- exercise 1.7 -->
+    <servlet>
+        <servlet-name>LoginServlet7</servlet-name>
+        <servlet-class>com.harmonengineering.URLRewriteDemo.LoginServlet7</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dashboard7</servlet-name>
+        <servlet-class>com.harmonengineering.URLRewriteDemo.Dashboard7</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dashboard7</servlet-name>
+        <url-pattern>/URLRewriteDemo/dashboard7</url-pattern>
+        <url-pattern>/dashboard7</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet7</servlet-name>
+        <url-pattern>/URLRewriteDemo/login7</url-pattern>
+        <url-pattern>/login7</url-pattern>
+    </servlet-mapping>
 </web-app>
+
