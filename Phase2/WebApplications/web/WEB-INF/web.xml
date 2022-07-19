@@ -58,4 +58,15 @@
         <url-pattern>/ServletConcept/name</url-pattern>
         <url-pattern>/name</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InterfaceDemo</servlet-name>
+        <servlet-class>com.harmonengineering.ServletInterfaces.InterfaceDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InterfaceDemo</servlet-name>
+        <url-pattern>/interface</url-pattern>
+        <url-pattern>/ServletInterfaces/interface</url-pattern>
+    </servlet-mapping>
+
 </web-app>
