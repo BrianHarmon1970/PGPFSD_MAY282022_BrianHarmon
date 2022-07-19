@@ -173,5 +173,36 @@
         <url-pattern>/login8</url-pattern>
     </servlet-mapping>
 
+    <!-- exercise 1.9 -->
+    <servlet>
+        <servlet-name>LoginServlet9</servlet-name>
+        <servlet-class>com.harmonengineering.HttpSessionDemo.LoginServlet9</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dashboard9</servlet-name>
+        <servlet-class>com.harmonengineering.HttpSessionDemo.Dashboard9</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResetSessionServlet</servlet-name>
+        <servlet-class>com.harmonengineering.HttpSessionDemo.ResetSessionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dashboard9</servlet-name>
+        <url-pattern>/HttpSessionDemo/dashboard9</url-pattern>
+        <url-pattern>/dashboard9</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet9</servlet-name>
+        <url-pattern>/HttpSessionDemo/login9</url-pattern>
+        <url-pattern>/login9</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResetSessionServlet</servlet-name>
+        <url-pattern>/HttpSessionDemo/resetsession</url-pattern>
+        <url-pattern>/resetsession</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
 
