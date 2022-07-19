@@ -150,5 +150,28 @@
         <url-pattern>/URLRewriteDemo/login7</url-pattern>
         <url-pattern>/login7</url-pattern>
     </servlet-mapping>
+
+
+    <!-- exercise 1.8 -->
+    <servlet>
+        <servlet-name>LoginServlet8</servlet-name>
+        <servlet-class>com.harmonengineering.FormFieldsTracking.LoginServlet8</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dashboard8</servlet-name>
+        <servlet-class>com.harmonengineering.FormFieldsTracking.Dashboard8</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dashboard8</servlet-name>
+        <url-pattern>/FormFieldsTracking/dashboard8</url-pattern>
+        <url-pattern>/dashboard8</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet8</servlet-name>
+        <url-pattern>/FormFieldsTracking/login8</url-pattern>
+        <url-pattern>/login8</url-pattern>
+    </servlet-mapping>
+
 </web-app>
 
