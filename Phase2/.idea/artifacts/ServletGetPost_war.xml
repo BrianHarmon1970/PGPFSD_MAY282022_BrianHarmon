@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ServletGetPost:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/ServletGetPost_war</output-path>
+    <root id="archive" name="ServletGetPost_war.war">
+      <element id="artifact" artifact-name="ServletGetPost:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WebApplications" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="WebApplications/web/Web" />
+    </root>
+  </artifact>
+</component>

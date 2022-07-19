@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ServletAssignment">
+    <output-path>$PROJECT_DIR$/out/artifacts/ServletAssignment</output-path>
+    <root id="archive" name="ServletAssignment.war">
+      <element id="javaee-facet-resources" facet="Servlet/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Servlet" />
+          <element id="module-output" name="Phase2" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Phase2/web/Web" />
+    </root>
+  </artifact>
+</component>

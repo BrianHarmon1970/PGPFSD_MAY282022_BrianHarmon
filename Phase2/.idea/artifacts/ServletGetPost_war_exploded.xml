@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="ServletGetPost:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ServletGetPost_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Phase2WebApps" />
+          <element id="module-output" name="Phase2" />
+          <element id="module-output" name="WebAppllications" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="WebAppllications/web/Web" />
+      <element id="artifact" artifact-name="WebAppllications:war exploded" />
+    </root>
+  </artifact>
+</component>

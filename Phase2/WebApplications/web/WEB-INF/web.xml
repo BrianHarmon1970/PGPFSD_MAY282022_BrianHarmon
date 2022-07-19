@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+    <display-name>LoginLogout</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>GetHandler</servlet-name>
+        <servlet-class>com.harmonengineering.GetPost.GetHandler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PostHandler</servlet-name>
+        <servlet-class>com.harmonengineering.GetPost.PostHandler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.harmonengineering.Servlet.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetHandler</servlet-name>
+        <url-pattern>/GetPost/gethandler</url-pattern>
+        <url-pattern>/web/GetPost/gethandler</url-pattern>
+        <url-pattern>/gethandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PostHandler</servlet-name>
+        <url-pattern>/GetPost/posthandler</url-pattern>
+        <url-pattern>/web/GetPost/posthandler</url-pattern>
+        <url-pattern>/posthandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/GetPost/test_servlet</url-pattern>
+        <url-pattern>/test_servlet</url-pattern>
+    </servlet-mapping>
+</web-app>

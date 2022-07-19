@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="Servlet1">
+    <output-path>$PROJECT_DIR$/out/artifacts/Servlet1</output-path>
+    <root id="archive" name="Servlet1.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Servlet" />
+          <element id="module-output" name="Phase2" />
+          <element id="module-output" name="WebAppllications" />
+          <element id="module-output" name="Phase2WebApps" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="WebAppllications/web/Web" />
+      <element id="javaee-facet-resources" facet="Phase2/web/Web" />
+    </root>
+  </artifact>
+</component>
