@@ -69,4 +69,44 @@
         <url-pattern>/ServletInterfaces/interface</url-pattern>
     </servlet-mapping>
 
+    <filter>
+        <filter-name>loginFilter</filter-name>
+        <filter-class>com.harmonengineering.FilterDemo.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>loginFilter</filter-name>
+        <url-pattern>/dashboard</url-pattern>
+        <url-pattern>/profile</url-pattern>
+        <url-pattern>/FilterDemo/dashboard</url-pattern>
+        <url-pattern>/FilterDemo/profile</url-pattern>
+    </filter-mapping>
+
+
+    <servlet>
+        <servlet-name>AccountDashboard</servlet-name>
+        <servlet-class>com.harmonengineering.FilterDemo.AccountDashboard</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountProfile</servlet-name>
+        <servlet-class>com.harmonengineering.FilterDemo.AccountProfile</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InfoPage</servlet-name>
+        <servlet-class>com.harmonengineering.FilterDemo.InfoPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountDashboard</servlet-name>
+        <url-pattern>/FilterDemo/dashboard</url-pattern>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountProfile</servlet-name>
+        <url-pattern>/FilterDemo/profile</url-pattern>
+        <url-pattern>/profile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InfoPage</servlet-name>
+        <url-pattern>/FilterDemo/info</url-pattern>
+        <url-pattern>/info</url-pattern>
+    </servlet-mapping>
 </web-app>
