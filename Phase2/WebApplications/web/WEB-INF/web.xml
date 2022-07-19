@@ -109,4 +109,25 @@
         <url-pattern>/FilterDemo/info</url-pattern>
         <url-pattern>/info</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.harmonengineering.CookieTrackingDemo.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dashboard</servlet-name>
+        <servlet-class>com.harmonengineering.CookieTrackingDemo.Dashboard</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dashboard</servlet-name>
+        <url-pattern>/CookieTrackingDemo/dashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/CookieTrackingDemo/login</url-pattern>
+    </servlet-mapping>
+
 </web-app>
