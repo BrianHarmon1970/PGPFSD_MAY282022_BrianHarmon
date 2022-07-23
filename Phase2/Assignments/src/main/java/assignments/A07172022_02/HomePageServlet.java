@@ -12,8 +12,10 @@ public class HomePageServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException
     {
+        System.out.println("Entering Home Page");
         Writer writer = response.getWriter() ;
         writer.write( "    ==== HOME PAGE =====    " ) ;
+        System.out.println("Leaving Home Page");
     }
 
     @Override

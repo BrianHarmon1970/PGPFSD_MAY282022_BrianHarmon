@@ -233,5 +233,61 @@
         <url-pattern>/dashboard10</url-pattern>
     </servlet-mapping>
 
+    <!-- section 1.0 Practice Project UserLogin -->
+    <servlet>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <servlet-class>com.harmonengineering.userlogin.UserLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <url-pattern>/loginuser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserLogoutServlet</servlet-name>
+        <servlet-class>com.harmonengineering.userlogin.UserLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLogoutServlet</servlet-name>
+        <url-pattern>/logoutuser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserDashboardServlet</servlet-name>
+        <servlet-class>com.harmonengineering.userlogin.UserDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDashboardServlet</servlet-name>
+        <url-pattern>/userdashboard</url-pattern>
+    </servlet-mapping>
+
+
+
+    <filter>
+        <filter-name>SessionGateFilter</filter-name>
+        <filter-class>com.harmonengineering.userlogin.UserSessionGateFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SessionGateFilter</filter-name>
+        <url-pattern>/UserLogin/UserLogin.html</url-pattern>
+        <url-pattern>/UserLogin/UserDashboard.html</url-pattern>
+        <url-pattern>/UserLogin</url-pattern>
+        <url-pattern>/</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>UserInputFilter</filter-name>
+        <filter-class>com.harmonengineering.userlogin.UserValidationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>UserInputFilter</filter-name>
+        <servlet-name>UserLoginServlet</servlet-name>
+    </filter-mapping>
+    <filter>
+        <filter-name>UserAuthenticateFilter</filter-name>
+        <filter-class>com.harmonengineering.userlogin.UserAuthenticateFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>UserAuthenticateFilter</filter-name>
+        <servlet-name>UserLoginServlet</servlet-name>
+    </filter-mapping>
+
 </web-app>
 

@@ -30,5 +30,6 @@ public class ValidateFilter implements Filter {
         if( validAgeInput && !uname.isBlank() && !uage.isBlank())
             chain.doFilter(request, response);
         else response.getWriter().println( "Please provide valid user name and age." ) ;
+        System.out.println("Leaving ValidateFilter");
     }
 }

@@ -22,5 +22,6 @@ public class AuthFilter implements Filter {
         if( userName.toLowerCase().equals("admin") && userAge >= 30 )
             chain.doFilter(request, response);
         else response.getWriter().println("Invalid User Data. (" + userName + ", " + userAge + ")") ;
+        System.out.println("Leaving AuthFilter");
     }
 }
