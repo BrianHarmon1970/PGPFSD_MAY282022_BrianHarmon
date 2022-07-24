@@ -288,6 +288,5 @@
         <filter-name>UserAuthenticateFilter</filter-name>
         <servlet-name>UserLoginServlet</servlet-name>
     </filter-mapping>
-
 </web-app>
 

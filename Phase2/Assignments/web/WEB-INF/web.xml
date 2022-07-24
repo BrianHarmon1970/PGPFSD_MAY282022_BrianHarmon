@@ -4,7 +4,9 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+
     <display-name>Servlets</display-name>
+
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
@@ -13,6 +15,7 @@
         <welcome-file>default.htm</welcome-file>
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
+
 <!-- Assignment 1 - July 17, 2022 -->
     <context-param>
         <param-name>param_a</param-name>
@@ -95,4 +98,39 @@
         <filter-name>AuthFilter</filter-name>
         <servlet-name>HomePageServlet</servlet-name>
     </filter-mapping>
+
+
+    <!-- Assignment 1 July 23 2022 -->
+    <servlet>
+        <servlet-name>Servlet_01</servlet-name>
+        <servlet-class>assignments.A07232022_01.Servlet_01</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet_01</servlet-name>
+        <url-pattern>/Servlet_01</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Servlet_02</servlet-name>
+        <servlet-class>assignments.A07232022_01.Servlet_02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet_02</servlet-name>
+        <url-pattern>/Servlet_02</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Servlet_03</servlet-name>
+        <servlet-class>assignments.A07232022_01.Servlet_03</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet_03</servlet-name>
+        <url-pattern>/Servlet_03</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Servlet_04</servlet-name>
+        <servlet-class>assignments.A07232022_01.Servlet_04</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet_04</servlet-name>
+        <url-pattern>/Servlet_04</url-pattern>
+    </servlet-mapping>
 </web-app>
