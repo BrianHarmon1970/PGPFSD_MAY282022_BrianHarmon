@@ -311,5 +311,17 @@
         <url-pattern>/list</url-pattern>
     </servlet-mapping>
 
+    <!-- exercise 2.3 Assisted Practice:  JDBC Connections, Statements, and ResultSets -->
+    <servlet>
+        <servlet-name>ProductDetailsStoredProcedure</servlet-name>
+        <servlet-class>com.harmonengineering.JDBCSetup.ProductDetails2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDetailsStoredProcedure</servlet-name>
+        <url-pattern>/JDBCSetup/list_sp</url-pattern>
+        <url-pattern>/list_sp</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
 
