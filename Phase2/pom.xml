@@ -9,9 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>Servlet</module>
+   <!--     <module>Servlet</module>
         <module>ServletGetPost</module>
-        <module>WebAppllications</module>
+        <module>WebAppllications</module>-->
         <module>WebApplications</module>
         <module>Assignments</module>
     </modules>

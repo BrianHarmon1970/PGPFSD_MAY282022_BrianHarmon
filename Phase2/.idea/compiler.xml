@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Assignments" />
-        <module name="Servlet" />
         <module name="WebApplications" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Phase2WebApps" target="11" />
+      <module name="Servlet" target="11" />
       <module name="WebAppllications" target="11" />
     </bytecodeTargetLevel>
   </component>

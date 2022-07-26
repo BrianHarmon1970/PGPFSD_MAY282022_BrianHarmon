@@ -299,5 +299,17 @@
         <url-pattern>/JDBCSetup/init</url-pattern>
         <url-pattern>/init</url-pattern>
     </servlet-mapping>
+
+    <!-- exercise 2.2 Assisted Practice:  JDBC Connections, Statements, and ResultSets -->
+    <servlet>
+        <servlet-name>ProductDetails</servlet-name>
+        <servlet-class>com.harmonengineering.JDBCSetup.ProductDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDetails</servlet-name>
+        <url-pattern>/JDBCSetup/list</url-pattern>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+
 </web-app>
 
