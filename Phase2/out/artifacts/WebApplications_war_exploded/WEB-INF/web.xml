@@ -322,6 +322,17 @@
         <url-pattern>/list_sp</url-pattern>
     </servlet-mapping>
 
+    <!-- exercise 2.4 Assisted Practice: Create, Select, and Drop a Database -->
+    <servlet>
+        <servlet-name>DBOperations</servlet-name>
+        <servlet-class>com.harmonengineering.JDBCSetup.DBOperations</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBOperations</servlet-name>
+        <url-pattern>/JDBCSetup/dboperations</url-pattern>
+        <url-pattern>/dboperaions</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
 
