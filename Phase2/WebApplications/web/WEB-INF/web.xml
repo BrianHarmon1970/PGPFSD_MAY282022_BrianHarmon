@@ -288,5 +288,16 @@
         <filter-name>UserAuthenticateFilter</filter-name>
         <servlet-name>UserLoginServlet</servlet-name>
     </filter-mapping>
+
+<!-- exercise 2.1 Assisted Practice: 2.1 Set Up JDBC Environment -->
+    <servlet>
+        <servlet-name>DemoJDBC</servlet-name>
+        <servlet-class>com.harmonengineering.JDBCSetup.DemoJDBC</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DemoJDBC</servlet-name>
+        <url-pattern>/JDBCSetup/init</url-pattern>
+        <url-pattern>/init</url-pattern>
+    </servlet-mapping>
 </web-app>
 
