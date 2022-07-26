@@ -333,6 +333,15 @@
         <url-pattern>/dboperaions</url-pattern>
     </servlet-mapping>
 
-
+    <!-- exercise Assisted Practice: 2.5 Insertion, Updation, and Deletion of Database Records -->
+    <servlet>
+        <servlet-name>ProductDetails3</servlet-name>
+        <servlet-class>com.harmonengineering.JDBCSetup.ProductDetails3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDetails3</servlet-name>
+        <url-pattern>/JDBCSetup/list_ud</url-pattern>
+        <url-pattern>/list_ud</url-pattern>
+    </servlet-mapping>
 </web-app>
 
