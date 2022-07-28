@@ -68,14 +68,3 @@ public class DBOperations extends HttpServlet {
 }
 
 
-class LittleServerWrapper extends HttpServlet
-{
-    @Override
-    protected void doGet( HttpServletRequest request, HttpServletResponse response )
-    {
-    }
-    protected void doPost( HttpServletRequest request, HttpServletResponse response )
-    {
-        doGet( request, response ) ;
-    }
-}

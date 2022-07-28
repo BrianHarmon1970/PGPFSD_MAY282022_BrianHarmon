@@ -1,5 +1,7 @@
 package com.harmonengineering.userlogin;
 
+import com.harmonengineering.util.ConnectionTool;
+
 import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +17,7 @@ public class UserSessionGateFilter implements Filter
 {
     public void init(FilterConfig config) throws ServletException {    }
     public void destroy() {  }
-
+/*
     void sendRedirectNoCache( ServletRequest request , ServletResponse response ,String uri )
             throws IOException
     {
@@ -56,97 +58,7 @@ public class UserSessionGateFilter implements Filter
         refreshCache( request, response ) ;
         disableCache( response ) ;
     }
-    class ConnectionTool
-    {
-        /*********************************************
-         *  ConnectionTool - encapsulating some of the
-         *  features developed for UserLogin which could be
-         *  more generally useful, perhaps more to come.
-         */
-        private HttpServletRequest m_httpServletRequest ;
-        private HttpServletResponse m_httpServletResponse ;
-        private HttpSession m_httpSession ;
-
-        ConnectionTool( HttpServletRequest request, HttpServletResponse response )
-        {
-            m_httpServletRequest = request ;
-            m_httpServletResponse = response ;
-            m_httpSession = request.getSession() ;
-        }
-        ConnectionTool( ServletRequest request, ServletResponse response )
-        {
-            m_httpServletRequest = (HttpServletRequest) request ;
-            m_httpServletResponse = (HttpServletResponse) response ;
-            m_httpSession = ((HttpServletRequest) request).getSession() ;
-        }
-        void printConnectionHeadInfo( String heading )
-                throws IOException
-        {
-            PrintWriter w = m_httpServletResponse.getWriter();
-            String URI = m_httpServletRequest.getRequestURI();
-            ServletContext servletContext = m_httpServletRequest.getServletContext() ;
-            String servlet_context_path = m_httpServletRequest.getServletContext().getContextPath() ;
-            String servlet_path = m_httpServletRequest.getServletPath() ;
-            String real_path = m_httpServletRequest.getSession().getServletContext().getRealPath( servlet_context_path ) ;
-            String context_path = servletContext.getContextPath();
-            String context_name = servletContext.getServletContextName();
-
-            w.println("<b>" + heading + "</b>") ;
-            w.println("<br>Servlet context: " + context_name );
-            w.println("<br>context path:    " + context_path );
-
-            w.println("<br>context servlet path:    " + servlet_path );
-            w.println("<br>context real path:    " + real_path );
-            w.println("<br>request URI: " + URI);
-        //    System.out.println("request URI: " + URI);
-        }
-        void resetCache(  )
-                throws IOException
-        {
-            refreshCache( ) ;
-            disableCache( ) ;
-        }
-        void disableCache( )
-        {
-            m_httpServletResponse.setHeader("Pragma", "No-cache");
-            m_httpServletResponse.setHeader("Cache-Control", "no-store");
-            m_httpServletResponse.setDateHeader("Expires", 0);
-        }
-        void refreshCache(  )
-                throws IOException
-        {
-            String uri = m_httpServletRequest.getRequestURI() ;
-
-            m_httpServletResponse.setHeader("Refresh", "0; URL=" +
-                    m_httpServletRequest.getContextPath() + uri );
-            // try { Thread.sleep( 50 ) ; }
-            //catch( InterruptedException e )
-            //    { System.out.print( e.getMessage() ); }
-            m_httpServletResponse.setHeader("Refresh", "-1; URL=" +
-                    m_httpServletRequest.getContextPath() + uri );
-        }
-        void sendRedirectNoCache( String uri )
-                throws IOException
-        {
-            // presently does not do anything different from redirect
-            // in fact when originally written measures of cache control
-            // were included but timing issues prevented the permanent inclusion
-            // here.... retained for experimentation until better understood
-            // about the timing in controlling the cache.. it would be desirable
-            // if it could all be contained here.... perhaps that is missing the
-            /// point  but not giving up on it yet.
-            String url = m_httpServletResponse.encodeRedirectURL(
-                    m_httpServletRequest.getContextPath() + uri ) ;
-            m_httpServletResponse.sendRedirect( url );
-        }
-        void sendRedirect( String uri )
-                throws IOException
-        {
-            String url = m_httpServletResponse.encodeRedirectURL(
-                    m_httpServletRequest.getContextPath() + uri ) ;
-            m_httpServletResponse.sendRedirect( url );
-        }
-    }
+*/
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws ServletException, IOException

@@ -343,5 +343,26 @@
         <url-pattern>/JDBCSetup/list_ud</url-pattern>
         <url-pattern>/list_ud</url-pattern>
     </servlet-mapping>
+
+    <!-- Lesson 2 Project: Retrieving Product details Using the Product ID -->
+    <servlet>
+        <servlet-name>ProductQueryServlet</servlet-name>
+        <servlet-class>com.harmonengineering.ProductQuery.ProductQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductQueryServlet</servlet-name>
+        <url-pattern>/ProductQuery/queryproduct</url-pattern>
+        <url-pattern>/queryproduct</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>ProductQueryFilter</filter-name>
+        <filter-class>com.harmonengineering.ProductQuery.ProductQueryFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ProductQueryFilter</filter-name>
+        <servlet-name>ProductQueryServlet</servlet-name>
+    </filter-mapping>
+
 </web-app>
 
