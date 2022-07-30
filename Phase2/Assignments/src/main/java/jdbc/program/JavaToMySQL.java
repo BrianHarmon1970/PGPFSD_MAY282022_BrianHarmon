@@ -191,7 +191,7 @@ public class JavaToMySQL {
     public void insertRecord()
     {
 
-    	String query1 = "INSERT INTO db_world.emp (empid, empname, salary) " +
+    	String query1 = "INSERT INTO db_world.jspbean.emp (empid, empname, salary) " +
                        " VALUES (106, 'Sonam', 34000);";
         String query = "INSERT INTO db_world.emp (empid, empname, salary) " +
                 " VALUES ( ?, ?, ? );";
@@ -305,7 +305,7 @@ public class JavaToMySQL {
      */
     public void deleteRecord()
     {
-        //String query = "DELETE FROM db_world.emp WHERE empid = " ;
+        //String query = "DELETE FROM db_world.jspbean.emp WHERE empid = " ;
         String query2 = " delete from emp where empid = " ;
         String query1 = "(select(MAX(emp.empid)) as bigone from db_world.emp )"  ;
         try {
