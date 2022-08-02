@@ -1,0 +1,26 @@
+<web-fragment metadata-complete="true" version="3.0"
+              xmlns="http://java.sun.com/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-fragment_3_0.xsd">
+
+    <!-- Lesson 2 Project: Retrieving Product details Using the Product ID -->
+    <name>product_query_xml</name>
+    <servlet>
+        <servlet-name>ProductQueryServlet</servlet-name>
+        <servlet-class>com.harmonengineering.ProductQuery.ProductQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductQueryServlet</servlet-name>
+        <url-pattern>/ProductQuery/queryproduct</url-pattern>
+        <url-pattern>/queryproduct</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>ProductQueryFilter</filter-name>
+        <filter-class>com.harmonengineering.ProductQuery.ProductQueryFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ProductQueryFilter</filter-name>
+        <servlet-name>ProductQueryServlet</servlet-name>
+    </filter-mapping>
+</web-fragment>
