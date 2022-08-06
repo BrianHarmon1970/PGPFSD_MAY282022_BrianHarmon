@@ -1,29 +1,30 @@
 package com.ecommerce;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
-public class EProduct implements Serializable {
-    private String productId;
-    private String productName;
-    private double price;
+public class EProduct
+{
+    private long ID;
+    private String name;
+    private BigDecimal price;
+    private Date dateAdded;
 
-    public void setProductId(String value) {
-        this.productId = value;
+    public EProduct(  )  {    }
+    public EProduct(long id, String name, BigDecimal price, Date dateAdded) {
+        this.ID = id;
+        this.name = name;
+        this.price = price;
+        this.dateAdded = dateAdded;
     }
-    public void setProductName(String value) {
-        this.productName = value;
-    }
-    public void setPrice(double value) {
-        this.price = value;
-    }
+    public long getID() {return this.ID; }
+    public String getName() { return this.name;}
+    public BigDecimal getPrice() { return this.price;}
+    public Date getDateAdded() { return this.dateAdded;}
 
-    public String getProductId() {
-        return this.productId;
-    }
-    public String getProductName() {
-        return this.productName;
-    }
-    public double getPrice() {
-        return this.price;
-    }
+    public void setID(long id) { this.ID = id;}
+    public void setName(String name) { this.name = name;}
+    public void setPrice(BigDecimal price) { this.price = price;}
+    public void setDateAdded(Date date) { this.dateAdded = date;}
 }

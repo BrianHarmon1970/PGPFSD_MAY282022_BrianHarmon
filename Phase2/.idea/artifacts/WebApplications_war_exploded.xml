@@ -5,10 +5,21 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="WebApplications" />
+          <element id="jpa-descriptors" facet="WebApplications/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="byte-buddy-1.10.7" />
+          <element id="library" level="project" name="hibernate-core-5.6.10.Final" />
+          <element id="library" level="project" name="hibernate-jpa-2.1-api-1.0.0.Final" />
           <element id="library" level="project" name="Java EE 6-Java EE 6" />
-          <element id="library" level="project" name="Hibernate 5.4.11-5.4.11" />
+          <element id="library" level="project" name="javax.activation-api-1.2.0" />
+          <element id="library" level="project" name="javax.xml.bind" />
+          <element id="library" level="project" name="jaxb-api-2.3.1" />
+          <element id="library" level="project" name="jaxb-osgi-4.0.0" />
+          <element id="library" level="project" name="jboss-logging-3.3.2.Final" />
+          <element id="library" level="project" name="jta-1_1" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.251" />
+          <element id="library" level="project" name="H1B1Stuff" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="WebApplications/web/Web" />
