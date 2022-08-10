@@ -20,6 +20,8 @@
           <element id="library" level="project" name="JSTL" />
           <element id="library" level="project" name="jaxb-osgi-2.4.0-b180830.0438" />
           <element id="library" level="project" name="H1B1Stuff" />
+          <element id="library" level="project" name="activation-1.1" />
+          <element id="library" level="project" name="slf4j-log4j12" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="WebApplications/web/Web" />
