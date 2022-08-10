@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="MySQL - db_world@localhost" uuid="b7df47c5-5f33-4d07-9c02-be6c4e726f07">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <configured-by-url>true</configured-by-url>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/db_world</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="MySQL - @localhost" uuid="67551491-fe1e-44b1-b3cc-16acec7d7a69">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
@@ -16,16 +8,15 @@
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="web:WEB-INF:hibernate.cfg.xml/Hibernate" uuid="6577f746-a471-40c6-b88d-bd37796a234e">
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="4fd85e95-401f-4bcc-ad24-147f87a468f6">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>Hibernate
 
-E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase2/WebApplications/web/WEB-INF/hibernate.cfg.xml</remarks>
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase2/WebApplications/target/classes/web/hibernate.cfg.xml</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/ecommerce</jdbc-url>
-      <vm-options>&quot;-Djdk.tls.disabledAlgorithms=SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, DH keySize &lt; 1024, EC keySize &lt; 224, 3DES_EDE_CBC, anon, NULL, include jdk.disabled.namedCurves&quot;</vm-options>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

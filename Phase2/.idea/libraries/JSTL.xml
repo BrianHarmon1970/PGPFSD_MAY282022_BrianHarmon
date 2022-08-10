@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="JSTL">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WebApplications/lib/JSTL/resolver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApplications/lib/JSTL/serializer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApplications/lib/JSTL/taglibs-standard-compat-1.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApplications/lib/JSTL/taglibs-standard-impl-1.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApplications/lib/JSTL/taglibs-standard-jstlel-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApplications/lib/JSTL/taglibs-standard-jstlel-1.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApplications/lib/JSTL/taglibs-standard-spec-1.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApplications/lib/JSTL/xalan-2.7.1.jar!/" />
+      <root url="file://$PROJECT_DIR$/WebApplications/lib/JSTL" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/WebApplications/lib/JSTL" recursive="false" />
+  </library>
+</component>

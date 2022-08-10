@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/Assignments/web/WEB-INF/web.xml" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet/web/WEB-INF/web.xml" />
+    <file type="web" url="file://$PROJECT_DIR$/WebApplications/src/main/resources/web/WEB-INF/web.xml" />
     <file type="web" url="file://$PROJECT_DIR$/WebApplications/web/WEB-INF/web.xml" />
     <type id="jpa" />
   </component>
@@ -15,11 +16,13 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Assignments/pom.xml" />
+        <option value="$PROJECT_DIR$/WebApplications/pom.xml" />
         <option value="$PROJECT_DIR$/WebAppllications/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ProjectType">
