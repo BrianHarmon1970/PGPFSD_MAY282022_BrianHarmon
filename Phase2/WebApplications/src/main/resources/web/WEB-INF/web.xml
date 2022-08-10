@@ -397,5 +397,16 @@
         <servlet-name>ListProducts</servlet-name>
         <url-pattern>/list_productsA</url-pattern>
     </servlet-mapping>
+
+    <!-- exercise Assisted Practice: Assisted Practice: 3.5 Collection Mapping in Hibernate -->
+    <servlet>
+        <servlet-name>HibernateProductDetailsServlet</servlet-name>
+        <servlet-class>com.harmonengineering.Hibernate.HibernateProductDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HibernateProductDetailsServlet</servlet-name>
+        <url-pattern>/details</url-pattern>
+    </servlet-mapping>
+
 </web-app>
 
