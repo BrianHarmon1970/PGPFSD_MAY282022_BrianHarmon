@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Assignments:war exploded">
+  <artifact type="exploded-war" build-on-make="true" name="Assignments:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/Assignments_war_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="Assignments/web/Web" />
@@ -8,7 +8,13 @@
           <element id="module-output" name="Assignments" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.25" />
+          <element id="library" level="project" name="taglibs-standard-jstlel-1.2.5" />
+          <element id="library" level="project" name="taglibs-standard-jstlel-1.2.51" />
+          <element id="library" level="project" name="taglibs-standard-impl-1.2.5" />
+          <element id="library" level="project" name="taglibs-standard-spec-1.2.5" />
+          <element id="library" level="project" name="serializer" />
+          <element id="library" level="project" name="xalan-2.7.1" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="Phase2/web/Web" />

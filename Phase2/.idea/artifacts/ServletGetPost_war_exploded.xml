@@ -8,9 +8,7 @@
           <element id="module-output" name="Phase2" />
           <element id="module-output" name="WebAppllications" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Java EE 6-Java EE 6" />
-        </element>
+        <element id="directory" name="lib" />
       </element>
       <element id="javaee-facet-resources" facet="WebAppllications/web/Web" />
       <element id="artifact" artifact-name="WebAppllications:war exploded" />

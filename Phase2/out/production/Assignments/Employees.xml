@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<Employees>
+	<Employee>
+	<name>Rajesh</name>
+	<age>34</age>
+	<dept>IT</dept>
+	</Employee>
+	<Employee>
+	<name>Vinay</name>
+	<age>35</age>
+	<dept>IT</dept>
+	</Employee>
+	<Employee>
+	<name>Ramesh</name>
+	<age>29</age>
+	<dept>HR</dept>
+	</Employee>
+	<Employee>
+	<name>Kamal</name>
+	<age>35</age>
+	<dept>IT</dept>
+	</Employee>
+</Employees>

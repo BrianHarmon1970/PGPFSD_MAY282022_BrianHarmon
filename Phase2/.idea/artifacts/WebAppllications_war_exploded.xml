@@ -8,9 +8,7 @@
           <element id="module-output" name="WebAppllications" />
           <element id="module-output" name="Phase2" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Java EE 6-Java EE 6" />
-        </element>
+        <element id="directory" name="lib" />
       </element>
     </root>
   </artifact>
