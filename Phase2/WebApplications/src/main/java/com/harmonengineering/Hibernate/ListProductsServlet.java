@@ -15,6 +15,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
 
+import com.ecommerce.HibernateUtil_EXperiMental ;
+
 public class ListProductsServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     public ListProductsServlet() {  super();  }
@@ -22,7 +24,7 @@ public class ListProductsServlet extends HttpServlet {
             throws ServletException, IOException
     {
         try {
-            SessionFactory factory = HibernateUtil.getSessionFactory();
+            SessionFactory factory = HibernateUtil_EXperiMental.getSessionFactory();
 
             Session session = factory.openSession();
             EProduct eProduct = new EProduct(  ) ;
