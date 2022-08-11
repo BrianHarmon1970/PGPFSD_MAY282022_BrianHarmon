@@ -408,5 +408,15 @@
         <url-pattern>/details</url-pattern>
     </servlet-mapping>
 
+    <!-- exercise Assisted Practice: Assisted Practice: 3.5 Collection Mapping in Hibernate -->
+    <servlet>
+        <servlet-name>HibernateDetailsServletTwo</servlet-name>
+        <servlet-class>com.harmonengineering.Hibernate.HibernateDetailsServletTwo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HibernateDetailsServletTwo</servlet-name>
+        <url-pattern>/details_two</url-pattern>
+    </servlet-mapping>
+
 </web-app>
 
