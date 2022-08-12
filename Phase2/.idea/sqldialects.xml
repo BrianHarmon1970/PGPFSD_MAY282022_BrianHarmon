@@ -2,6 +2,8 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Assignments" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/EmployeeHibernateDemo/src/main/java/com/harmonengineering/employee_certificate.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/EmployeeHibernateDemo/src/main/java/com/harmonengineering/employee_salary.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/WebApplications/src/main/java/com/harmonengineering/ProductQuery/ProductQueryServlet.java" dialect="MySQL" />
   </component>
 </project>

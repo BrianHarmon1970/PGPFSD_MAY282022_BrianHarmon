@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.harmonengineering">
+    <class name="EmployeeCertificate" table="employee_certificate">
+        <id name="ID" column="ID">
+            <generator class="increment"/>
+        </id>
+        <property name="description" type="string" column="description"/>
+        <property name="employeeID" type="integer" column="employee_id"/>
+    </class>
+</hibernate-mapping>

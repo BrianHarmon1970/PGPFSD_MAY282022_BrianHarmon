@@ -14,6 +14,7 @@
         <module>WebAppllications</module>-->
         <module>WebApplications</module>
         <module>Assignments</module>
+        <module>EmployeeHibernateDemo</module>
     </modules>
 
     <properties>

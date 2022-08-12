@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Assignments" />
+        <module name="WebApplications" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Assignments" target="11" />
+      <module name="EmployeeHIbernateDemo" target="11" />
+      <module name="EmployeeHibernateDemo" target="11" />
       <module name="Phase2WebApps" target="11" />
       <module name="Servlet" target="11" />
       <module name="WebApplications" target="11" />

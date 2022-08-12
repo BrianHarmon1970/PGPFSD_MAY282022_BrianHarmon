@@ -6,11 +6,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Assignments/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/Assignments/pom.xml" />
+        <option value="$PROJECT_DIR$/EmployeeHibernateDemo/pom.xml" />
         <option value="$PROJECT_DIR$/WebApplications/pom.xml" />
         <option value="$PROJECT_DIR$/WebAppllications/pom.xml" />
       </set>

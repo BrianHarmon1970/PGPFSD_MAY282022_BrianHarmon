@@ -15,6 +15,7 @@
           <element id="library" level="project" name="taglibs-standard-spec-1.2.5" />
           <element id="library" level="project" name="serializer" />
           <element id="library" level="project" name="xalan-2.7.1" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:3.6.3.Final" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="Phase2/web/Web" />
