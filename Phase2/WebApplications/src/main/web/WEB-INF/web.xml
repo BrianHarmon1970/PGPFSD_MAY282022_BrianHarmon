@@ -4,7 +4,7 @@
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
-        <welcome-file>index.jsp</welcome-file>
+        <!--<welcome-file>index.jsp</welcome-file>-->
         <welcome-file>default.html</welcome-file>
         <welcome-file>default.htm</welcome-file>
         <welcome-file>default.jsp</welcome-file>
@@ -364,5 +364,79 @@
         <servlet-name>ProductQueryServlet</servlet-name>
     </filter-mapping>
 
-</web-app>
+    <!-- exercise Assisted Practice: 3.1 Configuration of Hibernate -->
+    <servlet>
+        <servlet-name>InitHibernate</servlet-name>
+        <servlet-class>com.harmonengineering.Hibernate.InitHibernate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitHibernate</servlet-name>
+        <url-pattern>/init_hibernate</url-pattern>
+        <url-pattern>/HibernateConfig/init_hibernate</url-pattern>
+    </servlet-mapping>
 
+
+    <!-- exercise Assisted Practice: 3.2 Hibernate Configuration Using XML in Eclipse -->
+    <servlet>
+        <servlet-name>ListProductsServlet</servlet-name>
+        <servlet-class>com.harmonengineering.Hibernate.ListProductsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ListProductsServlet</servlet-name>
+        <url-pattern>/list_products</url-pattern>
+    </servlet-mapping>
+
+    <!-- exercise Assisted Practice: 3.3 Hibernate Configuration Using Annotations -->
+    <servlet>
+        <servlet-name>ListProducts</servlet-name>
+        <servlet-class>com.harmonengineering.Hibernate.ListProducts</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ListProducts</servlet-name>
+        <url-pattern>/list_productsA</url-pattern>
+    </servlet-mapping>
+
+    <!-- exercise Assisted Practice: Assisted Practice: 3.5 Collection Mapping in Hibernate -->
+    <servlet>
+        <servlet-name>HibernateProductDetailsServlet</servlet-name>
+        <servlet-class>com.harmonengineering.Hibernate.HibernateProductDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HibernateProductDetailsServlet</servlet-name>
+        <url-pattern>/details</url-pattern>
+    </servlet-mapping>
+
+    <!-- exercise Assisted Practice: Assisted Practice: 3.5 Collection Mapping in Hibernate -->
+    <servlet>
+        <servlet-name>HibernateDetailsServletTwo</servlet-name>
+        <servlet-class>com.harmonengineering.Hibernate.HibernateDetailsServletTwo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HibernateDetailsServletTwo</servlet-name>
+        <url-pattern>/details_two</url-pattern>
+    </servlet-mapping>
+
+    <!-- exercise Assisted Practice: 3.8 Integration of Hibernate with Spring-->
+    <servlet>
+        <servlet-name>eproduct</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>eproduct</servlet-name>
+       <url-pattern>/eproduct/*</url-pattern>
+        <!--<url-pattern>/aindex.html</url-pattern>-->
+    </servlet-mapping>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/eproduct-servlet.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+</web-app>

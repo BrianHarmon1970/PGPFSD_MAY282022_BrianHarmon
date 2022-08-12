@@ -33,5 +33,37 @@ E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase2/
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="jdbc" uuid="953915ec-e54f-41e7-b117-ea73bc319abc">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>jdbc.properties
+
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase2/WebApplications/src/main/web/WEB-INF/jdbc.properties</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="dataSource" uuid="3aed8184-9f93-4bd7-896a-ed8954311331">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>jakarta commons-dbcp
+
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase2/WebApplications/src/main/web/WEB-INF/eproduct-servlet.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/ecommerce</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="sessionFactory/Hibernate" uuid="85e08744-ddb9-45f4-8ad9-5823e6a3ab4a">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase2/WebApplications/src/main/web/WEB-INF/eproduct-servlet.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/ecommerce</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
