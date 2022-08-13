@@ -6,17 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Assignments" />
-        <module name="WebApplications" />
+        <module name="Assignments1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+<<<<<<< HEAD
       <module name="EmployeeHIbernateDemo" target="11" />
       <module name="EmployeeHibernateDemo" target="11" />
       <module name="Phase2WebApps" target="11" />
       <module name="Servlet" target="11" />
       <module name="WebApplications" target="11" />
       <module name="WebAppllications" target="11" />
+=======
+      <module name="WebApplications" target="11" />
+>>>>>>> WebApplications
     </bytecodeTargetLevel>
   </component>
 </project>

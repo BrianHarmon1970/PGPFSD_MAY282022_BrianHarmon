@@ -1,0 +1,3 @@
+*.[class|jar|lib]
+/Phase1/out/
+/Phase2/out/

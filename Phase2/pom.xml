@@ -11,7 +11,7 @@
     <modules>
    <!--     <module>Servlet</module>
         <module>ServletGetPost</module>
-        <module>WebAppllications</module>-->
+        <module>WebAppllications</module> -->
         <module>WebApplications</module>
         <module>Assignments</module>
         <module>EmployeeHibernateDemo</module>

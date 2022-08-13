@@ -364,5 +364,17 @@
         <servlet-name>ProductQueryServlet</servlet-name>
     </filter-mapping>
 
+    <!-- exercise Assisted Practice: 3.1 Configuration of Hibernate -->
+    <servlet>
+        <servlet-name>InitHibernate</servlet-name>
+        <servlet-class>com.harmonengineering.Hibernate.InitHibernate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitHibernate</servlet-name>
+        <url-pattern>/init_hibernate</url-pattern>
+        <url-pattern>/HibernateConfig/init_hibernate</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
 

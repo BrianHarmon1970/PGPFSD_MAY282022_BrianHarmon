@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+    <display-name>Servlets</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>GetHandler</servlet-name>
+        <servlet-class>com.harmonengineering.GetPost.GetHandler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PostHandler</servlet-name>
+        <servlet-class>com.harmonengineering.GetPost.PostHandler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.harmonengineering.Servlet.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetHandler</servlet-name>
+        <url-pattern>/GetPost/gethandler</url-pattern>
+        <url-pattern>/web/GetPost/gethandler</url-pattern>
+        <url-pattern>/gethandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PostHandler</servlet-name>
+        <url-pattern>/GetPost/posthandler</url-pattern>
+        <url-pattern>/web/GetPost/posthandler</url-pattern>
+        <url-pattern>/posthandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/GetPost/test_servlet</url-pattern>
+        <url-pattern>/test_servlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>com.harmonengineering.ServletConcept.MyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <!--<url-pattern>/ServletConcept/my_servlet</url-pattern>-->
+        <url-pattern>/ServletConcept/my_servlet</url-pattern>
+        <url-pattern>/my_servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NameServlet</servlet-name>
+        <servlet-class>com.harmonengineering.ServletConcept.NameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NameServlet</servlet-name>
+        <url-pattern>/ServletConcept/name</url-pattern>
+        <url-pattern>/name</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InterfaceDemo</servlet-name>
+        <servlet-class>com.harmonengineering.ServletInterfaces.InterfaceDemo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InterfaceDemo</servlet-name>
+        <url-pattern>/interface</url-pattern>
+        <url-pattern>/ServletInterfaces/interface</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>loginFilter</filter-name>
+        <filter-class>com.harmonengineering.FilterDemo.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>loginFilter</filter-name>
+        <url-pattern>/dashboard</url-pattern>
+        <url-pattern>/profile</url-pattern>
+        <url-pattern>/FilterDemo/dashboard</url-pattern>
+        <url-pattern>/FilterDemo/profile</url-pattern>
+    </filter-mapping>
+
+
+    <servlet>
+        <servlet-name>AccountDashboard</servlet-name>
+        <servlet-class>com.harmonengineering.FilterDemo.AccountDashboard</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountProfile</servlet-name>
+        <servlet-class>com.harmonengineering.FilterDemo.AccountProfile</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InfoPage</servlet-name>
+        <servlet-class>com.harmonengineering.FilterDemo.InfoPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountDashboard</servlet-name>
+        <url-pattern>/FilterDemo/dashboard</url-pattern>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountProfile</servlet-name>
+        <url-pattern>/FilterDemo/profile</url-pattern>
+        <url-pattern>/profile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InfoPage</servlet-name>
+        <url-pattern>/FilterDemo/info</url-pattern>
+        <url-pattern>/info</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.harmonengineering.CookieTrackingDemo.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dashboard</servlet-name>
+        <servlet-class>com.harmonengineering.CookieTrackingDemo.Dashboard</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dashboard</servlet-name>
+        <url-pattern>/CookieTrackingDemo/dashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/CookieTrackingDemo/login</url-pattern>
+    </servlet-mapping>
+
+<!-- exercise 1.7 -->
+    <servlet>
+        <servlet-name>LoginServlet7</servlet-name>
+        <servlet-class>com.harmonengineering.URLRewriteDemo.LoginServlet7</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dashboard7</servlet-name>
+        <servlet-class>com.harmonengineering.URLRewriteDemo.Dashboard7</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dashboard7</servlet-name>
+        <url-pattern>/URLRewriteDemo/dashboard7</url-pattern>
+        <url-pattern>/dashboard7</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet7</servlet-name>
+        <url-pattern>/URLRewriteDemo/login7</url-pattern>
+        <url-pattern>/login7</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- exercise 1.8 -->
+    <servlet>
+        <servlet-name>LoginServlet8</servlet-name>
+        <servlet-class>com.harmonengineering.FormFieldsTracking.LoginServlet8</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dashboard8</servlet-name>
+        <servlet-class>com.harmonengineering.FormFieldsTracking.Dashboard8</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dashboard8</servlet-name>
+        <url-pattern>/FormFieldsTracking/dashboard8</url-pattern>
+        <url-pattern>/dashboard8</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet8</servlet-name>
+        <url-pattern>/FormFieldsTracking/login8</url-pattern>
+        <url-pattern>/login8</url-pattern>
+    </servlet-mapping>
+
+    <!-- exercise 1.9 -->
+    <servlet>
+        <servlet-name>LoginServlet9</servlet-name>
+        <servlet-class>com.harmonengineering.HttpSessionDemo.LoginServlet9</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dashboard9</servlet-name>
+        <servlet-class>com.harmonengineering.HttpSessionDemo.Dashboard9</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResetSessionServlet</servlet-name>
+        <servlet-class>com.harmonengineering.HttpSessionDemo.ResetSessionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Dashboard9</servlet-name>
+        <url-pattern>/HttpSessionDemo/dashboard9</url-pattern>
+        <url-pattern>/dashboard9</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet9</servlet-name>
+        <url-pattern>/HttpSessionDemo/login9</url-pattern>
+        <url-pattern>/login9</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResetSessionServlet</servlet-name>
+        <url-pattern>/HttpSessionDemo/resetsession</url-pattern>
+        <url-pattern>/resetsession</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- exercise 1.10 -->
+    <servlet>
+        <servlet-name>LoginServlet10</servlet-name>
+        <servlet-class>com.harmonengineering.LoginLogout.LoginServlet10</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Dashboard10</servlet-name>
+        <servlet-class>com.harmonengineering.LoginLogout.Dashboard10</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.harmonengineering.LoginLogout.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/LoginLogout/logout</url-pattern>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet10</servlet-name>
+        <url-pattern>/LoginLogout/login10</url-pattern>
+        <url-pattern>/login10</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Dashboard10</servlet-name>
+        <url-pattern>/LoginLogout/dashboard10</url-pattern>
+        <url-pattern>/dashboard10</url-pattern>
+    </servlet-mapping>
+
+    <!-- section 1.0 Practice Project UserLogin -->
+    <servlet>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <servlet-class>com.harmonengineering.userlogin.UserLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <url-pattern>/loginuser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserLogoutServlet</servlet-name>
+        <servlet-class>com.harmonengineering.userlogin.UserLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLogoutServlet</servlet-name>
+        <url-pattern>/logoutuser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserDashboardServlet</servlet-name>
+        <servlet-class>com.harmonengineering.userlogin.UserDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDashboardServlet</servlet-name>
+        <url-pattern>/userdashboard</url-pattern>
+    </servlet-mapping>
+
+
+
+    <filter>
+        <filter-name>SessionGateFilter</filter-name>
+        <filter-class>com.harmonengineering.userlogin.UserSessionGateFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SessionGateFilter</filter-name>
+        <url-pattern>/UserLogin/UserLogin.html</url-pattern>
+        <url-pattern>/UserLogin/UserDashboard.html</url-pattern>
+        <url-pattern>/UserLogin</url-pattern>
+        <url-pattern>/</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>UserInputFilter</filter-name>
+        <filter-class>com.harmonengineering.userlogin.UserValidationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>UserInputFilter</filter-name>
+        <servlet-name>UserLoginServlet</servlet-name>
+    </filter-mapping>
+    <filter>
+        <filter-name>UserAuthenticateFilter</filter-name>
+        <filter-class>com.harmonengineering.userlogin.UserAuthenticateFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>UserAuthenticateFilter</filter-name>
+        <servlet-name>UserLoginServlet</servlet-name>
+    </filter-mapping>
+
+<!-- exercise 2.1 Assisted Practice: 2.1 Set Up JDBC Environment -->
+    <servlet>
+        <servlet-name>DemoJDBC</servlet-name>
+        <servlet-class>com.harmonengineering.JDBCSetup.DemoJDBC</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DemoJDBC</servlet-name>
+        <url-pattern>/JDBCSetup/init</url-pattern>
+        <url-pattern>/init</url-pattern>
+    </servlet-mapping>
+
+    <!-- exercise 2.2 Assisted Practice:  JDBC Connections, Statements, and ResultSets -->
+    <servlet>
+        <servlet-name>ProductDetails</servlet-name>
+        <servlet-class>com.harmonengineering.JDBCSetup.ProductDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDetails</servlet-name>
+        <url-pattern>/JDBCSetup/list</url-pattern>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+
+    <!-- exercise 2.3 Assisted Practice:  JDBC Connections, Statements, and ResultSets -->
+    <servlet>
+        <servlet-name>ProductDetailsStoredProcedure</servlet-name>
+        <servlet-class>com.harmonengineering.JDBCSetup.ProductDetails2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDetailsStoredProcedure</servlet-name>
+        <url-pattern>/JDBCSetup/list_sp</url-pattern>
+        <url-pattern>/list_sp</url-pattern>
+    </servlet-mapping>
+
+    <!-- exercise 2.4 Assisted Practice: Create, Select, and Drop a Database -->
+    <servlet>
+        <servlet-name>DBOperations</servlet-name>
+        <servlet-class>com.harmonengineering.JDBCSetup.DBOperations</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBOperations</servlet-name>
+        <url-pattern>/JDBCSetup/dboperations</url-pattern>
+        <url-pattern>/dboperaions</url-pattern>
+    </servlet-mapping>
+
+    <!-- exercise Assisted Practice: 2.5 Insertion, Updation, and Deletion of Database Records -->
+    <servlet>
+        <servlet-name>ProductDetails3</servlet-name>
+        <servlet-class>com.harmonengineering.JDBCSetup.ProductDetails3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDetails3</servlet-name>
+        <url-pattern>/JDBCSetup/list_ud</url-pattern>
+        <url-pattern>/list_ud</url-pattern>
+    </servlet-mapping>
+
+    <!-- Lesson 2 Project: Retrieving Product details Using the Product ID -->
+    <servlet>
+        <servlet-name>ProductQueryServlet</servlet-name>
+        <servlet-class>com.harmonengineering.ProductQuery.ProductQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductQueryServlet</servlet-name>
+        <url-pattern>/ProductQuery/queryproduct</url-pattern>
+        <url-pattern>/queryproduct</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>ProductQueryFilter</filter-name>
+        <filter-class>com.harmonengineering.ProductQuery.ProductQueryFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ProductQueryFilter</filter-name>
+        <servlet-name>ProductQueryServlet</servlet-name>
+    </filter-mapping>
+
+</web-app>
+
