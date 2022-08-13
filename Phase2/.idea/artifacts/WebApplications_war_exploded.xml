@@ -5,6 +5,7 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="WebApplications" />
+<<<<<<< HEAD
           <element id="jpa-descriptors" facet="WebApplications/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
@@ -72,6 +73,17 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.22" />
         </element>
       </element>
+=======
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+          <element id="library" level="project" name="jstl" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Phase2/web/Web" />
+      <element id="javaee-facet-resources" facet="WebApplications/web/Web2" />
+      <element id="javaee-facet-resources" facet="WebApplications/web/Web2" />
+>>>>>>> Lesson_4_JSP
       <element id="javaee-facet-resources" facet="WebApplications/web/Web" />
     </root>
   </artifact>

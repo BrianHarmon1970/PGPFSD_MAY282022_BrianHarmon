@@ -6,14 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="WebApplications" />
-      </profile>
-    </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Assignments" target="11" />
-      <module name="Phase2WebApps" target="11" />
-      <module name="Servlet" target="11" />
-      <module name="WebAppllications" target="11" />
-    </bytecodeTargetLevel>
+          <module name="Phase2WebApps" target="11" />
+          <module name="Servlet" target="11" />
+          <module name="WebApplications1" target="11" />
+          <module name="WebAppllications" target="11" />
+      </bytecodeTargetLevel>
   </component>
 </project>
