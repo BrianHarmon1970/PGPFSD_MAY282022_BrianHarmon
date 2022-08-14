@@ -10,7 +10,7 @@
                    driver="com.mysql.jdbc.Driver"
                    url="jdbc:mysql://localhost:3306/ecommerce"
                    user="root"
-                   password="root" /><html>
+                   password="root" />
 <c:set var="db" value="${dbSource}" scope="session"/>
 
 <a href="sqlJSP_InsertData.jsp">Create Dataset</a><br>
