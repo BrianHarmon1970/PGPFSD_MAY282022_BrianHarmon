@@ -30,7 +30,7 @@
                        user="root"
                        password="root" />
 
-    <c:set var="db" value="${dbSource}" scope="session"/>
+    <c:set var="db" value="${dbSource}" scope="application"/>
 
     <h1> TESTING... </h1>
 <c:catch var="Exception">

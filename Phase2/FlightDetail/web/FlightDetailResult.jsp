@@ -130,7 +130,8 @@ ${db}
 <form action="home.jsp" method="get">
     <button type="submit" >Home</button>
 </form>
-<form action="BookFlight.jsp" method="get">
+<form action="OpenBooking.jsp" method="get">
+     <var id="seats_selected" name="user_seats">${criteriaBean.requiredSeats}</var>
     <label for="selected_flight_record">Choose a flight number:</label><br>
     <input type="number" id="selected_flight_record" name="selected_flight_record">
     <button type="submit" >Book</button>
@@ -160,11 +161,12 @@ ${db}
     out.print( "</datalist>") ;
 %>
     <%--============================================================================--%>
-
+<%--
 <form action="BookFlight.jsp" method="get">
     <label for="selected_flight_record_ex">Choose a flight number:</label><br>
     <input list="flight_list" id="selected_flight_record_ex" name="selected_flight_record_ex">
     <button type="submit" >Book</button>
 </form>
+--%>
     </body>
 </html>

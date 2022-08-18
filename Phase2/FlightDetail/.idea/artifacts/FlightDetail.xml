@@ -7,9 +7,10 @@
           <element id="module-output" name="FlightDetail" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.17" />
           <element id="library" level="project" name="Maven: org.apache.taglibs:taglibs-standard-impl:1.2.5" />
           <element id="library" level="project" name="Maven: org.apache.taglibs:taglibs-standard-spec:1.2.5" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.19.4" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.30" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="FlightDetail/web/Web" />
