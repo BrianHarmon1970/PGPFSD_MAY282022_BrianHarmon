@@ -1,29 +1,31 @@
-<%@ page import="com.harmonengineering.beans.SessionStatusBean" %><%--
-  Created by IntelliJ IDEA.
-  User: black
-  Date: 8/15/2022
-  Time: 9:57 AM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="com.harmonengineering.beans.SessionStatusBean" %>
+<%@ page import="com.harmonengineering.beans.StringBean" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Login/Register</title>
+    <%@ include file="DashBoardHeader.jsp"%>
 </head>
 <body>
-<jsp:useBean id="customerBean"  class="com.harmonengineering.beans.CustomerBean" scope="session"  />
-<jsp:useBean id="addressBean"  class="com.harmonengineering.beans.AddressBean" scope="session" />
+<jsp:useBean id="jspForward" class="com.harmonengineering.beans.StringBean"/>
+<%
+    if (sessionBean.isVerifiedLogin())
+    {
+         //jspForward.setStrBean( "<jsp:forward page=\"LoggedIn.jsp\"/>" ) ;
+        //jspForward.setStrBean( "LoggedIn.jsp" ) ;
+
+        pageContext.forward( "LoggedIn.jsp") ;
+        //<jsp:forward page="'${ jspForward.strBean }'"/>
+    }
+%>
 
 
-<%--
-<% System.out.print( "LoginRegister.jsp " ) ; %>
-<jsp:useBean id="sessionBean" class="com.harmonengineering.beans.SessionStatusBean" scope="session"/>
-<% sessionBean.setSessionState( SessionStatusBean.SessionState.Update ) ; %>
---%>
-
+<%--<c:if test="${sessionBean.verifiedLogin} == true" >
+    <jsp:forward page="LoggedIn.jsp"/>
+</c:if>--%>
     <h1>Login/Register</h1>
     <form>
-
         <label for="register_button">Don't have an account?:</label><br>
         <button id="register_button" type="submit" formaction="Register.jsp" >New Customer</button>
 <br><br>
@@ -31,9 +33,12 @@
         <button id="login_button" type="submit" formaction="UserLogin.jsp" >Existing Customer</button>
     </form>
 
-
 <%--
+<% System.out.print( "LoginRegister.jsp " ) ; %>
+<jsp:useBean id="sessionBean" class="com.harmonengineering.beans.SessionStatusBean" scope="session"/>
+<% sessionBean.setSessionState( SessionStatusBean.SessionState.Update ) ; %>
 <form><button type="submit" formaction="BookFlight.jsp" formmethod="get">Confirm</button></form>
 --%>
+
 </body>
 </html>

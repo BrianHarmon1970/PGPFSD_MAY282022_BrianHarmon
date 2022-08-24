@@ -29,10 +29,10 @@
     <h1>Register</h1>
     <form  action="doRegister.jsp" method="get">
         <label for="user_name">User Name (email address):</label><br>
-        <input id="user_name" name="user_name"size="40" type="text"/><br>
+        <input id="user_name" name="user_name" type="text"/><br>
         <br>
         <label for="password">Password:</label><br>
-        <input id="password" name="password"size="40" type="password"/><br>
+        <input id="password" name="password" type="password"/><br>
         <br>
         <label for="confirm_password">Confirm Password:</label><br>
         <input id="confirm_password" name="confirm_password" size="40" type="password"/><br>

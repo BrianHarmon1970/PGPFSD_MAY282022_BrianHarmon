@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Title</title>
+    <%@ include file="DashBoardHeader.jsp"%>
 </head>
 <body>
   <form>

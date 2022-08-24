@@ -9,7 +9,8 @@ package com.harmonengineering.beans;
     Payment,
     PaymentConfirmed,
     Final,
-    Update
+    Update,
+    Reset
 }*/
 public class SessionStatusBean
 {
@@ -27,12 +28,18 @@ public class SessionStatusBean
         Payment,
         PaymentConfirmed,
         Final,
-        Update
+        Update,
+        Reset
     }
-    public SessionStatusBean() { sessionState = SessionState.Final ; }
+    public SessionStatusBean()
+    {
+        sessionState = SessionState.Final ;
+        verifiedLogin = false ;
+    }
     public void setSessionState(SessionState sessionState)
     {
-        assert ( sessionState == SessionState.Update ) ;
+        assert ( sessionState == SessionState.Update ||
+                    sessionState == SessionState.Reset ) ;
         SessionState status = this.sessionState;
         System.out.print( this.sessionState + " --> ");
         switch ( status )
@@ -46,13 +53,17 @@ public class SessionStatusBean
             case Payment:   status = SessionState.PaymentConfirmed ; break ;
             case PaymentConfirmed: status = SessionState.Final ; break ;
         }
+        if ( sessionState == SessionState.Reset )
+            status = SessionState.Final ;
         this.sessionState = status;
         System.out.println( this.sessionState ) ;
     }
-    //public void setVerifiedLogin(boolean verifiedLogin) { this.verifiedLogin = verifiedLogin; }
+    public void setVerifiedLogin(boolean verifiedLogin) { this.verifiedLogin = verifiedLogin; }
     public void setUserLoginName(String userLoginName) { this.userLoginName = userLoginName; }
+    public boolean getVerifiedLogin() { return verifiedLogin; }
 
     public SessionState getSessionState() { return sessionState; }
     public boolean isVerifiedLogin() { return verifiedLogin; }
+
     public String getUserLoginName() { return userLoginName; }
 }

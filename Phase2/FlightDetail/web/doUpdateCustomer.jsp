@@ -1,21 +1,12 @@
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: black
-  Date: 8/17/2022
-  Time: 1:44 AM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Title</title>
+    <%@include file="DashBoardHeader.jsp"%>
 </head>
 <body>
-
-<jsp:useBean id="customerBean" scope="session" class="com.harmonengineering.beans.CustomerBean"/>
-<jsp:useBean id="addressBean" scope="session" class="com.harmonengineering.beans.AddressBean"/>
-<jsp:useBean id="userBean" scope="session" class="com.harmonengineering.beans.UserBean" />
 
 <%-- include modification from the form param data --%>
 <jsp:setProperty name="customerBean" property="firstName" param="first_name" />

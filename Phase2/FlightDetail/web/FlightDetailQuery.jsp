@@ -4,6 +4,7 @@
 <html>
 <head>
     <Title> Test JSP    </Title>
+    <%@ include file="DashBoardHeader.jsp"%>
 </head>
 
 <body>
@@ -17,24 +18,12 @@
             <input id="required_seats" name="required_seats" type="number"><br>
         <label for="travel_date">Date:</label><br>
             <input id="travel_date" name="travel_date" type="date" ><br>
-        <button type="submit">GO GET IT!</button>
+        <button type="submit">Find It!</button>
     </form>
 
-    <jsp:useBean id="criteriaBean" class="com.harmonengineering.beans.FlightDetailBean" scope="session"/>
-    Arrival City: <%= request.getParameter("arrival_city") %>
-    <jsp:setProperty name="criteriaBean" property="arrivalCity" value="5150" />
 
-    <sql:setDataSource var="dbSource"
-                       driver="com.mysql.cj.jdbc.Driver"
-                       url="jdbc:mysql://localhost:3306/phase2"
-                       user="root"
-                       password="root" />
-
-    <c:set var="db" value="${dbSource}" scope="application"/>
-
-    <h1> TESTING... </h1>
 <c:catch var="Exception">
-    <h2> Cities </h2>
+<%--    <h2> Cities </h2>
     <sql:query dataSource="${db}" var="result"
                sql="select ID, city_name from city"/>
 
@@ -50,6 +39,8 @@
             </tr>
         </c:forEach>
     </table>
+
+
     <h2> Airlines </h2>
     <sql:query dataSource="${db}" var="result"
                sql="select ID, airline_name from airline"/>
@@ -66,6 +57,7 @@
             </tr>
         </c:forEach>
     </table>
+    --%>
     <%-- =============================================================--%>
     <%-- DATA SET FOR CITY SELECTION CRITERIA --%>
     <datalist id="cities_list" >

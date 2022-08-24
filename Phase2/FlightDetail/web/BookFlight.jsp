@@ -2,13 +2,6 @@
 <%@ page import="com.harmonengineering.beans.SessionStatusBean" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: black
-  Date: 8/14/2022
-  Time: 12:53 AM
-  To change this template use File | Settings | File Templates.
---%>
 
 <html>
 <head>

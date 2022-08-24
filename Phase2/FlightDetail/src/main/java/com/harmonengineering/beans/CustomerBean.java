@@ -1,5 +1,9 @@
 package com.harmonengineering.beans;
 
+import javax.servlet.jsp.JspWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class CustomerBean
 {
     private int ID ;
@@ -24,4 +28,26 @@ public class CustomerBean
     public String getPhoneNumber() { return phoneNumber; }
     public String getEmailAddress() { return emailAddress; }
     public int getUser_id() { return user_id; }
+
+    public void sprint(  JspWriter pw ) throws IOException
+    {
+        //System.out.print("ID: " + ID + " firstName: " + firstName);
+        //System.out.print(" lastName " + lastName + " PhoneNumber " + phoneNumber);
+        //System.out.print(" email " + emailAddress);
+
+        /*
+        pw.print("<br>ID: " + ID + " firstName: " + firstName);
+        pw.print("<br>lastName " + lastName + " PhoneNumber " + phoneNumber);
+        pw.print("<br>email " + emailAddress);
+
+         */
+        pw.print("<br>" + firstName);
+        pw.print("<br>" + lastName ) ;
+        pw.print( "<br>" + phoneNumber);
+        pw.print("<br>" + emailAddress);
+
+
+    }
+
 }
+

@@ -1,3 +1,4 @@
+<%@ page import="com.harmonengineering.beans.FlightDetailBean" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
@@ -10,6 +11,13 @@
 
     <a href="test.jsp">test.jsp</a>
         <a href="FlightDetailQuery.jsp">Search for Flights</a>
+
+    <%
+        FlightDetailBean newBean = new FlightDetailBean() ;
+        newBean.setAirlineName( "Hello." ) ;
+        newBean.setArrivalCity( "Hello." ) ;
+        newBean.sprint(out) ;
+    %>
     </body>
 </html>
 

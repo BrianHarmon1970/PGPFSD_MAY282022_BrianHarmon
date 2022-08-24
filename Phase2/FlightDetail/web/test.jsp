@@ -20,7 +20,7 @@
     criteriaBean.setAirlineName("Major Airline");
     criteriaBean.setDepartureCity("London" ) ;
     criteriaBean.setArrivalCity("Moscow") ;
-    criteriaBean.setTravelDate( new Date(0) ) ;
+    criteriaBean.setTravelDate( "" ) ;
     criteriaBean.setRequiredSeats( 6 ) ;
 %>
 

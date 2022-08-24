@@ -10,9 +10,11 @@
 <%@ page import="java.io.PrintWriter" %>
 <!DOCTYPE html>
 
+
 <html>
 <head>
     <Title> Test JSP    </Title>
+    <%@ include file="DashBoardHeader.jsp"%>
 </head>
 
 <body>
@@ -23,7 +25,6 @@
                    password="root" />
 <h1> TESTING... </h1>
 
-<jsp:useBean id="criteriaBean" class="com.harmonengineering.beans.FlightDetailBean" scope="session"/>
     <% criteriaBean.setDepartureCity( request.getParameter("departure_city") ) ; %>
     <% criteriaBean.setArrivalCity( request.getParameter("arrival_city") ); %>
     <%  String p = request.getParameter( "required_seats" ) ;
@@ -34,13 +35,14 @@
             catch( NumberFormatException e ) { v = default_value ; }
         }
         criteriaBean.setRequiredSeats( v <= 0 ?  default_value : v ) ; %>
-    <%
+    <%--
         String str =request.getParameter("travel_date") ;
         if ( !str.isEmpty())
             criteriaBean.setTravelDate( Date.valueOf( str )) ;
-        else criteriaBean.setTravelDate( new Date(0) ) ;  %>
+        else criteriaBean.setTravelDate( new Date(0) ) ;  --%>
+    <% criteriaBean.setTravelDate( request.getParameter("travel_date")); %>
     <% criteriaBean.setAirlineName("") ;%>
-
+<%--
 Arrival City:    <%= request.getParameter("arrival_city") %><br>
 Departure City:     <%= request.getParameter("departure_city") %><br>
 Required Seats:    <%= request.getParameter("required_seats").toString() %><br>
@@ -52,12 +54,14 @@ Required Seats:    <%= criteriaBean.getRequiredSeats() %><br>
 Travel Date:    <%= (criteriaBean.getTravelDate()) %> -<br>
 <br>
 Arrival City:City: <%= request.getParameter("arrival_city") %>
-
+--%>
+<%--
 <br>
 <c:set var="criteriaBean" value="${criteriaBean}" scope="session" />
-${criteriaBean.arrivalCity}<br>
+--%>
+<%--${criteriaBean.arrivalCity}<br>
 ${criteriaBean.departureCity}<br>
-${db}
+${db}--%>
 
 <h3>Data Set</h3>
 <sql:query var="result" dataSource="${db}" maxRows="10"
@@ -113,12 +117,18 @@ ${db}
                 <td><c:out value="${row.ticket_price}"/></td>
 
                 <%
-                    bean = new FlightDetailBean() ;
-                    //bean.setTravelDate( Date.valueOf("${row.travel_date}") ) ;
-                    bean.setArrivalCity( "${row.arrival_city}" );
-                    bean.setArrivalCity( "${row.departure_city}" );
-                    bean.setArrivalCity( "${row.airline_name}" );
-                    queryResult.add( bean ) ;
+                    //bean = new FlightDetailBean() ;
+                    ////bean.setTravelDate( Date.valueOf("${row.travel_date}") ) ;
+                    //bean.setArrivalCity( "${row.arrival_city}" );
+                    //bean.setDepartureCity( "${row.departure_city}" );
+                    //bean.setAirlineName( "${row.airline_name}" );
+                    ////bean.setTicketPrice( "${row.ticket_price}" );
+                    ////bean.setRequiredSeats( "${row.available_seats}" );
+
+                    //queryResult.add( bean ) ;
+
+                    //bean = new FlightDetailBean() ;
+                    //bean.sprint( out ) ;
                 %>
             </tr>
 
@@ -137,7 +147,9 @@ ${db}
     <button type="submit" >Book</button>
 </form>
 
+
 <%--============================================================================--%>
+<%--
 <%
     out.print(" <h1> Hello " + criteriaBean.getDepartureCity()  + " </h1>") ;
     out.print( queryResult ) ;
@@ -160,6 +172,7 @@ ${db}
     }
     out.print( "</datalist>") ;
 %>
+--%>
     <%--============================================================================--%>
 <%--
 <form action="BookFlight.jsp" method="get">

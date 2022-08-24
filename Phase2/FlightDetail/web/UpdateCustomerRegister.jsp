@@ -9,23 +9,19 @@
             width: 40ch ;
             text-align-all: right;
         }
-
     </style>
     <title>Title</title>
+    <%@include file="DashBoardHeader.jsp"%>
 
 </head>
 <body>
-    <jsp:useBean id="userBean"  class="com.harmonengineering.beans.UserBean" scope="session"/>
-    <jsp:useBean id="customerBean" class="com.harmonengineering.beans.CustomerBean" scope="session"/>
-    <jsp:useBean id="addressBean" class="com.harmonengineering.beans.AddressBean" scope="session" />
-
     ubean ID:           <c:out value="${userBean.ID}"/> <br>
     cbean ID:    <c:out value="${customerBean.ID}"/><br>
     abean ID:      <c:out value="${addressBean.ID}"/><br>
 
     cbean firstName:    <c:out value="${customerBean.firstName}"/><br>
     abean zipcode:      <c:out value="${addressBean.zipCode}"/><br>
-    <%--<%@ include file="LoadCustomerData.jsp" %>--%>
+
     <form id="profile_form" action="ConfirmCustomerRegister.jsp" method="get">
         <h3>Personal</h3>
         <label for="profile_form_firstname">First Name:</label><br>

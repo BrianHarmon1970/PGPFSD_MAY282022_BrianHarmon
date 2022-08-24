@@ -6,19 +6,13 @@
 <html>
 <head>
     <title>CheckLogin</title>
+    <%@include file="DashBoardHeader.jsp"%>
 </head>
 <body>
 <%--
 <sql:query var="count" dataSource="${db}" sql="SELECT COUNT(*) FROM users " />
 users count: <c:out value="${count.rowsByIndex[0][0]}" />
 --%>
-<jsp:useBean id="customerBean"  class="com.harmonengineering.beans.CustomerBean" scope="session"  />
-<jsp:useBean id="addressBean"  class="com.harmonengineering.beans.AddressBean" scope="session" />
-
-
-<jsp:useBean id="userBean" class="com.harmonengineering.beans.UserBean" scope="session" />
-<jsp:useBean id="reqUserBean" class="com.harmonengineering.beans.UserBean" scope="session" />
-<%--<jsp:useBean id="sqlUserBean" class="com.harmonengineering.beans.UserBean" scope="session" />--%>
 
 <%
     boolean loginSuccess = true ;
@@ -33,20 +27,21 @@ users count: <c:out value="${count.rowsByIndex[0][0]}" />
 
 %>
 
-<sql:setDataSource var="dbSource"
+<%--<sql:setDataSource var="dbSource"
                    driver="com.mysql.cj.jdbc.Driver"
                    url="jdbc:mysql://localhost:3306/phase2"
                    user="root"
                    password="root" />
-<c:set var="db" value="${dbSource}" scope="application"/>
+<c:set var="db" value="${dbSource}" scope="application"/>--%>
 <sql:query var="user" dataSource="${db}"
-            sql="select ID, user_name, user_pass from users
-                where user_name='${reqUserBean.userName}'
-                and user_type='CUSTOMER'"/>
+            sql="select ID, user_name, user_pass, user_type from users
+                where user_name='${reqUserBean.userName}'"/>
 
 <jsp:setProperty name="userBean" property="userName" value="${user.rows[0].user_name}"/>
 <jsp:setProperty name="userBean" property="userPass" value="${user.rows[0].user_pass}"/>
+<jsp:setProperty name="userBean" property="userType" value="${user.rows[0].user_type}"/>
 <jsp:setProperty name="userBean" property="ID" value="${user.rows[0].ID}"/>
+
 <%
     String uName = userBean.getUserName() ;
     String uPass = userBean.getUserPass() ;
@@ -56,19 +51,15 @@ users count: <c:out value="${count.rowsByIndex[0][0]}" />
             loginSuccess = false ;
     } else loginSuccess = false ;
 %>
-
-SQL UserName: <c:out value="${userBean.userName}" /> <br>
-SQL Password: <c:out value="${userBean.userPass}"/> <br>
-login UserName: <%= userName == null ? "null" : userName %> <br>
-login PassWord: <%= userPass == null ? "null" : userPass %> <br>
-<br>
-userBean UserName: <c:out value="${userBean.ID}" /> <br>
-userBean UserName: <c:out value="${userBean.userName}" /> <br>
-userBean Password: <c:out value="${userBean.userPass}"/> <br>
-<br>
 loginSuccess: <%= loginSuccess %> <br>
 <c:if test= "<%= loginSuccess == true%>">
-    <jsp:forward page="ConfirmCustomerRegister.jsp"/>
+    <% if ( userBean.getUserType().equals("ADMIN")) {
+        sessionBean.setVerifiedLogin(true) ;
+        pageContext.forward("AdminPage.jsp");
+    }
+    %>
+    <jsp:include page="LoadCustomerData.jsp"/>
+    <jsp:forward page="LoggedIn.jsp"/>
 </c:if>
 <jsp:forward page="RetryLogin.jsp" />
 

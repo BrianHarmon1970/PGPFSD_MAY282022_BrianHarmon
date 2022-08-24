@@ -5,11 +5,9 @@
 <html>
 <head>
     <title>Title</title>
+    <%@include file="DashBoardHeader.jsp"%>
 </head>
 <body>
-<jsp:useBean id="customerBean"  class="com.harmonengineering.beans.CustomerBean" scope="session"  />
-<jsp:useBean id="addressBean"  class="com.harmonengineering.beans.AddressBean" scope="session" />
-<jsp:useBean id="userBean" class="com.harmonengineering.beans.UserBean" scope="session"/>
 <%--
 <sql:query var="CustomerResult" dataSource="${db}"
             sql="SELECT ID, first_name, last_name, phone_number, email_address

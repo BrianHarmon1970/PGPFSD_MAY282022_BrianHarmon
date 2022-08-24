@@ -11,6 +11,7 @@
         }
     </style>
     <title>Login</title>
+    <%@include file="DashBoardHeader.jsp"%>
 </head>
 <body>
 <div class="color-border">
