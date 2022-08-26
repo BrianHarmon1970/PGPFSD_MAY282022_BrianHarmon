@@ -3,12 +3,12 @@
 <html>
 <head>
     <title>Payment Confirmation</title>
+    <%@include file="DashBoardHeader.jsp"%>
 </head>
 <body>
 <h1>Payment Confirmation</h1>
 <% System.out.print( " PaymentConfirmation.jsp " ) ; %>
-<jsp:useBean id="sessionBean" class="com.harmonengineering.beans.SessionStatusBean" scope="session"/>
-<% sessionBean.setSessionState( SessionStatusBean.SessionState.Update ) ; %>
-<form><button type="submit" formaction="CloseBooking.jsp" formmethod="get">Confirm</button></form>
+Thank you for your purchase. your confirmation number is ${bookingBean.ID}.
+<form><button type="submit" formaction="home.jsp" formmethod="get">Home</button></form>
 </body>
 </html>

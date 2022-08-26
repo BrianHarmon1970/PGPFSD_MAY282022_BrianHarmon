@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Title</title>
+    <%@include file="DashBoardHeader.jsp"%>
 </head>
 <body>
     <h2> We are sorry. This booking is no longer available. Please select another flight.</h2>

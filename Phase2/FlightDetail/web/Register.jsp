@@ -18,13 +18,9 @@
         }
     </style>
     <title>Title</title>
+    <%@include file="DashBoardHeader.jsp"%>
 </head>
 <body>
-<jsp:useBean id="customerBean"  class="com.harmonengineering.beans.CustomerBean" scope="session"  />
-<jsp:useBean id="addressBean"  class="com.harmonengineering.beans.AddressBean" scope="session" />
-
-
-
 <div class="color-border">
     <h1>Register</h1>
     <form  action="doRegister.jsp" method="get">

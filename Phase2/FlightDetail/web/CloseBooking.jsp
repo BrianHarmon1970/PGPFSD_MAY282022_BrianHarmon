@@ -9,8 +9,17 @@
 <html>
 <head>
     <title>Title</title>
+    <%@include file="DashBoardHeader.jsp"%>
 </head>
 <body>
-<jsp:forward page="home.jsp"/>
+<% System.out.print( "ClostBooking.jsp" ) ; %>
+<sql:update dataSource="${db}"
+            sql="UPDATE booking SET booking_status='BOOKING_STATUS_BOOKEDFINAL'
+            WHERE ID='${bookingBean.ID}'  "/>
+<sql:update dataSource="${db}"
+            sql="COMMIT"/>
+
+<% sessionBean.setSessionState( SessionStatusBean.SessionState.Update ) ; %>
+<jsp:forward page="PaymentConfirmation.jsp"/>
 </body>
 </html>

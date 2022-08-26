@@ -10,6 +10,8 @@
 <body>
     <h1>Flight Finder</h1>
     <form name="flight_search_criteria" action="FlightDetailResult.jsp" method="get">
+        <label for="airline_name">Airline:</label><br>
+            <input id="airline_name" type="text" name="airline_name" list="airline_list" ><br>
         <label for="departure_city">Departing from:</label><br>
             <input type="search" list="cities_list" name="departure_city" id="departure_city" ><br>
         <label for="arrival_city">Arriving at:</label><br>
@@ -64,10 +66,21 @@
     <sql:query dataSource="${db}" var="result"
                sql="select ID, city_name from city"/>
         <c:forEach var="row" items="${result.rows}">
-            <option value="${row.city_name}">
+            <option value="${row.city_name}"></option>
         </c:forEach>
     </datalist>
-   <%--================================================================--%>
+
+    <%-- DATA SET FOR AIRLINT SELECTION CRITERIA --%>
+    <sql:query dataSource="${db}" var="result"
+               sql="select ID, airline_name from airline"/>
+    <datalist id="airline_list" >
+        <c:forEach var="row" items="${result.rows}">
+            <option value="${row.airline_name}"></option>
+        </c:forEach>
+    </datalist>
+
+
+    <%--================================================================--%>
 </c:catch>
 <c:if test="${Exception} != null" >
     Error: ${Exception}

@@ -5,10 +5,9 @@
 <html>
 <head>
     <title>Title</title>
+  <%@include file="DashBoardHeader.jsp"%>
 </head>
 <body>
-  <jsp:useBean id="bookingBean" class="com.harmonengineering.beans.BookingBean" scope="session"/>
-  <jsp:useBean id="sessionBean" class="com.harmonengineering.beans.SessionStatusBean" scope="session"/>
   <% sessionBean.setSessionState( SessionStatusBean.SessionState.Reset ) ; %>
   <sql:update dataSource="${db}" sql="ROLLBACK "/>
   <sql:update dataSource="${db}"

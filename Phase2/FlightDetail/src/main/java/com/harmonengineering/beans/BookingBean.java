@@ -21,7 +21,7 @@ public class BookingBean
     public void setStatus(String status) { this.status = status; }
     public void setCustomerID(Long customerID) { this.customerID = customerID; }
     public void setFlightDetailID(Long flightDetailID) { this.flightDetailID = flightDetailID; }
-    public void setReservedSeats(Integer reservedSeats) { this.reservedSeats = reservedSeats; }
+    public void setReservedSeats( Integer reservedSeats) { this.reservedSeats = reservedSeats; }
     public void setTotalPrice(Double totalPrice) { this.totalPrice = totalPrice; }
 
     public Long getID() { return ID; }

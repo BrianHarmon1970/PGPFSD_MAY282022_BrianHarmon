@@ -22,7 +22,7 @@
         <%--
         <% sessionBean.setSessionState( SessionStatusBean.SessionState.Update ) ; %>
         --%>
-        <jsp:forward page="PaymentConfirmation.jsp"/>
+        <jsp:forward page="CloseBooking.jsp"/>
 
     </c:if>
     <c:if test="<%=sessionBean.getSessionState() == SessionStatusBean.SessionState.BookingConfirmed %>">

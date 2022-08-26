@@ -81,13 +81,15 @@
     <sql:query var="rs" dataSource="${db}" scope="session"
                sql="SELECT available_seats from flight_detail
         where ID='${selectedRecord.ID}' FOR UPDATE"/>
+    sr seats: ${selectedRecord.requiredSeats} <br>
     <jsp:setProperty name="selectedRecord" property="requiredSeats"
-                     value="${rs.rows[0].available_seats}"/>
+                     param="${rs.rows[0].available_seats}"/>
+    sr seats: ${selectedRecord.requiredSeats} <br>
     <c:if test="${  'selectedRecord.requiredSeats' >= 'bookingBean.reservedSeats'  }">
         <sql:update dataSource="${db}"
                     sql="UPDATE flight_detail
                             SET available_seats=
-                                 ('${selectedRecord.requiredSeats - bookingBean.reservedSeats}')
+                                 '${selectedRecord.requiredSeats - bookingBean.reservedSeats}'
                                     where ID='${selectedRecord.ID}'"/>
 
 
@@ -95,8 +97,12 @@
         bb customer_id: "${bookingBean.customerID}"<br>
         bb reserved seats: "${bookingBean.reservedSeats}"<br>
         bb total_price: ${bookingBean.totalPrice}<br>
+
+        sr reserved seats: "${selectedRecord.requiredSeats}"<br>
+
         <jsp:forward page="ConfirmBooking.jsp"/>
+        <%--<a href="ConfirmBooking.jsp">ConfirmBooking</a>--%>
     </c:if>
-    <%--<jsp:forward page="NotifyBookingNotAvailable.jsp"/>--%>
+    <jsp:forward page="NotifyBookingNotAvailable.jsp"/>
 </body>
 </html>

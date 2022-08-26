@@ -1,43 +1,32 @@
 package com.harmonengineering.beans;
 
-class CardCredentials
-{
-    private String digitString ;
-    private String cvvString ;
-
-    public CardCredentials() {}
-    public CardCredentials( String digitString, String cvvString  )
-    {
-        this.digitString = digitString ;
-        this.cvvString = cvvString ;
-    }
-    public String getDigitString() { return digitString; }
-    public String getCvvString() { return cvvString;  }
-
-    public void setDigitString(String digitString) { this.digitString = digitString; }
-    public void setCvvString(String cvvString) { this.cvvString = cvvString;  }
-
-}
 public class PaymentAgentBean
 {
-    private double  PayPalAccountValue ;
+    private Double  PayPalAccountValue ;
     private CardCredentials authorizedCard ;
     private boolean authorizedStatus ;
 
-    public PaymentAgentBean() {}
+    public PaymentAgentBean()
+    {
+        CardCredentials cc = new CardCredentials();
+        cc.setDigitString("1111222233334444");
+        cc.setCvvString("000");
+        this.setAuthorizedCard(cc);
+        PayPalAccountValue = 10000.00d ;
+    }
 
-    public void setPayPalAccountValue(double payPalAccountValue)
-        { PayPalAccountValue = payPalAccountValue;    }
+    public void setPayPalAccountValue( Double payPalAccountValue)
+        { this.PayPalAccountValue = payPalAccountValue; }
     public void setAuthorizedCard(CardCredentials authorizedCard)
         { this.authorizedCard = authorizedCard; }
     public void setAuthorizedStatus(boolean authorizedStatus)
         {  this.authorizedStatus = authorizedStatus;  }
 
-    public double getPayPalAccountValue()  {  return PayPalAccountValue;  }
+    public Double getPayPalAccountValue()  {  return PayPalAccountValue;  }
     public CardCredentials getAuthorizedCard() { return authorizedCard; }
     public boolean isAuthorizedStatus() { return authorizedStatus; }
 
-    public void AuthorizePayPalPayment( double amount )
+    public void AuthorizePayPalPayment( Double amount )
     {
         if (PayPalAccountValue >= amount)
         {

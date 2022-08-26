@@ -6,6 +6,13 @@
 <%@ page import="com.harmonengineering.beans.SessionStatusBean" %>
 <%@ page import="com.harmonengineering.beans.StringBean" %>
 <%@ page import="com.harmonengineering.beans.BookingBean" %>
+<%@ page import="com.harmonengineering.beans.CardCredentials" %>
+<%@ page import="com.harmonengineering.beans.PaymentAgentBean" %>
+<%@page import="com.harmonengineering.beans.ResultSelectorBean" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.io.InputStream" %>
+<%@ page import="java.util.Properties" %>
+<%@ page import="java.net.URL" %>
 
 <html>
 <head>
@@ -29,16 +36,46 @@
 <jsp:useBean id="reqUserBean" class="com.harmonengineering.beans.UserBean" scope="session" />
 <%--<jsp:useBean id="sqlUserBean" class="com.harmonengineering.beans.UserBean" scope="session" />--%>
 
+<jsp:useBean id="paymentAgentBean" class="com.harmonengineering.beans.PaymentAgentBean" scope="session"/>
+<jsp:useBean id="resultSelectorBean" class="com.harmonengineering.beans.ResultSelectorBean" scope="session" />
 
+<%
+
+    InputStream in = pageContext.getServletContext().getResourceAsStream("/WEB-INF/config.properties") ;
+    Properties props = new Properties();
+    props.load(in);
+    pageContext.setAttribute( "dbConnectString", props.getProperty("url"));
+    pageContext.setAttribute( "dbUserName", props.getProperty("userid"));
+    pageContext.setAttribute( "dbPassword", props.getProperty("password"));
+    pageContext.setAttribute( "dbDriverName", props.getProperty("driver")) ;
+%>
 <sql:setDataSource var="dbSource"
-                   driver="com.mysql.cj.jdbc.Driver"
-                   url="jdbc:mysql://localhost:3306/phase2"
-                   user="root"
-                   password="root"
+                   driver="${dbDriverName}"
+                   url="${dbConnectString}"
+                   user="${dbUserName}"
+                   password="${dbPassword}"
                    scope="session" />
 <c:set var="db" value="${dbSource}" scope="session"/>
 
-
+<%! String sqlText ; %>
+<%--
+<%
+    sqlText = "select ID, airline, departure_city, " +
+            " arrival_city, available_seats, " +
+            " travel_date, ticket_price from VIEW_FDETAILS " ;
+    sqlText += " WHERE '" + criteriaBean.getRequiredSeats() +"' <= available_seats" ;
+    if ( !criteriaBean.getArrivalCity().isBlank() )
+    {
+        sqlText += " AND arrival_city = '" + criteriaBean.getArrivalCity() +"'" ;
+    }
+    if ( !criteriaBean.getDepartureCity().isBlank() )
+    {
+        sqlText += " AND departure_city= '" +  criteriaBean.getDepartureCity() + "'" ;
+    }
+    //if ( !criteriaBean.getTravelDate().isBlank() )    {    }
+    pageContext.setAttribute("sqlText" , sqlText ) ;
+%>
+--%>
 
 
 <div style="flow-from: left; border: blue; border-style: solid ">
@@ -48,7 +85,7 @@
     <%
         if( sessionBean.isVerifiedLogin())
         {
-            System.out.print( "<<Admin Page Button>>") ;
+            //System.out.print( "<<Admin Page Button>>") ;
             out.print(
                 "<form method=\"get\">" +
                         "<button type=\"submit\" formaction=\"UserLogout.jsp\"> Logout </button></form>");
@@ -68,8 +105,13 @@
                             "<button type=\"submit\" formaction=\"UserLogin.jsp\">" +
                                     "Login </button></form>" ) ;
 
-
-        FlightDetailBean bean = new FlightDetailBean() ;
+        if( (userBean.getUserType() == null ) || !userBean.getUserType().equals("ADMIN")) {
+            out.print(
+                    "<form method =\"get\">" +
+                            "<button type=\"submit\" formaction=\"home.jsp\">" +
+                            "Home </button></form>");
+        }
+        //FlightDetailBean bean = new FlightDetailBean() ;
         //bean.sprint( out ) ;
         userBean.sprint( out ) ;
         customerBean.sprint( out ) ;

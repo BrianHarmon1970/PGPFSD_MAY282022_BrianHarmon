@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: black
-  Date: 8/23/2022
-  Time: 4:55 PM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,7 +6,7 @@
     <%@include file="DashBoardHeader.jsp"%>
 </head>
 <body>
-    <h1><< Admin >></h1>
+    <h1> Admin </h1>
     <%--- Admin Password Change --%>
     <div style="border: black; border-style: solid; border-width: 3px;" >
 
@@ -28,13 +22,13 @@
                sql="SELECT creation_time, statechange_time, booking_status,
                     customer_id, flight_detail_id, seats_reserved, total_price
                     from booking" />
-    <div style=" height: 25%">
+    <div>
         <table style="
         border-color: blue ;
         border-width: 3px ;
         border-style: solid;
         overflow-y: scroll;
-        ">
+        height: 25% ;">
             <thead><tr>
                 <td>created</td><td>updated</td><td>status</td><td>customer</td>
                 <td>flight detail</td><td>seats</td><td>price</td>
