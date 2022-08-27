@@ -48,11 +48,5 @@
     <c:if test="<%=sessionBean.getSessionState()== SessionStatusBean.SessionState.Final %>">
         <jsp:forward page="FlightDetailQuery.jsp"/>
     </c:if>
-    <%--
-    <% sessionBean.setSessionState( SessionStatusBean.SessionState.Update ) ; %>
-    <form><button type="submit" formaction="BookFlight.jsp" formmethod="get">Confirm</button></form>
-    <jsp:forward page="BookFlight.jsp"/>
-    --%>
-
 </body>
 </html>

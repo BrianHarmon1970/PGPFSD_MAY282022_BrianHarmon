@@ -25,41 +25,6 @@
 
 
 <c:catch var="Exception">
-<%--    <h2> Cities </h2>
-    <sql:query dataSource="${db}" var="result"
-               sql="select ID, city_name from city"/>
-
-    <table style=" border-color:
-        deepskyblue;
-        border-width: 3px ;
-        border-style: solid;" >
-        <thead><tr><td>ID</td> <td>NAME</td></tr></thead>
-        <c:forEach var="row" items="${result.rows}">
-            <tr>
-                <td><c:out value="${row.ID}"/></td>
-                <td><c:out value="${row.city_name}"/></td>
-            </tr>
-        </c:forEach>
-    </table>
-
-
-    <h2> Airlines </h2>
-    <sql:query dataSource="${db}" var="result"
-               sql="select ID, airline_name from airline"/>
-
-    <table style=" border-color:
-        deepskyblue;
-        border-width: 3px ;
-        border-style: solid;" >
-        <thead><tr><td>ID</td> <td>NAME</td></tr></thead>
-        <c:forEach var="row" items="${result.rows}">
-            <tr>
-                <td><c:out value="${row.ID}"/></td>
-                <td><c:out value="${row.airline_name}"/></td>
-            </tr>
-        </c:forEach>
-    </table>
-    --%>
     <%-- =============================================================--%>
     <%-- DATA SET FOR CITY SELECTION CRITERIA --%>
     <datalist id="cities_list" >
@@ -78,8 +43,6 @@
             <option value="${row.airline_name}"></option>
         </c:forEach>
     </datalist>
-
-
     <%--================================================================--%>
 </c:catch>
 <c:if test="${Exception} != null" >

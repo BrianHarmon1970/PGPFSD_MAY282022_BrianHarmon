@@ -28,13 +28,7 @@
     reqUserBean.setUserPass( userPass ) ;
 %>
 RegisterSuccess: <%= RegisterSuccess %> <br>
-<%--<sql:setDataSource var="dbSource"
-                   driver="com.mysql.cj.jdbc.Driver"
-                   url="jdbc:mysql://localhost:3306/phase2"
-                   user="root"
-                   password="root" />
-<c:set var="db" value="${dbSource}" scope="session"/>
---%>
+
 <sql:query var="user" dataSource="${db}"
            sql="select  user_name, user_pass from users
                 where user_name='${reqUserBean.userName}'
@@ -63,6 +57,6 @@ RegisterSuccess: <%= RegisterSuccess %> <br>
     userBean pass: <c:out value="${userBean.userPass}"/>
     <jsp:forward page="CreateUserData.jsp"/>
 </c:if>
-<%--<jsp:forward page="RetryLogin.jsp" />--%>
+<jsp:forward page="RetryLogin.jsp" />
 </body>
 </html>

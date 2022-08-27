@@ -38,15 +38,7 @@
 
 <h3>Data Set</h3>
 <jsp:useBean id="bean" class="com.harmonengineering.beans.FlightDetailBean" scope="page" />
-<%--
-<%! ArrayList<FlightDetailBean> queryResult = new ArrayList<FlightDetailBean>() ; %>
-<% resultSelectorBean.setQueryResult( queryResult ); %>
---%>
 <h3>Result Set</h3>
-<%--<c:set var="db" value="${dbSource}" scope="session"/>--%>
-<%--
-<%! String sqlText ; %>
---%>
 <%
     sqlText = "select ID, airline, departure_city, " +
             " arrival_city, available_seats, " +
