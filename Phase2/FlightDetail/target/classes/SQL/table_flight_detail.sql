@@ -5,7 +5,7 @@ create table flight_detail
     departure_cityID    bigint(20) NOT NULL,
     arrival_cityID      bigint(20) NOT NULL,
     airlineID           bigint(20) NOT NULL,
-    travel_date         datetime NOT NULL,
+    travel_date         VARCHAR(30) NOT NULL,
     available_seats     integer(20) NOT NULL,
     FOREIGN KEY( departure_cityID )     REFERENCES city( ID ),
     FOREIGN KEY( arrival_cityID )       REFERENCES city( ID ),

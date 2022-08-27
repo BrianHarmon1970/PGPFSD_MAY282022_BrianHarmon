@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aopalliance.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aspectjrt-1.9.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aspectjweaver-1.9.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/commons-logging-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-asm-3.1.2.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-beans-3.1.1.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-context-3.1.1.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-core-3.1.1.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-expression-3.2.3.release.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/spring-jdbc-3.2.4.release.jar/spring-jdbc-3.2.4.release.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Downloads/spring-dao-2.0.6.jar (1)/spring-dao-2.0.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Documents/Simplilearn/Simplilearn/Jar Files/JDBC Jar files/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mridul Sharma/Documents/Simplilearn/Simplilearn/Jar Files/JDBC Jar files/mysql-connector-java-5.0.8-bin-g.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
