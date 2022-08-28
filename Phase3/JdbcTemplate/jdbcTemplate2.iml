@@ -21,7 +21,11 @@
   </component>
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration process_explicitly_annotated="false">
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/applicationContext.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager">
@@ -32,7 +36,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="aopalliance.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aopalliance.jar" />
@@ -41,7 +45,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="aspectjrt-1.9.4.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aspectjrt-1.9.4.jar" />
@@ -50,7 +54,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="aspectjweaver-1.9.4.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aspectjweaver-1.9.4.jar" />
@@ -59,7 +63,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="commons-logging-1.2.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/commons-logging-1.2.jar" />
@@ -68,7 +72,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="commons-logging-1.2-javadoc.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/commons-logging-1.2-javadoc.jar" />
@@ -77,7 +81,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="spring-asm-3.1.2.RELEASE.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-asm-3.1.2.RELEASE.jar" />
@@ -86,7 +90,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="spring-beans-3.1.1.RELEASE.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-beans-3.1.1.RELEASE.jar" />
@@ -95,7 +99,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="spring-context-3.1.1.RELEASE.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-context-3.1.1.RELEASE.jar" />
@@ -104,7 +108,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="spring-core-3.1.1.RELEASE.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-core-3.1.1.RELEASE.jar" />
@@ -113,7 +117,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="spring-expression-3.2.3.release.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-expression-3.2.3.release.jar" />
@@ -122,7 +126,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="spring-jdbc-3.2.4.release.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/spring-jdbc-3.2.4.release.jar/spring-jdbc-3.2.4.release.jar" />
@@ -131,7 +135,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="spring-dao-2.0.6.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/spring-dao-2.0.6.jar (1)/spring-dao-2.0.6.jar" />
@@ -140,7 +144,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="com.mysql.jdbc_5.1.5.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Documents/Simplilearn/Simplilearn/Jar Files/JDBC Jar files/com.mysql.jdbc_5.1.5.jar" />
@@ -149,7 +153,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="mysql-connector-java-5.0.8-bin-g.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Documents/Simplilearn/Simplilearn/Jar Files/JDBC Jar files/mysql-connector-java-5.0.8-bin-g.jar" />
@@ -159,6 +163,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="Spring-5.2.3.RELEASE" level="project" />
-    <orderEntry type="library" name="Spring Web Services-2.0.2" level="project" />
+    <orderEntry type="library" exported="" name="Spring Web Services-2.0.2" level="project" />
   </component>
 </module>

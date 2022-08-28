@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Main-Class: com.javatpoint.Test
+Class-Path: spring-instrument-5.2.3.RELEASE.jar spring-aop-5.2.3.RELEASE
+ .jar spring-expression-5.2.3.RELEASE.jar spring-aspects-5.2.3.RELEASE.j
+ ar spring-beans-5.2.3.RELEASE.jar spring-context-5.2.3.RELEASE.jar spri
+ ng-core-5.2.3.RELEASE.jar spring-context-support-5.2.3.RELEASE.jar spri
+ ng-jms-5.2.3.RELEASE.jar spring-jdbc-5.2.3.RELEASE.jar spring-oxm-5.2.3
+ .RELEASE.jar spring-orm-5.2.3.RELEASE.jar spring-messaging-5.2.3.RELEAS
+ E.jar aopalliance-1.0.jar commons-logging-1.2.jar spring-test-5.2.3.REL
+ EASE.jar spring-tx-5.2.3.RELEASE.jar spring-ws.jar
+
