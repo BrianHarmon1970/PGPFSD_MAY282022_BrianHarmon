@@ -24,13 +24,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ec8a5ea (...)
+=======
+>>>>>>> a9cfe27 (8/28/2022)
       <configuration process_explicitly_annotated="false">
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/applicationContext.xml</file>
         </fileset>
       </configuration>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       <configuration />
@@ -40,6 +44,8 @@
 =======
       <configuration />
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+>>>>>>> a9cfe27 (8/28/2022)
     </facet>
   </component>
   <component name="NewModuleRootManager">
@@ -53,6 +59,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -63,6 +70,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="aopalliance.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aopalliance.jar" />
@@ -74,6 +84,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -84,6 +95,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="aspectjrt-1.9.4.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aspectjrt-1.9.4.jar" />
@@ -95,6 +109,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -105,6 +120,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="aspectjweaver-1.9.4.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aspectjweaver-1.9.4.jar" />
@@ -116,6 +134,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -126,6 +145,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="commons-logging-1.2.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/commons-logging-1.2.jar" />
@@ -137,6 +159,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -147,6 +170,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="commons-logging-1.2-javadoc.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/commons-logging-1.2-javadoc.jar" />
@@ -158,6 +184,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -168,6 +195,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="spring-asm-3.1.2.RELEASE.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-asm-3.1.2.RELEASE.jar" />
@@ -179,6 +209,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -189,6 +220,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="spring-beans-3.1.1.RELEASE.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-beans-3.1.1.RELEASE.jar" />
@@ -200,6 +234,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -210,6 +245,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="spring-context-3.1.1.RELEASE.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-context-3.1.1.RELEASE.jar" />
@@ -221,6 +259,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -231,6 +270,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="spring-core-3.1.1.RELEASE.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-core-3.1.1.RELEASE.jar" />
@@ -242,6 +284,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -252,6 +295,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="spring-expression-3.2.3.release.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-expression-3.2.3.release.jar" />
@@ -263,6 +309,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -273,6 +320,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="spring-jdbc-3.2.4.release.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/spring-jdbc-3.2.4.release.jar/spring-jdbc-3.2.4.release.jar" />
@@ -284,6 +334,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -294,6 +345,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="spring-dao-2.0.6.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Downloads/spring-dao-2.0.6.jar (1)/spring-dao-2.0.6.jar" />
@@ -305,6 +359,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -315,6 +370,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="com.mysql.jdbc_5.1.5.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Documents/Simplilearn/Simplilearn/Jar Files/JDBC Jar files/com.mysql.jdbc_5.1.5.jar" />
@@ -326,6 +384,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="module-library" exported="">
 =======
     <orderEntry type="module-library">
@@ -336,6 +395,9 @@
 =======
     <orderEntry type="module-library">
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="module-library" exported="">
+>>>>>>> a9cfe27 (8/28/2022)
       <library name="mysql-connector-java-5.0.8-bin-g.jar">
         <CLASSES>
           <root url="file://C:/Users/Mridul Sharma/Documents/Simplilearn/Simplilearn/Jar Files/JDBC Jar files/mysql-connector-java-5.0.8-bin-g.jar" />
@@ -348,6 +410,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <orderEntry type="library" exported="" name="Spring Web Services-2.0.2" level="project" />
 =======
     <orderEntry type="library" name="Spring Web Services-2.0.2" level="project" />
@@ -358,5 +421,8 @@
 =======
     <orderEntry type="library" name="Spring Web Services-2.0.2" level="project" />
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+    <orderEntry type="library" exported="" name="Spring Web Services-2.0.2" level="project" />
+>>>>>>> a9cfe27 (8/28/2022)
   </component>
 </module>

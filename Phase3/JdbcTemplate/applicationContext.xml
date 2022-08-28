@@ -7,10 +7,14 @@
 
 <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9cfe27 (8/28/2022)
 	<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 	<property name="url" value="jdbc:mysql://localhost:3306/db_world" />
 	<property name="username" value="root" />
 	<property name="password" value="root" />
+<<<<<<< HEAD
 </bean>
 
 <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
@@ -24,15 +28,21 @@
 <property name="url" value="mysql://localhost:3306/ecommerce" />
 <property name="username" value="root" />
 <property name="password" value="root" />
+=======
+>>>>>>> a9cfe27 (8/28/2022)
 </bean>
 
 <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-<property name="dataSource" ref="ds"></property>
+	<property name="dataSource" ref="ds"></property>
 </bean>
 
 <bean id="edao" class="com.javatpoint.EmployeeDao">
+<<<<<<< HEAD
 <property name="jdbcTemplate" ref="jdbcTemplate"></property>
 >>>>>>> 7981575 (beginning Phase3-ending Phase2 branch on 2 and 3. synch.)
+=======
+	<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+>>>>>>> a9cfe27 (8/28/2022)
 </bean>
 
 </beans>
