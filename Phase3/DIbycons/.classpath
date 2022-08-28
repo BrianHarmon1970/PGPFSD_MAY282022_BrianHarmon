@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_CORE"/>
+	<classpathentry kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aopalliance.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aspectjrt-1.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/aspectjweaver-1.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-asm-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-beans-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-context-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-core-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mridul Sharma/Downloads/simplilearn/Jar Files/Springs/spring-expression-3.2.3.release.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
