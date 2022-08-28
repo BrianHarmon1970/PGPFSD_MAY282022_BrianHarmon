@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact name="jdbcTemplate2:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/jdbcTemplate2_jar</output-path>
+    <root id="root">
+      <element id="archive" name="jdbcTemplate2.jar">
+        <element id="module-output" name="jdbcTemplate2" />
+      </element>
+      <element id="library" level="module" name="spring-beans-3.1.1.RELEASE.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="aopalliance.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="aspectjweaver-1.9.4.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
+      <element id="library" level="module" name="spring-expression-3.2.3.release.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="spring-context-3.1.1.RELEASE.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="spring-core-3.1.1.RELEASE.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="commons-logging-1.2.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="com.mysql.jdbc_5.1.5.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="spring-asm-3.1.2.RELEASE.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="commons-logging-1.2-javadoc.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="spring-dao-2.0.6.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="aspectjrt-1.9.4.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="module" name="mysql-connector-java-5.0.8-bin-g.jar" module-name="jdbcTemplate2" />
+      <element id="library" level="project" name="Spring Web Services-2.0.2" />
+      <element id="library" level="module" name="spring-jdbc-3.2.4.release.jar" module-name="jdbcTemplate2" />
+    </root>
+  </artifact>
+</component>
