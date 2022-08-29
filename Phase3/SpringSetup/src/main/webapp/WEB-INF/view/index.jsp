@@ -1,7 +1,6 @@
 <html>
 <body>
-<h2>Spring Application</h2>
-
+<h2>Hello World!</h2>
 <a href="customEvent.jsp">Custom Event Handling</a>
 <a href="listProducts">List Products</a>
 </body>
