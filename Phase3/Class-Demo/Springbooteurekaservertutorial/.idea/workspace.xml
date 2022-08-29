@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3eae4708-eefe-43fb-bb8a-1c8a1d0b1e47" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2F5AlBFHP1jPRqDw4APcRgl3BKC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/Class-Demo/Springbooteurekaclientutorial&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5264ff08d5b730d520789c5424af9ba3&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JAR Application.Springbooteurekaservertutorial-0.0.1-SNAPSHOT.jar">
+    <configuration name="Springbooteurekaservertutorial-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/Springbooteurekaservertutorial-0.0.1-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringbooteurekaservertutorialApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Springbooteurekaservertutorial" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringbooteurekaservertutorialApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.Springbooteurekaservertutorial-0.0.1-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3eae4708-eefe-43fb-bb8a-1c8a1d0b1e47" name="Changes" comment="" />
+      <created>1663771719473</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663771719473</updated>
+      <workItem from="1663771720881" duration="214000" />
+      <workItem from="1663771942300" duration="3314000" />
+      <workItem from="1663792109528" duration="1142000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

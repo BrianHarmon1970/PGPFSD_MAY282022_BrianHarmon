@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SpringBootKafka:Web exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f45b6933-d58f-48c8-a2c8-e2ea47f2ad9d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/classes/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/classes/com/ecommerce/KafkaConsumerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/classes/com/ecommerce/KafkaProducerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/classes/com/ecommerce/SpringBootKafkaApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/classes/com/ecommerce/controllers/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/classes/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/jackson-annotations-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/jackson-core-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/jackson-databind-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/jackson-datatype-jdk8-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/jackson-datatype-jsr310-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/jackson-module-parameter-names-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/jsr305-3.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/jul-to-slf4j-1.7.36.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/kafka-clients-3.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/log4j-api-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/log4j-to-slf4j-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/logback-classic-1.2.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/logback-core-1.2.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/lz4-java-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/slf4j-api-1.7.36.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/snakeyaml-1.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/snappy-java-1.1.8.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-aop-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-beans-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-boot-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-boot-autoconfigure-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-boot-starter-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-boot-starter-json-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-boot-starter-logging-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-boot-starter-tomcat-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-boot-starter-web-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-context-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-core-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-expression-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-jcl-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-kafka-2.8.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-messaging-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-retry-1.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-tx-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-web-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/spring-webmvc-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/tomcat-embed-core-9.0.65.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/tomcat-embed-el-9.0.65.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/tomcat-embed-websocket-9.0.65.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/lib/zstd-jni-1.5.0-4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_Web_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/classes/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/classes/com/ecommerce/KafkaConsumerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/classes/com/ecommerce/KafkaProducerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/classes/com/ecommerce/SpringBootKafkaApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/classes/com/ecommerce/controllers/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/jackson-annotations-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/jackson-core-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/jackson-databind-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/jackson-datatype-jdk8-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/jackson-datatype-jsr310-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/jackson-module-parameter-names-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/jsr305-3.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/jul-to-slf4j-1.7.36.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/kafka-clients-3.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/kafka-streams-3.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/log4j-api-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/log4j-to-slf4j-2.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/logback-classic-1.2.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/logback-core-1.2.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/lz4-java-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/rocksdbjni-6.22.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/slf4j-api-1.7.36.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/snakeyaml-1.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/snappy-java-1.1.8.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-aop-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-beans-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-boot-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-boot-autoconfigure-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-boot-starter-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-boot-starter-json-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-boot-starter-logging-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-boot-starter-tomcat-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-boot-starter-web-2.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-context-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-core-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-expression-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-jcl-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-kafka-2.8.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-messaging-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-retry-1.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-tx-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-web-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/spring-webmvc-5.3.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/tomcat-embed-core-9.0.65.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/tomcat-embed-el-9.0.65.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/tomcat-embed-websocket-9.0.65.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/lib/zstd-jni-1.5.0-4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/SpringBootKafka_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/SpringBootKafkaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ecommerce/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ecommerce/SpringBootKafkaApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2EHtzFnZEhsIWG0a1xI2mxSxXP4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/Lessons/LessonTwo/SpringBootKafka",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "7f22aa5abcb7f36c3e774d8653a25570"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="SpringBootKafkaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBootKafka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ecommerce.SpringBootKafkaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f45b6933-d58f-48c8-a2c8-e2ea47f2ad9d" name="Changes" comment="" />
+      <created>1662264598093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662264598093</updated>
+      <workItem from="1662264599601" duration="1793000" />
+      <workItem from="1662266425905" duration="403000" />
+      <workItem from="1662402689031" duration="433000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+  </component>
+</project>
