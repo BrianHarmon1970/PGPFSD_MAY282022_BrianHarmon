@@ -1,6 +1,0 @@
-com\ecommerce\beans\CustomEvent.class
-com\ecommerce\beans\StopEventHandler.class
-com\ecommerce\beans\CustomEventListener.class
-com\ecommerce\beans\CustomEventPublisher.class
-com\ecommerce\beans\StartEventHandler.class
-com\ecommerce\controller\MainController.class

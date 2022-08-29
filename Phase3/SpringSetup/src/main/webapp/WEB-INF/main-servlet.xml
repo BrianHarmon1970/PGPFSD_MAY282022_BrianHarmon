@@ -21,24 +21,40 @@ http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
     <bean id="jspViewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass"
-                  value="org.springframework.web.servlet.view.JstlView"></property>
-        <property name="prefix" value="/WEB-INF/view/"></property>
-        <property name="suffix" value=".jsp"></property>
+                  value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/view/"/>
+        <property name="suffix" value=".jsp"/>
     </bean>
     <bean id="messageSource"
           class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-        <property name="basename" value="classpath:messages"></property>
-        <property name="defaultEncoding" value="UTF-8"></property>
+        <property name="basename" value="classpath:messages"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
+    <bean id="dataSource"
+          class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"
+          p:driverClassName="${jdbc.driverClassName}"
+          p:url="${jdbc.databaseurl}" p:username="${jdbc.username}"
+          p:password="${jdbc.password}">
+    </bean>
+    <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/ecommerce"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
     </bean>
 
+    <bean id="jt" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="ds"/>
+    </bean>
 
-
-    <bean id = "startEventHandler" class = "com.ecommerce.beans.StartEventHandler"/>
-    <bean id = "stopEventHandler" class = "com.ecommerce.beans.StopEventHandler"/>
-
-    <bean id = "customEventListener" class = "com.ecommerce.beans.CustomEventListener"/>
-    <bean id = "customEventPublisher" class = "com.ecommerce.beans.CustomEventPublisher"/>
-
+    <bean id="dao" class="com.ecommerce.dao.EProductDAO">
+        <property name="template" ref="jt"/>
+    </bean>
     <tx:annotation-driven />
+<!--    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+-->
 
 </beans>
