@@ -7,7 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ProductAdd" />
+<<<<<<< HEAD
         <module name="ProductForm" />
+=======
+>>>>>>> cfe8cbe (Phase2 - Practice Project 3:Adding a New Product in the Database)
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

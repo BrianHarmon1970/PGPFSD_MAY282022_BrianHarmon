@@ -10,7 +10,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/ProductAdd/pom.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/ProductForm/pom.xml" />
+=======
+>>>>>>> cfe8cbe (Phase2 - Practice Project 3:Adding a New Product in the Database)
       </list>
     </option>
   </component>

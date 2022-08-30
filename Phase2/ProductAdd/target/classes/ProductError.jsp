@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <%--===================== File: ProductError.jsp ====================================--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+=======
+<!DOCTYPE html>
+>>>>>>> cfe8cbe (Phase2 - Practice Project 3:Adding a New Product in the Database)
 <html lang="en">
 <head>
     <meta charset="UTF-8">
