@@ -14,11 +14,18 @@
         <input id="id_product_name" name="product_name"><br>
         <label for="id_product_price">Product price:</label>
         <input id="id_product_price" name="product_price"><br>
-        <button type="submit">Create Product</button>
-        <button type="submit" formaction="listProducts">List Current Products</button>
+        <br><br>
+        <%-- added for lesson 4 project - product data test --%>
+        <button type="submit" formaction="ProductLoad.jsp">TestLoad(Jsp)</button>
+        <button type="submit" formaction="datatest">TestLoad(Servlet)</button>
         <br><br>
 </div>
 </form>
+<jsp:useBean id="EProductBean" class="com.ecommerce.EProduct" scope="session"/>
+<jsp:setProperty name="EProductBean" property="dateAdded" value="<%=null%>"/>
+<jsp:setProperty name="EProductBean" property="ID" value="0" />
+<jsp:setProperty name="EProductBean" property="name" value="" />
+<jsp:setProperty name="EProductBean"   property="price" value="<%=null%>"/>
 
 </body>
 </html>
