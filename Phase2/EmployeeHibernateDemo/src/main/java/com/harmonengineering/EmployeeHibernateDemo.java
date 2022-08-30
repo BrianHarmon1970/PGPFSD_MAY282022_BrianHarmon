@@ -5,6 +5,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.mapping.MetadataSource;
 import org.hibernate.mapping.PersistentClass;
 
+import java.math.BigDecimal;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
@@ -19,7 +20,8 @@ public class EmployeeHibernateDemo
     public static void main( String[] args ) {
         Session session = createSession();
         System.out.println("Created session, connected: " + (session.isConnected()));
-        System.out.println( "Listeing Employee certifications" ) ;
+
+        System.out.println( "Listing Employee certifications" ) ;
         ListCertificates( session ) ;
         System.out.println( "Listing employee salaries" ) ;
         ListEmployeeSalaries( session ) ;
@@ -31,13 +33,16 @@ public class EmployeeHibernateDemo
     }
     static void AddEmployee( Session session )
     {
+        BigDecimal bigsalary = new BigDecimal("100000.00") ;
         EmployeeSalary newEmployeeSalary = new EmployeeSalary() ;
         newEmployeeSalary.setFirstName( "Johnny" ) ;
         newEmployeeSalary.setLastName( "Biggs" ) ;
-        newEmployeeSalary.setSalary( 100_000_000.00 ) ;
+        newEmployeeSalary.setSalary( bigsalary ) ;
 
+        session.getTransaction().begin();
         session.persist( newEmployeeSalary );
         session.save( newEmployeeSalary ) ;
+        session.getTransaction().commit();
     }
     static void ListEmployeeSalaries( Session session )
     {

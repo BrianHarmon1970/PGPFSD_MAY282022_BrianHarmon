@@ -5,163 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6e31126-d9af-4725-a0fe-81de196271d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/EmployeeHibernateDemo_1_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmployeeHibernateDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/Assignments_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/artifacts/Assignments_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/WebApplications_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/artifacts/WebApplications_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07172022_01/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07172022_02/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07232022_01/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07232022_01/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07232022_01/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07302022_01/dashboard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07302022_01/final.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07302022_01/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07302022_01/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07302022_01/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07302022_01/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A07302022_01/verify.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_01/Citizens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_01/Employees.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_01/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_01/xmlJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_02/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_02/sqlJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_02/sqlJSP_DeleteData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_02/sqlJSP_DisplayData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_02/sqlJSP_InsertData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_02/sqlJSP_UpdateData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/A08062022_03/fmtJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/Employees.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/JSPTest/JSPLogin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/JSPTest/Jstl.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/JSPTest/Product.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/JSPTest/emp.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/JSPTest/forward.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/JSPTest/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/JSPTest/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/JSPTest/jspdate.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/assignments/A07242022_01/new_update_price_sp.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/java/assignments/A07242022_01/new_update_price_sp.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07172022_01/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07172022_02/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07232022_01/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07232022_01/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07232022_01/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07302022_01/dashboard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07302022_01/final.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07302022_01/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07302022_01/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07302022_01/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07302022_01/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A07302022_01/verify.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_01/Citizens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_01/Employees.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_01/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_01/xmlJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_02/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_02/sqlJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_02/sqlJSP_DeleteData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_02/sqlJSP_DisplayData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_02/sqlJSP_InsertData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_02/sqlJSP_UpdateData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/A08062022_03/fmtJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/Employees.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/JSPTest/JSPLogin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/JSPTest/Jstl.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/JSPTest/Product.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/JSPTest/emp.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/JSPTest/forward.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/JSPTest/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/JSPTest/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/JSPTest/jspdate.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Assignments_war_exploded/WEB-INF/classes/main/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/Servlet1/Servlet1.war" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/Servlet1/Servlet1.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/WebApplications_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/WebApplications_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07172022_01/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07172022_02/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07232022_01/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07232022_01/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07232022_01/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07302022_01/dashboard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07302022_01/final.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07302022_01/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07302022_01/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07302022_01/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07302022_01/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A07302022_01/verify.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_01/Citizens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_01/Employees.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_01/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_01/xmlJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_02/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_02/sqlJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_02/sqlJSP_DeleteData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_02/sqlJSP_DisplayData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_02/sqlJSP_InsertData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_02/sqlJSP_UpdateData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/A08062022_03/fmtJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/Employees.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/JSPTest/JSPLogin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/JSPTest/Jstl.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/JSPTest/Product.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/JSPTest/emp.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/JSPTest/forward.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/JSPTest/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/JSPTest/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/JSPTest/jspdate.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/assignments/A07242022_01/new_update_price_sp.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/java/assignments/A07242022_01/new_update_price_sp.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07172022_01/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07172022_02/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07232022_01/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07232022_01/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07232022_01/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07302022_01/dashboard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07302022_01/final.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07302022_01/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07302022_01/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07302022_01/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07302022_01/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A07302022_01/verify.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_01/Citizens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_01/Employees.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_01/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_01/xmlJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_02/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_02/sqlJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_02/sqlJSP_DeleteData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_02/sqlJSP_DisplayData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_02/sqlJSP_InsertData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_02/sqlJSP_UpdateData.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/A08062022_03/fmtJSP.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/Employees.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/JSPTest/JSPLogin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/JSPTest/Jstl.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/JSPTest/Product.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/JSPTest/emp.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/JSPTest/forward.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/JSPTest/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/JSPTest/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/JSPTest/jspdate.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/Assignments/main/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeHibernateDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeHibernateDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeHibernateDemo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeHibernateDemo.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmployeeHibernateDemo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/EmployeeHibernateDemo.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/EmployeeHibernateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/EmployeeHibernateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/EmployeeSalary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/EmployeeSalary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,14 +22,19 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DGSn3LIUYHAV8CGf74MfXH1Yj9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -189,14 +42,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.57129717" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="EmployeeHibernateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.harmonengineering.EmployeeHibernateDemo" />
@@ -226,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660324095628</updated>
       <workItem from="1660324097844" duration="2681000" />
+      <workItem from="1661796421733" duration="2318000" />
     </task>
     <servers />
   </component>
