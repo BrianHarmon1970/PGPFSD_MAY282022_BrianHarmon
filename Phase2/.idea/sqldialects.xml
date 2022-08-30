@@ -2,6 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/FlightDetail/web/FlightDetailQuery.jsp" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ProductAdd/src/main/SQL/table_eproduct.sql" dialect="MySQL" />
   </component>
   <component name="SqlResolveMappings">
     <file url="file://$PROJECT_DIR$/FlightDetail/web/FlightDetailQuery.jsp" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;@negative&quot;:&quot;1&quot;   }  } }}" />
