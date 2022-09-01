@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f6ae9bf3-ff95-48c1-85cc-694596feae60" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductAdd/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductAdd/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductAdd/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_19_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__mysql_mysql_connector_java_8_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__taglibs_standard_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmployeeHibernateDemo/EmployeeHibernateDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeHibernateDemo/EmployeeHibernateDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmployeeHibernateDemo/EmployeeHibernateDemo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeHibernateDemo/EmployeeHibernateDemo.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmployeeHibernateDemo/EmployeeHibernateDemo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeHibernateDemo/EmployeeHibernateDemo.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmployeeHibernateDemo/src/main/java/com/harmonengineering/EmployeeHibernateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeHibernateDemo/src/main/java/com/harmonengineering/EmployeeHibernateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmployeeHibernateDemo/src/main/java/com/harmonengineering/EmployeeSalary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeHibernateDemo/src/main/java/com/harmonengineering/EmployeeSalary.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="2E2ktp8K9qVQQHikxe4uuhTpcPg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase2/WebApplications"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6ae9bf3-ff95-48c1-85cc-694596feae60" name="Changes" comment="" />
+      <created>1661801283646</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661801283646</updated>
+      <workItem from="1661801284985" duration="203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
