@@ -50,6 +50,9 @@ http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
     <bean id="dao" class="com.ecommerce.dao.EProductDAO">
         <property name="template" ref="jt"/>
     </bean>
+    <bean id="eUserDao" class="com.ecommerce.dao.EUsersDAO">
+
+    </bean>
     <tx:annotation-driven />
 <!--    <bean id="transactionManager"
           class="org.springframework.orm.hibernate3.HibernateTransactionManager">

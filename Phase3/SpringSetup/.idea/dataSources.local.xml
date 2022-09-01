@@ -11,7 +11,11 @@
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" qname="db_world" />
+          <node kind="schema">
+            <name qname="db_world" />
+            <name qname="ecommerce" />
+            <name qname="phase2" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>
