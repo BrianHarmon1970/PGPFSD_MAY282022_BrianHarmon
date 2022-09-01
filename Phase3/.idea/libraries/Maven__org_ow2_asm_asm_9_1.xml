@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.ow2.asm:asm:9.1">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/9.1/asm-9.1.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/9.1/asm-9.1-sources.jar!/" />
+=======
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/ow2/asm/asm/9.1/asm-9.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/ow2/asm/asm/9.1/asm-9.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/ow2/asm/asm/9.1/asm-9.1-sources.jar!/" />
+>>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
     </SOURCES>
   </library>
 </component>
