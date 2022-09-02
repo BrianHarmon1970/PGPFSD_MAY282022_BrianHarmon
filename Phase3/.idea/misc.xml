@@ -3,9 +3,13 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/SpringSetup" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <type id="Spring" />
 =======
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
+=======
+    <type id="Spring" />
+>>>>>>> 3a9e234 (Phase3 - Assisted Practice: 2.4 File Handling)
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -23,7 +27,11 @@
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
 =======
         <option value="$PROJECT_DIR$/SpringEdge/pom.xml" />
+<<<<<<< HEAD
 >>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
+=======
+        <option value="$PROJECT_DIR$/SpringFiles/pom.xml" />
+>>>>>>> 3a9e234 (Phase3 - Assisted Practice: 2.4 File Handling)
       </list>
     </option>
   </component>

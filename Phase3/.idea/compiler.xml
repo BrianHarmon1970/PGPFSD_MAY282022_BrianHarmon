@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <module name="SpringBootKafka" />
         <module name="SpringEdge" />
       </profile>
@@ -18,6 +19,9 @@
       <module name="SpringFiles" target="11" />
       <module name="SpringKafka" target="1.8" />
 =======
+=======
+        <module name="SpringFiles" />
+>>>>>>> 3a9e234 (Phase3 - Assisted Practice: 2.4 File Handling)
         <module name="SpringRESTClient" />
         <module name="SpringBootStarter" />
         <module name="SpringSetup" />
@@ -30,7 +34,11 @@
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
 =======
       <module name="SpringEdge" target="11" />
+<<<<<<< HEAD
 >>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
+=======
+      <module name="SpringFiles" target="11" />
+>>>>>>> 3a9e234 (Phase3 - Assisted Practice: 2.4 File Handling)
       <module name="SpringRESTClient" target="1.8" />
       <module name="SpringSetup" target="11" />
     </bytecodeTargetLevel>
@@ -49,7 +57,11 @@
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
 =======
       <module name="SpringEdge" options="-parameters" />
+<<<<<<< HEAD
 >>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
+=======
+      <module name="SpringFiles" options="-parameters" />
+>>>>>>> 3a9e234 (Phase3 - Assisted Practice: 2.4 File Handling)
       <module name="SpringRESTClient" options="-parameters" />
     </option>
   </component>
