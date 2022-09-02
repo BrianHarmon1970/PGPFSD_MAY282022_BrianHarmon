@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.boot:spring-boot-starter-test:1.5.21.RELEASE">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-test/1.5.21.RELEASE/spring-boot-starter-test-1.5.21.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-test/1.5.21.RELEASE/spring-boot-starter-test-1.5.21.RELEASE-sources.jar!/" />
+=======
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/springframework/boot/spring-boot-starter-test/1.5.21.RELEASE/spring-boot-starter-test-1.5.21.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/springframework/boot/spring-boot-starter-test/1.5.21.RELEASE/spring-boot-starter-test-1.5.21.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/springframework/boot/spring-boot-starter-test/1.5.21.RELEASE/spring-boot-starter-test-1.5.21.RELEASE-sources.jar!/" />
+>>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
     </SOURCES>
   </library>
 </component>

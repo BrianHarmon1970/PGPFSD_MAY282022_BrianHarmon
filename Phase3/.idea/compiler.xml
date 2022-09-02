@@ -21,11 +21,16 @@
         <module name="SpringRESTClient" />
         <module name="SpringBootStarter" />
         <module name="SpringSetup" />
+        <module name="SpringEdge" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SpringBootStarter" target="11" />
+<<<<<<< HEAD
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
+=======
+      <module name="SpringEdge" target="11" />
+>>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
       <module name="SpringRESTClient" target="1.8" />
       <module name="SpringSetup" target="11" />
     </bytecodeTargetLevel>
@@ -40,7 +45,11 @@
       <module name="SpringKafka" options="-parameters" />
 =======
       <module name="SpringBootStarter" options="-parameters" />
+<<<<<<< HEAD
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
+=======
+      <module name="SpringEdge" options="-parameters" />
+>>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
       <module name="SpringRESTClient" options="-parameters" />
     </option>
   </component>

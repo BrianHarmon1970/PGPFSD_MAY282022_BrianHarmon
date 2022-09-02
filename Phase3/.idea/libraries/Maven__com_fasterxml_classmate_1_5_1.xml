@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: com.fasterxml:classmate:1.5.1">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.5.1/classmate-1.5.1-sources.jar!/" />
+=======
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1-sources.jar!/" />
+>>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
     </SOURCES>
   </library>
 </component>

@@ -19,7 +19,11 @@
         <option value="$PROJECT_DIR$/SpringBootStarter/pom.xml" />
         <option value="$PROJECT_DIR$/SpringSetup/pom.xml" />
         <option value="$PROJECT_DIR$/SpringRESTClient/pom.xml" />
+<<<<<<< HEAD
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
+=======
+        <option value="$PROJECT_DIR$/SpringEdge/pom.xml" />
+>>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
       </list>
     </option>
   </component>

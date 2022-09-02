@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: junit:junit:4.13.2">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.2/junit-4.13.2.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.2/junit-4.13.2-sources.jar!/" />
+=======
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/junit/junit/4.13.2/junit-4.13.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/junit/junit/4.13.2/junit-4.13.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/junit/junit/4.13.2/junit-4.13.2-sources.jar!/" />
+>>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
     </SOURCES>
   </library>
 </component>

@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBootKafka/SpringBootKafka.iml" filepath="$PROJECT_DIR$/SpringBootKafka/SpringBootKafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootStarter/SpringBootStarter.iml" filepath="$PROJECT_DIR$/SpringBootStarter/SpringBootStarter.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringEdge/SpringEdge.iml" filepath="$PROJECT_DIR$/SpringEdge/SpringEdge.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/SpringFiles/SpringFiles.iml" filepath="$PROJECT_DIR$/SpringFiles/SpringFiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringRESTClient/SpringRESTClient.iml" filepath="$PROJECT_DIR$/SpringRESTClient/SpringRESTClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSetup/SpringSetup.iml" filepath="$PROJECT_DIR$/SpringSetup/SpringSetup.iml" />
@@ -16,6 +17,11 @@
       <module fileurl="file://$PROJECT_DIR$/SpringRESTClient/SpringRESTClient.iml" filepath="$PROJECT_DIR$/SpringRESTClient/SpringRESTClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSetup/SpringSetup.iml" filepath="$PROJECT_DIR$/SpringSetup/SpringSetup.iml" />
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
+=======
+      <module fileurl="file://$PROJECT_DIR$/SpringRESTClient/SpringRESTClient.iml" filepath="$PROJECT_DIR$/SpringRESTClient/SpringRESTClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSetup/SpringSetup.iml" filepath="$PROJECT_DIR$/SpringSetup/SpringSetup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringEdge/src/test/test.iml" filepath="$PROJECT_DIR$/SpringEdge/src/test/test.iml" />
+>>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
     </modules>
   </component>
 </project>
