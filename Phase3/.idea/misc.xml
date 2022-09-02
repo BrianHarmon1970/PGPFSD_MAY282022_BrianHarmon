@@ -7,11 +7,10 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/SpringBootStarter/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringSetup/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringRESTClient/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringKafka/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringKafka/SpringBootKafka/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafka/pom.xml" />
         <option value="$PROJECT_DIR$/SpringEdge/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringFiles/pom.xml" />
       </list>
     </option>
   </component>
