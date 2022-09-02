@@ -2,6 +2,7 @@
   <library name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.65">
     <CLASSES>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.65/tomcat-embed-core-9.0.65.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -11,13 +12,20 @@
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.65/tomcat-embed-core-9.0.65-sources.jar!/" />
 =======
       <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.65/tomcat-embed-core-9.0.65.jar!/" />
+=======
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.65/tomcat-embed-core-9.0.65.jar!/" />
+>>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.65/tomcat-embed-core-9.0.65-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.65/tomcat-embed-core-9.0.65-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+<<<<<<< HEAD
       <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.65/tomcat-embed-core-9.0.65-sources.jar!/" />
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
+=======
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.65/tomcat-embed-core-9.0.65-sources.jar!/" />
+>>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
     </SOURCES>
   </library>
 </component>

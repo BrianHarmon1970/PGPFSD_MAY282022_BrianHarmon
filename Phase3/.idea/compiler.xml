@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <module name="SpringBootKafka" />
         <module name="SpringEdge" />
       </profile>
@@ -25,10 +26,14 @@
         <module name="SpringRESTClient" />
         <module name="SpringBootStarter" />
         <module name="SpringSetup" />
+=======
+        <module name="SpringBootKafka" />
+>>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
         <module name="SpringEdge" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SpringBootKafka" target="1.8" />
       <module name="SpringBootStarter" target="11" />
 <<<<<<< HEAD
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
@@ -38,7 +43,11 @@
 >>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
 =======
       <module name="SpringFiles" target="11" />
+<<<<<<< HEAD
 >>>>>>> 3a9e234 (Phase3 - Assisted Practice: 2.4 File Handling)
+=======
+      <module name="SpringKafka" target="1.8" />
+>>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
       <module name="SpringRESTClient" target="1.8" />
       <module name="SpringSetup" target="11" />
     </bytecodeTargetLevel>
@@ -46,12 +55,16 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <module name="SpringBootKafka" options="-parameters" />
       <module name="SpringBootStarter" options="-parameters" />
       <module name="SpringEdge" options="-parameters" />
       <module name="SpringFiles" options="-parameters" />
       <module name="SpringKafka" options="-parameters" />
 =======
+=======
+      <module name="SpringBootKafka" options="-parameters" />
+>>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
       <module name="SpringBootStarter" options="-parameters" />
 <<<<<<< HEAD
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
@@ -61,7 +74,11 @@
 >>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
 =======
       <module name="SpringFiles" options="-parameters" />
+<<<<<<< HEAD
 >>>>>>> 3a9e234 (Phase3 - Assisted Practice: 2.4 File Handling)
+=======
+      <module name="SpringKafka" options="-parameters" />
+>>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
       <module name="SpringRESTClient" options="-parameters" />
     </option>
   </component>

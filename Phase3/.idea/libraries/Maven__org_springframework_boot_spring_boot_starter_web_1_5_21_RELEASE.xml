@@ -2,6 +2,7 @@
   <library name="Maven: org.springframework.boot:spring-boot-starter-web:1.5.21.RELEASE">
     <CLASSES>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/1.5.21.RELEASE/spring-boot-starter-web-1.5.21.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -11,13 +12,20 @@
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/1.5.21.RELEASE/spring-boot-starter-web-1.5.21.RELEASE-sources.jar!/" />
 =======
       <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/springframework/boot/spring-boot-starter-web/1.5.21.RELEASE/spring-boot-starter-web-1.5.21.RELEASE.jar!/" />
+=======
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/1.5.21.RELEASE/spring-boot-starter-web-1.5.21.RELEASE.jar!/" />
+>>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/springframework/boot/spring-boot-starter-web/1.5.21.RELEASE/spring-boot-starter-web-1.5.21.RELEASE-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/1.5.21.RELEASE/spring-boot-starter-web-1.5.21.RELEASE-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+<<<<<<< HEAD
       <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/org/springframework/boot/spring-boot-starter-web/1.5.21.RELEASE/spring-boot-starter-web-1.5.21.RELEASE-sources.jar!/" />
 >>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
+=======
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/1.5.21.RELEASE/spring-boot-starter-web-1.5.21.RELEASE-sources.jar!/" />
+>>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
     </SOURCES>
   </library>
 </component>

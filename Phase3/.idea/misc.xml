@@ -15,6 +15,7 @@
     <option name="originalFiles">
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/SpringKafka/pom.xml" />
         <option value="$PROJECT_DIR$/SpringKafka/SpringBootKafka/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootKafka/pom.xml" />
@@ -32,6 +33,12 @@
 =======
         <option value="$PROJECT_DIR$/SpringFiles/pom.xml" />
 >>>>>>> 3a9e234 (Phase3 - Assisted Practice: 2.4 File Handling)
+=======
+        <option value="$PROJECT_DIR$/SpringKafka/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringKafka/SpringBootKafka/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafka/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringEdge/pom.xml" />
+>>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
       </list>
     </option>
   </component>
