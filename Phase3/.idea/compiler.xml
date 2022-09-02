@@ -9,10 +9,12 @@
         <module name="SpringRESTClient" />
         <module name="SpringBootStarter" />
         <module name="SpringSetup" />
+        <module name="SpringEdge" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SpringBootStarter" target="11" />
+      <module name="SpringEdge" target="11" />
       <module name="SpringRESTClient" target="1.8" />
       <module name="SpringSetup" target="11" />
     </bytecodeTargetLevel>
@@ -20,6 +22,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringBootStarter" options="-parameters" />
+      <module name="SpringEdge" options="-parameters" />
       <module name="SpringRESTClient" options="-parameters" />
     </option>
   </component>

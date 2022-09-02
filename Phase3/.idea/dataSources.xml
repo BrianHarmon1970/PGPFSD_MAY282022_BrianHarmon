@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="ds" uuid="27010f97-da51-43b7-a3b0-d9ae52a6df30">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>spring
+
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/UserDatabase-SpringMVC/target/UserDatabase/WEB-INF/main-servlet.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/ecommerce</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="dataSource" uuid="fc8038c4-cec5-44b4-93e7-6092cadbd53e">
+      <imported>true</imported>
+      <remarks>jakarta commons-dbcp
+
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/SpringSetup/src/main/webapp/WEB-INF/main-servlet.xml</remarks>
+      <jdbc-driver>${jdbc.driverClassName}</jdbc-driver>
+      <jdbc-url>${jdbc.databaseurl}</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="dataSource" uuid="6960b7a5-0c33-456f-9cba-337deaa8b98c">
+      <imported>true</imported>
+      <remarks>jakarta commons-dbcp
+
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/UserDatabase-SpringMVC/src/main/webapp/WEB-INF/main-servlet.xml</remarks>
+      <jdbc-driver>${jdbc.driverClassName}</jdbc-driver>
+      <jdbc-url>${jdbc.databaseurl}</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="ds" uuid="87a03cc1-2aa3-4a4a-9e88-e9a19f57a97b">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>spring
+
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/SpringSetup/src/main/webapp/WEB-INF/main-servlet.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/ecommerce</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="ds" uuid="2d488537-735a-497b-8c6b-bd4d3156e733">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>spring
+
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/UserDatabase-SpringMVC/src/main/webapp/WEB-INF/main-servlet.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/ecommerce</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="dataSource" uuid="2d73803e-828a-41d4-b920-1ab1cdc3551c">
+      <imported>true</imported>
+      <remarks>jakarta commons-dbcp
+
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/UserDatabase-SpringMVC/target/UserDatabase/WEB-INF/main-servlet.xml</remarks>
+      <jdbc-driver>${jdbc.driverClassName}</jdbc-driver>
+      <jdbc-url>${jdbc.databaseurl}</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="eb61f7ad-37b0-4b67-8132-790e93455de1">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/SpringSetup/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/ecommerce</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
