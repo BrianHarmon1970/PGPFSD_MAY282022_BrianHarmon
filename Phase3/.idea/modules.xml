@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Phase3.iml" filepath="$PROJECT_DIR$/Phase3.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootStarter/SpringBootStarter.iml" filepath="$PROJECT_DIR$/SpringBootStarter/SpringBootStarter.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringEdge/SpringEdge.iml" filepath="$PROJECT_DIR$/SpringEdge/SpringEdge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringFiles/SpringFiles.iml" filepath="$PROJECT_DIR$/SpringFiles/SpringFiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringRESTClient/SpringRESTClient.iml" filepath="$PROJECT_DIR$/SpringRESTClient/SpringRESTClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSetup/SpringSetup.iml" filepath="$PROJECT_DIR$/SpringSetup/SpringSetup.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringEdge/src/test/test.iml" filepath="$PROJECT_DIR$/SpringEdge/src/test/test.iml" />

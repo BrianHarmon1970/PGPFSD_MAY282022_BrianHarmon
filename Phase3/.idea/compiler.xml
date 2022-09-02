@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SpringFiles" />
         <module name="SpringRESTClient" />
         <module name="SpringBootStarter" />
         <module name="SpringSetup" />
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="SpringBootStarter" target="11" />
       <module name="SpringEdge" target="11" />
+      <module name="SpringFiles" target="11" />
       <module name="SpringRESTClient" target="1.8" />
       <module name="SpringSetup" target="11" />
     </bytecodeTargetLevel>
@@ -23,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringBootStarter" options="-parameters" />
       <module name="SpringEdge" options="-parameters" />
+      <module name="SpringFiles" options="-parameters" />
       <module name="SpringRESTClient" options="-parameters" />
     </option>
   </component>

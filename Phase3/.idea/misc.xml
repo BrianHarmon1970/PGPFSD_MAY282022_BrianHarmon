@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/SpringSetup" />
+    <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -10,6 +11,7 @@
         <option value="$PROJECT_DIR$/SpringSetup/pom.xml" />
         <option value="$PROJECT_DIR$/SpringRESTClient/pom.xml" />
         <option value="$PROJECT_DIR$/SpringEdge/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringFiles/pom.xml" />
       </list>
     </option>
   </component>
