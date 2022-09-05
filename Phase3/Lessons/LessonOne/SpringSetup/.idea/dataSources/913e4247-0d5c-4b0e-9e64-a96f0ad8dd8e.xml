@@ -1,7 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.43">
+<<<<<<< HEAD
     <root id="1"/>
+=======
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <Grants>|root||root|localhost|ALTER|G
+|root||sqlAdmin||ALTER|G
+|root||root|localhost|ALTER ROUTINE|G
+|root||sqlAdmin||ALTER ROUTINE|G
+|root||root|localhost|CREATE|G
+|root||sqlAdmin||CREATE|G
+|root||root|localhost|CREATE ROUTINE|G
+|root||sqlAdmin||CREATE ROUTINE|G
+|root||root|localhost|CREATE TABLESPACE|G
+|root||sqlAdmin||CREATE TABLESPACE|G
+|root||root|localhost|CREATE TEMPORARY TABLES|G
+|root||sqlAdmin||CREATE TEMPORARY TABLES|G
+|root||root|localhost|CREATE USER|G
+|root||sqlAdmin||CREATE USER|G
+|root||root|localhost|CREATE VIEW|G
+|root||sqlAdmin||CREATE VIEW|G
+|root||root|localhost|DELETE|G
+|root||sqlAdmin||DELETE|G
+|root||root|localhost|DROP|G
+|root||sqlAdmin||DROP|G
+|root||root|localhost|EVENT|G
+|root||sqlAdmin||EVENT|G
+|root||root|localhost|EXECUTE|G
+|root||sqlAdmin||EXECUTE|G
+|root||root|localhost|FILE|G
+|root||sqlAdmin||FILE|G
+|root||root|localhost|INDEX|G
+|root||sqlAdmin||INDEX|G
+|root||root|localhost|INSERT|G
+|root||sqlAdmin||INSERT|G
+|root||root|localhost|LOCK TABLES|G
+|root||sqlAdmin||LOCK TABLES|G
+|root||root|localhost|PROCESS|G
+|root||sqlAdmin||PROCESS|G
+|root||root|localhost|REFERENCES|G
+|root||sqlAdmin||REFERENCES|G
+|root||root|localhost|RELOAD|G
+|root||sqlAdmin||RELOAD|G
+|root||root|localhost|REPLICATION CLIENT|G
+|root||sqlAdmin||REPLICATION CLIENT|G
+|root||root|localhost|REPLICATION SLAVE|G
+|root||sqlAdmin||REPLICATION SLAVE|G
+|root||root|localhost|SELECT|G
+|root||sqlAdmin||SELECT|G
+|root||root|localhost|SHOW DATABASES|G
+|root||sqlAdmin||SHOW DATABASES|G
+|root||root|localhost|SHOW VIEW|G
+|root||sqlAdmin||SHOW VIEW|G
+|root||root|localhost|SHUTDOWN|G
+|root||sqlAdmin||SHUTDOWN|G
+|root||mysql.session|localhost|SUPER|G
+|root||root|localhost|SUPER|G
+|root||sqlAdmin||SUPER|G
+|root||root|localhost|TRIGGER|G
+|root||sqlAdmin||TRIGGER|G
+|root||root|localhost|UPDATE|G
+|root||sqlAdmin||UPDATE|G
+|root||root|localhost|grant option|G
+|root||sqlAdmin||grant option|G
+performance_schema|schema||mysql.session|localhost|SELECT|G
+sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
+      <ServerVersion>5.7.38</ServerVersion>
+    </root>
+>>>>>>> 51097e9 (+Phase3 Assisted Practice(1.1-1.3) +Practice Project 1: (SpringSetup))
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
     </collation>
