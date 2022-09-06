@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com\ecommerce\tests\NestedCases.class
 com\ecommerce\tests\StandardTestClass.class
 com\ecommerce\tests\NestedCases$A.class
@@ -8,3 +9,6 @@ com\ecommerce\tests\MyExecutable.class
 com\ecommerce\tests\DependencyInjection.class
 com\ecommerce\tests\DynamicTests.class
 com\ecommerce\tests\NestedCases$A$WhenX.class
+=======
+com\ecommerce\tests\StandardTestClass.class
+>>>>>>> e898aaa (Phase3 - Assisted Practice: 3.1 JUnit5: Standard Tests)
