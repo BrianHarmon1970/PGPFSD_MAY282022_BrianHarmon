@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\ConditionalTests.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\DependencyInjection.java
+<<<<<<< HEAD
 =======
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\ConditionalTests.java
 >>>>>>> 7c0cdfb (Phase 3 - Assisted Practice: 3.3 Conditional Test Execution (USingJunit))
@@ -12,6 +13,8 @@ E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\Assertions.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\DynamicTests.java
 =======
+=======
+>>>>>>> 62bc987 (Phase3 - Assisted Practice: 3.6 Dependency Injection (UsingJUnit))
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\StandardTestClass.java
 <<<<<<< HEAD
 >>>>>>> e898aaa (Phase3 - Assisted Practice: 3.1 JUnit5: Standard Tests)
@@ -21,4 +24,8 @@ E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\NestedCases.java
 >>>>>>> 6962259 (Phase3 - Assisted Practice: 3.4 Nested and Repeated Tests (UsingJUnit))
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\Assertions.java
+<<<<<<< HEAD
 >>>>>>> 80839c5 (Phase3 - Assisted Practice: 3.2 Assertions (UsingJUnit))
+=======
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\DynamicTests.java
+>>>>>>> 62bc987 (Phase3 - Assisted Practice: 3.6 Dependency Injection (UsingJUnit))
