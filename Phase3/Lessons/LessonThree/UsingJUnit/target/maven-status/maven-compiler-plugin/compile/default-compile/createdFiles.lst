@@ -3,11 +3,19 @@
 com\ecommerce\tests\NestedCases.class
 =======
 com\ecommerce\tests\ConditionalTests.class
+<<<<<<< HEAD
 >>>>>>> 7c0cdfb (Phase 3 - Assisted Practice: 3.3 Conditional Test Execution (USingJunit))
 com\ecommerce\tests\StandardTestClass.class
 <<<<<<< HEAD
 com\ecommerce\tests\NestedCases$A.class
 com\ecommerce\tests\Calculator.class
+=======
+com\ecommerce\tests\NestedCases.class
+com\ecommerce\tests\StandardTestClass.class
+com\ecommerce\tests\NestedCases$A.class
+com\ecommerce\tests\Calculator.class
+com\ecommerce\tests\NestedCases$A$WhenX.class
+>>>>>>> 6962259 (Phase3 - Assisted Practice: 3.4 Nested and Repeated Tests (UsingJUnit))
 com\ecommerce\tests\Assertions.class
 com\ecommerce\tests\ConditionalTests.class
 com\ecommerce\tests\MyExecutable.class
