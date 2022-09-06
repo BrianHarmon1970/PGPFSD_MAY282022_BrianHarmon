@@ -2,6 +2,7 @@
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\ConditionalTests.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\DependencyInjection.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\StandardTestClass.java
+<<<<<<< HEAD
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\Calculator.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\NestedCases.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\Assertions.java
@@ -9,3 +10,6 @@ E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\
 =======
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\StandardTestClass.java
 >>>>>>> e898aaa (Phase3 - Assisted Practice: 3.1 JUnit5: Standard Tests)
+=======
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\Assertions.java
+>>>>>>> 80839c5 (Phase3 - Assisted Practice: 3.2 Assertions (UsingJUnit))
