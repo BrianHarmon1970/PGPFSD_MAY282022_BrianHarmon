@@ -1,0 +1,7 @@
+com\harmonengineering\authentication\Authenticate.class
+com\harmonengineering\authentication\UserData.class
+com\harmonengineering\authentication\AuthStatus.class
+com\harmonengineering\beans\ValidatorBean.class
+com\harmonengineering\authentication\User.class
+com\harmonengineering\authentication\AuthenticateResult.class
+com\harmonengineering\tests\AuthenticateTest.class
