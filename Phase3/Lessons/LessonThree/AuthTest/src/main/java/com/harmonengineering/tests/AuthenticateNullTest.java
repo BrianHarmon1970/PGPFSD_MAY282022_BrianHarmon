@@ -50,7 +50,10 @@ public class AuthenticateNullTest {
         { m_Result =  m_Authenticator.AuthenticateUser( null  ) ; }) ;
     }
     @Test
+<<<<<<< HEAD
 
+=======
+>>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
     @DisplayName( " ADD USER NULL RESULT")
     void AddUserNullResultTest()
     {

@@ -36,7 +36,10 @@ public class AuthenticateTest
         assert( m_Result.getResultStatus() == AuthStatus.UserAdd_ConfirmationMismatch ) ;
     }
     @Test
+<<<<<<< HEAD
 
+=======
+>>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
     @DisplayName( " ADD USER ")
     void AddUserTest()
     {
@@ -52,7 +55,10 @@ public class AuthenticateTest
         assertSame(m_Result.getResultStatus(), AuthStatus.UserAdd_UserExists);
     }
     @Test
+<<<<<<< HEAD
 
+=======
+>>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
     @DisplayName( " AUTH USER ")
     void AuthUserTest()
     {
@@ -63,7 +69,10 @@ public class AuthenticateTest
         assert( m_Result.getResultStatus() == AuthStatus.Authenticated ) ;
     }
     @Test
+<<<<<<< HEAD
 
+=======
+>>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
     @DisplayName( " DENY USER ")
     void DenyUserTest()
     {
@@ -71,9 +80,12 @@ public class AuthenticateTest
         assert( m_Result.getResultStatus() == AuthStatus.Authenticate_NoUser ) ;
     }
     @Test
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
     @DisplayName( " BAD PASSWORD ")
     void AuthUserBadPassTest()
     {
@@ -84,4 +96,9 @@ public class AuthenticateTest
         m_Result = m_Authenticator.AuthenticateUser( TestData.User4 ) ;
         assert( m_Result.getResultStatus() == AuthStatus.Authenticate_PasswordMismatch ) ;
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
 }
