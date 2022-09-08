@@ -1,3 +1,6 @@
 *.[class|jar|lib]
+*/.idea/
+*/target/
+/Phase3/out/
 /Phase1/out/
 /Phase2/out/

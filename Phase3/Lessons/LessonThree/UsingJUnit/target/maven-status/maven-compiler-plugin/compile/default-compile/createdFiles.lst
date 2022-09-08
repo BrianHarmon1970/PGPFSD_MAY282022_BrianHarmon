@@ -1,0 +1,10 @@
+com\ecommerce\tests\NestedCases.class
+com\ecommerce\tests\StandardTestClass.class
+com\ecommerce\tests\NestedCases$A.class
+com\ecommerce\tests\Calculator.class
+com\ecommerce\tests\Assertions.class
+com\ecommerce\tests\ConditionalTests.class
+com\ecommerce\tests\MyExecutable.class
+com\ecommerce\tests\DependencyInjection.class
+com\ecommerce\tests\DynamicTests.class
+com\ecommerce\tests\NestedCases$A$WhenX.class
