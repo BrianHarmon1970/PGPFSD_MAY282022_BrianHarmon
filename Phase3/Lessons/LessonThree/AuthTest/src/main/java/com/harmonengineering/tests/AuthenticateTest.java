@@ -37,9 +37,13 @@ public class AuthenticateTest
     }
     @Test
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
+=======
+
+>>>>>>> f93722c (Practice Project 3 - document only changes)
     @DisplayName( " ADD USER ")
     void AddUserTest()
     {
@@ -56,9 +60,13 @@ public class AuthenticateTest
     }
     @Test
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
+=======
+
+>>>>>>> f93722c (Practice Project 3 - document only changes)
     @DisplayName( " AUTH USER ")
     void AuthUserTest()
     {
@@ -70,9 +78,13 @@ public class AuthenticateTest
     }
     @Test
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
+=======
+
+>>>>>>> f93722c (Practice Project 3 - document only changes)
     @DisplayName( " DENY USER ")
     void DenyUserTest()
     {
@@ -81,11 +93,17 @@ public class AuthenticateTest
     }
     @Test
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 =======
 >>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
+=======
+
+
+
+>>>>>>> f93722c (Practice Project 3 - document only changes)
     @DisplayName( " BAD PASSWORD ")
     void AuthUserBadPassTest()
     {
@@ -97,8 +115,11 @@ public class AuthenticateTest
         assert( m_Result.getResultStatus() == AuthStatus.Authenticate_PasswordMismatch ) ;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
+=======
+>>>>>>> f93722c (Practice Project 3 - document only changes)
 }

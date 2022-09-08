@@ -51,9 +51,13 @@ public class AuthenticateNullTest {
     }
     @Test
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
+=======
+
+>>>>>>> f93722c (Practice Project 3 - document only changes)
     @DisplayName( " ADD USER NULL RESULT")
     void AddUserNullResultTest()
     {
