@@ -2,6 +2,9 @@
 <project version="4">
   <component name="JpaBuddyIdeaProjectConfig">
     <option name="defaultUnitInitialized" value="true" />
+<<<<<<< HEAD
     <option name="renamerInitialized" value="true" />
+=======
+>>>>>>> a2e34e4 (Phase3 Assisted Practice: 4.2 Microservices Communication in Spring Boot (RestApi/RestApiOne/RestApiTwo))
   </component>
 </project>
