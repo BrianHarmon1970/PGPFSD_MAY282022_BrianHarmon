@@ -36,6 +36,7 @@ public class AuthenticateTest
         assert( m_Result.getResultStatus() == AuthStatus.UserAdd_ConfirmationMismatch ) ;
     }
     @Test
+
     @DisplayName( " ADD USER ")
     void AddUserTest()
     {
@@ -51,6 +52,7 @@ public class AuthenticateTest
         assertSame(m_Result.getResultStatus(), AuthStatus.UserAdd_UserExists);
     }
     @Test
+
     @DisplayName( " AUTH USER ")
     void AuthUserTest()
     {
@@ -61,6 +63,7 @@ public class AuthenticateTest
         assert( m_Result.getResultStatus() == AuthStatus.Authenticated ) ;
     }
     @Test
+
     @DisplayName( " DENY USER ")
     void DenyUserTest()
     {
@@ -68,6 +71,9 @@ public class AuthenticateTest
         assert( m_Result.getResultStatus() == AuthStatus.Authenticate_NoUser ) ;
     }
     @Test
+
+
+
     @DisplayName( " BAD PASSWORD ")
     void AuthUserBadPassTest()
     {
@@ -78,6 +84,4 @@ public class AuthenticateTest
         m_Result = m_Authenticator.AuthenticateUser( TestData.User4 ) ;
         assert( m_Result.getResultStatus() == AuthStatus.Authenticate_PasswordMismatch ) ;
     }
-
-
 }
