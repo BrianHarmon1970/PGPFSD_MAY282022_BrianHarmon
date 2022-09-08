@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RestApi.iml" filepath="$PROJECT_DIR$/RestApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RestApiOne/RestApiOne.iml" filepath="$PROJECT_DIR$/../RestApiOne/RestApiOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RestApiTwo/RestApiTwo.iml" filepath="$PROJECT_DIR$/../RestApiTwo/RestApiTwo.iml" />
+    </modules>
+  </component>
+</project>
