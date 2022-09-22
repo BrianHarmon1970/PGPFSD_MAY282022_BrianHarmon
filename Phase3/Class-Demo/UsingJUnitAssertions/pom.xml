@@ -28,12 +28,15 @@
 			 <artifactId>junit-jupiter-api</artifactId>
 			 <version>5.9.0</version>
 		 </dependency>
+<<<<<<< HEAD
 		 <dependency>
 			 <groupId>junit</groupId>
 			 <artifactId>junit</artifactId>
 			 <version>4.13.2</version>
 			 <scope>compile</scope>
 		 </dependency>
+=======
+>>>>>>> 3747800 (class work and demos(Phase3))
 	 </dependencies>
 	<build>
 		<plugins>
