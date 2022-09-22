@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Springfeignclienttutorial:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Springfeignclienttutorial</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Springfeignclienttutorial.war">
+      <element id="artifact" artifact-name="Springfeignclienttutorial:war exploded" />
+    </root>
+  </artifact>
+</component>

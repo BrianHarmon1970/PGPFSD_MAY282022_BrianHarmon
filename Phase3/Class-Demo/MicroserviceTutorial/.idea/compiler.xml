@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Springfeignclienttutorial" />
+        <module name="Springbooteurekaclientutorial" />
+        <module name="Springbooteurekaservertutorial" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Springbooteurekaclientutorial" target="11" />
+      <module name="Springbooteurekaservertutorial" target="11" />
+      <module name="Springcloudzuulgateway" target="1.6" />
+      <module name="Springfeignclienttutorial" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Springbooteurekaclientutorial" options="-parameters" />
+      <module name="Springbooteurekaservertutorial" options="-parameters" />
+      <module name="Springcloudzuulgateway" options="" />
+      <module name="Springfeignclienttutorial" options="-parameters" />
+    </option>
+  </component>
+</project>
