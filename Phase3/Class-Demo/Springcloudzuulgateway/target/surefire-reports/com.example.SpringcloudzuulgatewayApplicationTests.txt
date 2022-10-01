@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.example.SpringcloudzuulgatewayApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.736 s <<< FAILURE! - in com.example.SpringcloudzuulgatewayApplicationTests
+contextLoads  Time elapsed: 0.013 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.cloud.netflix.zuul.ZuulServerAutoConfiguration$ZuulCounterFactoryConfiguration.counterFactory
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.netflix.zuul.ZuulServerAutoConfiguration$ZuulMetricsConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a]
+Caused by: java.lang.NoClassDefFoundError: com/netflix/zuul/monitoring/TracerFactory
+Caused by: java.lang.ClassNotFoundException: com.netflix.zuul.monitoring.TracerFactory
+

@@ -1,0 +1,4 @@
+com\onlyxcodes\app\controller\StudentController.class
+com\onlyxcodes\app\SpringBootRestfulCrudApplication.class
+com\onlyxcodes\app\model\Student.class
+com\onlyxcodes\app\repository\StudentRepository.class

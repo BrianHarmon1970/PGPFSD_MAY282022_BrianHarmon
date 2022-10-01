@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SpringSetup:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="Phase3" />
+      <module name="SpringSetup" />
+      <module name="SpringBootKafka" />
+      <module name="SpringEdge" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="12413191-c8fd-4d38-b081-f70380e2cb0e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/src/main/java/com/ecommerce/KafkaConsumerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/src/main/java/com/ecommerce/KafkaProducerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/src/main/java/com/ecommerce/SpringBootKafkaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/src/main/java/com/ecommerce/controllers/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/src/test/java/com/ecommerce/SpringBootKafkaApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootKafka/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringEdge/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringEdge/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringEdge/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringEdge/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringEdge/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringEdge/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringEdge/src/main/java/com/ecommerce/SpringEdgeApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringEdge/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringEdge/src/test/java/com/ecommerce/SpringEdgeApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/src/main/java/com/ecommerce/SpringFilesApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/src/main/java/com/ecommerce/controllers/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/src/main/resources/static/dump.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringFiles/src/test/java/com/ecommerce/SpringFilesApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringKafka.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/src/main/java/com/ecommerce/SpringSslApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/src/main/java/com/ecommerce/controllers/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/src/main/resources/ssl-server.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSSL/src/test/java/com/ecommerce/SpringSslApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e/storage_v2/_src_/schema/db_world.kbT1fA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e/storage_v2/_src_/schema/db_world.kbT1fA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e/storage_v2/_src_/schema/ecommerce.QLYXWw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e/storage_v2/_src_/schema/ecommerce.QLYXWw.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e/storage_v2/_src_/schema/phase2.FyYGxQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e/storage_v2/_src_/schema/phase2.FyYGxQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/dataSources/913e4247-0d5c-4b0e-9e64-a96f0ad8dd8e/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/SpringSetup.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/byte-buddy-1.10.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/hibernate-core-5.4.11.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/spring-ws.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/SQL/table_eusers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/SQL/table_user_types.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/SQL/table_users.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/ecommerce/beans/CustomEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/ecommerce/beans/CustomEventListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/ecommerce/beans/CustomEventPublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/ecommerce/beans/StartEventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/ecommerce/beans/StopEventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/ecommerce/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/ecommerce/dao/EProductDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/ecommerce/dao/EUsersDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/ecommerce/entity/EProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/ecommerce/entity/EUsers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/harmonengineering/HibernateSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/java/com/harmonengineering/UsersData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/resources/EUsers.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/resources/EmployeeSalary.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/FindUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/WEB-INF/main-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/WEB-INF/view/UpdateUserData.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/WEB-INF/view/UserNotFound.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/WEB-INF/view/confirmUserUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/WEB-INF/view/listProducts.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/WEB-INF/view/listUsers.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/customEvent.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/FindUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/EUsers.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/EmployeeSalary.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/beans/CustomEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/beans/CustomEventListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/beans/CustomEventPublisher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/beans/StartEventHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/beans/StopEventHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/dao/EProductDAO$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/dao/EProductDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/dao/EUsersDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/entity/EProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/ecommerce/entity/EUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/harmonengineering/HibernateSession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/com/harmonengineering/UsersData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/commons-pool-1.5.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/hibernate-core-4.3.11.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/jandex-1.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/javassist-3.12.1.GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/javassist-3.18.1-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/javax.servlet-api-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/mysql-connector-java-8.0.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/persistence-api-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/protobuf-java-3.19.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-aop-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-beans-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-context-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-context-support-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-core-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-expression-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-jcl-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-jdbc-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-orm-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-tx-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-web-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/spring-webmvc-5.3.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/standard-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/main-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/view/UpdateUserData.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/view/UserNotFound.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/view/confirmUserUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/view/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/view/listProducts.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/view/listUsers.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/customEvent.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/SpringSetup/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/EUsers.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/EmployeeSalary.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/beans/CustomEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/beans/CustomEventListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/beans/CustomEventPublisher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/beans/StartEventHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/beans/StopEventHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/dao/EProductDAO$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/dao/EProductDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/dao/EUsersDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/entity/EProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/ecommerce/entity/EUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/harmonengineering/HibernateSession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/com/harmonengineering/UsersData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSetup/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2EBHXATI1k0oB1QlwfTOjnYygXg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/SpringSetup/src/main/webapp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3529b7d90230f4d40859ad8ea0906997&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonTwo" />
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3" />
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\SpringKafka\SpringBootKafka\src\main\java\com\ecommerce" />
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\SpringKafka\SpringBootKafka\src\main\java\com\ecommerce\controllers" />
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\SpringKafka\SpringBootKafka" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.70">
+    <configuration name="All in SpringRESTClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringRESTClient" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootKafkaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="IntelliJ IDEA IU-212.5080.55" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="SpringBootKafka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ecommerce.SpringBootKafkaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootStarterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="SpringBootStarter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ecommerce.SpringBootStarterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringEdgeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringEdge" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ecommerce.SpringEdgeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringFilesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringFiles" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ecommerce.SpringFilesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringKafkaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="SpringBootKafka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ecommerce.SpringBootKafkaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringRestClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="SpringRESTClient" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ecommerce.SpringRestClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.70" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.70" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SpringSetup:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SpringSetup" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="32e14ff9-a5b1-4c1a-b680-672c8d8a1e09" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63541" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SpringSetup:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in SpringRESTClient" />
+      <item itemvalue="Spring Boot.SpringBootKafkaApplication (1)" />
+      <item itemvalue="Spring Boot.SpringKafkaApplication" />
+      <item itemvalue="Spring Boot.SpringFilesApplication" />
+      <item itemvalue="Spring Boot.SpringEdgeApplication" />
+      <item itemvalue="Spring Boot.SpringRestClientApplication" />
+      <item itemvalue="Spring Boot.SpringBootStarterApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.70" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in SpringRESTClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12413191-c8fd-4d38-b081-f70380e2cb0e" name="Changes" comment="" />
+      <created>1662062097043</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662062097043</updated>
+      <workItem from="1662062100771" duration="611000" />
+      <workItem from="1662063781020" duration="4307000" />
+      <workItem from="1662068211701" duration="2041000" />
+      <workItem from="1662070260581" duration="3257000" />
+      <workItem from="1662073538228" duration="7530000" />
+      <workItem from="1662082006446" duration="1411000" />
+      <workItem from="1662083806647" duration="4901000" />
+      <workItem from="1662088793378" duration="10080000" />
+      <workItem from="1662122793913" duration="163000" />
+      <workItem from="1662128210783" duration="145000" />
+      <workItem from="1662295235163" duration="371000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:com.google.inject:guice" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.kafka:kafka-clients" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+  </component>
+  <component name="UnloadedModulesList">
+    <module name="SpringBootStarter" />
+    <module name="SpringFiles" />
+    <module name="SpringRESTClient" />
+    <module name="test1" />
+  </component>
+</project>

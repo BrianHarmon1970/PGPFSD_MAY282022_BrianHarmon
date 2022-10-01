@@ -1,0 +1,5 @@
+com\ecommerce\FeedbackRepository.class
+com\ecommerce\controllers\MainController.class
+com\ecommerce\FeedbackApiApplication.class
+com\ecommerce\Config.class
+com\ecommerce\entity\Feedback.class

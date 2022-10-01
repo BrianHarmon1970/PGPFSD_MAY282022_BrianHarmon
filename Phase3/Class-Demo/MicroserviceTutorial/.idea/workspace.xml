@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Springbooteurekaclientutorial:war" />
+      <artifact name="Springbooteurekaclientutorial:war exploded" />
+      <artifact name="Springbooteurekaservertutorial:jar" />
+      <artifact name="Springcloudzuulgateway:war" />
+      <artifact name="Springcloudzuulgateway:war exploded" />
+      <artifact name="Springfeignclienttutorial:war" />
+      <artifact name="Springfeignclienttutorial:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e439e660-b95f-4285-993c-33f7c1a8bf19" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TCHWebService/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2EuSHZhTtxmHmhL4rLPOEmyp332" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/Class-Demo/Springcloudzuulgateway",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "99e57037682495b733e068e38c957269"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringcloudzuulgatewayApplication">
+    <configuration name="Springcloudzuulgateway.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/../Springcloudzuulgateway/target/Springcloudzuulgateway.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Myzuulgateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Springcloudzuulgateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Myzuulgateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudZuulGateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="Springcloudzuulgateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringCloudZuulGateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbooteurekaclientutorialApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Springbooteurekaclientutorial" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringbooteurekaclientutorialApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbooteurekaservertutorialApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Springbooteurekaservertutorial" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringbooteurekaservertutorialApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudzuulgatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Springcloudzuulgateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringcloudzuulgatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springfeignclient" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Springfeignclienttutorial" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.springcloud.feign.Springfeignclient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springcloud.feign.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringcloudzuulgatewayApplication" />
+        <item itemvalue="Spring Boot.Myzuulgateway" />
+        <item itemvalue="Spring Boot.SpringCloudZuulGateway" />
+        <item itemvalue="Spring Boot.Springfeignclient" />
+        <item itemvalue="JAR Application.Springcloudzuulgateway.jar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e439e660-b95f-4285-993c-33f7c1a8bf19" name="Changes" comment="" />
+      <created>1663443889336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663443889336</updated>
+      <workItem from="1663443890920" duration="778000" />
+      <workItem from="1663502072407" duration="2847000" />
+      <workItem from="1663789553308" duration="2255000" />
+      <workItem from="1663791816204" duration="287000" />
+      <workItem from="1663793258914" duration="1867000" />
+      <workItem from="1663796184084" duration="146000" />
+      <workItem from="1663796335375" duration="245000" />
+      <workItem from="1663804934922" duration="6367000" />
+      <workItem from="1663851649767" duration="2929000" />
+      <workItem from="1663863181300" duration="75000" />
+      <workItem from="1663863266341" duration="146000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

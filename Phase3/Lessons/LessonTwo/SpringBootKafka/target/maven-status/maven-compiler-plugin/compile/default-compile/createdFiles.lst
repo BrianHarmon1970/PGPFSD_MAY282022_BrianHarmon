@@ -1,0 +1,4 @@
+com\ecommerce\controllers\MainController.class
+com\ecommerce\SpringBootKafkaApplication.class
+com\ecommerce\KafkaConsumerConfig.class
+com\ecommerce\KafkaProducerConfig.class

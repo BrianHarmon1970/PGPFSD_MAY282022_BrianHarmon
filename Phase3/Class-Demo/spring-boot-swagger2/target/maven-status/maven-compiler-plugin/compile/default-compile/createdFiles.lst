@@ -1,0 +1,4 @@
+com\example\springbootswagger2\model\Student.class
+com\example\springbootswagger2\configuration\Swagger2UiConfiguration.class
+com\example\springbootswagger2\controller\Swagger2DemoRestController.class
+com\example\springbootswagger2\SpringBootSwagger2Application.class

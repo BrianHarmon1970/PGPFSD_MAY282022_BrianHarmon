@@ -1,0 +1,5 @@
+com\test\example\ProductService.class
+com\test\example\RestApiTestApplication.class
+com\test\example\ProductRepository.class
+com\test\example\ProductController.class
+com\test\example\ProductEntity.class

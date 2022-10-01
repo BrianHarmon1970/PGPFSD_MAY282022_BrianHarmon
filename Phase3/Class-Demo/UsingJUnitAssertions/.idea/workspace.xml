@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bdb12dac-8210-403a-8960-94098b7c9c94" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Project/SportyShoes/src/main/webapp/WEB-INF/dummy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/ParentClassTest$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/ParentClassTest$B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/ParentClassTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/AfterAnnotationsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/AssumptionsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/BeforeAllTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/BeforeEachTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/ClassATest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/DevelopmentTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/ExpectedExceptionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/JUnit5TestSuite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/MultipleTagsExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/NestedCases$A$WhenX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/NestedCases$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/NestedCases.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/ProductionTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/RepeatedInvocationsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/packageA/ClassATest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/packageB/ClassBTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/packageC/ClassCTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JUnit5Examples/target/test-classes/com/howtodoinjava/junit5/examples/suites/JUnit5TestSuiteExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/LessonFour/RestApi/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/LessonFour/RestApi/.idea/jpa-buddy.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2EwlCRfVTSMWkFzsLXrejThswOl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/Class-Demo/UsingJUnitAssertions&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.DependencyInjection">
+    <configuration name="ConditionalTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UsingJUnitAssertions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecommerce.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ecommerce.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ecommerce.tests.ConditionalTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DependencyInjection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UsingJUnitAssertions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecommerce.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ecommerce.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ecommerce.tests.DependencyInjection" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UsingJUnitAssertions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecommerce.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ecommerce.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ecommerce.tests.DynamicTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ecommerce.tests in UsingJUnitAssertions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UsingJUnitAssertions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecommerce.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ecommerce.tests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DependencyInjection" />
+        <item itemvalue="JUnit.com.ecommerce.tests in UsingJUnitAssertions" />
+        <item itemvalue="JUnit.DynamicTests" />
+        <item itemvalue="JUnit.ConditionalTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bdb12dac-8210-403a-8960-94098b7c9c94" name="Changes" comment="" />
+      <created>1663514400756</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663514400756</updated>
+      <workItem from="1663514402249" duration="2020000" />
+      <workItem from="1664028758171" duration="2583000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

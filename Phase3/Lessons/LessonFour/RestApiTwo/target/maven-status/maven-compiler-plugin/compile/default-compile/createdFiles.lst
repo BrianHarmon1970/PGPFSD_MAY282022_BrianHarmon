@@ -1,0 +1,5 @@
+com\example\test\HobbyRepository.class
+com\example\test\HobbyService.class
+com\example\test\RestApiTwoApplication.class
+com\example\test\HobbyEntity.class
+com\example\test\HobbyController.class

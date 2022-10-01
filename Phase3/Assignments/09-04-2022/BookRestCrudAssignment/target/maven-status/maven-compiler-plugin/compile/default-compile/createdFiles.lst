@@ -1,0 +1,4 @@
+com\harmonengineering\controllers\BookController.class
+com\harmonengineering\entity\BookRepository.class
+com\harmonengineering\BookRestCrudAssignmentApplication.class
+com\harmonengineering\entity\Book.class

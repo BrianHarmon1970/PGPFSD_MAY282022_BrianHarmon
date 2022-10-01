@@ -1,0 +1,4 @@
+com\ecommerce\beans\Value.class
+com\ecommerce\beans\Quote.class
+com\ecommerce\controllers\MainController.class
+com\ecommerce\SpringRestClientApplication.class
