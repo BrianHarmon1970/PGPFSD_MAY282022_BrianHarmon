@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/JdbcTemplate.iml" filepath="$PROJECT_DIR$/.idea/JdbcTemplate.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/jdbcTemplate2.iml" filepath="$PROJECT_DIR$/jdbcTemplate2.iml" />
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     </modules>
   </component>
 </project>

@@ -4,16 +4,21 @@
     <file type="web" url="file://$PROJECT_DIR$/SpringSetup" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <type id="Spring" />
 =======
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
 =======
     <type id="Spring" />
 >>>>>>> 3a9e234 (Phase3 - Assisted Practice: 2.4 File Handling)
+=======
+    <type id="Spring" />
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/SpringKafka/pom.xml" />
@@ -34,11 +39,16 @@
         <option value="$PROJECT_DIR$/SpringFiles/pom.xml" />
 >>>>>>> 3a9e234 (Phase3 - Assisted Practice: 2.4 File Handling)
 =======
+=======
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
         <option value="$PROJECT_DIR$/SpringKafka/pom.xml" />
         <option value="$PROJECT_DIR$/SpringKafka/SpringBootKafka/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootKafka/pom.xml" />
         <option value="$PROJECT_DIR$/SpringEdge/pom.xml" />
+<<<<<<< HEAD
 >>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
+=======
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
       </list>
     </option>
   </component>

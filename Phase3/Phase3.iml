@@ -2,6 +2,7 @@
 <module type="GENERAL_MODULE" version="4">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
@@ -11,6 +12,8 @@
 >>>>>>> 1d5f456 (Phase3 - Assisted Practice: 2.2 Consuming RESTful Web Services)
 =======
 >>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
+=======
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />

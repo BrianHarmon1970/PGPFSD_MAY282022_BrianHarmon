@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\ConditionalTests.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\DependencyInjection.java
 <<<<<<< HEAD
@@ -29,3 +30,12 @@ E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\
 =======
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\DynamicTests.java
 >>>>>>> 62bc987 (Phase3 - Assisted Practice: 3.6 Dependency Injection (UsingJUnit))
+=======
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\ConditionalTests.java
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\DependencyInjection.java
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\StandardTestClass.java
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\Calculator.java
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\NestedCases.java
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\Assertions.java
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\LessonThree\UsingJUnit\src\main\java\com\ecommerce\tests\DynamicTests.java
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6

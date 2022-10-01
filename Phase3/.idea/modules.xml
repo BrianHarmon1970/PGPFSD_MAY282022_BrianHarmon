@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Phase3.iml" filepath="$PROJECT_DIR$/Phase3.iml" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
       <module fileurl="file://$PROJECT_DIR$/SpringBootKafka/SpringBootKafka.iml" filepath="$PROJECT_DIR$/SpringBootKafka/SpringBootKafka.iml" />
@@ -12,10 +13,16 @@
       <module fileurl="file://$PROJECT_DIR$/SpringEdge/SpringEdge.iml" filepath="$PROJECT_DIR$/SpringEdge/SpringEdge.iml" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+      <module fileurl="file://$PROJECT_DIR$/SpringBootKafka/SpringBootKafka.iml" filepath="$PROJECT_DIR$/SpringBootKafka/SpringBootKafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootStarter/SpringBootStarter.iml" filepath="$PROJECT_DIR$/SpringBootStarter/SpringBootStarter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringEdge/SpringEdge.iml" filepath="$PROJECT_DIR$/SpringEdge/SpringEdge.iml" />
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
       <module fileurl="file://$PROJECT_DIR$/SpringFiles/SpringFiles.iml" filepath="$PROJECT_DIR$/SpringFiles/SpringFiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringRESTClient/SpringRESTClient.iml" filepath="$PROJECT_DIR$/SpringRESTClient/SpringRESTClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSetup/SpringSetup.iml" filepath="$PROJECT_DIR$/SpringSetup/SpringSetup.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringKafka/src/test/test1.iml" filepath="$PROJECT_DIR$/SpringKafka/src/test/test1.iml" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       <module fileurl="file://$PROJECT_DIR$/SpringBootStarter/SpringBootStarter.iml" filepath="$PROJECT_DIR$/SpringBootStarter/SpringBootStarter.iml" />
@@ -32,6 +39,8 @@
 >>>>>>> 4256dda (Phase3 Lesson 2 - Assisted Practice: 2.3 Edge Server and Routing)
 =======
 >>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
+=======
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     </modules>
   </component>
 </project>

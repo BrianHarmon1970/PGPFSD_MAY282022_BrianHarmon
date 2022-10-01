@@ -38,12 +38,16 @@ public class AuthenticateTest
     @Test
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
 =======
 
 >>>>>>> f93722c (Practice Project 3 - document only changes)
+=======
+
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName( " ADD USER ")
     void AddUserTest()
     {
@@ -61,12 +65,16 @@ public class AuthenticateTest
     @Test
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
 =======
 
 >>>>>>> f93722c (Practice Project 3 - document only changes)
+=======
+
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName( " AUTH USER ")
     void AuthUserTest()
     {
@@ -79,12 +87,16 @@ public class AuthenticateTest
     @Test
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
 =======
 
 >>>>>>> f93722c (Practice Project 3 - document only changes)
+=======
+
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName( " DENY USER ")
     void DenyUserTest()
     {
@@ -94,6 +106,7 @@ public class AuthenticateTest
     @Test
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -104,6 +117,11 @@ public class AuthenticateTest
 
 
 >>>>>>> f93722c (Practice Project 3 - document only changes)
+=======
+
+
+
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName( " BAD PASSWORD ")
     void AuthUserBadPassTest()
     {
@@ -116,10 +134,13 @@ public class AuthenticateTest
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
 =======
 >>>>>>> f93722c (Practice Project 3 - document only changes)
+=======
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
 }

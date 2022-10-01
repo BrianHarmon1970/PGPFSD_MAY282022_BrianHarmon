@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>

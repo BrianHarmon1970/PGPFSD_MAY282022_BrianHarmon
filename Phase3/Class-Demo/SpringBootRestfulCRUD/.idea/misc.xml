@@ -8,7 +8,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD:Phase3/Class-Demo/SpringBootRestfulCRUD/.idea/misc.xml
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="11" project-jdk-type="JavaSDK" />
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6:Phase3/Class-Demo/Spring-Boot-REST/.idea/misc.xml
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 com\ecommerce\tests\NestedCases.class
 =======
 com\ecommerce\tests\ConditionalTests.class
@@ -33,10 +34,19 @@ com\ecommerce\tests\StandardTestClass.class
 com\ecommerce\tests\Assertions.class
 >>>>>>> 80839c5 (Phase3 - Assisted Practice: 3.2 Assertions (UsingJUnit))
 =======
+=======
+com\ecommerce\tests\NestedCases.class
+com\ecommerce\tests\StandardTestClass.class
+com\ecommerce\tests\NestedCases$A.class
+com\ecommerce\tests\Calculator.class
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
 com\ecommerce\tests\Assertions.class
 com\ecommerce\tests\ConditionalTests.class
 com\ecommerce\tests\MyExecutable.class
 com\ecommerce\tests\DependencyInjection.class
 com\ecommerce\tests\DynamicTests.class
 com\ecommerce\tests\NestedCases$A$WhenX.class
+<<<<<<< HEAD
 >>>>>>> 62bc987 (Phase3 - Assisted Practice: 3.6 Dependency Injection (UsingJUnit))
+=======
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6

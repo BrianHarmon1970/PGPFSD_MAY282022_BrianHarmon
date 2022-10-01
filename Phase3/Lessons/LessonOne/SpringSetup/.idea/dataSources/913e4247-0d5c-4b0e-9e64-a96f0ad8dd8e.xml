@@ -2,8 +2,11 @@
 <dataSource name="@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.43">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <root id="1"/>
 =======
+=======
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -71,7 +74,10 @@ performance_schema|schema||mysql.session|localhost|SELECT|G
 sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <ServerVersion>5.7.38</ServerVersion>
     </root>
+<<<<<<< HEAD
 >>>>>>> 51097e9 (+Phase3 Assisted Practice(1.1-1.3) +Practice Project 1: (SpringSetup))
+=======
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
     </collation>

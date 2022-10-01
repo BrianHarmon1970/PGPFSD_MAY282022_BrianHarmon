@@ -3,6 +3,9 @@
     <CLASSES>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
       <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -10,6 +13,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0-sources.jar!/" />
+<<<<<<< HEAD
 =======
       <root url="jar://$PROJECT_DIR$/../../../Maven-Repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar!/" />
 =======
@@ -26,6 +30,8 @@
 =======
       <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0-sources.jar!/" />
 >>>>>>> 9e010e8 (Phase3 Assisted Practice: 2.5 Sending and Receiving Messages with Apache Kafka)
+=======
+>>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     </SOURCES>
   </library>
 </component>
