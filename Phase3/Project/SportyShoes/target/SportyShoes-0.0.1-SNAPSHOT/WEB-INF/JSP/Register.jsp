@@ -17,7 +17,7 @@
             width: 40ch ;
         }
     </style>
-    <title>Title</title>
+    <title>User Registration</title>
     <%@include file="DashboardHeader.jsp"%>
 </head>
 <body>

@@ -8,10 +8,25 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Cart View</title>
 </head>
 <body>
-<h1>User Cart!!!</h1>
+<h1>User Cart.</h1>
+<table>
+    <thead>
+        <tr><td>Product No.</td><td>Product</td><td>Price</td><td>Quantity</td></tr>
+    </thead>
+    <c:forEach var="cartItem" items="${cartItems}">
+        <tr>
+        <td>${cartItem.product.id}</td><td>${cartItem.product.description}</td>
+        <td>${cartItem.product.price}</td><td> ${cartItem.quantity}</td>
+        </tr>
+    </c:forEach>
+</table>
 
+<form method="get">
+    <button type="submit" formaction="submitCart">Submit</button>
+    <button type="submit" formaction="emptyCart">Empty</button>
+</form>
 </body>
 </html>

@@ -70,7 +70,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:5.3.23" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.23" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aspects:5.3.23" />
-          <element id="library" level="project" name="Maven: javax.persistence:persistence-api:2.2.3" />
         </element>
       </element>
       <element id="directory" name="META-INF">
