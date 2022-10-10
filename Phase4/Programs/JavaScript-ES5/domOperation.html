@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        function readAndWrite()
+        {
+            var msg = document.getElementsByTagName("h1")[0].innerHTML ;
+            var firstName = document.getElementsByName("uname")[0].value ;
+            var lastName = document.getElementsByName("uname")[1].value ;
+            fullName = firstName + " " + lastName ;
+            //alert( "Welcome, " + fullName ) ;
+            
+            document.getElementById("n3").value = fullName ;
+            document.getElementById("n1").value = "" ;
+            document.getElementById("n2").value = "" ;
+            
+            document.getElementById("out").innerHTML = fullName ;
+            document.getElementsByTagName("span")[0].innerHTML = fullName ;
+            
+            alert( msg ) ;
+        }
+    </script>
+</head>
+<body>
+    <h1> HTML DOM Operations </h1>
+    First Name:<input type="text" name="uname" id="n1"/><br>
+    Last Name:<input type="text" name="uname" id="n2"/><br>
+    <input type="button" value="Click Here." onclick="readAndWrite()"><br>
+    Full Name: <input type="text" name="fullname" id="n3"/>
+    <div id="out"></div>
+        <span></span>
+    
+</body>
+</html>
