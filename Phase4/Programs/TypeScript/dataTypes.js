@@ -1,0 +1,16 @@
+var n = 100;
+var fnmame = "String";
+var result1 = true;
+var msg = "Welcome";
+msg = 10;
+msg = false;
+var m = 200;
+var lname = "Ajay Kumar";
+var o;
+var desg;
+var result3;
+o = 400;
+desg = "Tester";
+result3 = false;
+console.log(n);
+console.log(desg);

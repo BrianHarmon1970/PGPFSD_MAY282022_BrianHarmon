@@ -1,0 +1,10 @@
+<h2>Event Binding</h2>
+<input type="button" value="click here" (click)="fun()">
+{{msg}}
+<br>
+<input type="text" #nameRef>
+<input type="button" value="pass value" (click)="passValue(nameRef)">
+<br><input type="text" #n1>
+<input type="text" #n2><br>
+<input type="button" value="Add" (click)="add(n1, n2 )">
+{{result}}
