@@ -1,0 +1,21 @@
+body
+{
+    color:aliceblue;  
+    background: url('./images/8081968978_3faa2caac1_c.jpg'); 
+    background-size: cover; 
+}
+p
+{ 
+    background-color: rgba( 128,128,128,.30);
+}
+        
+a
+{ 
+    color: rgb(180, 3, 180);
+    background-color: rgba( 128,128,128,.30);
+}
+       
+.link-list
+{ 
+    background-color: aqua opacity 0.80 ;
+}
