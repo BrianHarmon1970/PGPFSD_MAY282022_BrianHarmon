@@ -3,6 +3,7 @@ body
     color:aliceblue;  
     background: url('./images/8081968978_3faa2caac1_c.jpg'); 
     background-size: cover; 
+    
 }
 p
 { 
@@ -14,8 +15,62 @@ a
     color: rgb(180, 3, 180);
     background-color: rgba( 128,128,128,.30);
 }
-       
+
+
 .link-list
 { 
     background-color: aqua opacity 0.80 ;
+}
+
+.mings 
+{
+    color: aliceblue; background-color: slateblue; 
+
+}
+.mings:hover { color: white ;  }
+.mings:focus { color: white ;  }
+
+.footer 
+{
+    position: fixed; 
+    bottom: 0 ; right: 0 ; 
+    width: 100% ; 
+    background-image: url(./images/lukasz-rawa-fmc-tFMMiBs-unsplash.jpg); 
+    opacity: 0.50 ; 
+}
+
+h5{ color: aliceblue ; background-color: slateblue; border-radius: 10 ; }
+.card p { color: black ; background-color: aliceblue ; }
+
+.flex-container 
+{
+    display: flex ;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    opacity: 0.80 ;
+    
+    justify-content: center;
+}
+.flex-container div
+{
+    margin: 0.5em ;
+    background: black ;
+    height: 240px ;
+    width: 320px ;
+    align-items: center ;
+    justify-content: center;
+}
+.flex-container div span
+{
+    color:azure ;
+    margin-left: 1em ;
+    align-items: center ;
+    justify-content: center;   
+     
+    
+    font-size: large;
+}
+.flex-container div span a
+{
+    color: cyan ;
 }

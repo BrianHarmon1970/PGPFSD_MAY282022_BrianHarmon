@@ -5,23 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ming's Diner - Address</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1> Ming's Diner </h1>
-    <h2>Address</h2>
-    
-    <a href="index.html">Home</a><br>
-    <a href="about.html">About</a><br>
-    <a href="address.html">Address</a><br>
-    <a href="products.html">Popular Products</a><br>
-    <a href="contact.html">Contact</a><br>
-
-    <p>
-        Ming's Diner<br>
-        2112 Expo Drive<br>
-        St. Louis, Mo<br>
-    </p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199412.25318854128!2d-90.24346200000001!3d38.65310045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b4a9faed8ef9%3A0xbe39eaca22bbe05b!2sSt.%20Louis%2C%20MO!5e0!3m2!1sen!2sus!4v1666472975554!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <nav class="navbar navbar-expand-lg" style="background-color:black; border: 1px solid white; background-color: black;">
+        <div class="container-fluid">
+            <a class="navbar-brand mings" style="background-color: black" href="#">Ming's Diner</a>
+            <!--<button class="navbar-toggler mings" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>-->
+          <div class="xcollapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link mings btn btn-light" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mings btn btn-light" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mings btn active" aria-current="page" href="#">Address</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mings btn btn-light" href="products.html">Popular Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mings btn btn-light" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <h2>Address</h2>
+      <div class="card" style="width: 36rem; max-width: 100%;">
+        <div class="card-body">
+        <p>
+            Ming's Diner<br>
+            2112 Expo Drive<br>
+            St. Louis, Mo<br>
+        </p>
+        </div>
+        <iframe style="max-width: 100%; " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199412.25318854128!2d-90.24346200000001!3d38.65310045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b4a9faed8ef9%3A0xbe39eaca22bbe05b!2sSt.%20Louis%2C%20MO!5e0!3m2!1sen!2sus!4v1666472975554!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div style="height: 3em;"></div>
+    </div>
+    <footer class="bg-light footer" >
+            <div class="column" style="width: auto  ;">
+                <div class="text-center p-0" >
+                    <p>
+                        © 2022 Copyright:
+                        <a class="text-light text-center" href="https://harmonengineering.com/">Brian Harmon - Harmon Engineering L.L.C.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -5,35 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ming's Diner - Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-    <h1> Ming's Diner </h1>
-    <div class="link-list">
-    <h2>Products</h2>
-    <a href="index.html">Home</a><br>
-    <a href="about.html">About</a><br>
-    <a href="address.html">Address</a><br>
-    <a href="products.html">Popular Products</a><br>
-    <a href="contact.html">Contact</a><br>
-    </div>
-    <ul>
-        <h3> Popular Items</h3>
-        <li>Crab Rangoons</li>
-        <img src="./images/8185937012_189743095c_c.jpg" alt="">
-        
-        <p>A delicious appetizer of cream cheese and crab meat stuffed into a fried dumpling</p>
-        <li>Cucumber Sushi</li>
-        <img src="./images/4537205522_bc9334954a_c.jpg" alt="">
-        <p>Raw fish and fresh veggies wrapped in seaweed, add a splash of Ming's own Soy Sauce or a dash of Wasabi for an unforgettable treat.</p>
-        <li>Spicy Beef</li>
-        <img src="./images/4394896046_f4ba2bf912_c.jpg" alt="">
-        <p>Ming's starts this dish with some select beef bits and a spicy selection of southwwestern and traditional peppers and adds a creamy orange sauce to compliment. Made with Jalapeno, Habenero and Bird's Eye Peppers, a very spicy and unique experience.</p>
-        <li>Chopped Liver</li>
-        <img src="./images/9818161804_d66d399317_c.jpg" alt="">
-        <p>Everyone's favorite, mader better by none othe than Ming's Diner, A savory sauce on top of choice liver patties served with a side of fries and cole slaw</p>
-    </ul>
+    <div style="height: 100vh;">
+        <nav class="navbar navbar-expand-lg" style="background-color:black; border: 1px solid white; background-color: black;">
+            <div class="container-fluid">
+                <a class="navbar-brand mings" style="background-color: black" href="#">Ming's Diner</a>
+                <!--<button class="navbar-toggler mings" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>-->
+                <div class="xcollapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link mings btn btn-light" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mings btn btn-light" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mings btn btn-light" href="address.html">Address</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mings btn active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mings btn btn-light" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     
+        <h2>Popular Products</h2>
+    
+    <!--- CARDS -->
+        
+        <div class="container" style="margin: 15px 15px; ">
+            <div class="row" style="margin: 15px; width: auto;">
+        
+                <div class="card column" style="width: 18rem; margin: 15px 15px;">
+                    <img src="./images/8185937012_189743095c_c.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Crab Rangoons</h5>
+                        <p class="card-text">A delicious appetizer of cream cheese and crab meat stuffed into a fried dumpling</p>
+                    </div>
+                </div>
+        
+                <div class="card column" style="width: 18rem; margin: 15px 15px;">
+                    <img src="./images/4537205522_bc9334954a_c.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Cucumber Sushi</h5>
+                        <p class="card-text">Raw fish and fresh veggies wrapped in seaweed, add a splash of Ming's own Soy Sauce or a dash of Wasabi for an unforgettable treat.</p>
+                    </div>
+                </div>
+            
+                <div class="card column" style="width: 18rem; margin: 15px 15px;">
+                    <img src="./images/4394896046_f4ba2bf912_c.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Spicy Beef</h5>
+                        <p class="card-text">Ming's starts this dish with some select beef bits and a spicy selection of southwwestern and traditional peppers and adds a creamy orange sauce to compliment. Made with Jalapeno, Habenero and Bird's Eye Peppers, a very spicy and unique experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row"style="margin: 15px 15px; width: auto;">
+                <div class="column" style="width: 18rem; margin: 15px 15px;"></div>
+                <div class="card column" style="width: 18rem;"style="margin: 15px;">
+                    <img src="./images/9818161804_d66d399317_c.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Chopped Liver</h5>
+                        <p class="card-text">Everyone's favorite, made better by none other than Ming's Diner, A savory sauce on top of choice liver patties served with a side of fries and cole slaw</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <a class="nav-item btn btn-outline-light" 
+                    style=" margin: 1em ; padding: 0 ; align-self: left" href="./atrributions.html">photo credits</a>  
+        <div style="height: 3em;"></div>
+    </div>
+    <footer class="bg-light footer" >
+        <div class="column" style="width: auto  ;">
+            <div class="text-center p-0" >
+                <p>
+                    © 2022 Copyright:
+                    <a class="text-light text-center" href="https://harmonengineering.com/">Brian Harmon - Harmon Engineering L.L.C.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

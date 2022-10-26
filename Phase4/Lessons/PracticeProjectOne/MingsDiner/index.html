@@ -5,17 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Ming's Diner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1> Ming's Diner </h1>
-    <h2>Home</h2>
-    <div  >
-        <a href="index.html">Home</a><br>
-        <a href="about.html">About</a><br>
-        <a href="address.html">Address</a><br>
-        <a href="products.html">Popular Products</a><br>
-        <a href="contact.html">Contact</a><br>
+    <section>
+    <nav class="navbar navbar-expand-lg" style="background-color:black; border: 1px solid white; background-color: black;">
+        <div class="container-fluid">
+          <a class="navbar-brand mings" style="background-color: black" href="#">Ming's Diner</a>
+          <!--<button class="navbar-toggler mings" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>-->
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+              <li class="nav-item">
+                <a class="nav-link mings btn active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mings btn btn-light" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mings btn btn-light" href="address.html">Address</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mings btn btn-light" href="products.html">Popular Products</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link mings btn btn-light" href="contact.html">Contact</a>
+            </li>
+            
+            </ul>
+            
+          <!--</div>-->
+        </div>
+      </nav>
     </div>
+    </section>
+    <section>
+      <h2>Home</h2>
+      <!-- CAROUSEL -->
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true"
+        style="background: black ;height: min-height; width: 18rem; justify-content: center; align-items: center;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner" style="justify-content: center; align-items: center;">
+          <div class="carousel-item active" style="justify-content: center; align-items: center;">
+            
+            <div class="card" style="width: 18rem;">
+                <img src="./images/8185937012_189743095c_c.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Crab Rangoons</h5>
+                    <p class="card-text">A delicious appetizer of cream cheese and crab meat stuffed into a fried dumpling</p>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+            
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/4537205522_bc9334954a_c.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Cucumber Sushi</h5>
+                        <p class="card-text">Raw fish and fresh veggies wrapped in seaweed, add a splash of Ming's own Soy Sauce or a dash of Wasabi for an unforgettable treat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+            
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/4394896046_f4ba2bf912_c.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Spicy Beef</h5>
+                        <p class="card-text">Ming's starts this dish with some select beef bits and a spicy selection of southwwestern and traditional peppers and adds a creamy orange sauce to compliment. Made with Jalapeno, Habenero and Bird's Eye Peppers, a very spicy and unique experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+            
+                <div class="card" style="width: 18rem; ">
+                    <img src="./images/9818161804_d66d399317_c.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Chopped Liver</h5>
+                        <p class="card-text">Everyone's favorite, made better by none other than Ming's Diner, A savory sauce on top of choice liver patties served with a side of fries and cole slaw</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <a class="nav-item btn btn-outline-light" 
+                    style=" margin: 1em ; padding: 0 ; align-self: left" href="./atrributions.html">photo credits</a>
+      <div style="height: 3em;"></div>
+    </section>
+    <footer class="bg-light footer" >
+        <div class="row">
+            <div class="column" style="width: auto; ">
+                <a class="nav-item btn btn-outline-light" 
+                    style=" margin: 0 ; padding: 0 ; align-self: right" href="./landingCTA101.html">landing_page_test</a>
+            </div>
+            <div class="column" style="width: auto  ;">
+                <div class="text-center p-0" style="margin: 0 ; padding: 0 ; align-self:center">
+                  <p>
+                    © 2022 Copyright:
+                    <a class="text-light text-center" href="https://harmonengineering.com/">Brian Harmon - Harmon Engineering L.L.C.</a>
+                  </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
