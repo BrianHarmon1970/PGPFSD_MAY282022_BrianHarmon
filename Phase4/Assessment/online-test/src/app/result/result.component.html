@@ -1,0 +1,43 @@
+<!--<app-review></app-review>-->
+<h2> Result </h2>
+<div>
+    <div id="score_box">
+        <span>Score:</span><span>{{userScore}}</span><br>
+    </div>
+</div>
+<h2> Review </h2>
+<div>
+    <div  *ngFor="let q of questionsInfo" id="test_box">
+        <!--<section *ngIf="questionIndex==q.qid" >-->
+            <div  id="question_box">{{q.qid}}. {{q.question}} </div>
+            <!--{{q.a}}{{q.b}}{{q.c}}{{q.d}}-->
+            <div id="answer_box">
+                <input type="radio" name={{q.qid}} value={{q.a}} 
+                    readonly [checked]="userAnswerArray[(q.qid)-1][1] == 'a' ? true : false">
+                    <span [class]="q.answer=='a' ? 'correct' : 
+                    (userAnswerArray[(q.qid)-1][1] == 'a' ? 'incorrect':'')"
+                    > a.) {{q.a}}</span><br>    
+                <input type="radio" name={{q.qid}} value={{q.b}} 
+                readonly [checked]="userAnswerArray[(q.qid)-1][1] == 'b' ? true : false">
+                    <span [class]="q.answer=='b' ? 'correct' : 
+                    (userAnswerArray[(q.qid)-1][1] == 'b' ? 'incorrect':'')"
+                    > b.) {{q.b}}</span><br>
+                <input type="radio" name={{q.qid}} value={{q.c}}
+                readonly [checked]="userAnswerArray[(q.qid)-1][1] == 'c' ? true : false">
+                    <span [class]="q.answer=='c' ? 'correct' :  
+                    (userAnswerArray[(q.qid)-1][1] == 'c' ? 'incorrect':'')"
+                    > c.) {{q.c}}</span><br>
+                <input type="radio" name={{q.qid}} value={{q.d}} 
+                readonly [checked]="userAnswerArray[(q.qid)-1][1] == 'd' ? true : false">
+                    <span [class]="q.answer=='d' ? 'correct' : 
+                    (userAnswerArray[(q.qid)-1][1] == 'd' ? 'incorrect':'')"
+                    > d.) {{q.d}}</span><br>
+            </div>
+            <div id="navspan">
+                <span>Answer: {{q.answer}} <br></span>
+                <span>Response: {{userAnswerArray[(q.qid)-1][1]}}, </span>
+                <span>is {{userAnswerArray[(q.qid)-1][1]==q.answer ? 'correct' : 'incorrect'}}.</span>
+            </div>
+        <!--</section>-->
+    </div> 
+</div>

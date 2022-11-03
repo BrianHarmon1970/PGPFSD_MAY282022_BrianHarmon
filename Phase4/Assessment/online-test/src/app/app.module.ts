@@ -1,0 +1,27 @@
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { QuestionService } from './question.service';
+import { QuizComponent } from './quiz/quiz.component';
+import { ResultComponent } from './result/result.component';
+import { ReviewComponent } from './review/review.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    QuizComponent,
+    ResultComponent,
+    ReviewComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule
+  ],
+  providers: [ QuestionService ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

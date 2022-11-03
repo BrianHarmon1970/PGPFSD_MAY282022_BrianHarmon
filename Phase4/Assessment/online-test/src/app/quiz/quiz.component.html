@@ -1,0 +1,51 @@
+<div>
+    <input *ngIf="!inProgress" id="start_button" type="button" value="Start new test" (click)="loadQuestionDetails()">
+    <br>
+    <div  *ngFor="let q of questionsInfo">
+        <section id="test_box" *ngIf="questionIndex==q.qid" >
+            <div  id="question_box">
+                {{q.qid}}. {{q.question}} 
+                <div id="test_progress">
+                    <span> ({{questionIndex}} of {{questionCount}}) </span>
+                    <progress [max]="questionCount" [value]="answerCount"></progress>
+                </div>
+            </div>
+            <!--{{q.a}}{{q.b}}{{q.c}}{{q.d}}-->
+            <div id="answer_box">
+    
+                <input type="radio" name={{q.qid}} value={{q.a}} 
+                (click)="storAns(q.qid, 'a')" [checked]="uAnswer == 'a' ? true : false">
+                    <span [class]="q.answer=='a' ? 'correct' : ''"> a.) {{q.a}}</span><br>
+
+                <input type="radio" name={{q.qid}} value={{q.b}} 
+                (click)="storAns(q.qid, 'b')" [checked]="uAnswer == 'b' ? true : false">
+                    <span [class]="q.answer=='b' ? 'correct' : ''" > b.) {{q.b}}</span><br>
+
+                <input type="radio" name={{q.qid}} value={{q.c}}
+                (click)="storAns(q.qid, 'c')" [checked]="uAnswer == 'c' ? true : false">
+                    <span [class]="q.answer=='c' ? 'correct' : ''" > c.) {{q.c}}</span><br>
+
+                <input type="radio" name={{q.qid}} value={{q.d}}
+                (click)="storAns(q.qid, 'd')" [checked]="uAnswer == 'd' ? true : false">
+                    <span [class]="q.answer=='d' ? 'correct' : ''" > d.) {{q.d}}</span><br>
+
+            </div>    
+            <div id="navspan">
+                <span id="navspan">
+                    <button  *ngIf="prevEnable==true"  value="Prev" (click)="onPreviousQuestion()">Prev</button>
+                    <button  *ngIf="prevEnable==false"  disabled value="Prev" (click)="onPreviousQuestion()">Prev</button>
+                    <button  *ngIf="nextEnable==true" value="Next" (click)="onNextQuestion()">Next</button>
+                    <button  *ngIf="nextEnable==false" disabled value="Next" (click)="onNextQuestion()">Next</button>
+                    <button  *ngIf="submitEnable==true" value="SubmitTest" (click)="onSubmitTest()">Submit Test</button>
+                    <button  *ngIf="submitEnable==false" disabled value="SubmitTest" (click)="onSubmitTest()">Submit Test</button>
+                    <span>[{{answerCount}} of {{questionCount}} questions answered.]
+                        
+    
+                
+                    </span>  
+                </span>
+            </div>
+            
+        </section>
+    </div> 
+</div>

@@ -1,0 +1,90 @@
+{
+    "questions":
+    [
+        {
+            "qid":1,
+            "question":"Where does Santa Clause live?",
+            "a":"Center of the Earth",
+            "b":"Santa Clause isn't real",
+            "c":"Venus",
+            "d":"Same Place as Rudolph the Red Nosed Reindeer",
+            "answer":"d"
+        },
+        {
+            "qid":2,
+            "question":"How many licks does it take to get to the tootsie roll center of a Tootsie Roll Lollipop?",
+            "a":"Infinite",
+            "b":"100,000",
+            "c":"I don't know, let me see, 'one... two... three.... crunch! easy, it's three",
+            "d":"Seven times Seventy",
+            "answer":"c"
+        },
+        {
+            "qid":3,"question":"If a tree falls in the forest and there is no one there to hear it, does it make a sound?",
+            "a":"Yes of course there is a repurcussion(Classical Physics)",
+            "b":"ohm....( Buddha )",
+            "c":"There is no tree, only forest..., there is no forest... (Zen}",
+            "d":"It is not possible that it is not heard (Quantum Entanglement+Diamond Sutra)",
+            "answer":"d"
+        },
+        {
+            "qid":4,
+            "question":"What is a thneed?",
+            "a":"A fine something of athing that everyone needs!",
+            "b":"Oncelers ingenious product of the trufula trees",
+            "c":"An amorphic sweater-like thing that can be used as a sock, a hat, a carpet, a pillow, or a sheet",
+            "d":"All of the above",
+            "answer":"d"
+        },
+        {
+            "qid":5,"question":"Are you pondering what I am pondering, Pinky?",
+                "a":"I think so Brain, but don't you think Mr. Hoover would notice a missing evening gown?",
+                "b":"I think so Brain, but me and Pippi longstocking? just think of the children.",
+                "c":"I think so, Brain. But if I put on two tutu's, would I really be wearing a four-by-four?",
+                "d":"The answer is always really 'no, not really'.",
+                "answer":"d"
+            },
+        {
+            "qid":6,"question":"What color was George Washington's white horse",
+            "a":"It wasnt' white.",
+            "b":"Not white",
+            "c":"It was white",
+            "d":"It was certainly not white",
+            "answer":"c"
+        },
+        {
+            "qid":7,
+            "question":"What is the formula for the area of a circle?",
+            "a":"2 pi r",
+            "b":"pi r2",
+            "c":"pi d",
+            "d":"both a and c",
+            "answer":"b"
+        },
+        {
+            "qid":8,
+            "question":"What is the formula for the circumference of a circle",
+            "a":"2 pi r",
+            "b":"pi r2",
+            "c":"pi d",
+            "d":"both a and c",
+            "answer":"d"
+        },
+        {
+            "qid":9,"question":"Which of the following is not an expression of Newton's laws of motion...",
+            "a":"An object in motion tends to stay in motion",
+            "b":"An object at rest tends to stay at rest",
+            "c":"An object in motion will eventually come to rest",
+            "d":"For every action force there is an equal and opposite reaction force",
+            "answer":"c"
+        },
+        {
+            "qid":10,"question":"In what year did Columbus set sail to seek new trade routes to India?",
+            "a":"1492",
+            "b":"1592",
+            "c":"1650",
+            "d":"1453",
+            "answer":"a"
+        }
+    ]
+}
