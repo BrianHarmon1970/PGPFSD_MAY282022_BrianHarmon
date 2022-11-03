@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team/Finance Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1> Your Management Home</h1>
+    </header>
+    <section id="main_section">
+        <div class="container-fluid">
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link btn active" hidden aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mings btn btn-outline-dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mings btn btn-outline-dark" href="TeamManagement.html">Teams<br>Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mings btn btn-outline-dark" href="FinanceManagement.html">Finance<br>Management</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+            
+        <br><a href="./TeamManagement.html">Team Management</a>
+        <br><a href="./FinanceManagement.html">Finance Management</a>
+        
+    </section>
+    <footer>
+        <div class="text-center p-0" >
+            <p>
+                © 2022 Copyright:
+                <!--<a class="text-light text-center" href="https://harmonengineering.com/">Brian Harmon - Harmon Engineering L.L.C.</a>-->
+                <a class=" text-center" href="https://harmonengineering.com/">Brian Harmon - Harmon Engineering L.L.C.</a>
+            </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+        crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="expenseBudget.js"></script>
+    <script> 
+        
+        CreatedTeams.addTeamByName("ATeam") ; 
+        CreatedTeams.addTeamByName("BTeam") ; 
+        //CreatedTeams.addTeamByName("Team1") ; 
+        //window.sessionStorage.setItem()
+        storeTeamList() ;
+        
+        restoreTeamList() ;
+        //console.log( Teams) ;
+        Teams.listTeams()  ;
+
+        item = new ExpenseItem( null, new Team( 100, "Killers"), 
+                        new Vendor( 100, "ButcherSupply"), 
+                        "Soap", new Date() ) ;
+        
+
+        Expenses.display( item ) ;
+
+        Expenses.addItem( new ExpenseItem( null, new Team( 100, "Killers"), 
+                        new Vendor( 100, "ButcherSupply"), 
+                        "Soap", new Date() )) ;
+        Expenses.addItem( new ExpenseItem( null, new Team( 100, "Killers"), 
+                        new Vendor( 100, "ButcherSupply"), 
+                        "H2So4", new Date() )) ;
+
+        Expenses.storeItems() ;
+        Expenses.listItems() ;     
+        
+        
+        //Vendors.addVendorByName( "Vendor M" ) ;
+        let vendor = new Vendor( "Vendor M") ;
+        let product = new VendorOffering() ;
+        
+        product.baseBuilder(  1, "Basic PitchFork" ) ;
+        product.simpleProductBuilder( 19.99 ) ; 
+        Offerings.addOffering( product ) ;
+
+        product = new VendorOffering() ;
+        product.baseBuilder( 1, "Double Bubble 1000 count box" ) ;
+        product.multiUnitProductBuilder( 0.02, 1000 ) ;
+        Offerings.addOffering( product ) ;
+        Vendors.addVendor( vendor ) ;
+
+        vendor = new Vendor( "Vendor N") ;
+        //Vendors.addVendorByName( "Vendor N" ) ;
+        product = new VendorOffering() ;
+        product.baseBuilder( 2, "Taxman's Insurance Policy (1 Month)" ) ;
+        product.monthlySubscriptionBuilder( 66.66, 1 ) ;
+        Offerings.addOffering( product ) ;
+
+        product = new VendorOffering() ;
+        product.baseBuilder( 2, "Taxman's Insurance Policy (6 Months)" ) ;
+        product.monthlySubscriptionBuilder( 33.33, 6 ) ;
+        Offerings.addOffering( product ) ;
+
+        product = new VendorOffering() ;
+        product.baseBuilder( 2, "Taxman's Insurance Policy (1 Year)" ) ;
+        product.yearlySubscriptionBuilder( 99.99, 1 ) ;
+        Offerings.addOffering( product ) ;
+        Vendors.addVendor( vendor ) ;
+
+        Offerings.storeOfferings() ;
+        //Offerings.restoreOfferings() ;
+        Offerings.listOfferings() ;
+        
+        Vendors.addVendorByName( "Vendor O" ) ;
+        Vendors.storeVendors() ;
+        Vendors.listVendors() ;
+
+    </script>
+    <div style="height: 3em"></div>
+</body>
+</html>

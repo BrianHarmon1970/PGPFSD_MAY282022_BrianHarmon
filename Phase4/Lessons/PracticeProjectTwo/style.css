@@ -1,0 +1,29 @@
+header
+{
+    background-color: aliceblue;
+    color:blue
+}
+section
+{
+    margin-left: 2em ;
+}
+footer
+{
+    background-color: black;
+    color:azure;
+    margin: 0 ; 
+    padding: 0 ; 
+    position: fixed; 
+    bottom: 0 ; right: 0 ; 
+    width: 100% ; 
+    /*
+    background-image: url(./images/lukasz-rawa-fmc-tFMMiBs-unsplash.jpg); 
+    opacity: 0.50 ; 
+    */
+
+}
+footer a 
+{
+    color: cyan ;
+    background-color: black;
+}
