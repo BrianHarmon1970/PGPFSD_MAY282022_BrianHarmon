@@ -1,0 +1,41 @@
+span
+{ 
+    color: green; 
+}
+#start_button { margin: 1em ; }
+#test_box 
+{ 
+    margin: none ;
+    padding: none ;
+    border: cadetblue 1px solid ;
+    background-color:blanchedalmond ;
+}
+#question_box 
+{
+    padding: .5em ;
+    padding-left: 1em ; 
+    color:aliceblue ;
+    border: blue 1px solid ;
+    background-color: cornflowerblue;
+}
+#answer_box
+{
+    margin: 2em ;
+    padding: 1em ;
+    border: gray 2px solid;
+    background-color: rgba( 64, 192, 164, 96) ;
+}
+#navspan
+{
+    margin: 2em ;
+    margin-bottom: 2em ;
+    margin-top: .2em ;
+}
+.correct
+{
+    color: greenyellow ;
+}
+.incorrect
+{
+    color: red ;
+}

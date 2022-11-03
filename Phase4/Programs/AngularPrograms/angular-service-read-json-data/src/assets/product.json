@@ -1,0 +1,8 @@
+{
+    "product":[
+        {"id":1,"pname":"TV","price":85000,"url":"https://cdn1.smartprix.com/rx-iSUL96nlp-w1200-h1200/SUL96nlp.jpg"},
+        {"id":2,"pname":"Computer","price":45000,"url":"https://image.shutterstock.com/image-illustration/modern-office-business-desktop-computer-260nw-148831151.jpg"},
+        {"id":3,"pname":"Laptop","price":62000,"url":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRgd6uIroN_ot0ZeIFM1PtxO3bXRdIwNXAK2pqyrRo5YwWRoMSQSkGoJaNTn2OKV-M74l2yrgrSxaOv_pj8zR2DgucpbBaYatU9v6cg6Gm9dJmxqpDOUPe-&usqp=CAc"},
+        {"id":4,"pname":"Mobile","price":45000,"url":"https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/uk/advisor/wp-content/uploads/2020/11/phones-switch-apps.jpg"}
+    ]
+}

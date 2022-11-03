@@ -1,0 +1,11 @@
+<p>product works!</p>
+<div>
+    <input type="button" value="Load Data" (click)="loadProductInfo()">
+    <div style="padding: 2em;">
+        <div *ngFor="let product of productInfo">
+            <img src="{{product.url}}" width="100px" height="100px"><br>
+            <span>{{product.id}} {{product.pname}} {{product.price}}</span>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<h2> Questions </h2>
+<div>
+    <input id="start_button" type="button" value="start test" (click)="loadQuestionDetails()">
+    <br>
+    <div  *ngFor="let q of questionsInfo" id="test_box">
+        <section *ngIf="questionIndex==q.qid" >
+            <div  id="question_box">{{questionsInfo[3].qid}} {{q.qid}}. {{q.question}} ({{questionIndex}} of {{questionCount}})</div>
+            <!--{{q.a}}{{q.b}}{{q.c}}{{q.d}}-->
+            <div id="answer_box">
+    
+                <input type="radio" name={{q.qid}} (click)="storAns(q.qid, q.a)">
+                    <span [class]="q.answer=='a' ? 'correct' : ''" > a.) {{q.a}}</span><br>
+                <input type="radio" name={{q.qid}} value={{q.b}} (click)="storAns(q.qid, q.b)">
+                    <span [class]="q.answer=='b' ? 'correct' : ''" > b.) {{q.b}}</span><br>
+                <input type="radio" name={{q.qid}} value={{q.c}} (click)="storAns(q.qid, q.c)">
+                    <span [class]="q.answer=='c' ? 'correct' : ''" > c.) {{q.c}}</span><br>
+                <input type="radio" name={{q.qid}} value={{q.d}} (click)="storAns(q.qid, q.d)">
+                    <span [class]="q.answer=='d' ? 'correct' : ''" > d.) {{q.d}}</span><br>
+            </div>
+            <span id="navspan">
+                <button  *ngIf="prevEnable==true"  value="Prev" (click)="onPreviousQuestion()">Prev</button>
+                <button  *ngIf="prevEnable==false"  disabled value="Prev" (click)="onPreviousQuestion()">Prev</button>
+                <button  *ngIf="nextEnable==true" value="Next" (click)="onNextQuestion()">Next</button>
+                <button  *ngIf="nextEnable==false" disabled value="Next" (click)="onNextQuestion()">Next</button>
+                <button disabled value="SubmitTest" (click)="onSubmitTest()">Submit Test</button>
+            </span>
+        </section>
+    </div> 
+</div>
