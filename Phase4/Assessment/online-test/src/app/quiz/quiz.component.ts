@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { HighlightSpanKind } from 'typescript';
 import { Question } from '../question'
-//import { Answer } from '../answer'
 import { QuestionService } from '../question.service'
 
 
@@ -14,7 +12,6 @@ import { QuestionService } from '../question.service'
 
 export class QuizComponent implements OnInit {
   questionsInfo:Array<Question>=[]
-  //answerInfo:Array<Answer>=[] ;
   questionIndex:number ;
   questionCount:number ;
   answerCount:number ;
@@ -38,10 +35,6 @@ export class QuizComponent implements OnInit {
   }
   userAnswer = new Map ;
   ngOnInit(): void {
-    //this.qs.loadAnswers().subscribe({
-    //  next:(data:any)=>this.answerInfo=data.answers,
-     // error:(error:any)=>console.log(error) ,
-     // complete:()=>console.log("done")     })
   }
   loadQuestionDetails()
   {

@@ -23,12 +23,14 @@ class TeamList
     {
         this.count++ ;
         this.TeamMap.set( this.count, team ) ;
+        return this.TeamMap.get( this.count ) ;
     }
     addTeamByName( name )
     {
         ++this.count ;
         let newTeam = new Team( this.count, name ) ;
         this.TeamMap.set( this.count, newTeam ) ; 
+        return this.TeamMap.get( this.count ) ;
     }
     listTeams()
     {
@@ -41,9 +43,9 @@ class TeamList
 
 class Vendor
 {
-    constructor(  name ) 
+    constructor( id, name ) 
     {
-        this.id = id = 0 ; 
+        this.id = id ;
         this.name = name ;
     }
     getId() { return this.id ; }
@@ -64,8 +66,12 @@ class VendorList
     addVendor( item )
     {
         this.count++ ;
-        item.vendorId =  this.count  ;
+
+        item.id =  this.count  ;
         this.VendorMap.set( this.count, item ) ;
+        //this.addVendorByName( item.getName() ) ;
+        
+        return this.VendorMap.get( this.count ) ;
     }
     addVendorByName( name )
     {
@@ -73,6 +79,8 @@ class VendorList
         let newVendor = new Vendor( this.count, name ) ;
         //this.addVendor( newVendor) ;
         this.VendorMap.set( this.count, newVendor ) ; 
+        return this.VendorMap.get( this.count ) ;
+        
     }
     
     listVendors()
@@ -273,11 +281,11 @@ class ExpenseItem
     // double unitPrice
     // double totalCost
 
-    constructor( id, Team, Vendor, description, date )
+    constructor( id, Team, vendor, description, date )
     {
         this.id = id  ;
         this.teamId = Team.getId() ;
-        this.vendorId = Vendor.getId() ;
+        this.vendorId = vendor.getId() ;
         this.description = description ;
         this.date = date ;
     }

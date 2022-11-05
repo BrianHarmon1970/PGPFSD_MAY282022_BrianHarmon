@@ -63,28 +63,38 @@
         
         restoreTeamList() ;
         //console.log( Teams) ;
+        //Teams.listTeams()  ;
+
+
+        killerTeam = CreatedTeams.addTeamByName( "Killers" ) ;
+        butcherSupply = Vendors.addVendorByName( "ButcherSupply" ) ;
+        storeTeamList() ;
+        restoreTeamList() ;
         Teams.listTeams()  ;
-
-        item = new ExpenseItem( null, new Team( 100, "Killers"), 
-                        new Vendor( 100, "ButcherSupply"), 
-                        "Soap", new Date() ) ;
+        Vendors.listVendors() ;
         
+        soap = new ExpenseItem( null, killerTeam, 
+                        butcherSupply, 
+                        "Soap", new Date() ) ;
 
-        Expenses.display( item ) ;
+                        Expenses.addItem( soap ) ;
+                        Expenses.display( soap ) ;
+       
 
-        Expenses.addItem( new ExpenseItem( null, new Team( 100, "Killers"), 
-                        new Vendor( 100, "ButcherSupply"), 
-                        "Soap", new Date() )) ;
-        Expenses.addItem( new ExpenseItem( null, new Team( 100, "Killers"), 
-                        new Vendor( 100, "ButcherSupply"), 
-                        "H2So4", new Date() )) ;
-
+        acid = new ExpenseItem( null, killerTeam, 
+                        butcherSupply, 
+                        "H2So4", new Date() ) ;
+                        Expenses.addItem( acid ) ;
+                        Expenses.display( acid ) ;
+        
+        
+        
+        
         Expenses.storeItems() ;
         Expenses.listItems() ;     
         
-        
         //Vendors.addVendorByName( "Vendor M" ) ;
-        let vendor = new Vendor( "Vendor M") ;
+        let vendor = new Vendor( 0, "Vendor M") ;
         let product = new VendorOffering() ;
         
         product.baseBuilder(  1, "Basic PitchFork" ) ;
@@ -97,7 +107,7 @@
         Offerings.addOffering( product ) ;
         Vendors.addVendor( vendor ) ;
 
-        vendor = new Vendor( "Vendor N") ;
+        vendor = new Vendor( 0, "Vendor N") ;
         //Vendors.addVendorByName( "Vendor N" ) ;
         product = new VendorOffering() ;
         product.baseBuilder( 2, "Taxman's Insurance Policy (1 Month)" ) ;
@@ -116,7 +126,7 @@
         Vendors.addVendor( vendor ) ;
 
         Offerings.storeOfferings() ;
-        //Offerings.restoreOfferings() ;
+        Offerings.restoreOfferings() ;
         Offerings.listOfferings() ;
         
         Vendors.addVendorByName( "Vendor O" ) ;

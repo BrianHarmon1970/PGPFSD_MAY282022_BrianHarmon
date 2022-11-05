@@ -5,13 +5,13 @@ h1
     color: white ;
     padding: 1% ;
 }
-div
+#main_div
 {
     background-color: black ;
     color: white ;
     padding: 1% ;
 }
-div a
+#main_div a
 {
     
     background-color: black;
@@ -22,6 +22,27 @@ div a
     border-radius: 10px;
     padding: .5em ; 
     margin: 1em ; 
-
+}
+footer
+{
+    background-color: black;
+    color:azure;
+    margin: 0 ; 
+    padding: 0 ; 
+    position: fixed; 
+    bottom: 0 ; right: 0 ; 
+    width: 100% ; 
+    /*
+    background-image: url(./images/lukasz-rawa-fmc-tFMMiBs-unsplash.jpg); 
+    */
+    opacity: 0.50 ; 
     
+
+}
+footer a 
+{
+    margin: 0 ; 
+    padding: 0 ; 
+    color: cyan ;
+    background-color: black;
 }
