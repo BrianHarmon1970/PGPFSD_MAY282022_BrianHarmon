@@ -1,11 +1,166 @@
 header
 {
-    background-color: aliceblue;
-    color:blue
+    display: flex ;
+    align-content: space-around;
+    /* background-color: blue; */
+    color:black ;
 }
+#navbar_container
+{
+    padding:20px ;
+    padding-right: 0 ;
+    
+    position: fixed ;
+    background-color: wheat ;
+    height: 100vh ;
+    width:fit-content ;
+}
+.btn
+{
+    background-color: whitesmoke;
+    width: 15ch ;
+    border-right: none ;
+    border-bottom-left-radius: 20px ;
+    border-top-left-radius: 20px ;
+    border-bottom-right-radius: 0px ;
+    border-top-right-radius: 0px ;
+}
+.select-list
+{
+    display: grid ;
+    
+    width: 400px ;
+    /* border: 1px solid black ; */
+    font-size: small;   
+}
+.select-list span
+{
+    display: flex ;
+    color: black ;
+    width: auto ;
+    /* margin: 0px ; */
+    
+    
+    /* height:.25in ; */
+    border: 1px solid slategrey ;
+    align-items: center;
+    justify-items:flex-start; 
+    
+}
+/* #teams-list span span:hover 
+{
+    nav-down: none;
+} */
+.select-list span:hover
+{
+    color:black ;
+    background-color: goldenrod;
+    border-bottom: 1px solid blue ;
+    border-top: 1px solid blue ;
+}
+.selected-row
+{
+    background-color:cyan ;
+    color: white ;    
+}
+#teams-id
+{
+    width: 5% ;
+}
+#vendors-id
+{
+    width: 5% ;
+}
+#teams-name 
+{
+    width: 95% ;
+}
+#vendors-name 
+{
+    width: 95% ;
+}
+#product-id 
+{
+    width: 5% ;
+}
+#product-vid
+{
+    width: 5% ;
+}
+#product-description
+{
+    width: 75% ;
+}
+#product-price
+{
+    width: 15% ;
+    justify-content: right ;
+    padding-right: 4px ;
+}
+/* .iRow span:hover
+{
+    background-color:white ;
+    color:blue;
+} */
+/*  .iRow:hover
+{
+    color:aqua ;
+    background-color: goldenrod;
+} */ 
+.i2
+{
+    grid-template-columns: repeat( 2, 1fr ) ;
+}
+.i4
+{
+    grid-template-columns: repeat( 4, 1fr) ;
+}
+.select-list span span
+{
+    border-left: none ;
+    border-left: 1px solid grey ;
+    
+    
+    padding-left: 1px ;
+    padding-right: 1px ;
+    /* border: solid black 1px ;
+    padding: 1px ; 
+    margin: 1px ;    */
+}
+
+.select-list div
+{
+    color:blueviolet ;
+    margin: 4px ;
+     align-items:stretch; 
+    width: 100px ;
+    height:.25in ;
+    border-left: 1px solid blue ;
+    
+    justify-items: center;
+}
+#teams-section-div
+{
+    display: grid ;
+    grid-template-columns: repeat( 2, 1fr ) ; 
+}
+
+/* .iRow span
+{
+    color: red ;
+} 
+.iRow 
+{
+    color: red ;
+}
+*/
 section
 {
-    margin-left: 2em ;
+    padding: 20px ;
+    background-color: aliceblue;
+    color:blue ;
+    margin-left: 10rem ;
+    height: 100vh ; 
 }
 footer
 {
@@ -20,7 +175,6 @@ footer
     background-image: url(./images/lukasz-rawa-fmc-tFMMiBs-unsplash.jpg); 
     opacity: 0.50 ; 
     */
-
 }
 footer a 
 {

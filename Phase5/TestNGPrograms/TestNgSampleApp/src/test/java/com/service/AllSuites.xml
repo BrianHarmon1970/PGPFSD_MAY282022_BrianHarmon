@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MyAllSuites">
+	<suite-files>
+		<suite-file path="mySuite.xml"></suite-file>
+		<suite-file path="VSuiteFile.xml"></suite-file>
+	</suite-files>
+</suite>

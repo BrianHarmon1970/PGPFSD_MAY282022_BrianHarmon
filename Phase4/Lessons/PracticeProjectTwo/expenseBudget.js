@@ -1,5 +1,6 @@
 
 
+
 class Team
 {
     constructor( id, name ) 
@@ -36,6 +37,68 @@ class TeamList
     {
         document.write("=== TEAMS ===<br>")
         this.TeamMap.forEach( (team, id )=>{ document.writeln( id + " " + team.id + " "+ team.name+"<br>") ;  })        
+    }
+    testFunction( )
+    {
+        let str = event.target.getAttribute("data-v")  ;
+        
+        let vRow = Teams.getMap().get(  eval(str) ) ;
+        let p = document.getElementById("id_selected_team" ) ;
+        p.textContent = vRow.name ;
+        SelectedTeam = vRow ;
+    }
+    writeTeamsToElement( targetElement )
+    {
+        targetElement.innerText = "" ;
+        //let s = new Element() ;
+        this.TeamMap.forEach( 
+            (team, id)=> 
+                
+            {
+                  let s = document.createElement( "span" ) ;
+                  let s1 = document.createElement( "span" ) ;
+                  let s2 = document.createElement( "span" ) ;
+                  s.className="iRow" ;
+                  s1.innerText = team.id ;
+                  s2.innerText = team.name ;
+                  
+                  s.addEventListener("click",
+                  //targetElement.addEventListener("click",
+                    ()=>{ 
+                        s.setAttribute("data-v", team.id ) ;
+                        s1.setAttribute("data-v", team.id ) ;
+                        s2.setAttribute("data-v", team.id ) ;
+                        
+                        this.testFunction() ;
+                        
+                    },false ) ;
+                
+
+                  s1.class = "rowElement" ;
+                  s2.class = "rowElement" ;
+
+                  s1.id = "teams-id";
+                  s2.id = "teams-name" ;
+                  s.append( s1 ) ;
+                  s.append( s2 ) ;
+
+                
+                  targetElement.appendChild( s ) ;             
+            } 
+        ) ;
+        /* let s = document.createElement( "span") ;
+        let t = document.createTextNode( "Hello." ) ;
+         s.appendChild( t ) ;
+
+        //targetElement.appendChild( t ) ;
+        targetElement.appendChild( s ) ; */
+        
+    }
+    getTeamList() 
+    {
+        let str = "=== TEAMS ===\n" ;
+        this.TeamMap.forEach( (team, id )=>{ str+=( id + " " + team.id + " "+ team.name+"\n") ;  }) ; 
+        return str ;
     }
     setMap( map ) { this.TeamMap = map  ; this.count = map.size ;  }
     getMap() { return this.TeamMap ; }
@@ -79,8 +142,7 @@ class VendorList
         let newVendor = new Vendor( this.count, name ) ;
         //this.addVendor( newVendor) ;
         this.VendorMap.set( this.count, newVendor ) ; 
-        return this.VendorMap.get( this.count ) ;
-        
+        return this.VendorMap.get( this.count )         
     }
     
     listVendors()
@@ -90,6 +152,62 @@ class VendorList
         //for( i = 0 ; i < this.ItemMap.size ; ++i )
         //    display( this.ItemMap.get( i+1 )) ;
         this.VendorMap.forEach( (v) =>{ this.display( v ) ;  })        
+
+    }
+    getList()
+    {
+        let str = "" ;
+        str += "=== VENDORS ===\n" ;
+        this.VendorMap.forEach( (v) =>{ str += this.getDisplayString( v ) ;  })  ;
+        return str ;      
+    }
+    testFunction( )
+    {
+        let str = event.target.getAttribute("data-v")  ;
+        
+        let vRow = Vendors.getMap().get(  eval(str) ) ;
+        let p = document.getElementById("id_selected_vendor" ) ;
+        p.textContent = vRow.name ;
+        SelectedVendor = vRow ;
+        SelectedProduct = null ;
+        document.getElementById( "id_selected_product").textContent = "[product]" ;
+        ListVendorProducts() ;
+    }
+    writeListToElement( targetElement )
+    {
+        targetElement.innerText = "" ;
+        //let s = new Element() ;
+        this.VendorMap.forEach( 
+            ( v )=>  
+            {
+                
+                    let s = document.createElement( "span" ) ;
+                    s.className = "iRow" ;
+                    let s1 = document.createElement( "span" ) ;
+                    let s2 = document.createElement( "span" ) ;
+                    s1.innerText = v.id ;
+                    s2.innerText = v.name ;
+
+                    s.addEventListener("click",
+                    ()=>
+                    {
+                        s.setAttribute("data-v", v.id ) ;
+                        s1.setAttribute("data-v", v.id ) ;
+                        s2.setAttribute("data-v", v.id ) ;
+                        
+                        this.testFunction() ;
+                    })
+
+                    s1.id = "vendors-id" ;
+                    s2.id = "vendors-name" ;
+                    
+                    s.append( s1 ) ;
+                    s.append( s2 ) ;
+                  
+                    targetElement.appendChild( s ) ;             
+                }
+            
+        ) ;
     }
   
     setMap( map ) { this.VendorMap = map  ; this.count = map.size ;  }
@@ -124,6 +242,12 @@ class VendorList
     { 
         document.write( item.id + " " + 
                         item.name + "<br>"  ) ;
+    }
+    getDisplayString( item ) 
+    { 
+        let str = "" ;
+        str +=  item.id + " " + item.name + "\n"   ;
+        return str ;
     }
 }
 class VendorOffering // product or service
@@ -203,6 +327,16 @@ class VendorOffering // product or service
     }
 
 }
+function testFunction( val  )
+    {
+        let str = event.target.getAttribute("data-v")  ;
+        
+        //alert("testFunction() called:" + str ) ;
+        //callingElement.appendChild( document.createTextNode("TestFunction() called")) ;
+        //let vProduct = Offerings.getMap().get(  eval(str) ) ;
+        //let p = document.getElementById("id_selected_team" ) ;
+        //p.textContent = vProduct.description ;
+    }
 class VendorOfferingList
 {
     constructor() 
@@ -217,6 +351,18 @@ class VendorOfferingList
         this.count++ ;
         offering.setId( this.count ) ;
         this.OfferingMap.set( this.count, offering ) ;
+    }
+    testFunction(  )
+    {
+        let str = event.target.getAttribute("data-v")  ;
+        
+        //alert("testFunction() called:" + str ) ;
+        //callingElement.appendChild( document.createTextNode("TestFunction() called")) ;
+        let vProduct = Offerings.getMap().get(  eval(str) ) ;
+        let p = document.getElementById("id_selected_product" ) ;
+        p.textContent = vProduct.description ;
+        SelectedProduct = vProduct ;
+        
     }
     /*
     addTeamByName( name )
@@ -233,6 +379,74 @@ class VendorOfferingList
         //    display( this.ItemMap.get( i+1 )) ;
         this.OfferingMap.forEach( (offering)=>{ this.display( offering ) ;  })        
     }
+    getList()
+    {
+        let str1 =  "=== OFFERINGS ===\n" ;
+        this.OfferingMap.forEach( 
+            (offering)=>{ str1 += this.getDisplayString( offering ) ;  }) ;       
+        return str1 ;
+    }
+    
+    writeListToElement( targetElement )
+    {
+        targetElement.innerText = "" ;
+        //let s = new Element() ;
+        this.OfferingMap.forEach( 
+            ( item )=> 
+                
+            {
+                let v = new Vendor( item ) ;
+                if ( item.vendorId == SelectedVendor.getId())
+                {
+                let s = document.createElement( "span" ) ;
+                //s.className = "iRow" ;
+                //s.setAttribute( "capture", "true" ) ;
+                //s.setAttribute("data-v", item.id) ;
+                
+                  let s1 = document.createElement( "span" ) ;
+                  let s2 = document.createElement( "span" ) ;
+                  let s3 = document.createElement( "span" ) ;
+                  let s4 = document.createElement( "span" ) ;
+                  //targetElement.className ="i4" ;
+                  s.addEventListener("click",
+                  //targetElement.addEventListener("click",
+                    ()=>{ 
+                        s.setAttribute("data-v", item.id ) ;
+                        s1.setAttribute("data-v", item.id ) ;
+                        s2.setAttribute("data-v", item.id ) ;
+                        s3.setAttribute("data-v", item.id ) ;
+                        s4.setAttribute("data-v", item.id ) ;
+                        
+                        this.testFunction() ;
+                        
+                    },false ) ;
+                
+
+                  s1.innerText = item.id ;
+                  s2.innerText = item.vendorId ;
+                  s3.innerText = item.description ;
+                  s4.innerText = item.offeringPrice ;
+                  s1.class = "rowElement" ;
+                  s2.class = "rowElement" ;
+                  s3.class = "rowElement" ;
+                  s4.class = "rowElement" ;
+
+                  s1.id = "product-id" ;
+                  s2.id = "product-vid" ;
+                   s3.id = "product-description" ;
+                   s4.id = "product-price" ;
+                  
+                  s.append( s1 ) ;
+                  s.append( s2 ) ;
+                  s.append( s3 ) ;
+                  s.append( s4 ) ;
+
+                targetElement.appendChild( s ) ;
+                }
+            } 
+        ) ;
+    }
+  
     replacer(key, value) {
         if(value instanceof Map) {
           return {
@@ -268,9 +482,16 @@ class VendorOfferingList
         + offering.description + " " + offering.offeringPrice + "<br>" ) ;
 
     }   
+    getDisplayString( offering ) 
+    {
+        let str = "" ;
+        str +=  offering.id + " " + offering.vendorId + " "   + offering.description + " " + offering.offeringPrice + "\n"  ;
+        return str ;
+
+    }
 }
 
-class ExpenseItem
+/* class ExpenseItem
 {
     // int id
     // int teamId
@@ -321,6 +542,26 @@ class ExpenseItemList
         //    display( this.ItemMap.get( i+1 )) ;
         this.ItemMap.forEach( ( item ) =>{ this.display( item ) ;  })        
     }
+    // writeItemsToElement( targetElement )
+    //{
+    //    targetElement.innerText = "" ;
+    //    //let s = new Element() ;
+    //    this.ItemMap.forEach( 
+    //        (team, id)=> 
+    //            
+    //        {
+    //              let s = document.createElement( "span" ) ;
+         //         let s1 = document.createElement( "span" ) ;
+         //         let s2 = document.createElement( "span" ) ;
+         //         s1.innerText = team.id ;
+         //         s2.innerText = team.name ;
+         //         s.append( s1 ) ;
+         //         s.append( s2 ) ;
+         //           // s.innerText = ( id + " " + team.id + " "+ team.name+"\n") ;
+         //           targetElement.appendChild( s ) ;             
+        //    } 
+      //  ) ;
+    //} 
   
     setMap( map ) { this.ItemMap = map  ; this.count = map.size ;  }
     getMap() { return this.ItemMap ; }
@@ -370,14 +611,37 @@ class ExpenseItemList
                         item.unitPrice + " " +
                         item.totalCost+ "<br>" ) ; 
     }
-}
+    getList()
+    {
+        let str =  "=== ITEMS ===\n"
+        this.ItemMap.forEach( ( item ) =>{ str += this.getExpenseItemString( item ) ;  }) ;
+        return str ;
+    }
+    getExpenseItemString( item )
+    {
+        let str = "" ;
+        str += item.id + " " + 
+        item.teamId  + " " + 
+        item.vendorId + " " +
+        item.description + " " +
+        item.date + " " + 
+        item.units + " " +
+        item.unitPrice + " " +
+        item.totalCost+ "\n"
+        return str ;
 
-let Offerings = new VendorOfferingList() ;
+    }
+}
+ */
+/* let Offerings = new VendorOfferingList() ;
 let Vendors = new VendorList() ;
 let Expenses = new ExpenseItemList() ;
 let CreatedTeams = new TeamList() ;  
 let Teams = new TeamList() ;
-
+let SelectedVendor = new Vendor() ;
+let SelectedTeam = new Team() ;
+let SelectedProduct = new VendorOffering() ;
+ */
 function replacer(key, value) {
     if(value instanceof Map) {
       return {

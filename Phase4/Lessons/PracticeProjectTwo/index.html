@@ -8,14 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
         crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <link rel="stylesheet" href="style.css">
+
 
 </head>
 <body>
     <header>
-        <h1> Your Management Home</h1>
-    </header>
-    <section id="main_section">
+
+    
+    <!-- <section id="main_section">
         <div class="container-fluid">
             <div class="navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -39,6 +41,114 @@
         <br><a href="./TeamManagement.html">Team Management</a>
         <br><a href="./FinanceManagement.html">Finance Management</a>
         
+    </section> -->
+    <div id="navbar_container" class="container-fluid">
+    
+        <div class="navbar-collapse  " id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link btn active" hidden aria-current="page" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="#project_section">Project Requirements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="#teams_section">Teams<br>Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-info" href="#finance_section">Finance<br>Management</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <section id="main_section">
+        <h1>Budget Planner Home</h1>
+        
+        <div id="myfirstchart" style="height: 250px;"></div>
+            
+      <!--   <br><a href="./TeamManagement.html">Team Management</a>
+        <br><a href="./FinanceManagement.html">Finance Management</a> -->
+        <div id="expense-summary"></div>
+        <button onclick="SummarizeExpenses()">Sum</button>
+        <div>
+            <canvas id="myChart"></canvas>
+          </div>
+          
+        
+    </section>
+    <section id="project_section">
+        <h1>Project</h1>
+        <div>
+            <p>
+                Team Budget Planner.
+                DESCRIPTION
+            </p>
+            <p>
+                Project objective: <br>
+                As a developer, write a program using JavaScript to decide the budget of a specific team.
+            </p>
+            <p>
+                <br>Background of the problem statement: <br>
+                <br>As a developer, you are assigned to a project. 
+                <br>You need to develop a website where program managers of a specific team will add details of professional deals they want to have with vendors. 
+                <br>The finance team will check expenses of those teams and will decide their annual budget.
+        
+            </p>
+            <p>
+                You must use the following: 
+                <br>● Visual Studio Code: An IDE to code for the application
+                <br>● JavaScript: A programming language
+                <br>● Git: To connect and push files from the local system to GitHub
+                <br>● GitHub: To store the application code and track its versions
+                <br>● JavaScript concepts: Functions, prototypes, primitives, objects, IIFEs, promises, async, and webpack
+            </p>        
+            <p>
+                Following requirements should be met: 
+                <br>● Versions of the code should be tracked on GitHub repositories 
+                <br>● Team Budget Planner should work properly
+            </p> 
+        </div>
+    </section>
+    <section id="teams_section">
+        <h1>Team Management</h1>
+        <!-- <div id="teams-section-div"> -->
+            <div>
+            <button value="ListTeams" onclick="ListTeams()">Teams</button>
+            <!-- <button value="ListOfferings" onclick=" ListOfferings()">Products</button> -->
+            <button value="ListVendors" onclick=" ListVendors()">Vendors</button>
+            <div class="select-list" id="teams-list" data-val="0" onclick="testFunction(this.dataset.val)"><div class="iRow"><span>1 2 3 4 5</span></div></div>
+            </div>
+            <!--  <details id="teams-list">
+                <Summary>Teams</Summary>
+
+            </details> -->
+            <div>
+            <h4>Vendor Products</h4>
+            <div class="select-list" id="product-list" data-val="0" onclick="testFunction(this.dataset.val)"><div class="iRow"><span>1 2 3 4 5</span></div></div>
+            </div>
+            <div>
+                <h4>Product Discounts</h4>
+                <div class="select-list" id="product-discount-list" data-val="0" onclick="testFunction(this.dataset.val)"><div class="iRow"><span>1 2 3 4 5</span></div></div>
+            </div>
+            <h4>Selected Purchase</h4>
+            <span id="id_selected_team">team</span>|
+            <span id="id_selected_vendor">vendor</span>|
+            <span id="id_selected_product">product</span>
+            <br><span id="id_selected_discount">discount</span>
+            <button value="SubmitPurchase" onclick="SubmitPurchaseRequest(SelectedTeam, 
+                                                    SelectedVendor, 
+                                                    SelectedProduct, 
+                                                    SelectedDiscount )">Submit Request</button>
+        <!-- </div> -->
+    </section>
+    <section id="finance_section">
+        <h1>Finance Management</h1>
+        <button value="ListExpenses" onclick="ListExpenses()">List Expenses</button>
+        <div class="select-list" id="expense-list"></div>
     </section>
     <footer>
         <div class="text-center p-0" >
@@ -52,7 +162,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
         crossorigin="anonymous"></script>
+
+
+2   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+3   <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+4   <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
     <script type="text/JavaScript" src="expenseBudget.js"></script>
+    <script type="text/JavaScript" src="ExpenseItem.js"></script>
+    <script type="text/JavaScript" src="ProductDiscount.js"></script>
+    <script type="text/JavaScript" src="DataModel.js"></script>
+    
+    
     <script> 
         
         CreatedTeams.addTeamByName("ATeam") ; 
@@ -75,23 +198,22 @@
         
         soap = new ExpenseItem( null, killerTeam, 
                         butcherSupply, 
-                        "Soap", new Date() ) ;
+                        "Soap", new Date().getUTCDate() ) ;
 
-                        Expenses.addItem( soap ) ;
-                        Expenses.display( soap ) ;
+//                        Expenses.addItem( soap ) ;
+//                        Expenses.display( soap ) ;
        
 
         acid = new ExpenseItem( null, killerTeam, 
                         butcherSupply, 
-                        "H2So4", new Date() ) ;
-                        Expenses.addItem( acid ) ;
-                        Expenses.display( acid ) ;
+                        "H2So4", new Date().getDate() ) ;
+//                        Expenses.addItem( acid ) ;
+//                        Expenses.display( acid ) ;
         
         
         
-        
-        Expenses.storeItems() ;
-        Expenses.listItems() ;     
+//        Expenses.storeItems() ;
+//        Expenses.listItems() ;     
         
         //Vendors.addVendorByName( "Vendor M" ) ;
         let vendor = new Vendor( 0, "Vendor M") ;
@@ -133,7 +255,185 @@
         Vendors.storeVendors() ;
         Vendors.listVendors() ;
 
+        let discount = new ProductDiscount() ;
+        discount.setVendorId( 1 ) ;
+        discount.setProductId( 1 ) ;
+        discount.setName( "TEST_DISCOUNT" ) ;
+        discount.setDescription( "First ever instance of ProductDiscount" ) ;
+        discount.setFractionalDiscount( 0.50 ) ;
+        discount.setCouponDiscount( 0.00 ) ;
+        Discounts.addDiscount( discount ) ;
+
+        discount = new ProductDiscount() ;
+        discount.setVendorId( 1 ) ;
+        discount.setProductId( 2 ) ;
+        discount.setName( "TEST_DISCOUNT_TWO" ) ;
+        discount.setDescription( "Second instance of ProductDiscount" ) ;
+        discount.setFractionalDiscount( 0.0 ) ;
+        discount.setCouponDiscount( 5.00 ) ;
+        Discounts.addDiscount( discount ) ;
+
+        class TeamSumElement 
+            {
+                constructor(name, value)
+                { 
+                    this.name = name; 
+                    this.value = value;
+                }
+            }
+        
+        ListDiscounts() ;
+        var TeamSum  = SummarizeExpenses;
+
+        
+
+        function SummarizeExpenses() 
+        {
+            //let sum = Expenses.Summarize() ;
+            let div = document.getElementById( "expense-summary" ) 
+            div.innerHTML = "" ;
+
+            
+            
+            let br = document.createElement( "br" ) ; 
+
+            let i = 0 ;
+            Teams.getMap().forEach( ( team ) =>
+            {
+                ++i ;
+                
+                let tsum = Expenses.SummarizeTeamId( team.id ) ;
+                let name = team.name ;
+                TeamSum[ i ] = { name: team.name, value: tsum}  ;
+
+                let br = document.createElement( "br" ) ; 
+                
+
+                let s = document.createElement( "span" ) ; 
+                s.textContent = team.name + ": " +  tsum + " "  ;
+                s.append( br ) ;
+                div.appendChild( s ) ;
+
+
+                
+            }) ;
+            s = document.createElement( "span" ) ; 
+            s.textContent = " Total: " + Expenses.Summarize()  ;
+            TeamSum[ 0 ] = { name: 'Total', value: Expenses.Summarize() } ;
+            div.appendChild( s ) ;
+
+            console.log( TeamSum ) ;
+            return TeamSum ;
+                
+        }
+
+        function ListTeams()
+        {
+
+            let div = document.getElementById("teams-list") ;
+            Teams.writeTeamsToElement( div ) ;
+        }
+        function ListExpenses()
+        {
+            let div = document.getElementById("expense-list") ;
+            div.innerText = Expenses.getList() ;    
+            Expenses.writeListToElement( div ) ;
+        }
+        function ListOfferings()
+        {
+            let div = document.getElementById("teams-list") ;
+            Offerings.writeListToElement( div ) ;
+        }
+        function ListVendors()
+        {
+            let div = document.getElementById("teams-list") ;
+            Vendors.writeListToElement( div ) ;
+        }
+        function ListVendorProducts()
+        {
+            let div = document.getElementById("product-list") ;
+            Offerings.writeListToElement( div ) ;
+        }
+        function ListDiscounts()
+        {
+            let div = document.getElementById("product-discount-list") ;
+            Discounts.writeListToElement( div ) ;
+        }
+        function SubmitPurchaseRequest( team, vendor, product, discount ) 
+        {
+            let newReq = new ExpenseItem( 0, team, vendor, product.description, new Date()) ;
+            
+            discount.ApplyProduct( product ) ;
+
+            newReq.applyTeam( team ) ;
+            newReq.setUnitCount( 10 ) ;
+            newReq.applyProduct( product ) ;
+            newReq.applyDiscount( discount ) ;
+            console.log( newReq ) ;
+            Expenses.addItem( newReq ) ;
+
+        }
+
     </script>
+    <!-- <script>
+        const myChart = new Chart(
+          document.getElementById('myChart'),
+          config
+        );
+     </script>
+     -->  
+    <script> 
+       
+        new Morris.Line({
+            // ID of the element in which to draw the chart.
+            element: 'myfirstchart',
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+             TeamSum, xkey: 'name', ykeys:['value'],
+            labels: ['value'] 
+             /* data: [
+                { year: '2008', value: 20 },
+                { year: '2009', value: 10 },
+                { year: '2010', value: 5 },
+                { year: '2011', value: 5 },
+                { year: '2012', value: 20 }
+            ], 
+            // The name of the data record attribute that contains x-values.
+            xkey: 'year',
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ['value'], */
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            //labels: ['value']
+        });
+    </script>
+<!--     <script> 
+        const labels = [
+          'January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+        ];
+      
+        const data = {
+          labels: labels,
+          datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+          }]
+        };
+      
+        const config = {
+          type: 'line',
+          data: data,
+          options: {}
+        };
+      </script>
+ -->      
     <div style="height: 3em"></div>
 </body>
 </html>
