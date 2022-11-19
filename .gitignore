@@ -1,5 +1,5 @@
 *.[class|jar|lib]
-.idea/
+*/.idea/*
 */target/
 .idea/*
 '

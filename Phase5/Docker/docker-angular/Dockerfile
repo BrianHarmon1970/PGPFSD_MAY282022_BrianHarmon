@@ -1,0 +1,3 @@
+FROM nginx
+COPY ./dist/docker-angular /usr/share/nginx/html
+

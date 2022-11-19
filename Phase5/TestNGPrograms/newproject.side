@@ -1,0 +1,1138 @@
+{
+  "id": "db8f4bd2-7a5a-43f8-aaff-d063d40a2a69",
+  "version": "2.0",
+  "name": "newproject",
+  "url": "http://127.0.0.1:5500",
+  "tests": [{
+    "id": "fec08b09-4590-48ff-b1e0-095bad098070",
+    "name": "Budget Planner",
+    "commands": [{
+      "id": "4e6e5b76-c22e-4d3b-8cd2-b4de7c925797",
+      "comment": "",
+      "command": "open",
+      "target": "/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ed607ac-7a53-482f-8c56-c92b693e7177",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55a011da-5178-4a0a-8bc9-67facf84a2c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(4) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#teams_section')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c278f4b-12a8-48a3-8e18-0cf1efb74371",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//button[@value='ListTeams']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Teams')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ebf5fe2-fedc-4a4c-bbfc-5d7970b88702",
+      "comment": "",
+      "command": "click",
+      "target": "id=teams-name",
+      "targets": [
+        ["id=teams-name", "id"],
+        ["css=.iRow:nth-child(1) > #teams-name", "css:finder"],
+        ["xpath=//span[@id='teams-name']", "xpath:attributes"],
+        ["xpath=//div[@id='teams-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64dfc902-ef58-49f0-9262-5302843dc954",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > button:nth-child(2)",
+      "targets": [
+        ["css=div > button:nth-child(2)", "css:finder"],
+        ["xpath=//button[@value='ListVendors']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Vendors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2c54623-9971-43d6-83a4-5993d419dd14",
+      "comment": "",
+      "command": "click",
+      "target": "id=vendors-name",
+      "targets": [
+        ["id=vendors-name", "id"],
+        ["css=.iRow:nth-child(1) > #vendors-name", "css:finder"],
+        ["xpath=//span[@id='vendors-name']", "xpath:attributes"],
+        ["xpath=//div[@id='teams-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b50b5007-d377-4aff-b5c2-8cacd83ac114",
+      "comment": "",
+      "command": "click",
+      "target": "id=product-description",
+      "targets": [
+        ["id=product-description", "id"],
+        ["css=span:nth-child(1) > #product-description", "css:finder"],
+        ["xpath=//span[@id='product-description']", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span/span[3]", "xpath:idRelative"],
+        ["xpath=//span/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ad176db-8403-431f-a563-adc5f2e43f64",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d941760-044a-4493-a1c5-ccbc0971b782",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b8a1178-d68a-49fa-9541-14195882eb9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-discount-list > .iRow:nth-child(2)",
+      "targets": [
+        ["css=#product-discount-list > .iRow:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='product-discount-list']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "106ab9ab-da43-40ca-935e-28a769c02e74",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b2759e0-ece4-4ce2-b649-3ba0a958fa34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #vendors-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #vendors-name", "css:finder"],
+        ["xpath=(//span[@id='vendors-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='teams-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "418aaf0d-3757-4ef6-b85c-2705d9fe8f94",
+      "comment": "",
+      "command": "click",
+      "target": "id=product-description",
+      "targets": [
+        ["id=product-description", "id"],
+        ["css=span:nth-child(1) > #product-description", "css:finder"],
+        ["xpath=//span[@id='product-description']", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span/span[3]", "xpath:idRelative"],
+        ["xpath=//span/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15eeba8e-2877-48bb-8dbe-72a82711e49b",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b607f1a-0849-4cfe-b729-599eda1aadee",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f812a97c-b3de-483d-a79a-9cf6acf63d08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #discounts-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #discounts-name", "css:finder"],
+        ["xpath=(//span[@id='discounts-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19819bdf-6926-4c35-8f53-6af9299b2939",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf7ee762-74b9-446f-98d5-781efb6c6511",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(2) > #product-description",
+      "targets": [
+        ["css=span:nth-child(2) > #product-description", "css:finder"],
+        ["xpath=(//span[@id='product-description'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span[2]/span[3]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57900343-dd9d-41ba-9ed8-d5eab4b7b16d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-discount-list > .iRow:nth-child(1)",
+      "targets": [
+        ["css=#product-discount-list > .iRow:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='product-discount-list']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4200490-dc48-4ac9-837c-c6fcdbbc16fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d95c89cd-d108-4dac-9574-fa55974cbe8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #discounts-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #discounts-name", "css:finder"],
+        ["xpath=(//span[@id='discounts-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd688bd0-ec68-4462-9386-3f4f8c30df1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a254358-905a-4e55-8c09-0c81265b6c6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//button[@value='ListTeams']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Teams')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05339f09-a9e8-4e09-b257-810946e1bc10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #teams-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #teams-name", "css:finder"],
+        ["xpath=(//span[@id='teams-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='teams-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2466fec-1167-4574-be70-e2e2f6e81ddf",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > button:nth-child(2)",
+      "targets": [
+        ["css=div > button:nth-child(2)", "css:finder"],
+        ["xpath=//button[@value='ListVendors']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Vendors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8e2b3b6-f0ec-4f96-8e22-ba637ac83770",
+      "comment": "",
+      "command": "click",
+      "target": "id=vendors-name",
+      "targets": [
+        ["id=vendors-name", "id"],
+        ["css=.iRow:nth-child(1) > #vendors-name", "css:finder"],
+        ["xpath=//span[@id='vendors-name']", "xpath:attributes"],
+        ["xpath=//div[@id='teams-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b364ac80-4147-49bb-b9f6-e5aeb88e6806",
+      "comment": "",
+      "command": "click",
+      "target": "id=product-description",
+      "targets": [
+        ["id=product-description", "id"],
+        ["css=span:nth-child(1) > #product-description", "css:finder"],
+        ["xpath=//span[@id='product-description']", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span/span[3]", "xpath:idRelative"],
+        ["xpath=//span/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b010f271-4188-429d-a783-3fb3aee37b32",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23a25f08-c8ad-4bd6-8c53-895c987a3e79",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b22d3e47-52fd-4929-b666-8d67afbfc9c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #discounts-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #discounts-name", "css:finder"],
+        ["xpath=(//span[@id='discounts-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4edf31a-91a3-408f-8256-f1a23e64f42f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59e5e780-c893-43e9-a04f-dd90c10e3256",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(2) > #product-description",
+      "targets": [
+        ["css=span:nth-child(2) > #product-description", "css:finder"],
+        ["xpath=(//span[@id='product-description'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span[2]/span[3]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d878665-1435-4b31-b86f-96d428460580",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c661ccf1-37a9-4973-a4e7-0f9586c5968c",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46066ab7-da9c-47d7-ad2e-6f48a2d1e872",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #discounts-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #discounts-name", "css:finder"],
+        ["xpath=(//span[@id='discounts-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e8eadba-7f3c-4e17-b7cc-271b32c031ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c33f2ff4-ff0a-449a-b870-7fcbd5757ef0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #vendors-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #vendors-name", "css:finder"],
+        ["xpath=(//span[@id='vendors-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='teams-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "222d566c-83d5-4511-85d7-9f2989e09788",
+      "comment": "",
+      "command": "click",
+      "target": "id=product-description",
+      "targets": [
+        ["id=product-description", "id"],
+        ["css=span:nth-child(1) > #product-description", "css:finder"],
+        ["xpath=//span[@id='product-description']", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span/span[3]", "xpath:idRelative"],
+        ["xpath=//span/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "962c891d-8e54-4259-8710-010c51c939e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c78c80c-c0a3-46a3-a1c3-acd270afd658",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cb90fc2-1207-472f-823e-a5ba3fbf2487",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #discounts-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #discounts-name", "css:finder"],
+        ["xpath=(//span[@id='discounts-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10a19c8e-6c85-4427-8cc7-1f59dbc78442",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7758b5e3-4e2c-4ec2-bbc2-d155cb227338",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(2) > #product-description",
+      "targets": [
+        ["css=span:nth-child(2) > #product-description", "css:finder"],
+        ["xpath=(//span[@id='product-description'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span[2]/span[3]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc7e902f-8588-4f7c-879c-00f72c4ce4e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a13198bd-c8ff-4714-b67a-487694ac61a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2b31a8f-76d0-4ffd-a429-38927e1a02ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-discount-list > .iRow:nth-child(2)",
+      "targets": [
+        ["css=#product-discount-list > .iRow:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='product-discount-list']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1bf92af-c59a-4e3c-b566-6056a47a0e1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc390068-bb69-4e81-91fd-95bd8e8fe453",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(3) > #product-description",
+      "targets": [
+        ["css=span:nth-child(3) > #product-description", "css:finder"],
+        ["xpath=(//span[@id='product-description'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span[3]/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "349377cd-a0e6-42eb-aa7b-853a77d26420",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1821d892-f0dc-4e02-b67e-3ec21a610ac6",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c042205-df64-474d-932d-1dfc0867634c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-discount-list > .iRow:nth-child(2)",
+      "targets": [
+        ["css=#product-discount-list > .iRow:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='product-discount-list']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39b7d7ed-db5d-446c-97c6-89cd06af78e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35d0fa38-46ef-48e3-9fce-c55de8e09b62",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//button[@value='ListTeams']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Teams')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d0456f2-327a-4606-be3c-258c620778da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(3) > #teams-id",
+      "targets": [
+        ["css=.iRow:nth-child(3) > #teams-id", "css:finder"],
+        ["xpath=(//span[@id='teams-id'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='teams-list']/span[3]/span", "xpath:idRelative"],
+        ["xpath=//span[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "245c656f-1a88-4407-9556-29bc8aee1511",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > button:nth-child(2)",
+      "targets": [
+        ["css=div > button:nth-child(2)", "css:finder"],
+        ["xpath=//button[@value='ListVendors']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Vendors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb8aebf5-7904-42c6-85c6-8a12da3fcaa7",
+      "comment": "",
+      "command": "click",
+      "target": "id=vendors-name",
+      "targets": [
+        ["id=vendors-name", "id"],
+        ["css=.iRow:nth-child(1) > #vendors-name", "css:finder"],
+        ["xpath=//span[@id='vendors-name']", "xpath:attributes"],
+        ["xpath=//div[@id='teams-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c27420a1-3237-44b5-916c-7eeb2e835cea",
+      "comment": "",
+      "command": "click",
+      "target": "id=product-description",
+      "targets": [
+        ["id=product-description", "id"],
+        ["css=span:nth-child(1) > #product-description", "css:finder"],
+        ["xpath=//span[@id='product-description']", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span/span[3]", "xpath:idRelative"],
+        ["xpath=//span/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e59008ba-87c3-41b7-aab8-810b59ce2c3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00219299-0db4-4726-9bed-ee4acc6cb612",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afff26e6-b6e1-4f94-85fe-74fe734f57bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #discounts-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #discounts-name", "css:finder"],
+        ["xpath=(//span[@id='discounts-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74ad03a2-1fea-4bf1-a2eb-2b1fe8ac0401",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34d3bbc9-6d4a-47a3-8ce3-c2542276261f",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(2) > #product-description",
+      "targets": [
+        ["css=span:nth-child(2) > #product-description", "css:finder"],
+        ["xpath=(//span[@id='product-description'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span[2]/span[3]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbe5bc5b-6a11-426b-a141-89de374df103",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "621b5cb7-f7b8-4752-b6e2-15a5419b945b",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0fd66dd-3684-4978-ab0b-f65196e555cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #discounts-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #discounts-name", "css:finder"],
+        ["xpath=(//span[@id='discounts-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9fab7df-4db0-412a-b40b-259e3d4c730c",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "767259d7-c22e-4571-b037-2941b1ddfdfd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iRow:nth-child(2) > #vendors-name",
+      "targets": [
+        ["css=.iRow:nth-child(2) > #vendors-name", "css:finder"],
+        ["xpath=(//span[@id='vendors-name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='teams-list']/span[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4b4b018-07eb-465b-ae05-e0f888c62bf4",
+      "comment": "",
+      "command": "click",
+      "target": "id=product-description",
+      "targets": [
+        ["id=product-description", "id"],
+        ["css=span:nth-child(1) > #product-description", "css:finder"],
+        ["xpath=//span[@id='product-description']", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span/span[3]", "xpath:idRelative"],
+        ["xpath=//span/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9798fe0-401a-43a2-abda-d8bfb47e9ddd",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "121e9c32-c917-42f5-9442-1605100019c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d7599ed-ade4-4241-8850-144e8898fb36",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-discount-list > .iRow:nth-child(2)",
+      "targets": [
+        ["css=#product-discount-list > .iRow:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='product-discount-list']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fda94a4-805f-45da-b96a-3717858c4a44",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c222e61-e995-4f44-a6f1-9de61d1e54ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(2) > #product-description",
+      "targets": [
+        ["css=span:nth-child(2) > #product-description", "css:finder"],
+        ["xpath=(//span[@id='product-description'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span[2]/span[3]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f26bc1c-a7cd-47ee-b295-4e508e93dda4",
+      "comment": "",
+      "command": "click",
+      "target": "id=discounts-name",
+      "targets": [
+        ["id=discounts-name", "id"],
+        ["css=.iRow:nth-child(1) > #discounts-name", "css:finder"],
+        ["xpath=//span[@id='discounts-name']", "xpath:attributes"],
+        ["xpath=//div[@id='product-discount-list']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0ef0016-2f61-4412-9ed1-bebee7f59daf",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83576826-c812-4f08-8f61-9f60e17de913",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-discount-list > .iRow:nth-child(2)",
+      "targets": [
+        ["css=#product-discount-list > .iRow:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='product-discount-list']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "862a7cf4-843e-4251-9983-4b46b7e5c6cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "804fd885-fcda-487b-83ce-c2581274ac87",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(3) > #product-description",
+      "targets": [
+        ["css=span:nth-child(3) > #product-description", "css:finder"],
+        ["xpath=(//span[@id='product-description'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='product-list']/span[3]/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "465bbd8c-94db-437b-8a40-5e8a659c633b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-discount-list > .iRow:nth-child(1)",
+      "targets": [
+        ["css=#product-discount-list > .iRow:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='product-discount-list']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ffec47a-3b3b-4ec6-b4bf-ec0babbb7804",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "087a8ee5-1073-428a-bc00-e339b10fa84d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-discount-list > .iRow:nth-child(2)",
+      "targets": [
+        ["css=#product-discount-list > .iRow:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='product-discount-list']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1464fa97-31d7-453e-a929-64edde6546ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(11)",
+      "targets": [
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@value='SubmitPurchase']", "xpath:attributes"],
+        ["xpath=//section[@id='teams_section']/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Request')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0686d598-08ca-4f2a-9d28-523f891d0f32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(5) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#finance_section')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35b34a4d-e127-4162-9f38-db463fe0fbd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#finance_section > button",
+      "targets": [
+        ["css=#finance_section > button", "css:finder"],
+        ["xpath=//button[@value='ListExpenses']", "xpath:attributes"],
+        ["xpath=//section[@id='finance_section']/button", "xpath:idRelative"],
+        ["xpath=//section[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'List Expenses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c22e95bc-258b-4b99-9b36-e9cbf8b02d32",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2529)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfe1596d-9187-4636-badd-31e5ccc448a4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09fab8dc-b48c-4446-8a19-bc760c21adbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@onclick='SummarizeExpenses()']", "xpath:attributes"],
+        ["xpath=//section[@id='main_section']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db38193e-b601-4483-95f6-801668523de4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@onclick='SummarizeExpenses()']", "xpath:attributes"],
+        ["xpath=//section[@id='main_section']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4ee4d06-0ea6-4c8c-b795-5a611f05a010",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@onclick='SummarizeExpenses()']", "xpath:attributes"],
+        ["xpath=//section[@id='main_section']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "694bc7ed-13a5-4fec-bfb8-790c40640734",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fec08b09-4590-48ff-b1e0-095bad098070"]
+  }],
+  "urls": ["http://127.0.0.1:5500/"],
+  "plugins": []
+}
