@@ -68,15 +68,25 @@
     <section id="main_section">
         <h1>Budget Planner Home</h1>
         
-        <div id="myfirstchart" style="height: 250px;"></div>
+        <div id="expenseBudgetChart" style="height: 250px;"></div>
+        <div id="budgetItemChart" style="height: 250px;"></div>
             
       <!--   <br><a href="./TeamManagement.html">Team Management</a>
         <br><a href="./FinanceManagement.html">Finance Management</a> -->
-        <div id="expense-summary"></div>
-        <button onclick="SummarizeExpenses()">Sum</button>
-        <div>
+        <!-- <h6>Expense</h6> -->
+        <div style="display: flex ; flex-direction: row;">
+        <div id="expense-summary" class="summary"></div>
+        <!-- <h6>Budget</h6> -->
+        <div id="budget-summary" class="summary"></div>
+        </div>
+        <div style="border: 5px solid slateblue ; width: max-content;">
+        <button onclick="SummarizeExpenses( document.getElementById('expense-summary'));
+                        ListBudgetSummary( document.getElementById('budget-summary')) ;">Sum</button>
+        
+        </div>
+        <!-- <div>
             <canvas id="myChart"></canvas>
-          </div>
+          </div> -->
           
         
     </section>
@@ -116,41 +126,89 @@
     <section id="teams_section">
         <h1>Team Management</h1>
         <!-- <div id="teams-section-div"> -->
+            <div style="display: flex ; flex-direction: row;">
             <div>
-            <button value="ListTeams" onclick="ListTeams()">Teams</button>
+            <button  class="tab" value="ListTeams" onclick="ListTeams()">Teams</button>
             <!-- <button value="ListOfferings" onclick=" ListOfferings()">Products</button> -->
-            <button value="ListVendors" onclick=" ListVendors()">Vendors</button>
-            <div class="select-list" id="teams-list" data-val="0" onclick="testFunction(this.dataset.val)"><div class="iRow"><span>1 2 3 4 5</span></div></div>
+            <button  class="tab" value="ListVendors" onclick=" ListVendors()">Vendors</button>
+            <div class="select-list" id="teams-list" data-val="0" 
+                onclick="testFunction(this.dataset.val); ">
+                <div class="iRow"><span>1 2 3 4 5</span></div></div>
             </div>
             <!--  <details id="teams-list">
                 <Summary>Teams</Summary>
-
-            </details> -->
-            <div>
-            <h4>Vendor Products</h4>
-            <div class="select-list" id="product-list" data-val="0" onclick="testFunction(this.dataset.val)"><div class="iRow"><span>1 2 3 4 5</span></div></div>
+                </details> -->
+                <div style="border: 2px solid black; padding: 1rem; margin-top: 2rem; margin-left: 1rem;">
+                    <h4>Selected Purchase Request</h4>
+                    <span id="id_selected_team">team</span>|
+                    <span id="id_selected_vendor">vendor</span>|
+                    <span id="id_selected_product">product</span>
+                    <br><span id="id_selected_discount">discount</span>
+                    <button value="SubmitPurchase" onclick="SubmitPurchaseRequest(SelectedTeam, 
+                                                            SelectedVendor, 
+                                                            SelectedProduct, 
+                                                            SelectedDiscount );
+                                                            ListTeamPurchaseRequests();">
+                                                            Submit Request</button>
+                </div>
+            
             </div>
             <div>
-                <h4>Product Discounts</h4>
-                <div class="select-list" id="product-discount-list" data-val="0" onclick="testFunction(this.dataset.val)"><div class="iRow"><span>1 2 3 4 5</span></div></div>
+                <h4>Vendor Products</h4>
+                <div class="select-list" id="product-list" data-val="0" 
+                    onclick="testFunction(this.dataset.val);ListVendorProducts();">
+                    <div class="iRow"><span>1 2 3 4 5</span></div></div>
+                </div>
+                
+                <div>
+                    <h4>Product Discounts</h4>
+                    <div class="select-list" id="product-discount-list" 
+                    data-val="0" onclick="testFunction(this.dataset.val); ListDiscounts();">
+                    <div class="iRow"><span>1 2 3 4 5</span></div></div>
+                </div>
+                <div>
+                    <h4>Pending Requests</h4>
+                    <div  class="select-list" style="max-height: 25vh; overflow:auto;" id="team-request-list" 
+                        onClick="ListTeamPurchaseRequests(SelectedTeam.getId())">
+                    <div class="iRow"><span>1 2 3 4 5</span></div>
+                </div>
             </div>
-            <h4>Selected Purchase</h4>
-            <span id="id_selected_team">team</span>|
-            <span id="id_selected_vendor">vendor</span>|
-            <span id="id_selected_product">product</span>
-            <br><span id="id_selected_discount">discount</span>
-            <button value="SubmitPurchase" onclick="SubmitPurchaseRequest(SelectedTeam, 
-                                                    SelectedVendor, 
-                                                    SelectedProduct, 
-                                                    SelectedDiscount )">Submit Request</button>
+            
         <!-- </div> -->
     </section>
     <section id="finance_section">
         <h1>Finance Management</h1>
-        <button value="ListExpenses" onclick="ListExpenses()">List Expenses</button>
+        <div>
+        <button class="tab" value="ListExpenses" onclick="ListExpensesByStatus('pending')">Pending</button>
+        <button class="tab" value="ListExpenses" onclick="ListExpensesByStatus('approved')">Approved</button>
+        <button class="tab" value="ListExpenses" onclick="ListExpensesByStatus('rejected')">Rejected</button>
+        <button class="tab" value="ListExpenses" onclick="ListBudgetItems(document.getElementById('expense-list'))">Budget</button>
+
         <div class="select-list" id="expense-list"></div>
+        
+        </div>
+        <div style="border: 2px solid black; padding: 4px;">
+            <p id="id_selected_expenseitem"></p>
+            <button onclick="setSelectedExpenseItemStatus('approved');ListExpenses();">Approve</button>
+            <button onclick="setSelectedExpenseItemStatus('rejected');ListExpenses();">Reject</button>
+        </div>
+        <div style="border: 2px solid black; padding: 4px;">
+            <p id="id_selected_budgetitem"></p>
+            <label for="id_selected_budgetitem_input">Budget Amount</label><br>
+            <input id="id_selected_budgetitem_input" type="number">
+            <button onclick="updateSelectedBudgetItem();">Update</button>
+        </div>
+        <div id="expenseVsBudgetChart" style="height: 240px ; "></div>
+        <div id="ft_expense-summary"></div>
+        <div style="border: 5px solid slateblue ; width: max-content;">
+        <button onclick="chartExpenseBudget('expenseVsBudgetChart');">Chart</button>
+        </div>
+        <div>
+
+        <div style="height: 3rem;"></div>
     </section>
     <footer>
+        
         <div class="text-center p-0" >
             <p>
                 © 2022 Copyright:
@@ -170,31 +228,40 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
+    
     <script type="text/JavaScript" src="expenseBudget.js"></script>
-    <script type="text/JavaScript" src="ExpenseItem.js"></script>
     <script type="text/JavaScript" src="ProductDiscount.js"></script>
+    <script type="text/JavaScript" src="ExpenseItem.js"></script>
+    <script type="text/JavaScript" src="VendorOffering.js"></script>
+
     <script type="text/JavaScript" src="DataModel.js"></script>
+    
     
     
     <script> 
         
-        CreatedTeams.addTeamByName("ATeam") ; 
-        CreatedTeams.addTeamByName("BTeam") ; 
+        //CreatedTeams.addTeamByName("ATeam") ; 
+        //CreatedTeams.addTeamByName("BTeam") ; 
         //CreatedTeams.addTeamByName("Team1") ; 
         //window.sessionStorage.setItem()
-        storeTeamList() ;
+        //storeTeamList() ;
         
-        restoreTeamList() ;
+        //restoreTeamList() ;
         //console.log( Teams) ;
         //Teams.listTeams()  ;
 
-
-        killerTeam = CreatedTeams.addTeamByName( "Killers" ) ;
+        //killerTeam = CreatedTeams.addTeamByName( "Killers" ) ;
+        
+        Teams.addTeamByName("Team1") ; 
+        Teams.addTeamByName( "ATeam" ) ;
+        Teams.addTeamByName( "BTeam" ) ;
+        killerTeam = Teams.addTeamByName( "Killers" ) ;
+        
         butcherSupply = Vendors.addVendorByName( "ButcherSupply" ) ;
-        storeTeamList() ;
-        restoreTeamList() ;
-        Teams.listTeams()  ;
-        Vendors.listVendors() ;
+       // storeTeamList() ;
+        //restoreTeamList() ;
+        //Teams.listTeams()  ;
+        //Vendors.listVendors() ;
         
         soap = new ExpenseItem( null, killerTeam, 
                         butcherSupply, 
@@ -203,15 +270,12 @@
 //                        Expenses.addItem( soap ) ;
 //                        Expenses.display( soap ) ;
        
-
         acid = new ExpenseItem( null, killerTeam, 
                         butcherSupply, 
                         "H2So4", new Date().getDate() ) ;
 //                        Expenses.addItem( acid ) ;
 //                        Expenses.display( acid ) ;
-        
-        
-        
+         
 //        Expenses.storeItems() ;
 //        Expenses.listItems() ;     
         
@@ -247,13 +311,13 @@
         Offerings.addOffering( product ) ;
         Vendors.addVendor( vendor ) ;
 
-        Offerings.storeOfferings() ;
-        Offerings.restoreOfferings() ;
-        Offerings.listOfferings() ;
+        //Offerings.storeOfferings() ;
+        //Offerings.restoreOfferings() ;
+        //Offerings.listOfferings() ;
         
         Vendors.addVendorByName( "Vendor O" ) ;
-        Vendors.storeVendors() ;
-        Vendors.listVendors() ;
+        //Vendors.storeVendors() ;
+        //Vendors.listVendors() ;
 
         let discount = new ProductDiscount() ;
         discount.setVendorId( 1 ) ;
@@ -273,6 +337,11 @@
         discount.setCouponDiscount( 5.00 ) ;
         Discounts.addDiscount( discount ) ;
 
+        Teams.addTeamByName( "TeamC" ) ;
+        Teams.addTeamByName( "TeamD" ) ;
+
+        Teams.getMap().forEach((team)=>{ TeamBudgetItems.addTeam( team) ; }) ;
+
         class TeamSumElement 
             {
                 constructor(name, value)
@@ -283,61 +352,183 @@
             }
         
         ListDiscounts() ;
-        var TeamSum  = SummarizeExpenses;
-
         
+        let TeamSum = [{name: "", value: 0 }]  ; //= SummarizeExpenses();
+        let budgetArray = [{name: "", value: 0}] ;
 
-        function SummarizeExpenses() 
+        //let data = [{name: "", value: 0 }]  ; //= SummarizeExpenses();
+       
+        function ListBudgetSummary( pageElement )
+        {
+            pageElement.textContent = "" ;
+            let h = document.createElement( "h6" ) ;
+            h.textContent = "Budget" ;
+            pageElement.appendChild( h ) ;
+            pageElement.appendChild( document.createElement("br")) ;
+            TeamBudgetItems.getMap().forEach((item)=>
+            {
+                let br = document.createElement( "br" ) ;
+                let s = document.createElement( "span" ) ;
+                s.textContent = item.getDescription() + ": " + item.getItemBudget() ;
+                s.append( br ) ;
+                pageElement.appendChild( s ) ;
+
+            }) ;
+            
+            budgetArray = TeamBudgetItems.getItemArray() ;
+            console.log( budgetArray ) ;
+            chart( "budgetItemChart", budgetArray, "name", ["value"], ['value'] ) ;
+        }
+        function SummarizeExpenses( div ) 
         {
             //let sum = Expenses.Summarize() ;
-            let div = document.getElementById( "expense-summary" ) 
+            //let div = document.getElementById( "expense-summary" ) 
+            
             div.innerHTML = "" ;
-
+            let h = document.createElement( "h6" ) ;
+            h.textContent = "Expense" ;
             
-            
-            let br = document.createElement( "br" ) ; 
+            div.appendChild( h ) ;
+            div.appendChild( document.createElement("br")) ;
+   
+            //let br = document.createElement( "br" ) ; 
 
             let i = 0 ;
             Teams.getMap().forEach( ( team ) =>
             {
-                ++i ;
-                
+                //++i ;
                 let tsum = Expenses.SummarizeTeamId( team.id ) ;
                 let name = team.name ;
                 TeamSum[ i ] = { name: team.name, value: tsum}  ;
-
                 let br = document.createElement( "br" ) ; 
-                
-
                 let s = document.createElement( "span" ) ; 
                 s.textContent = team.name + ": " +  tsum + " "  ;
                 s.append( br ) ;
                 div.appendChild( s ) ;
-
-
-                
+                ++i ;
             }) ;
             s = document.createElement( "span" ) ; 
             s.textContent = " Total: " + Expenses.Summarize()  ;
-            TeamSum[ 0 ] = { name: 'Total', value: Expenses.Summarize() } ;
+            //TeamSum[ 0 ] = { name: 'Total', value: Expenses.Summarize() } ;
+            //TeamSum[ 0 ] = { name: 'Total', value: 0.00 } ;
             div.appendChild( s ) ;
 
-            console.log( TeamSum ) ;
-            return TeamSum ;
-                
+            //console.log( TeamSum ) ;
+            //i = 0  ;
+            //TeamSum.forEach( (entry)=> { data[i++] =  entry  ;}) ;
+            //console.log( "data", data ) ;
+            chart( "expenseBudgetChart", TeamSum, "name", ["value"],['expense'] ) ;
+
+            //return TeamSum ;
         }
+        function ListBudgetItems( div )
+        {
+            //let div = document.getElementById("teams-list") ;
+            TeamBudgetItems.writeItemsToElement( div ) ;
+
+        }
+        let expenseBudgetData = [{name:"",expense:0,budget:0}] ;
+        function chartExpenseBudget( pageElementID ) 
+        {
+            
+            let data = [] ;
+            
+            budgetArray = TeamBudgetItems.getItemArray() ;
+            console.log( 'budgetArray', budgetArray ) ;
+            console.log( 'DATA1', data ) ;
+            for ( let i = 0 ; i < budgetArray.length ; ++i )
+            {
+                data[i] = {name: TeamSum[i].name, 
+                    expense: TeamSum[i].value,
+                    budget: budgetArray[i].value} ;
+                    console.log( TeamSum[i].name) ;
+                console.log( "budget:", budgetArray[i].value)  ;
+               
+            }
+            console.log( 'DATA2', data ) ;
+            
+            chart( pageElementID, data, "name" , [ "budget","expense"],["budget","expense"]) ;
+        }
+        function buildExpenseBudgetArray([data2])
+        {
+            //console.log( 'expbudget1', data2 ) ;
+            console.log( 'TeamSum', TeamSum ) ;
+            console.log( 'budgetArray', budgetArray ) ;
+            for ( let i = 0 ; i < TeamSum.length ; ++i )
+            {
+                data2[i] = {name: TeamSum[i].name, 
+                    expense: TeamSum[i].value,
+                    budget: budgetArray[i].budget} ;
+               
+            }
+            console.log( 'expbudget2', data2 ) ;
+            return data2 ;
+        }
+        function chart( pageElementID, data, keyname, [valuenames], [labelnames ] )
+        {
+            el = document.getElementById(pageElementID).textContent = "" ;
+            let d = 
+                {element: pageElementID, 
+                    data: data, 
+                    xkey: keyname, 
+                    ykeys: [valuenames], 
+                    labels: [labelnames] } ;
+            new Morris.Bar( d ) ;
+/*
+            //document.getElementById("expenseBudgetChart").textContent="" ;
+            document.getElementById(pageElementID).textContent="" ;
+            //pageElement.textContent = "" ;
+            new Morris.Bar({
+            // ID of the element in which to draw the chart.
+            //element: 'expenseBudgetChart',
+            element: pageElementID , 
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+            data: data , 
+            //xkey: 'name', ykeys:['value'],
+            //labels: ['value'] 
+            xkey: keyname, ykeys: valuenames,
+            labels: [valuenames] 
+            
+        //     data: [
+          //      { year: '2008', value: 20 },
+          //      { year: '2009', value: 10 },
+          //      { year: '2010', value: 5 },
+          //      { year: '2011', value: 5 },
+          //      { year: '2012', value: 20 }
+          //  ], 
+          //  // The name of the data record attribute that contains x-values.
+          //  xkey: 'year',
+          //  // A list of names of data record attributes that contain y-values.
+          //  ykeys: ['value'], 
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            //labels: ['value']
+        });
+    */
+           }
 
         function ListTeams()
         {
-
             let div = document.getElementById("teams-list") ;
             Teams.writeTeamsToElement( div ) ;
         }
-        function ListExpenses()
+        function ListExpensesByStatus( status )
         {
             let div = document.getElementById("expense-list") ;
-            div.innerText = Expenses.getList() ;    
-            Expenses.writeListToElement( div ) ;
+            //div.innerText = Expenses.getList() ;    
+            switch( status )
+            {
+                case 'pending':
+                Expenses.writeListToElement( div, "pending" ) ;
+                break ;
+                case 'approved':
+                    Expenses.writeListToElement( div, "approved" ) ;
+                    break ;
+                case 'rejected':
+                    Expenses.writeListToElement( div , 'rejected') ;
+                    break ;
+            }
         }
         function ListOfferings()
         {
@@ -373,7 +564,18 @@
             Expenses.addItem( newReq ) ;
 
         }
-
+        function ListTeamPurchaseRequests( teamId )
+        {
+            let div = document.getElementById("team-request-list") ;
+            //div.innerText = Expenses.getList() ;    
+            Expenses.writeListToElement( div, "pending", teamId ) ;
+        }
+        function updateSelectedBudgetItem()
+        {
+            let input = document.getElementById("id_selected_budgetitem_input")
+            SelectedBudgetItem.setItemBudget( eval(input.value) ) ;
+        }
+    
     </script>
     <!-- <script>
         const myChart = new Chart(
@@ -382,14 +584,17 @@
         );
      </script>
      -->  
-    <script> 
+    <!-- <script> 
+       
+       //let data = Array.from<[{name:"",value: 0}]>(TeamSum) ;
+       
        
         new Morris.Line({
             // ID of the element in which to draw the chart.
             element: 'myfirstchart',
             // Chart data records -- each entry in this array corresponds to a point on
             // the chart.
-             TeamSum, xkey: 'name', ykeys:['value'],
+            data , xkey: 'name', ykeys:['value'],
             labels: ['value'] 
              /* data: [
                 { year: '2008', value: 20 },
@@ -406,7 +611,7 @@
             // chart.
             //labels: ['value']
         });
-    </script>
+    </script> -->
 <!--     <script> 
         const labels = [
           'January',

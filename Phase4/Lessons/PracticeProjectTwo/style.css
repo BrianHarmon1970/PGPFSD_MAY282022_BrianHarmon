@@ -22,29 +22,98 @@ header
     border-right: none ;
     border-bottom-left-radius: 20px ;
     border-top-left-radius: 20px ;
-    border-bottom-right-radius: 0px ;
+    border-bottom-right-radius: 0px ; 
     border-top-right-radius: 0px ;
+ 
 }
+.tab
+{
+    border: 2px solid black ;
+    background-color: rgba(18, 138, 72, 0.5) ;
+    color:antiquewhite ;
+    
+    border-bottom:none ;
+    border-top-right-radius: 5px ;
+    border-top-left-radius: 5px ;
+    margin-left: none ;
+    margin-right: none ;
+}
+
+    #expenseBudgetChart 
+    {
+        /* contain: content ; */
+        width: 95% ;
+        margin: 2.5% ;        
+        border: 4px solid slategrey ;
+        color: red ;
+
+    }
+#expense-summary
+{
+    
+    color: black ;
+    display: grid ;
+    grid-template-columns: repeat( 2, 1fr ) ;
+    margin: 2.5% ;
+    
+    justify-content: center ;
+    border: 5px solid slategrey ;
+    width: max-content ;
+    
+    
+}
+#expense-summary span
+{
+    padding-left: 4px ;
+    padding-right: 4px ;
+    width: max-content ;
+}
+.summary
+{
+    
+    color: black ;
+    display: grid ;
+    grid-template-columns: repeat( 2, 1fr ) ;
+    margin: 2.5% ;
+    
+    justify-content: center ;
+    border: 5px solid slategrey ;
+    width: max-content ;
+    
+    
+}
+.summary span
+{
+    padding-left: 4px ;
+    padding-right: 4px ;
+    width: max-content ;
+}
+
 .select-list
 {
     display: grid ;
     
     width: 400px ;
     /* border: 1px solid black ; */
-    font-size: small;   
+    font-size: small;
+    max-height: 50vh ;
+    overflow: auto ;
+    
 }
 .select-list span
 {
     display: flex ;
     color: black ;
-    width: auto ;
+    /* width: auto ; */
     /* margin: 0px ; */
     
     
-    /* height:.25in ; */
+    /* height:.25in ;  */
     border: 1px solid slategrey ;
     align-items: center;
     justify-items:flex-start; 
+    transition: background-color 1.75s, border-color 2s ;
+    
     
 }
 /* #teams-list span span:hover 
@@ -53,13 +122,18 @@ header
 } */
 .select-list span:hover
 {
+    
     color:black ;
     background-color: goldenrod;
     border-bottom: 1px solid blue ;
     border-top: 1px solid blue ;
+    transition: background-color .25s, border-color 2s ;
+    
 }
+
 .selected-row
 {
+    pointer-events: none ;
     background-color:cyan ;
     color: white ;    
 }
@@ -97,6 +171,21 @@ header
     justify-content: right ;
     padding-right: 4px ;
 }
+.w5 { width: 5% ; }
+.w10 { width: 10% ; }
+.w20 { width: 20% ; color:brown ; }
+.w30 { width: 40% ; }
+.w40 { width: 40% ; }
+.w60 { width: 60% ; }
+.w80 { width: 80% ; }
+.w90 { width: 90% ; }
+.w15 { width: 15% ; }
+.w25 { width: nont ; width: 25% ; color:brown ; }
+.w35 { width: 35% ; }
+.w45 { width: 45% ; }
+.w65 { width: 65% ; }
+.w85 { width: 85% ; }
+.w95 { width: 95% ; }
 /* .iRow span:hover
 {
     background-color:white ;
@@ -127,6 +216,19 @@ header
     padding: 1px ; 
     margin: 1px ;    */
 }
+.select-list span p
+{
+    border-left: none ;
+    border-left: 1px solid grey ;
+    
+    
+    padding-left: 1px ;
+    padding-right: 1px ;
+    /* border: solid black 1px ;
+    padding: 1px ; 
+    margin: 1px ;    */
+    margin: 0 ;
+}
 
 .select-list div
 {
@@ -138,11 +240,14 @@ header
     border-left: 1px solid blue ;
     
     justify-items: center;
+    
 }
 #teams-section-div
 {
+    position: absolute ;
     display: grid ;
     grid-template-columns: repeat( 2, 1fr ) ; 
+    height: 45ch ;   
 }
 
 /* .iRow span
