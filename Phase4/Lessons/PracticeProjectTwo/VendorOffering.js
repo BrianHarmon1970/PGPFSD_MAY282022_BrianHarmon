@@ -107,9 +107,7 @@ class VendorOfferingList
         //alert("testFunction() called:" + str ) ;
         //callingElement.appendChild( document.createTextNode("TestFunction() called")) ;
         let vProduct = Offerings.getMap().get(  eval(str) ) ;
-        let p = document.getElementById("id_selected_product" ) ;
-        p.textContent = vProduct.description ;
-        SelectedProduct = vProduct ;
+        updateSelectedProduct( vProduct ) ;
         
     }
     /*

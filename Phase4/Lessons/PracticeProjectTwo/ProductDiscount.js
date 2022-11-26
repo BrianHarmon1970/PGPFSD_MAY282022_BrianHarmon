@@ -130,14 +130,26 @@ class ProductDiscountList
         SelectedDiscount = vRow ;
         
     }
-    writeListToElement( targetElement )
+    writeListToElement( targetElement, vendorId, productId, teamId )
     {
         targetElement.innerText = "" ;
         //let s = new Element() ;
         this.DiscountMap.forEach( 
             ( discount )=>  
             {
-                
+                console.log( discount, vendorId, productId, teamId ) ;
+                if(
+                    (   discount.getTeamId() == undefined || 
+                            discount.getTeamId() == 0 || 
+                            discount.getTeamId() == teamId  ) &&
+                    (   discount.getVendorId() == undefined || 
+                            discount.getVendorId() == 0 ||
+                            discount.getVendorId() == vendorId ) &&
+                    (   discount.getProductId() == undefined || 
+                            discount.getProductId() == 0 ||
+                            discount.getProductId() == productId ))
+                {
+        
                     let s = document.createElement( "span" ) ;
                     s.className = "iRow" ;
                     let s1 = document.createElement( "span" ) ;
@@ -163,11 +175,10 @@ class ProductDiscountList
 
                     if ( discount.id == SelectedDiscount.getId() )
                     s.classList.add( "selected-row" );
-
-                  
+     
                     targetElement.appendChild( s ) ;             
                 }
-            
+            }
         ) ;
     }
   

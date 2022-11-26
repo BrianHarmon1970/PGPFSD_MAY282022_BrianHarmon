@@ -31,7 +31,7 @@ class ExpenseItem
     calculateCost() 
     {
         this.totalPrice = Math.floor( this.units * ((this.unitPrice)*100)+0.01) / 100  ;
-        this.netCost = this.totalPrice - this.discountAmount ; 
+        this.netCost = this.totalPrice - this.discountAmount  ; 
     }
     getId() { return this.id ; }
     getTeamId() { return this.teamId ; }
@@ -51,7 +51,7 @@ class ExpenseItem
     {
         discount.ApplyTotal( this.totalPrice /* this.unitPrice * this.units */ ) ;
         this.discountAmount = discount.discountAmount ;
-        this.netCost = this.totalPrice - this.discountAmount ;
+        this.netCost = this.totalPrice - this.discountAmount * this.units ;
         console.log( this ) ;
     }
     applyTeam( team ) 
@@ -83,7 +83,7 @@ class ExpenseItemList
         //    display( this.ItemMap.get( i+1 )) ;
         this.ItemMap.forEach( ( item ) =>{ this.display( item ) ;  })        
     }
-    testFunction( selectedRowElement )
+    testFunction( status )
     {        
         /* 
         let ndxElement = event.target.parentElement.firstElementChild ;
@@ -98,14 +98,8 @@ class ExpenseItemList
         
         let str = event.target.getAttribute("data-v")  ;
         
-        let vRow = Expenses.getMap().get(  eval(str) ) ;
-        let p = document.getElementById("id_selected_expenseitem" ) ;
-        p.textContent = vRow.getId() + " " +
-                        vRow.getTeamId() + " " +
-                        vRow.getVendorId() +  " - " + vRow.getDescription() ;
-        
-        SelectedExpenseItem = vRow ;
-        
+        let vRow = Expenses.getMap().get( eval(str) ) ;
+        updateSelectedExpenseItem( vRow, status ) ;       
     }
     writeListToElement( targetElement, status, teamid )
     {
@@ -155,7 +149,7 @@ class ExpenseItemList
                         s9.setAttribute("data-v", item.id ) ;
                         s10.setAttribute("data-v", item.id ) ;
                         
-                        this.testFunction( s ) ;
+                        this.testFunction( status ) ;
                     })
 
                   s1.innerText = item.id ;
@@ -174,12 +168,12 @@ class ExpenseItemList
                   s2.classList.add( "w5" ) ;
                   s3.classList.add( "w5" ) ;
                   //s4.classList.replace("width", "w25") ;
-                  s4.classList.add( "w25" ) ;
-                  s6.classList.add( "w10" ) ;
+                  s4.classList.add( "w55" ) ;
+                  s6.classList.add( "w5" ) ;
                   s7.classList.add( "w10" ) ;
-                  s8.classList.add( "w15" ) ;
-                  s9.classList.add( "w10" ) ;
-                  s10.classList.add( "w15" ) ;
+                  s8.classList.add( "w10" ) ;
+                  s9.classList.add( "w5" ) ;
+                  s10.classList.add( "w10" ) ;
 
 
 
@@ -219,14 +213,15 @@ class ExpenseItemList
         ) ;
         return sum /100  ;
     }
-    SummarizeTeamId( teamid )
+    SummarizeTeamId( teamid, status )
     {
         let sum = 0.0 ;
 
         this.ItemMap.forEach( 
             ( item )=> 
             {
-                if ( item.teamId == teamid )
+                if (( status == undefined || status == item.getStatus()) &&
+                 ( item.teamId == teamid ))
                     sum += Math.floor(item.netCost*100) ;
             }
         ) ;

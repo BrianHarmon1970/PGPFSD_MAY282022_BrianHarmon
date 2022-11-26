@@ -59,8 +59,6 @@ header
     justify-content: center ;
     border: 5px solid slategrey ;
     width: max-content ;
-    
-    
 }
 #expense-summary span
 {
@@ -78,27 +76,40 @@ header
     
     justify-content: center ;
     border: 5px solid slategrey ;
-    width: max-content ;
-    
-    
+    /* width: max-content ; */
 }
 .summary span
 {
     padding-left: 4px ;
     padding-right: 4px ;
-    width: max-content ;
+    /* width: max-content ; */
+}
+.summary h6
+{
+    grid-template-columns:  2fr  ;
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+    border-right: 1px solid black ;
+    border-bottom-right-radius: 10px;
+    background-color: blue;
+    color:antiquewhite ;
+    padding-top: 0 ;
+    height: 1.5rem ;
+    width: auto ;
 }
 
 .select-list
 {
     display: grid ;
     
-    width: 400px ;
+    /* width: 400px ; */
+    width: 40em ;
     /* border: 1px solid black ; */
     font-size: small;
-    max-height: 50vh ;
-    overflow: auto ;
-    
+    min-height:.25in ;
+    max-height: 30vh ;
+    overflow: auto    ;
+    border: 2px solid black ; 
 }
 .select-list span
 {
@@ -173,16 +184,18 @@ header
 }
 .w5 { width: 5% ; }
 .w10 { width: 10% ; }
-.w20 { width: 20% ; color:brown ; }
+.w20 { width: 20% ;  }
 .w30 { width: 40% ; }
 .w40 { width: 40% ; }
+.w40 { width: 50% ; }
 .w60 { width: 60% ; }
 .w80 { width: 80% ; }
 .w90 { width: 90% ; }
 .w15 { width: 15% ; }
-.w25 { width: nont ; width: 25% ; color:brown ; }
+.w25 { width: 25% ; }
 .w35 { width: 35% ; }
 .w45 { width: 45% ; }
+.w55 { width: 55% ; }
 .w65 { width: 65% ; }
 .w85 { width: 85% ; }
 .w95 { width: 95% ; }
@@ -208,7 +221,7 @@ header
 {
     border-left: none ;
     border-left: 1px solid grey ;
-    
+    height:.25in ;   
     
     padding-left: 1px ;
     padding-right: 1px ;
@@ -234,12 +247,12 @@ header
 {
     color:blueviolet ;
     margin: 4px ;
-     align-items:stretch; 
+     /* align-items:stretch;  */
     width: 100px ;
     height:.25in ;
     border-left: 1px solid blue ;
     
-    justify-items: center;
+    /* justify-items: center; */
     
 }
 #teams-section-div
@@ -250,15 +263,15 @@ header
     height: 45ch ;   
 }
 
-/* .iRow span
+ /* .iRow span
 {
-    color: red ;
+    color: green ;
 } 
 .iRow 
 {
     color: red ;
 }
-*/
+ */
 section
 {
     padding: 20px ;
