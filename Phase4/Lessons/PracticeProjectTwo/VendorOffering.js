@@ -75,16 +75,16 @@ class VendorOffering // product or service
     }
 
 }
-function testFunction( val  )
-    {
-        let str = event.target.getAttribute("data-v")  ;
-        
-        //alert("testFunction() called:" + str ) ;
-        //callingElement.appendChild( document.createTextNode("TestFunction() called")) ;
-        //let vProduct = Offerings.getMap().get(  eval(str) ) ;
-        //let p = document.getElementById("id_selected_team" ) ;
-        //p.textContent = vProduct.description ;
-    }
+// function testFunction( val  )
+//     {
+//         let str = event.target.getAttribute("data-v")  ;
+//
+//         //alert("testFunction() called:" + str ) ;
+//         //callingElement.appendChild( document.createTextNode("TestFunction() called")) ;
+//         //let vProduct = Offerings.getMap().get(  eval(str) ) ;
+//         //let p = document.getElementById("id_selected_team" ) ;
+//         //p.textContent = vProduct.description ;
+//     }
 class VendorOfferingList
 {
     constructor() 
@@ -99,6 +99,10 @@ class VendorOfferingList
         this.count++ ;
         offering.setId( this.count ) ;
         this.OfferingMap.set( this.count, offering ) ;
+    }
+    getProductById( id )
+    {
+        return this.getMap().get( id ) ;
     }
     testFunction(  )
     {
@@ -227,14 +231,9 @@ class VendorOfferingList
     }
     display( offering ) 
     { 
-        //document.write( item.id + " " + 
-        //                item.name + "<br>"  ) ;
-        //item.display() ;
-        //offering.display() ;
-        document.write( offering.id + " " + offering.vendorId + " " 
+        document.write( offering.id + " " + offering.vendorId + " "
         + offering.description + " " + offering.offeringPrice + "<br>" ) ;
-
-    }   
+    }
     getDisplayString( offering ) 
     {
         let str = "" ;

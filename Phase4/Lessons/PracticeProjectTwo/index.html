@@ -13,7 +13,6 @@
 
     </head>
     <body>
-        
         <header>
             <div id="navbar_container" class="container-fluid">
                 <div class="navbar-collapse  " id="navbarSupportedContent">
@@ -33,30 +32,26 @@
                         <li class="nav-item">
                             <a class="nav-link btn btn-outline-info" href="#project_section" onclick="BudgetPlanner.ProjectClicked();">Project Requirements</a>
                         </li>
-                 
                     </ul>
                 </div>
             </div>
         </header>
         <section id="main_section">
             <h1>Budget Planner Home</h1>
+            <div style="display: flex; flex-direction: row">
             <div id="expenseBudgetChart" style="height: 250px;"></div>
             <div id="budgetItemChart" style="height: 250px;"></div>
+            </div>
             <div style="display: flex ; flex-direction: row;">
                 <div id="expense-summary" class="summary"></div>
                 <div id="budget-summary" class="summary"></div>
             </div>
-            <!-- <div style="border: 5px solid slateblue ; width: max-content;">
-                <button onclick="SummarizeExpenses( document.getElementById('expense-summary'));
-                            ListBudgetSummary( document.getElementById('budget-summary')) ;">Sum</button>
-            </div> -->
         </section>
         
         <section id="teams_section">
             <h1>Team Management</h1>
             <div style="display: flex ; flex-direction: row;">
                 <div>
-                    <!-- <button value="ListOfferings" onclick=" ListOfferings()">Products</button> -->
                     <button  class="tab" value="ListTeams" onclick="BudgetPlanner.ListTeams()">Teams</button>
                     <button  class="tab" value="ListVendors" onclick=" BudgetPlanner.ListVendors()">Vendors</button>
                     <div class="select-list" id="teams-list" data-val="0" 
@@ -75,17 +70,10 @@
                             <div class="iRow"><span>1 2 3 4 5</span></div>
                         </div>
                     </div>
-                    
                 </div>
-
-            
                 <div>
-                <div class="summary" 
-                        style="border: 2px solid black; 
-                        padding: 1rem; 
-                        margin-top: 2rem; 
-                        margin-left: 1rem;">
-                    
+                <div class="summary" >
+
                     <h6>Selected Purchase Request</h6>
                     <span></span>
                     <span>Team:</span><span id="id_selected_team">team</span>
@@ -101,43 +89,44 @@
                 </div>
                 <div>
                     <h4 style="margin-left: 1rem; ">Pending Requests</h4>
-                    <div  class="select-list" style="max-height: 25vh; overflow:auto; margin-left: 1rem;" 
-                        
-                            id="team-request-list">
-                            
+                    <div  class="select-list" id="team-request-list" style="margin-left: 1em">
                         <div class="iRow"><span>1 2 3 4 5</span></div>
                     </div>
                 </div>
-            </div>
-            </div>
-            <div>
-                
+                </div>
             </div>
         </section>
         <section id="finance_section">
             <h1>Finance Management</h1>
             <div style="display: flex ; flex-direction: row;">
             <div>
-                <button class="tab" value="ListExpenses" onclick="BudgetPlanner.ListExpensesByStatus('pending'); SelectedStatus='pending'">Pending</button>
-                <button class="tab" value="ListExpenses" onclick="BudgetPlanner.ListExpensesByStatus('approved'); SelectedStatus='approved'">Approved</button>
-                <button class="tab" value="ListExpenses" onclick="BudgetPlanner.ListExpensesByStatus('rejected'); SelectedStatus='rejected'">Rejected</button>
-                <button class="tab" value="ListExpenses" onclick="BudgetPlanner.ListBudgetItems(document.getElementById('expense-list')); SelectedStatus=''">Budget</button>
-                
+
+                <button class="tab" onclick="BudgetPlanner.PendingTabSelected()">Pending</button>
+                <button class="tab" onclick="BudgetPlanner.ApprovedTabSelected()">Approved</button>
+                <button class="tab" onclick="BudgetPlanner.RejectedTabSelected()">Rejected</button>
+                <button class="tab" onclick="BudgetPlanner.BudgetTabSelected()">Budget</button>
+
                 <div class="select-list" id="expense-list"></div>    
             
             </div>
-                <div style="visibility: visible; border: 2px solid black;  margin-top: 2em; 
-                    margin-left: 1em; padding: 4px;" class="summary">
-                    <h6>Selected Expense Item</h6>
-                    <br><span id="id_selected_expenseitem"></span>
+                <div  id="selected_expenseitem"  class="dialog">
+                    <h6>Selected Expense Item</h6><span></span>
+                    <span>ID:</span><span id="selected_expenseitem_id"></span>
+                    <span>TEAM ID:</span><span id="selected_expenseitem_teamid"></span>
+                    <span>Quantity:</span><span id="selected_expenseitem_quantity"></span>
+                    <span>Product:</span><span id="selected_expenseitem_description"></span>
+                    <span>Amount:</span><span id="selected_expenseitem_totalprice"></span>
+                    <span>Discount:</span><span id="selected_expenseitem_discountprice"></span>
+                    <span>Total:</span><span id="selected_expenseitem_netprice"></span>
+<!--                    <div id="id_selected_expenseitem"></div>-->
+
                     <button onclick="BudgetPlanner.updateSelectedExpenseItemStatus('approved');">Approve</button>
                     <button onclick="BudgetPlanner.updateSelectedExpenseItemStatus('rejected');">Reject</button>
                 </div>
             
-            <div style="visibility: visible;border: 2px solid black;  margin-top: 2rem; padding: 4px;"
-                class="summary">
-                <h6>Selected Budget Item</h6>
-                <br><span id="id_selected_budgetitem"></span>
+            <div id="selected_budgetitemx" class="noshow">
+                <h6>Selected Budget Item</h6><span></span>
+                <span id="id_selected_budgetitem"></span><span></span>
                 <label for="id_selected_budgetitem_input">Budget Amount</label><br>
                 <input id="id_selected_budgetitem_input" type="number">
                 <button onclick="BudgetPlanner.updateSelectedBudgetItem();">Update</button>
@@ -147,7 +136,6 @@
                 <div id="ft_expense-summary"></div>
                 <!-- <div style="border: 5px solid slateblue ; width: max-content;"> -->
                 <!-- <button onclick="chartExpenseBudget('expenseVsBudgetChart');">Chart</button> -->
-                </div>
         </section>
         <section id="project_section">
             <h1>Project</h1>
@@ -183,7 +171,7 @@
             </div>
         </section>
         <div>
-            <div style="height: 3rem;">
+            <div style="height: 3rem;"></div>
         </div>
         <footer>    
             <div class="text-center p-0" >
@@ -216,7 +204,6 @@
     <script> 
        BudgetPlanner = new  BudgetPlannerApp() ;
        BudgetPlanner.InitializeApplication() ;
-    </script> 
-    <!-- <div style="height: 3em"></div> -->
+    </script>
 </body>
 </html>

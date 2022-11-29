@@ -1,15 +1,15 @@
 header
 {
     display: flex ;
-    align-content: space-around;
-    /* background-color: blue; */
+    /*align-content: space-around;*/
+     background-color: blue;
     color:black ;
+    overflow: clip;
 }
 #navbar_container
 {
-    padding:20px ;
-    padding-right: 0 ;
-    
+    padding: 20px 0 20px 20px;
+
     position: fixed ;
     background-color: wheat ;
     height: 100vh ;
@@ -20,11 +20,8 @@ header
     background-color: whitesmoke;
     width: 15ch ;
     border-right: none ;
-    border-bottom-left-radius: 20px ;
-    border-top-left-radius: 20px ;
-    border-bottom-right-radius: 0px ; 
-    border-top-right-radius: 0px ;
- 
+    border-radius: 20px 0 0 20px;
+
 }
 .tab
 {
@@ -35,56 +32,62 @@ header
     border-bottom:none ;
     border-top-right-radius: 5px ;
     border-top-left-radius: 5px ;
-    margin-left: none ;
-    margin-right: none ;
+    margin-left: 0;
+    margin-right: 0 ;
 }
+/*.dialog*/
+/*{*/
+/*    border: 2px solid black;*/
+/*    margin-top: 2em;*/
+/*    margin-left: 1em;*/
+/*    padding: 4px;*/
+/*    color: black ;*/
+/*    display: grid ;*/
+/*    grid-template-columns: repeat( 2, 1fr ) ;*/
+/*    margin: 2.5% ;*/
 
-    #expenseBudgetChart 
-    {
-        /* contain: content ; */
-        width: 95% ;
-        margin: 2.5% ;        
-        border: 4px solid slategrey ;
-        color: red ;
+/*    justify-content: center ;*/
+/*    border: 5px solid slategrey ;*/
+/*    !* width: max-content ; *!*/
+/*    background-color: antiquewhite;*/
+/*}*/
 
-    }
-#expense-summary
+#expenseBudgetChart , #budgetItemChart
 {
-    
-    color: black ;
+    width: 47.5% ;
+    margin: 2.5% ;
+    justify-content: center;
+    border: 4px solid slategrey ;
+    color: red ;
+}
+.noshow
+{
+    visibility: hidden ;
+    height: 0 ;
+    width: 0 ;
+}
+.summary, .dialog
+{
     display: grid ;
     grid-template-columns: repeat( 2, 1fr ) ;
-    margin: 2.5% ;
-    
-    justify-content: center ;
-    border: 5px solid slategrey ;
-    width: max-content ;
-}
-#expense-summary span
-{
-    padding-left: 4px ;
-    padding-right: 4px ;
-    width: max-content ;
-}
-.summary
-{
-    
+
+    border: 2px solid black;
+
+    margin-top: 2em;
+    margin-left: 1em;
+    padding: 4px;
+
+
     color: black ;
-    display: grid ;
-    grid-template-columns: repeat( 2, 1fr ) ;
-    margin: 2.5% ;
-    
-    justify-content: center ;
-    border: 5px solid slategrey ;
-    /* width: max-content ; */
+    background-color: antiquewhite;
 }
 .summary span
 {
     padding-left: 4px ;
     padding-right: 4px ;
-    /* width: max-content ; */
+     width: max-content ;
 }
-.summary h6
+.summary h6, .dialog h6
 {
     grid-template-columns:  2fr  ;
     border-top: 1px solid black ;
@@ -98,13 +101,30 @@ header
     width: auto ;
 }
 
+#expense-summary, #budget-summary
+{
+    
+    color: black ;
+    display: grid ;
+    grid-template-columns: repeat( 2, 1fr ) ;
+    margin: 2.5% ;
+    
+    justify-content: center ;
+    border: 5px solid slategrey ;
+}
+#expense-summary span
+{
+    padding-left: 4px ;
+    padding-right: 4px ;
+    width: max-content ;
+}
+
 .select-list
 {
     display: grid ;
     
-    /* width: 400px ; */
+
     width: 40em ;
-    /* border: 1px solid black ; */
     font-size: small;
     min-height:.25in ;
     max-height: 30vh ;
@@ -115,9 +135,7 @@ header
 {
     display: flex ;
     color: black ;
-    /* width: auto ; */
-    /* margin: 0px ; */
-    
+
     
     /* height:.25in ;  */
     border: 1px solid slategrey ;
@@ -136,6 +154,7 @@ header
     
     color:black ;
     background-color: goldenrod;
+    /*background-color: rgba(255,121,0) ;;*/
     border-bottom: 1px solid blue ;
     border-top: 1px solid blue ;
     transition: background-color .25s, border-color 2s ;
@@ -185,9 +204,9 @@ header
 .w5 { width: 5% ; }
 .w10 { width: 10% ; }
 .w20 { width: 20% ;  }
-.w30 { width: 40% ; }
+.w30 { width: 30% ; }
 .w40 { width: 40% ; }
-.w40 { width: 50% ; }
+.w50 { width: 50% ; }
 .w60 { width: 60% ; }
 .w80 { width: 80% ; }
 .w90 { width: 90% ; }
@@ -225,9 +244,6 @@ header
     
     padding-left: 1px ;
     padding-right: 1px ;
-    /* border: solid black 1px ;
-    padding: 1px ; 
-    margin: 1px ;    */
 }
 .select-list span p
 {
@@ -237,9 +253,6 @@ header
     
     padding-left: 1px ;
     padding-right: 1px ;
-    /* border: solid black 1px ;
-    padding: 1px ; 
-    margin: 1px ;    */
     margin: 0 ;
 }
 
@@ -252,7 +265,7 @@ header
     height:.25in ;
     border-left: 1px solid blue ;
     
-    /* justify-items: center; */
+    justify-items: center;
     
 }
 #teams-section-div
@@ -278,24 +291,28 @@ section
     background-color: aliceblue;
     color:blue ;
     margin-left: 10rem ;
-    height: 100vh ; 
+    height: 100vh ;
+    overflow: auto;
 }
 footer
 {
     background-color: black;
     color:azure;
+
+    /*safety orange*/
+    /*background-color: rgb(255,121,0) ;*/
+    /*background: rgba(255,121,0, 86.2%) ;*/
+
+
     margin: 0 ; 
     padding: 0 ; 
     position: fixed; 
     bottom: 0 ; right: 0 ; 
-    width: 100% ; 
-    /*
-    background-image: url(./images/lukasz-rawa-fmc-tFMMiBs-unsplash.jpg); 
-    opacity: 0.50 ; 
-    */
+    width: 100% ;
 }
 footer a 
 {
     color: cyan ;
     background-color: black;
+
 }

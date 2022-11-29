@@ -43,26 +43,28 @@ class ProductDiscount
     ApplyTotal(  total )
     {
         this.fractionalDiscount = (
-            this.fractionalDiscount == null || 
-            this.fractionalDiscount == undefined || 
+            this.fractionalDiscount == null || false ||
             this.fractionalDiscount == NaN 
             ? 0.00 : this.fractionalDiscount ) ;
 
         this.couponDiscount = (
-            this.couponDiscount == null || 
-            this.couponDiscount == undefined || 
+            this.couponDiscount == null || false ||
             this.couponDiscount == NaN 
             ? 0.00 : this.couponDiscount ) ;
 
         
-        total = Math.floor((total)*100)  ;
+        total = Math.floor((total*100)+0.005)  ;
+        console.log('total',total) ;
         let totalDiscount = 0.0 ;
-        totalDiscount += (total * Math.floor(this.fractionalDiscount*100)/100) ;
+        totalDiscount += (Math.floor(this.fractionalDiscount*100*total)+0.005)/100 ;
         totalDiscount += Math.floor(this.couponDiscount * 100)  ;
-        this.discountAmount = Math.floor(totalDiscount) /100 ;
+        this.discountAmount = Math.floor(totalDiscount )/100 ;
+        console.log('totalDiscount',totalDiscount) ;
+        console.log('discountAmount',this.discountAmount) ;
     }  
     ApplyProduct( product )
     {
+        this.productId = product.getId() ;
         this.ApplyTotal( product.offeringPrice) ;
     }
 }
@@ -88,7 +90,7 @@ class ProductDiscountList
     addDiscountByName( name )
     {
         this.count++ ;
-        let newDiscount = new Discount( this.count, name ) ;
+        let newDiscount = new ProductDiscount( this.count, name ) ;
         
         this.DiscountMap.set( this.count, newDiscount ) ; 
         return this.DiscountMap.get( this.count ) ;
@@ -104,7 +106,7 @@ class ProductDiscountList
     {
         let str = "" ;
         str += "=== DISCOUNTS ===\n" ;
-        this.VendorMap.forEach( (v) =>{ str += this.getDisplayString( v ) ;  })  ;
+        this.getMap().forEach( (v) =>{ str += this.getDisplayString( v ) ;  })  ;
         return str ;      
     }
     testFunction( selectedRowElement )

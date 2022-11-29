@@ -30,6 +30,6 @@ class DataElementList
         this.ElementMap.set( this.count, dataElement ) ;
         return this.ElementMap.get( this.count ) ;
     }
-    setMap( map ) { this.ElementMap = map  ; count = map.size ;  }
+    setMap( map ) { this.ElementMap = map  ; this.count = map.size ;  }
     getMap() { return this.ElementMap ; }
 }

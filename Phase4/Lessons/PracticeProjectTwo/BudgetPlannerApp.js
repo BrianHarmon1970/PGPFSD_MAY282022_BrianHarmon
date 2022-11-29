@@ -2,7 +2,7 @@ class BudgetPlannerApp
 {
   constructor()
   {
-
+    //this.dataModel = new BudgetPlannerDataModel()
   }
   InitializeApplication()
   {
@@ -33,6 +33,45 @@ class BudgetPlannerApp
   ListBudgetItems( domElement )
   {
     ListBudgetItems( domElement ) ;
+  }
+  PendingTabSelected()
+  {
+    this.ListExpensesByStatus('pending'); SelectedStatus='pending' ;
+    this.showSelectedExpenseItem( true ) ;
+    this.showSelectedBudgetItem( false ) ;
+
+  }
+  ApprovedTabSelected()
+  {
+    this.ListExpensesByStatus('approved'); SelectedStatus='approved' ;
+    this.showSelectedExpenseItem( true ) ;
+    this.showSelectedBudgetItem( false ) ;
+
+  }
+  RejectedTabSelected()
+  {
+    this.ListExpensesByStatus('rejected'); SelectedStatus='rejected' ;
+    this.showSelectedExpenseItem( true ) ;
+    this.showSelectedBudgetItem( false ) ;
+  }
+  BudgetTabSelected()
+  {
+    this.ListBudgetItems(document.getElementById('expense-list')); SelectedStatus='' ;
+    this.showSelectedBudgetItem( true ) ;
+    this.showSelectedExpenseItem( false ) ;
+
+  }
+  showSelectedBudgetItem( show )
+  {
+    let element = document.getElementById("selected_budgetitemx") ;
+    ( show ? element.classList.remove("noshow") : element.classList.add("noshow")) ;
+    ( show ? element.classList.add("dialog") : element.classList.remove("dialog")) ;
+  }
+  showSelectedExpenseItem( show )
+  {
+    let element = document.getElementById("selected_expenseitem") ;
+    ( show ? element.classList.remove("noshow") : element.classList.add("noshow")) ;
+    ( show ? element.classList.add("dialog") : element.classList.remove("dialog")) ;
   }
   updateSelectedBudgetItem()
   {
@@ -74,68 +113,3 @@ class TeamSumElement
         this.value = value;
     }
 }
-/* 
-function replacer(key, value) {
-    if(value instanceof Map) {
-      return {
-        dataType: 'Map',
-        value: Array.from(value.entries()) 
-      };
-    } else {
-      return value;
-    }
-  }
-function storeTeamList()
-{
-    let str = JSON.stringify(CreatedTeams.getMap(), replacer ) ;
-    window.localStorage.setItem('TeamList', str ) ;
-    document.write( "str: " + str +"<br>") ;
-    //console.log( str ) ;
-    *//*let db = window.indexedDB.open( "TeamList" ) ;
-    db.onsuccess = (event) => {
-        //note.innerHTML += '<li>Database initialized.</li>';
-      
-        alert("Open DB: Success") ;
-        // store the result of opening the database in the db variable.
-        // This is used a lot below
-        db = DBOpenRequest.result;
-      
-        let transaction = db.transaction(["TeamList"], "readwrite") ;
-        db.transaction.objectStore().put(Teams, "TeamList" ) ;
-      };
-}
-function restoreTeamList()
-{
-    let str = window.localStorage.getItem('TeamList' ) ;
-    document.write( "str: " + str + "<br>") ;
-    let item =  JSON.parse( str ) ;
-    let map = new Map( item.value )  ;
-    Teams = new TeamList() ;
-    Teams.setMap( map ) ; 
-    //console.log( JSON.parse( window.sessionStorage.getItem("TeamList"))) ;
-    console.log( Teams ) ;
-    /*let db = window.indexedDB.open( "TeamList" ) ;
-    db.onsuccess = (event) => {
-        alert("Open DB: Success") ;
-        //note.innerHTML += '<li>Database initialized.</li>';     
-        // store the result of opening the database in the db variable.
-        // This is used a lot below
-        db = DBOpenRequest.result;
-        getData() ;
-    };*/
-/*}
-/*
-function getData() 
-{
-    transaction = db.transaction.objectStore().get(Teams, "TeamList" ) ;
-        transaction.oncomplete = (event) => {
-            Teams = window.indexedDB.objectStore.get(["TeamList"]) ;
-            //note.innerHTML += '<li>Transaction completed.</li>';
-            alert("Get Object Store ( Teams ): Transaction Complete" ) ;
-        };
-    
-        transaction.onerror = (event) => {
-            //note.innerHTML += `<li>Transaction not opened due to error: ${transaction.error}</li>`;
-            alert("Get Object Store ( Teams ):  Transaction not opened due to error: ${transaction.error}") ; 
-        }
-}*/

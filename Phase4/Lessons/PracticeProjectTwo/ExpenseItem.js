@@ -30,7 +30,7 @@ class ExpenseItem
     setUnitPrice( unitPrice ) { this.unitPrice = unitPrice ; this.calculateCost() ; }
     calculateCost() 
     {
-        this.totalPrice = Math.floor( this.units * ((this.unitPrice)*100)+0.01) / 100  ;
+        this.totalPrice = this.units * Math.floor( (this.unitPrice+.005)*100)/100 ;
         this.netCost = this.totalPrice - this.discountAmount  ; 
     }
     getId() { return this.id ; }
@@ -38,8 +38,9 @@ class ExpenseItem
     getVendorId() { return this.vendorId ; }
     getUnitCount() { return this.units ; }
     getUnitPrice() { return this.unitPrice ; }
-    getTotalPrice() { caclculateCost() ; return this.totalPrice ; }
-    getTotalExpense() {  calculateCost() ; return this.netCost ; }
+    getTotalPrice() {  return this.totalPrice ; }
+    getTotalExpense() {  return this.netCost ; }
+    getDiscountAmount() { return this.discountAmount ; }
     applyProduct( product ) 
     {
         this.vendorId = product.vendorId ;
@@ -49,9 +50,10 @@ class ExpenseItem
     }
     applyDiscount( discount ) 
     {
-        discount.ApplyTotal( this.totalPrice /* this.unitPrice * this.units */ ) ;
-        this.discountAmount = discount.discountAmount ;
-        this.netCost = this.totalPrice - this.discountAmount * this.units ;
+        discount.ApplyTotal( this.unitPrice /* this.unitPrice * this.units */ ) ;
+        this.discountAmount = (Math.floor( (discount.discountAmount*100)) * this.units)/100 ;
+        //this.netCost = this.totalPrice - this.discountAmount * this.units ;
+        this.netCost = this.totalPrice - this.discountAmount  ;
         console.log( this ) ;
     }
     applyTeam( team ) 
@@ -84,20 +86,8 @@ class ExpenseItemList
         this.ItemMap.forEach( ( item ) =>{ this.display( item ) ;  })        
     }
     testFunction( status )
-    {        
-        /* 
-        let ndxElement = event.target.parentElement.firstElementChild ;
-        while ( ndxElement != null )
-        {
-            ndxElement.classList.remove("selected-row" );
-            ndxElement = ndxElement.nextElementSibling ;
-        } */
-        //ListDiscounts() ;
-        //event.target.parentElement.class =  "selected-row" ;
-        //selectedRowElement.class = "selected-row" ;
-        
+    {
         let str = event.target.getAttribute("data-v")  ;
-        
         let vRow = Expenses.getMap().get( eval(str) ) ;
         updateSelectedExpenseItem( vRow, status ) ;       
     }
@@ -168,11 +158,11 @@ class ExpenseItemList
                   s2.classList.add( "w5" ) ;
                   s3.classList.add( "w5" ) ;
                   //s4.classList.replace("width", "w25") ;
-                  s4.classList.add( "w55" ) ;
+                  s4.classList.add( "w50" ) ;
                   s6.classList.add( "w5" ) ;
                   s7.classList.add( "w10" ) ;
                   s8.classList.add( "w10" ) ;
-                  s9.classList.add( "w5" ) ;
+                  s9.classList.add( "w10" ) ;
                   s10.classList.add( "w10" ) ;
 
 
@@ -277,7 +267,7 @@ class ExpenseItemList
                         item.date + " " + 
                         item.units + " " +
                         item.unitPrice + " " +
-                        item.totalCost+ "<br>" ) ; 
+                        item.getTotalPrice()+ "<br>" ) ;
     }
     getList()
     {
@@ -295,7 +285,7 @@ class ExpenseItemList
         item.date + " " + 
         item.units + " " +
         item.unitPrice + " " +
-        item.totalCost+ "\n"
+        item.getTotalPrice()+ "\n"
         return str ;
 
     }

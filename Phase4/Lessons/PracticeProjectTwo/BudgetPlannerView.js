@@ -1,27 +1,32 @@
     let TeamSum = [{name: "", value: 0 }]  ; //= SummarizeExpenses();
     let budgetArray = [{name: "", value: 0}] ;
-    
+
+    class ViewComponent
+    {
+
+    }
     function ListBudgetSummary( pageElement )
     {
         pageElement.textContent = "" ;
         let h = document.createElement( "h6" ) ;
         h.textContent = "Budget" ;
         pageElement.appendChild( h ) ;
-        pageElement.appendChild( document.createElement("br")) ;
+        //pageElement.appendChild( document.createElement("br")) ;
+        pageElement.appendChild( document.createElement("span")) ;
         let Total = 0 ;
         TeamBudgetItems.getMap().forEach((item)=>
         {
-            let br = document.createElement( "br" ) ;
+            //let br = document.createElement( "br" ) ;
             let s = document.createElement( "span" ) ;
             s.textContent = item.getDescription() + ": " + item.getItemBudget() ;
-            s.append( br ) ;
+            //s.append( br ) ;
             pageElement.appendChild( s ) ;
             Total += item.getItemBudget() ;
         }) ;
-        let br = document.createElement( "br" ) ;
+        //let br = document.createElement( "br" ) ;
         let s = document.createElement( "span" ) ;
         s.textContent = "Total" + ": " + Total ;
-        s.append( br ) ;
+        //s.append( br ) ;
         pageElement.appendChild( s ) ;
     
         
@@ -58,7 +63,7 @@
             div.appendChild( s ) ;
             ++i ;
         }) ;
-        s = document.createElement( "span" ) ; 
+        let s = document.createElement( "span" ) ;
         s.textContent = " Total: " + Expenses.Summarize()  ;
         //TeamSum[ 0 ] = { name: 'Total', value: Expenses.Summarize() } ;
         //TeamSum[ 0 ] = { name: 'Total', value: 0.00 } ;
@@ -119,7 +124,7 @@
     }
     function chart( pageElementID, data, keyname, [valuenames], [labelnames ] )
     {
-        el = document.getElementById(pageElementID).textContent = "" ;
+        let el = document.getElementById(pageElementID).textContent = "" ;
         let d = 
             {element: pageElementID, 
                 data: data, 
@@ -193,7 +198,7 @@
         newReq.setUnitCount( 10 ) ;
         newReq.applyProduct( product ) ;
         newReq.applyDiscount( discount ) ;
-        console.log( newReq ) ;
+
         Expenses.addItem( newReq ) ;
 
     }
