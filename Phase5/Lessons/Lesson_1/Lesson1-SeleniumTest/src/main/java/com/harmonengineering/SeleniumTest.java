@@ -2,6 +2,7 @@ package com.harmonengineering;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -136,6 +137,34 @@ public class SeleniumTest
 //        driver.findElement (By.xpath (”//*[@type=’text’]//following-sibling::input”));
         System.out.println("Element found: " +
                 driver.findElement(By.xpath("//*[@type='text']//following-sibling::input")));
+
+        //============ Lesson 1.3 ====================
+        // 1.3.1 Using cssSelector
+
+        //a.	Tag and ID
+        //●	    Syntax: “css = tag#id”
+        //●	    Example: driver.findElement(By.cssSelector(“input#email”));
+        driver.findElement(By.cssSelector("input#Email"));
+
+//        b.	Tag and Class
+        //        ●	Syntax: “css = tag.class”
+        //        ●	Example: driver.findElement(By.cssSelector(”input.inputtext”));
+        driver.findElement(By.cssSelector("input.inputtext"));
+
+//        C.	 Tag and Attribute
+//        ●	Syntax: “css = tag[attribute=value]”
+//        ●	Example: driver.findElement(By.cssSelector(“input[name=lastName]”));
+        driver.findElement(By.cssSelector("input[name=lastName]"));
+
+//        c.	Tag, Class and Attribute
+        //    ●	Syntax: “tag.class[attribute=value]”
+        //    ●	Example:
+        driver. findElement(By.cssSelector("input.inputtext[tabindex='1']"));
+
+//        d.	Inner text
+        //●	Syntax: “css = tag.contains(“innertext”)”
+        //●	Example: driver.findElement(By.cssSelector(font:contains(“Boston”)));
+        //driver.findElement(By.cssSelector("h2:contains("Welcome")));
 
         driver.close() ;
     }
