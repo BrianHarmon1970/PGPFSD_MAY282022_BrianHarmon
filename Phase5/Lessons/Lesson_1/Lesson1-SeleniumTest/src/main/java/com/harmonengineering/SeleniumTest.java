@@ -1,5 +1,6 @@
 package com.harmonengineering;
 
+
 import java.io.File;
 import com.sun.jna.platform.FileUtils;
 import java.util.Iterator;
@@ -16,10 +17,23 @@ import static org.openqa.selenium.By.cssSelector;
 import static org.openqa.selenium.By.name;
 import static org.testng.internal.Utils.copyFile;
 
+import java.util.Iterator;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
 public class SeleniumTest
 {
     public static final String htmlLocation = "file:"+System.getProperty("user.dir")+"/src/main/resources/index.html";
+
     public static final String screenShotDir = System.getProperty("user.dir")+"/src/main/resources/";
+
+
 
     public static void main(String[] args) {
         //System.setProperty("webdriver.chrome.driver",
@@ -49,7 +63,9 @@ public class SeleniumTest
         //●	Finding  Web element using Locator Name
         //        a.	Syntax : name =  Name of the element
         //        b.	Example : driver.findElement(By.name(“name”));
-        System.out.println("Element found: " + driver.findElement(name("name")));
+
+        System.out.println("Element found: " + driver.findElement(By.name("name")));
+
 
         System.out.println("Step 1.2.4 Using LinkText as a Locator");
         //●	Finding  Web element using Locator Link Text
@@ -274,8 +290,6 @@ public class SeleniumTest
         String fileName = screenShotDir + "/test.png" ;
         System.out.println( fileName ) ;
         copyFile(scr, new File(fileName));
-
-
         driver.close() ;
     }
 }

@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6166b55f-3a49-49f4-935a-d3301c0db9c2" name="Changes" comment="" />
+    <list default="true" id="6166b55f-3a49-49f4-935a-d3301c0db9c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest/src/main/java/com/harmonengineering/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest/src/main/java/com/harmonengineering/SeleniumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest/src/main/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest/src/main/resources/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest/target/classes/com/harmonengineering/SeleniumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest/target/classes/com/harmonengineering/SeleniumTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +32,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -65,7 +72,8 @@
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "2e6ab33c28446d8b52288104a6ae538f"
+    "spring.configuration.checksum": "2e6ab33c28446d8b52288104a6ae538f",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.52">
@@ -179,6 +187,7 @@
       <updated>1661790931372</updated>
       <workItem from="1661790932768" duration="5291000" />
       <workItem from="1661796384946" duration="12000" />
+      <workItem from="1671394761248" duration="32000" />
     </task>
     <servers />
   </component>
