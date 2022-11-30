@@ -19,6 +19,7 @@ import static org.testng.internal.Utils.copyFile;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -182,114 +183,15 @@ public class SeleniumTest
 //        c.	Tag, Class and Attribute
         //    ●	Syntax: “tag.class[attribute=value]”
         //    ●	Example:
-        driver.findElement(By.cssSelector("input.inputtext[tabindex='1']"));
+        driver. findElement(By.cssSelector("input.inputtext[tabindex='1']"));
+
 
 //        d.	Inner text
         //●	Syntax: “css = tag.contains(“innertext”)”
         //●	Example: driver.findElement(By.cssSelector(font:contains(“Boston”)));
         //driver.findElement(By.cssSelector("h2:contains("Welcome")));
 
-        WebElement el = driver.findElement(By .id("editbox")) ;
-        System.out.println("editbox text:" + el.getAttribute("value")) ;
-        el.clear();
-        el.sendKeys("Hello!");
-        System.out.println("editbox text:" + el.getAttribute("value")) ;
 
-        System.out.println( "editbox exists?: " + (el != null)) ;
-        System.out.println( "is editbox enabled: " + el.isEnabled()) ;
-
-        el = driver.findElement(By.name("linkname")) ;
-
-        System.out.println( "link exists?: " + (el != null)) ;
-        System.out.println( "is link enabled: " + el.isEnabled()) ;
-        System.out.println( "element name is: " + el.getAttribute("name")) ;
-        //el.click();
-
-        el = driver.findElement(By.cssSelector("button")) ;
-        System.out.println( "button exists?: " + (el != null)) ;
-        System.out.println( "button enabled: " + el.isEnabled()) ;
-        el.click();
-
-        el = driver.findElement(By.cssSelector("#id_checkbox")) ;
-        System.out.println( "checkbox exists?: " + (el != null)) ;
-        System.out.println( "checkbox enabled: " + el.isEnabled()) ;
-        System.out.println( "checkbox selected: " + el.isSelected()) ;
-        el.click();
-        System.out.println( "checkbox selected: " + el.isSelected()) ;
-        el.click();
-        System.out.println( "checkbox selected: " + el.isSelected()) ;
-
-        el = driver.findElement(By.cssSelector("input[type=radio]")) ;
-        System.out.println( "radio enabled: " + el.isEnabled()) ;
-        System.out.println( "radio selected: " + el.isSelected()) ;
-        System.out.println( "radio displayed: " + el.isDisplayed()) ;
-
-        el = driver.findElement(By.cssSelector("select")) ;
-        Select sl  = new Select( el ) ;
-        System.out.println( "selectList exists?: " + (el != null)) ;
-        System.out.println( "selectList enabled: " + el.isEnabled()) ;
-        sl.selectByVisibleText("Blue");
-        sl.selectByIndex(1) ;
-        System.out.println( "selectList count: " + sl.getOptions().size()) ;
-
-        el = driver.findElement(By.cssSelector("table")) ;
-        //No.of Columns
-        //List <WebElement> col = driver.findElements(By.xpath(".//*[@id=\"id_tablediv\"]/table/thead/tr/td"));
-
-        List <WebElement> col = driver.findElements(By.xpath(".//*[@id=\"id_tablediv\"]/table/tbody/tr[1]/td"));
-        System.out.println("No of cols are : " +col.size());
-        //No.of rows
-        List <WebElement> rows = driver.findElements(By.xpath(".//*[@id='id_tablediv']/table/tbody/tr/td[1]"));
-        System.out.println("No of rows are : " + rows.size());
-        WebElement cell = driver.findElement(By.xpath(".//*[@id='id_tablediv']/table/tbody/tr[1]/td[1]")) ;
-        System.out.println("cell value: " + cell.getText()) ;
-        cell = driver.findElement(By.xpath(".//*[@id='id_tablediv']/table/tbody/tr[3]/td[3]")) ;
-        System.out.println("cell value: " + cell.getText()) ;
-
-
-        //el = driver.findElement(By.cssSelector("html")) ;
-        //driver.switchTo().frame("id_iframe");
-        //driver.switchTo().window( el.getDomProperty("id"));
-
-        // Lessson 1.5
-        //el = driver.findElement(By.cssSelector("#id_checkbox")) ;
-        el = driver.findElement(By.cssSelector("#id_alert")) ;
-
-//        el.click(); driver.switchTo().alert().accept();
-//        el.click(); driver.switchTo().alert().dismiss();
-        el.click(); System.out.println( driver.switchTo().alert().getText());
-        driver.switchTo().alert().accept();
-
-        el.click(); System.out.println( driver.switchTo().alert().getText());
-        driver.switchTo().alert().dismiss();
-
-        el = driver.findElement(By.cssSelector("#id_prompt")) ;
-
-        el.click(); driver.switchTo().alert().sendKeys("text");
-        System.out.println( driver.switchTo().alert().getText());
-        driver.switchTo().alert().accept();
-
-        el.click(); driver.switchTo().alert().sendKeys("text");
-        System.out.println( driver.switchTo().alert().getText());
-        driver.switchTo().alert().dismiss();
-
-        el = driver.findElement(By.cssSelector("#id_confirm")) ;
-        el.click() ; System.out.println( driver.switchTo().alert().getText());
-        driver.switchTo().alert().accept();
-        el.click() ; System.out.println( driver.switchTo().alert().getText());
-        driver.switchTo().alert().dismiss();
-
-        //driver.findElement(cssSelector("input#id_lastName")).sendKeys(Keys.CONTROL + "t");
-        //driver.findElement(By.id("lastName")).sendKeys(Keys.CONTROL + "w");
-
-        driver.get("https://www.google.com/");
-        WebElement upload =        driver.findElement(By.xpath("//*[@type='text']"));
-        upload.click();
-        TakesScreenshot ts = (TakesScreenshot)driver;
-        File scr = ts.getScreenshotAs(OutputType.FILE);
-        String fileName = screenShotDir + "/test.png" ;
-        System.out.println( fileName ) ;
-        copyFile(scr, new File(fileName));
         driver.close() ;
     }
 }

@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19987015-4d64-4b88-aac6-196fce46a5ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Phase3/Lessons/LessonOne/UserDatabase-SpringMVC/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase3/Lessons/LessonOne/UserDatabase-SpringMVC/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Phase3/Lessons/LessonOne/UserDatabase-SpringMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase3/Lessons/LessonOne/UserDatabase-SpringMVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/SeleniumTest.java" afterDir="false" />
@@ -54,6 +50,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase5/Lessons/Lesson_1/Lesson1-SeleniumTest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -106,6 +106,7 @@
       <workItem from="1669874276130" duration="1068000" />
       <workItem from="1669900237665" duration="5000" />
       <workItem from="1671394813167" duration="484000" />
+      <workItem from="1671395525566" duration="853000" />
     </task>
     <servers />
   </component>
