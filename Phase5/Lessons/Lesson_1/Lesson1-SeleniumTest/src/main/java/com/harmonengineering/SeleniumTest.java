@@ -1,6 +1,5 @@
 package com.harmonengineering;
 
-
 import java.io.File;
 import com.sun.jna.platform.FileUtils;
 import java.util.Iterator;
@@ -17,30 +16,13 @@ import static org.openqa.selenium.By.cssSelector;
 import static org.openqa.selenium.By.name;
 import static org.testng.internal.Utils.copyFile;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
-
-import static org.openqa.selenium.By.cssSelector;
-import static org.openqa.selenium.By.name;
-
 
 public class SeleniumTest
 {
     public static final String htmlLocation = "file:"+System.getProperty("user.dir")+"/src/main/resources/index.html";
-
     public static final String screenShotDir = System.getProperty("user.dir")+"/src/main/resources/";
 
-
-
+    
     public static void main(String[] args) {
         //System.setProperty("webdriver.chrome.driver",
         WebDriver driver = new ChromeDriver();
@@ -288,6 +270,16 @@ public class SeleniumTest
 
         //driver.findElement(cssSelector("input#id_lastName")).sendKeys(Keys.CONTROL + "t");
         //driver.findElement(By.id("lastName")).sendKeys(Keys.CONTROL + "w");
+
+        driver.get("https://www.google.com/");
+        WebElement upload =        driver.findElement(By.xpath("//*[@type='text']"));
+        upload.click();
+        TakesScreenshot ts = (TakesScreenshot)driver;
+        File scr = ts.getScreenshotAs(OutputType.FILE);
+        String fileName = screenShotDir + "/test.png" ;
+        System.out.println( fileName ) ;
+        copyFile(scr, new File(fileName));
+
 
         driver.close() ;
     }
