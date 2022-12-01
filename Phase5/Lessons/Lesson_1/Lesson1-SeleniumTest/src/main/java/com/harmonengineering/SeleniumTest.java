@@ -5,12 +5,14 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import static org.openqa.selenium.By.cssSelector;
 import static org.openqa.selenium.By.name;
 
 public class SeleniumTest
@@ -227,17 +229,40 @@ public class SeleniumTest
         System.out.println("cell value: " + cell.getText()) ;
 
 
-        el = driver.findElement(By.cssSelector("html")) ;
-        driver.switchTo().frame("id_iframe");
+        //el = driver.findElement(By.cssSelector("html")) ;
+        //driver.switchTo().frame("id_iframe");
         //driver.switchTo().window( el.getDomProperty("id"));
 
+        // Lessson 1.5
+        //el = driver.findElement(By.cssSelector("#id_checkbox")) ;
+        el = driver.findElement(By.cssSelector("#id_alert")) ;
 
+//        el.click(); driver.switchTo().alert().accept();
+//        el.click(); driver.switchTo().alert().dismiss();
+        el.click(); System.out.println( driver.switchTo().alert().getText());
+        driver.switchTo().alert().accept();
 
+        el.click(); System.out.println( driver.switchTo().alert().getText());
+        driver.switchTo().alert().dismiss();
 
+        el = driver.findElement(By.cssSelector("#id_prompt")) ;
 
+        el.click(); driver.switchTo().alert().sendKeys("text");
+        System.out.println( driver.switchTo().alert().getText());
+        driver.switchTo().alert().accept();
 
+        el.click(); driver.switchTo().alert().sendKeys("text");
+        System.out.println( driver.switchTo().alert().getText());
+        driver.switchTo().alert().dismiss();
 
+        el = driver.findElement(By.cssSelector("#id_confirm")) ;
+        el.click() ; System.out.println( driver.switchTo().alert().getText());
+        driver.switchTo().alert().accept();
+        el.click() ; System.out.println( driver.switchTo().alert().getText());
+        driver.switchTo().alert().dismiss();
 
+        //driver.findElement(cssSelector("input#id_lastName")).sendKeys(Keys.CONTROL + "t");
+        //driver.findElement(By.id("lastName")).sendKeys(Keys.CONTROL + "w");
 
         driver.close() ;
     }
