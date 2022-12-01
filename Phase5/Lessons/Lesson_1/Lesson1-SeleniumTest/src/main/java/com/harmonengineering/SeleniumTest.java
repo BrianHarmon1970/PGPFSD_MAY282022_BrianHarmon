@@ -26,6 +26,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import static org.openqa.selenium.By.name;
 
 
 public class SeleniumTest
@@ -64,8 +67,9 @@ public class SeleniumTest
         //●	Finding  Web element using Locator Name
         //        a.	Syntax : name =  Name of the element
         //        b.	Example : driver.findElement(By.name(“name”));
-
-        System.out.println("Element found: " + driver.findElement(By.name("name")));
+=======
+        System.out.println("Element found: " + driver.findElement(name("name")));
+>>>>>>> 01f476e (Phase5 - Assisted Practice: 1.4 Handling Various Web Elements)
 
 
         System.out.println("Step 1.2.4 Using LinkText as a Locator");
@@ -183,7 +187,7 @@ public class SeleniumTest
 //        c.	Tag, Class and Attribute
         //    ●	Syntax: “tag.class[attribute=value]”
         //    ●	Example:
-        driver. findElement(By.cssSelector("input.inputtext[tabindex='1']"));
+        driver.findElement(By.cssSelector("input.inputtext[tabindex='1']"));
 
 
 //        d.	Inner text
@@ -191,6 +195,8 @@ public class SeleniumTest
         //●	Example: driver.findElement(By.cssSelector(font:contains(“Boston”)));
         //driver.findElement(By.cssSelector("h2:contains("Welcome")));
 
+
+>>>>>>> 01f476e (Phase5 - Assisted Practice: 1.4 Handling Various Web Elements)
 
         driver.close() ;
     }
