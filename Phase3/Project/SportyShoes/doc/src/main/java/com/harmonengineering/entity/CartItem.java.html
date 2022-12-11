@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CartItem.java</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../../../../../../doc-style.css" />
+  <script src="../../../../../../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../../../../../../";
+    var thisFile = "src\\main\\java\\com\\harmonengineering\\entity\\CartItem.java";
+    var defaultSidebar = true;
+  </script>
+  <script src="../../../../../../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>CartItem.java</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java"><span class="hljs-keyword">package</span> com.harmonengineering.entity;
+
+<span class="hljs-keyword">import</span> javax.persistence.Entity;
+<span class="hljs-keyword">import</span> javax.persistence.GeneratedValue;
+<span class="hljs-keyword">import</span> javax.persistence.Id;
+<span class="hljs-keyword">import</span> javax.persistence.OneToOne;
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>@Entity</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CartItem</span>
+</span>{
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-3" id="section-3"></a>
+</div>
+<p>@Id
+@GeneratedValue</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">    <span class="hljs-keyword">private</span> Long id ;
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-4" id="section-4"></a>
+</div>
+<p>@OneToOne</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">    <span class="hljs-keyword">private</span> Product product ;
+    <span class="hljs-keyword">private</span> Long quantity ;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span>  <span class="hljs-title">CartItem</span><span class="hljs-params">()</span> </span>{}
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CartItem</span><span class="hljs-params">( Product p , Long q )</span> </span>{ <span class="hljs-keyword">this</span>.product = p ; <span class="hljs-keyword">this</span>.quantity = q ; }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Product <span class="hljs-title">getProduct</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> product; }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Long <span class="hljs-title">getQuantity</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> quantity; }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setProduct</span><span class="hljs-params">(Product product)</span> </span>{ <span class="hljs-keyword">this</span>.product = product; }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setQuantity</span><span class="hljs-params">(Long quantity)</span> </span>{ <span class="hljs-keyword">this</span>.quantity = quantity; }
+}
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

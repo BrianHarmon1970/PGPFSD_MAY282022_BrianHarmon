@@ -10,12 +10,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@RestController( value="employee")
 public class EmployeeController 
 {
-	@Autowired
+	//@Autowired
 	EmployeeService employeeService ;
-	
+	EmployeeController( EmployeeService es )
+	{
+		employeeService = es ;
+	}
 	@PostMapping( value="storeEmployee" , consumes = MediaType.APPLICATION_JSON_VALUE )
 	public String storeEmployee( @RequestBody Employee employee )
 	{

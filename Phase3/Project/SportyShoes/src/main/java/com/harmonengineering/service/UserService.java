@@ -1,11 +1,14 @@
 package com.harmonengineering.service;
 
+import com.harmonengineering.beans.ConfiguredPortNumberBean;
 import com.harmonengineering.entity.OrderItem;
 import com.harmonengineering.entity.User;
 import com.harmonengineering.entity.UserOrder;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
+import org.apache.catalina.Server;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.web.ServerProperties;
+import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
@@ -14,14 +17,44 @@ import java.util.Objects;
 
 public class UserService
 {
-    public static final String userResourceUrl = "http://localhost:8080/user" ;
+
+
+    static private int serverPort  ;
+
+    @Autowired
+    //private ServerProperties serverProperties;
+
+    //public static final String userResourceUrl = "http://localhost:"+serverPort+"/user" ;
+    public static  String userResourceUrl = "/user" ;
+    public static ConfiguredPortNumberBean portNumberBean ;
     static final RestTemplate restTemplate = new RestTemplate() ;
 
+
+    public UserService( ConfiguredPortNumberBean portBean )
+    {
+        this.portNumberBean = portBean ;
+        serverPort = portBean.serverPort ;
+        serverPort = 8080 ;
+    }
+    public String hostName()
+    {
+
+       // return "http://localhost:"+System.getProperty( "${server.port}","8787" ) ; }
+        return "http://localhost:"+ serverPort ; }
+//    public UserService()
+//    {
+//        //System.out.println( "name:" + hostName() );
+//        userResourceUrl = hostName() + "/user" ;
+//    }
     public List<User> getUserList( )
     {
+        System.out.println( userResourceUrl );
+        System.out.println( hostName() );
+
         ResponseEntity<User[]> userList =
-                restTemplate.getForEntity(userResourceUrl + "/listall",
+                restTemplate.getForEntity(hostName()+userResourceUrl + "/listall",
                         User[].class);
+
         return Arrays.asList( userList.getBody() ) ;
     }
     public User getUserById(Long id)

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sporty-shoes.yml</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="doc-style.css" />
+  <script src="doc-filelist.js"></script>
+  <script>
+    var relativeDir = "";
+    var thisFile = "sporty-shoes.yml";
+    var defaultSidebar = true;
+  </script>
+  <script src="doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>sporty-shoes.yml</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+<p>Use root/root as user/password or mysql/admin for credentials</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml"><span class="hljs-attr">version:</span> <span class="hljs-string">'3.3'</span>
+
+<span class="hljs-attr">services:</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>web:
+build: .
+ports:</p>
+<ul>
+<li>8000:8000</li>
+</ul>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml">  
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-3" id="section-3"></a>
+</div>
+<p>web:
+image: nginx:1.23.2-alpine
+networks:</p>
+<ul>
+<li>sporty-shoes.net
+ports:</li>
+<li>8087:8080</li>
+</ul>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml">
+  <span class="hljs-attr">mysql:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">mysql:5.7</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">always</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">MYSQL_DATABASE:</span> <span class="hljs-string">'sporty-shoes.db'</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-4" id="section-4"></a>
+</div>
+<p>So you don't have to use root, but you can if you like</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml">      <span class="hljs-attr">MYSQL_USER:</span> <span class="hljs-string">'mysql'</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-5" id="section-5"></a>
+</div>
+<p>You can use whatever password you like</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml">      <span class="hljs-attr">MYSQL_PASSWORD:</span> <span class="hljs-string">'admin'</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-6" id="section-6"></a>
+</div>
+<p>Password for root access</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml">      <span class="hljs-attr">MYSQL_ROOT_PASSWORD:</span> <span class="hljs-string">'root'</span>
+    <span class="hljs-attr">networks:</span> 
+      <span class="hljs-bullet">-</span> <span class="hljs-string">sporty-shoes.net</span>
+
+    <span class="hljs-attr">ports:</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-7" id="section-7"></a>
+</div>
+<p><Port exposed> : &lt; MySQL Port running inside container&gt;</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml">      <span class="hljs-bullet">-</span> <span class="hljs-number">3308</span><span class="hljs-string">:3306</span>      
+    <span class="hljs-attr">expose:</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-8" id="section-8"></a>
+</div>
+<p>Opens port 3306 on the container</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml">      <span class="hljs-bullet">-</span> <span class="hljs-number">3306</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-9" id="section-9"></a>
+</div>
+<p>Where our data will be persisted</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml">    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">sporty-shoes.db:/var/lib/mysql</span>
+
+  <span class="hljs-attr">sporty-shoes:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">brianharmon1970/sporty-shoes</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-10" id="section-10"></a>
+</div>
+<p>build: .
+restart: always</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml">    <span class="hljs-attr">networks:</span> 
+      <span class="hljs-bullet">-</span> <span class="hljs-string">sporty-shoes.net</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-number">8087</span><span class="hljs-string">:8080</span>
+    <span class="hljs-attr">expose:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-number">8080</span>
+
+<span class="hljs-attr">networks:</span>
+  <span class="hljs-attr">sporty-shoes.net:</span>
+    <span class="hljs-attr">driver:</span> <span class="hljs-string">bridge</span>
+   
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-11" id="section-11"></a>
+</div>
+<p>Names our volume</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml"><span class="hljs-attr">volumes:</span>
+  <span class="hljs-attr">sporty-shoes.db:</span>
+
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

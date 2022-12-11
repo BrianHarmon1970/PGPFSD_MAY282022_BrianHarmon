@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReportCriteriaBean.java</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../../../../../../doc-style.css" />
+  <script src="../../../../../../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../../../../../../";
+    var thisFile = "src\\main\\java\\com\\harmonengineering\\beans\\ReportCriteriaBean.java";
+    var defaultSidebar = true;
+  </script>
+  <script src="../../../../../../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>ReportCriteriaBean.java</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java"><span class="hljs-keyword">package</span> com.harmonengineering.beans;
+
+<span class="hljs-keyword">import</span> java.util.Date;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DateRange</span>
+</span>{
+    <span class="hljs-keyword">private</span> Date beginDate ;
+    <span class="hljs-keyword">private</span> Date endDate ;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">DateRange</span><span class="hljs-params">()</span> </span>{}
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Date <span class="hljs-title">getBeginDate</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> beginDate; }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Date <span class="hljs-title">getEndDate</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> endDate; }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setBeginDate</span><span class="hljs-params">(Date beginDate)</span> </span>{ <span class="hljs-keyword">this</span>.beginDate = beginDate; }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setEndDate</span><span class="hljs-params">(Date endDate)</span> </span>{ <span class="hljs-keyword">this</span>.endDate = endDate; }
+}
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReportCriteriaBean</span>
+</span>{
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>private DateRange dateRange = new DateRange() ;</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">    Date beginDate ;
+    Date endDate ;
+    <span class="hljs-keyword">private</span> String reportType ;
+
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ReportCriteriaBean</span><span class="hljs-params">()</span> </span>{}
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getReportType</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> reportType; }
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-3" id="section-3"></a>
+</div>
+<p>public DateRange getDateRange() { return dateRange; }</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">    <span class="hljs-function"><span class="hljs-keyword">public</span> Date <span class="hljs-title">getBeginDate</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.beginDate ; }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Date <span class="hljs-title">getEndDate</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.endDate ; }
+
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setReportType</span><span class="hljs-params">(String reportType)</span> </span>{  <span class="hljs-keyword">this</span>.reportType = reportType; }
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-4" id="section-4"></a>
+</div>
+<p>public void setDateRange(DateRange dateRange) { this.dateRange = dateRange; }</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setBeginDate</span><span class="hljs-params">(Date beginDate)</span> </span>{ <span class="hljs-keyword">this</span>.beginDate = beginDate ; }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setEndDate</span><span class="hljs-params">(Date endDate)</span> </span>{ <span class="hljs-keyword">this</span>.endDate = endDate ; }
+
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"ReportCriteriaBean"</span>+<span class="hljs-keyword">this</span>.hashCode();
+    }
+}
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Authenticate.java</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../../../../../../doc-style.css" />
+  <script src="../../../../../../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../../../../../../";
+    var thisFile = "src\\main\\java\\com\\harmonengineering\\authentication\\Authenticate.java";
+    var defaultSidebar = true;
+  </script>
+  <script src="../../../../../../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>Authenticate.java</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+<div class="dox">
+<div class="summary">
+<hr>
+<p>File: Authenticate.java
+9/6/2022 B&gt;S&gt;H&gt;</p>
+</div>
+<div class="body">
+</div>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java"><span class="hljs-keyword">package</span> com.harmonengineering.authentication;
+
+<span class="hljs-keyword">import</span> com.harmonengineering.beans.User;
+<span class="hljs-keyword">import</span> com.harmonengineering.beans.UserData;
+<span class="hljs-keyword">import</span> com.harmonengineering.beans.ValidatorBean ;
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.HashMap;
+
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Authenticate</span>
+</span>{
+    <span class="hljs-keyword">private</span> HashMap&lt;String, User&gt; m_Users ;
+    <span class="hljs-keyword">private</span> ArrayList&lt;UserData&gt; m_UsersData ;
+    ValidatorBean m_validator ;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Authenticate</span><span class="hljs-params">()</span>
+    </span>{
+        m_Users = <span class="hljs-keyword">new</span> HashMap&lt;String,User&gt;() ;
+        m_UsersData = <span class="hljs-keyword">new</span> ArrayList&lt;UserData&gt;() ;
+        m_validator = <span class="hljs-keyword">new</span> ValidatorBean() ;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> User <span class="hljs-title">findUser</span><span class="hljs-params">( User user )</span>
+    </span>{
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>add lookup and return here</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">        <span class="hljs-keyword">return</span> m_Users.get( user.getUserName() ) ;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addUser</span><span class="hljs-params">( User user )</span>
+    </span>{
+        m_Users.put( user.getUserName(), <span class="hljs-keyword">new</span> User( user.getUserName(), user.getUserPassword())) ;
+
+    }
+    <span class="hljs-function"><span class="hljs-keyword">private</span> AuthenticateResult <span class="hljs-title">ValidUserInput</span><span class="hljs-params">( User user, String confirmPassword )</span>
+    </span>{
+        AuthenticateResult result = ValidUserInput( user ) ;
+        <span class="hljs-keyword">if</span> ( result.getResultStatus() == AuthStatus.Validated &amp;&amp;
+                !m_validator.isValidText( confirmPassword))
+            result = <span class="hljs-keyword">new</span> AuthenticateResult( AuthStatus.BadData_ConfirmationPassword, user ) ;
+        <span class="hljs-keyword">return</span> result ;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">private</span> AuthenticateResult <span class="hljs-title">ValidUserInput</span><span class="hljs-params">( User userInput )</span>
+    </span>{
+        AuthenticateResult result ;
+
+
+        <span class="hljs-keyword">if</span> ( !m_validator.isValidText( userInput.getUserName()  ) )
+            result = <span class="hljs-keyword">new</span> AuthenticateResult( AuthStatus.BadData_UserName, userInput ) ;
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(  !m_validator.isValidText( userInput.getUserPassword() ))
+            result = <span class="hljs-keyword">new</span> AuthenticateResult( AuthStatus.BadData_Password, userInput ) ;
+        <span class="hljs-keyword">else</span> result = <span class="hljs-keyword">new</span> AuthenticateResult( AuthStatus.Validated, userInput ) ;
+        <span class="hljs-keyword">return</span> result ;
+
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AuthenticateResult <span class="hljs-title">AddUser</span><span class="hljs-params">( String userName, String userPassword, String confirmPassword )</span> </span>{
+        User newUser = <span class="hljs-keyword">new</span> User();
+        newUser.setUserName(userName);
+        newUser.setUserPassword(userPassword);
+        <span class="hljs-keyword">return</span> AddUser( newUser, confirmPassword);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AuthenticateResult <span class="hljs-title">AddUser</span><span class="hljs-params">( User newUser , String confirmPassword )</span>
+    </span>{
+        AuthenticateResult result = <span class="hljs-keyword">null</span> ;
+
+        <span class="hljs-keyword">if</span> ( newUser == <span class="hljs-keyword">null</span> )
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> RuntimeException( <span class="hljs-string">"AuthStatus:"</span> +AuthStatus.NullUser.toString() ) ;
+
+        result = ValidUserInput( newUser, confirmPassword ) ;
+        <span class="hljs-keyword">if</span>( result.getResultStatus() == AuthStatus.Validated )
+        {
+            <span class="hljs-keyword">if</span> ( confirmPassword.equals( newUser.getUserPassword()))
+            {
+                <span class="hljs-keyword">if</span>( (findUser( newUser ) == <span class="hljs-keyword">null</span>) ) {
+                    addUser(newUser);
+                    result = <span class="hljs-keyword">new</span> AuthenticateResult(AuthStatus.Authenticated, newUser);
+                } <span class="hljs-keyword">else</span> result = <span class="hljs-keyword">new</span> AuthenticateResult( AuthStatus.UserAdd_UserExists, newUser ) ; <span class="hljs-comment">// else handle error user exists</span>
+            } <span class="hljs-keyword">else</span> result = <span class="hljs-keyword">new</span> AuthenticateResult( AuthStatus.UserAdd_ConfirmationMismatch, newUser ) ;<span class="hljs-comment">// else handle error password confirmation</span>
+        } <span class="hljs-comment">// else result = new AuthenticateResult( AuthStatus.BadData_UserName , newUser ) ; // else handle data error</span>
+        <span class="hljs-keyword">return</span> result ;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">UpdateUserData</span><span class="hljs-params">( UserData data )</span>
+    </span>{
+
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AuthenticateResult <span class="hljs-title">AuthenticateUser</span><span class="hljs-params">( String userName, String userPassword )</span> </span>{
+        User newUser = <span class="hljs-keyword">new</span> User();
+        newUser.setUserName(userName);
+        newUser.setUserPassword(userPassword);
+        <span class="hljs-keyword">return</span> AuthenticateUser(newUser);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> AuthenticateResult <span class="hljs-title">AuthenticateUser</span><span class="hljs-params">( User newUser )</span>
+    </span>{
+        AuthenticateResult result = <span class="hljs-keyword">null</span> ;
+
+        <span class="hljs-keyword">if</span> ( newUser == <span class="hljs-keyword">null</span> )
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> RuntimeException( <span class="hljs-string">"AuthStatus:"</span> + AuthStatus.NullUser.toString() ) ;
+
+        result = ValidUserInput( newUser ) ;
+        <span class="hljs-keyword">if</span> ( result.getResultStatus() == AuthStatus.Validated )
+        {
+            User user = findUser( newUser) ;
+            <span class="hljs-keyword">if</span> ( user != <span class="hljs-keyword">null</span> ) {
+                <span class="hljs-keyword">if</span> (newUser.getUserPassword().equals(user.getUserPassword())) {
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-3" id="section-3"></a>
+</div>
+<p>handle authenticate user</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">                    result = <span class="hljs-keyword">new</span> AuthenticateResult(AuthStatus.Authenticated, user);
+                } <span class="hljs-keyword">else</span> result = <span class="hljs-keyword">new</span> AuthenticateResult( AuthStatus.Authenticate_PasswordMismatch , newUser ) ;<span class="hljs-comment">// else handle password mismatch</span>
+            } <span class="hljs-keyword">else</span> result = <span class="hljs-keyword">new</span> AuthenticateResult( AuthStatus.Authenticate_NoUser,  newUser ) ; <span class="hljs-comment">// else handle authentication failure</span>
+        } <span class="hljs-comment">// else result = new AuthenticateResult( AuthStatus.BadData_UserName , newUser ) ; // else handle data error</span>
+        <span class="hljs-keyword">return</span> result ;
+    }
+}
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

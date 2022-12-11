@@ -1,5 +1,6 @@
 package com.harmonengineering.controller;
 
+import com.harmonengineering.beans.ConfiguredPortNumberBean;
 import com.harmonengineering.beans.ReportCriteriaBean;
 import com.harmonengineering.beans.ValidatorBean;
 import com.harmonengineering.entity.*;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 
 import javax.servlet.http.HttpServletRequest;
@@ -18,13 +20,15 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 
+//@RestController
 @Controller
 public class MainController {
 
     //@Bean
+    private static final ConfiguredPortNumberBean portNumberBean = new ConfiguredPortNumberBean() ;
     private static final UserCart userCart = new UserCart();
     private static final ProductService productService = new ProductService();
-    private static final UserService userService = new UserService();
+    private static final UserService userService = new UserService( portNumberBean ) ;
 
     private static ValidatorBean validatorBean; //= new ValidatorBean() ;
     private final ReportCriteriaBean reportCriteriaBean;

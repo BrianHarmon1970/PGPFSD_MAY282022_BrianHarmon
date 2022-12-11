@@ -5,7 +5,7 @@ import com.harmonengineering.entity.OrderItem;
 import com.harmonengineering.entity.OrderItemRepository;
 import com.harmonengineering.entity.Product;
 import com.harmonengineering.entity.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.PersistenceContext;
@@ -35,23 +35,23 @@ public class ProductController
         validatorBean = validator ;
     }
 
-    @GetMapping(value = "listall" )
+    @GetMapping(value = "listall", produces = "application/json; charset=UTF-8" )
     List<Product> listAll( )
     {
         return (List<Product>)productRepository.findAll();
     }
 
-    @GetMapping( value="getById/{id}" )
+    @GetMapping( value="getById/{id}", produces = "application/json; charset=UTF-8" )
     Product getById( @PathVariable Long id )
     {
         Optional<Product> optional = productRepository.findById( id ) ;
-        return (Product) optional.orElse(null);
+        return optional.orElse(null);
     }
-    @GetMapping( value="/{id}" )
+    @GetMapping( value="/{id}", produces = "application/json; charset=UTF-8" )
     Product getById_( @PathVariable Long id )
     {
         Optional<Product> optional = productRepository.findById( id ) ;
-        return (Product) optional.orElse(null);
+        return optional.orElse(null);
     }
 
 //    @GetMapping( value="key/{key_name}/{key_value}")
@@ -61,7 +61,7 @@ public class ProductController
 //        return null ;
 //    }
     //@GetMapping( value="search/id/{id}/name/{name}/season/{season}/brand/{brand}/category/{category}/price/{price}/color/{color}/date/{date}")
-@GetMapping( value="search/{id}/{name}/{season}/{brand}/{category}/{price}/{color}/{date}")
+@GetMapping( value="search/{id}/{name}/{season}/{brand}/{category}/{price}/{color}/{date}", produces = "application/json; charset=UTF-8")
     List<Product> criteriaSelect(@PathVariable String id,
                                  @PathVariable String name,
                                  @PathVariable String season,
@@ -140,17 +140,17 @@ public class ProductController
         }
 
         TypedQuery<Product> typedQuery = entityManager.createQuery( criteriaQuery );
-        List<Product> list = typedQuery.getResultList() ;
-        return list ;
+        return typedQuery.getResultList() ;
+        //return list ;
 
     }
-    @GetMapping("purchase")
+    @GetMapping(value="purchase" ,  produces = "application/json; charset=UTF-8")
     List<Product> purchaseOrder()
     {
-        return (List<Product>)productRepository.getProductPurchases();
+        return productRepository.getProductPurchases();
     }
 
-    @GetMapping("purchases")
+    @GetMapping(value = "purchases", produces = "application/json; charset=UTF-8")
     List<OrderItem> ProductPurchases()
     {
         return (List<OrderItem>)orderItemRepository.findAll();
@@ -159,8 +159,8 @@ public class ProductController
     //@GetMapping(
     //        "search/purchases/orderid/{orderid}/productid/{productid}/name/{name}/season/{season}"+
     //                "/brand/{brand}/category/{category}/color/{color}/begin_date/{begin_date}/end_date/{end_date}")
-    @GetMapping( "search/purchases/{orderid}/{productid}/{name}/{season}"+
-            "/{brand}/{category}/{color}/{begin_date}/{end_date}")
+    @GetMapping( value="search/purchases/{orderid}/{productid}/{name}/{season}"+
+            "/{brand}/{category}/{color}/{begin_date}/{end_date}", produces = "application/json; charset=UTF-8")
 
             List<OrderItem> searchPurchases(
                                 @PathVariable String orderid,
@@ -263,22 +263,23 @@ public class ProductController
                 break;
         }
         TypedQuery<OrderItem> typedQuery = entityManager.createQuery( criteriaQuery );
-        List<OrderItem> list = typedQuery.getResultList() ;
-        return list ;
+        //List<OrderItem> list = typedQuery.getResultList() ;
+        //return list ;
+        return typedQuery.getResultList() ;
     }
 
     @PostMapping( value="add")
     public Product addProduct(@RequestBody Product product )
     { return productRepository.save( product ) ; }
 
-    @PutMapping("update/{id}")
+    @PutMapping(value = "update/{id}")
     public Product updateProduct(@PathVariable Long id, @RequestBody Product product )
     {
-        product.setId( id ); ;
+        product.setId( id );
         return productRepository.save( product );
     }
 
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping(value = "delete/{id}")
     public void deleteProduct(@PathVariable Long id)
     {
         productRepository.deleteById(id);

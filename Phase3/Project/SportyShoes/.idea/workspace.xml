@@ -11,44 +11,229 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abcc560d-48ce-4c80-ace1-391b7818de4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2b2d414e-b760-4c35-b47a-4c16694b2466.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2b2d414e-b760-4c35-b47a-4c16694b2466.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SportyShoes_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SportyShoes_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2b2d414e-b760-4c35-b47a-4c16694b2466.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_65.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_65.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_9_0_65.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_65.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_18_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_11_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SportyShoes.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/SportyShoesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/SportyShoesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/beans/ValidatorBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/beans/ValidatorBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/DashboardHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/DashboardHeader.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/harmonengineering/SportyShoesApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/harmonengineering/SportyShoesApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT.war.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/CartView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/CartView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/CatalogView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/CatalogView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/DashboardHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/DashboardHeader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/Message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/Message.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/OrdersView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/OrdersView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/ProductForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/ProductForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/Register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/Register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/UsersView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/UsersView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/listProducts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/listProducts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/beans/ValidatorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/beans/ValidatorBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/OrderItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/OrderItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/OrderItemRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/ProductRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/UserOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/UserOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/UserOrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/UserOrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/dummy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT.war.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/CartView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/CatalogView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/DashboardHeader.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/LoginRegister.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/Message.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/OrdersView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/ProductForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/Register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/UserLogin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/UsersView.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/JSP/listProducts.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/SportyShoesApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/authentication/AuthStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/authentication/Authenticate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/authentication/AuthenticateResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/beans/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/beans/UserData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/beans/ValidatorBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/controller/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/OrderItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/OrderItemRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/UserOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/UserOrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/entity/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/service/ProductList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/classes/com/harmonengineering/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/HikariCP-4.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.9.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/byte-buddy-1.12.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-core-5.6.11.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/istack-commons-runtime-3.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.activation-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.activation-api-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.persistence-api-2.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.transaction-api-1.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.xml.bind-api-2.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jandex-2.4.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jaxb-runtime-2.3.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.36.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-api-2.17.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.17.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.36.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/snakeyaml-1.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aspects-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-aop-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-jpa-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-jpa-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-orm-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SportyShoes-0.0.1-SNAPSHOT/WEB-INF/lib/txw2-2.3.6.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/AppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/AppConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/SportyShoesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/SportyShoesApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/ValidatorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/ValidatorBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.harmonengineering.SportyShoesApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.harmonengineering.SportyShoesApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.harmonengineering.SportyShoesApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.harmonengineering.SportyShoesApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.harmonengineering.SportyShoesApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.harmonengineering.SportyShoesApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Phase5/Docker/DockerSpringMySQL/src/main/java/com/example/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Phase5/Docker/DockerSpringMySQL/src/main/java/com/example/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Phase5/Docker/DockerSpringMySQL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Phase5/Docker/DockerSpringMySQL/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Phase5/Lessons/Lesson_2/SeleJenk/target/SeleJenk-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Phase5/Lessons/Lesson_2/SeleJenk/target/SeleJenk-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +276,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="E:\HarmonEngineering\Maven-Repository" />
         <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
@@ -104,43 +290,68 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase2/FlightDetail/src/main/resources/SQL/table_booking.sql&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/Project/SportyShoes/.mvn/wrapper/maven-wrapper.properties&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;62652c56c8ee346a0e655f5849d84704&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;java.sql.Driver&quot;
-    ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;MySQL&quot;
-    ]
+    &quot;spring.configuration.checksum&quot;: &quot;62652c56c8ee346a0e655f5849d84704&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.harmonengineering.entity" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\webapp\WEB-INF\JSP" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\resources\webapp" />
       <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\resources\static" />
-      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\webapp" />
-      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\resources\WEB-INF\" />
-      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\resources\WEB-INF\JSP" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src" />
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main" />
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes" />
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\resources\static" />
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\webapp\WEB-INF" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SportyShoesApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SportyShoes-embedded-tomcat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SportyShoes-embedded-tomcat" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SportyShoesApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="SportyShoes (2)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.harmonengineering.SportyShoesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SportyShoesApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="SportyShoesApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.harmonengineering.SportyShoesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SportyShoesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SportyShoes" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.harmonengineering.SportyShoesApplication" />
@@ -175,6 +386,60 @@
       <workItem from="1664563712015" duration="11235000" />
       <workItem from="1664590740485" duration="2572000" />
       <workItem from="1664596004670" duration="311000" />
+      <workItem from="1670091478576" duration="4987000" />
+      <workItem from="1670097465961" duration="9818000" />
+      <workItem from="1670109126258" duration="10760000" />
+      <workItem from="1670136908278" duration="300000" />
+      <workItem from="1670139206039" duration="1535000" />
+      <workItem from="1670175768523" duration="5142000" />
+      <workItem from="1670213063449" duration="16072000" />
+      <workItem from="1670291158949" duration="2143000" />
+      <workItem from="1670293451064" duration="1321000" />
+      <workItem from="1670296317848" duration="12733000" />
+      <workItem from="1670317920246" duration="6362000" />
+      <workItem from="1670344780336" duration="2469000" />
+      <workItem from="1670347259802" duration="1436000" />
+      <workItem from="1670348768027" duration="1908000" />
+      <workItem from="1670350681711" duration="2087000" />
+      <workItem from="1670359814079" duration="5574000" />
+      <workItem from="1670365398904" duration="7751000" />
+      <workItem from="1670377184736" duration="344000" />
+      <workItem from="1670377532597" duration="2663000" />
+      <workItem from="1670386501381" duration="9293000" />
+      <workItem from="1670400103677" duration="3278000" />
+      <workItem from="1670404043878" duration="10072000" />
+      <workItem from="1670474890022" duration="983000" />
+      <workItem from="1670475877808" duration="2948000" />
+      <workItem from="1670479401429" duration="2054000" />
+      <workItem from="1670481464659" duration="1115000" />
+      <workItem from="1670482587314" duration="1063000" />
+      <workItem from="1670484017983" duration="1986000" />
+      <workItem from="1670514709924" duration="14099000" />
+      <workItem from="1670550758899" duration="4174000" />
+      <workItem from="1670562351362" duration="13039000" />
+      <workItem from="1670579858589" duration="3838000" />
+      <workItem from="1670611765701" duration="7850000" />
+      <workItem from="1670622433962" duration="478000" />
+      <workItem from="1670622917305" duration="253000" />
+      <workItem from="1670623175915" duration="260000" />
+      <workItem from="1670623440704" duration="85000" />
+      <workItem from="1670623529249" duration="242000" />
+      <workItem from="1670623776462" duration="743000" />
+      <workItem from="1670625976362" duration="606000" />
+      <workItem from="1670626587195" duration="811000" />
+      <workItem from="1670639093506" duration="1441000" />
+      <workItem from="1670641928770" duration="183000" />
+      <workItem from="1670642282310" duration="52000" />
+      <workItem from="1670642350578" duration="132000" />
+      <workItem from="1670646175127" duration="669000" />
+      <workItem from="1670646848889" duration="327000" />
+      <workItem from="1670663809481" duration="903000" />
+      <workItem from="1670664961582" duration="430000" />
+      <workItem from="1670691704131" duration="39000" />
+      <workItem from="1670691787949" duration="1189000" />
+      <workItem from="1670693052475" duration="800000" />
+      <workItem from="1670694484182" duration="6131000" />
+      <workItem from="1670721726550" duration="11845000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UserController.java</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../../../../../../doc-style.css" />
+  <script src="../../../../../../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../../../../../../";
+    var thisFile = "src\\main\\java\\com\\harmonengineering\\controller\\UserController.java";
+    var defaultSidebar = true;
+  </script>
+  <script src="../../../../../../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>UserController.java</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java"><span class="hljs-keyword">package</span> com.harmonengineering.controller;
+
+<span class="hljs-keyword">import</span> com.harmonengineering.beans.ValidatorBean;
+<span class="hljs-keyword">import</span> com.harmonengineering.entity.*;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.*;
+
+<span class="hljs-keyword">import</span> javax.persistence.EntityManager;
+<span class="hljs-keyword">import</span> javax.persistence.PersistenceContext;
+<span class="hljs-keyword">import</span> javax.persistence.TypedQuery;
+<span class="hljs-keyword">import</span> javax.persistence.criteria.CriteriaBuilder;
+<span class="hljs-keyword">import</span> javax.persistence.criteria.CriteriaQuery;
+<span class="hljs-keyword">import</span> javax.persistence.criteria.Predicate;
+<span class="hljs-keyword">import</span> javax.persistence.criteria.Root;
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.List;
+<span class="hljs-keyword">import</span> java.util.Optional;
+
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@RequestMapping</span>(value = <span class="hljs-string">"user"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserController</span>
+</span>{
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>@Autowired</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">    UserRepository userRepository ;
+    UserOrderRepository userOrderRepository ;
+    OrderItemRepository orderItemRepository ;
+    <span class="hljs-meta">@PersistenceContext</span>
+    <span class="hljs-keyword">private</span> EntityManager entityManager;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ValidatorBean validatorBean ;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">UserController</span><span class="hljs-params">( UserOrderRepository uoRepo,
+                           UserRepository repo,
+                           OrderItemRepository oiRepo,
+                           ValidatorBean validator )</span>
+    </span>{
+        userRepository = repo ;
+        userOrderRepository = uoRepo ;
+        orderItemRepository = oiRepo ;
+        validatorBean = validator ;
+    }
+
+    <span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">"orders"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span> )
+    <span class="hljs-function">List&lt;UserOrder&gt; <span class="hljs-title">getOrders</span><span class="hljs-params">()</span>
+    </span>{
+        List&lt;UserOrder&gt; orders = (List&lt;UserOrder&gt; )userOrderRepository.findAll() ;
+        <span class="hljs-keyword">return</span> orders ;
+    }
+
+    <span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">"orders/{user_id}"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span>)
+    <span class="hljs-function">List&lt;UserOrder&gt;
+    <span class="hljs-title">getUserOrders</span><span class="hljs-params">( @PathVariable Long user_id )</span>
+    </span>{
+        List&lt;UserOrder&gt; orders = (List&lt;UserOrder&gt; )userOrderRepository.getUserOrdersByUserId( user_id ) ;
+        <span class="hljs-keyword">return</span> orders ;
+    }
+
+    <span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">"orders/add"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> UserOrder <span class="hljs-title">addOrder</span><span class="hljs-params">(@RequestBody UserOrder order )</span>
+    </span>{ <span class="hljs-keyword">return</span> userOrderRepository.save( order ) ; }
+
+    <span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">"orderitems"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span>)
+    <span class="hljs-function">List&lt;OrderItem&gt;
+    <span class="hljs-title">getAllOrderItems</span><span class="hljs-params">()</span>
+    </span>{
+        List&lt;OrderItem&gt; orderitems = (List&lt;OrderItem&gt; )orderItemRepository.findAll() ;
+        <span class="hljs-keyword">return</span> orderitems ;
+    }
+
+    <span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">"orderitems/{order_id}"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span>)
+    <span class="hljs-function">List&lt;OrderItem&gt;
+    <span class="hljs-title">getOrderItemsByOrderId</span><span class="hljs-params">( @PathVariable Long order_id )</span>
+    </span>{
+        <span class="hljs-keyword">return</span> (List&lt;OrderItem&gt; )orderItemRepository.getOrderItemsByOrderId(order_id);
+    }
+
+    <span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">"orderitems/add"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> OrderItem <span class="hljs-title">addOrderItem</span><span class="hljs-params">(@RequestBody OrderItem item )</span>
+    </span>{ <span class="hljs-keyword">return</span> orderItemRepository.save( item ) ; }
+
+    <span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">"listall"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span>)
+    <span class="hljs-function">List&lt;User&gt; <span class="hljs-title">listAllUsers</span><span class="hljs-params">( )</span>
+    </span>{
+        List&lt;User&gt; users = (List&lt;User&gt;)userRepository.findAll() ;
+        <span class="hljs-keyword">return</span> users ;
+    }
+    <span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">"search/{id}/{user_name}/{first_name}/{last_name}"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span>)
+    <span class="hljs-function">List&lt;User&gt; <span class="hljs-title">userSearchQuery</span><span class="hljs-params">(@PathVariable String id,
+                               @PathVariable String user_name,
+                               @PathVariable String first_name,
+                               @PathVariable String last_name )</span>
+    </span>{
+        Long longID = validatorBean.isValidLong(id) ? Long.parseLong(id) : <span class="hljs-keyword">null</span>  ;
+        CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder() ;
+
+        CriteriaQuery&lt;User&gt; criteriaQuery = criteriaBuilder.createQuery(User<span class="hljs-class">.<span class="hljs-keyword">class</span>)</span>;
+        Root&lt;User&gt; userRoot = criteriaQuery.from(User<span class="hljs-class">.<span class="hljs-keyword">class</span>)</span>;
+        ArrayList&lt;Predicate&gt; predicates = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;() ;
+        criteriaQuery.select(userRoot);
+        <span class="hljs-keyword">if</span>( longID != <span class="hljs-keyword">null</span> )
+            predicates.add(  criteriaBuilder.equal( userRoot.get(<span class="hljs-string">"ID"</span>), longID )) ;
+
+        <span class="hljs-keyword">if</span>( !user_name.equals(<span class="hljs-string">"null"</span>))
+            predicates.add( criteriaBuilder.equal( userRoot.get(<span class="hljs-string">"userName"</span>), user_name )) ;
+
+        <span class="hljs-keyword">if</span>( !first_name.equals(<span class="hljs-string">"null"</span>))
+            predicates.add( criteriaBuilder.equal( userRoot.get(<span class="hljs-string">"firstName"</span>), first_name )) ;
+
+        <span class="hljs-keyword">if</span>( !last_name.equals(<span class="hljs-string">"null"</span>))
+            predicates.add( criteriaBuilder.equal( userRoot.get(<span class="hljs-string">"lastName"</span>), last_name )) ;
+
+
+        System.out.println( <span class="hljs-string">"predicates.size(): "</span> + predicates.size() ) ;
+        <span class="hljs-keyword">switch</span>( predicates.size() )
+        {
+            <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>: <span class="hljs-comment">//criteriaQuery.where( predicates.get(0) ,predicates.get(1)  ) ;</span>
+                <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ) ;  <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ,predicates.get(<span class="hljs-number">1</span>)  ) ; <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ,predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>)  ) ; <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ,predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>), predicates.get(<span class="hljs-number">3</span>) ) ; <span class="hljs-keyword">break</span> ;
+        }
+
+        TypedQuery&lt;User&gt; typedQuery = entityManager.createQuery( criteriaQuery );
+        List&lt;User&gt; list = typedQuery.getResultList() ;
+        <span class="hljs-keyword">return</span> list ;
+    }
+
+    <span class="hljs-meta">@GetMapping</span>( value=<span class="hljs-string">"/getById/{id}"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span> )
+    <span class="hljs-function">User <span class="hljs-title">getById</span><span class="hljs-params">( @PathVariable Long id )</span>
+    </span>{
+        Optional&lt;User&gt; optional = userRepository.findById( id ) ;
+        <span class="hljs-keyword">return</span> (User) optional.orElse(<span class="hljs-keyword">null</span>);
+    }
+    <span class="hljs-meta">@GetMapping</span>( value=<span class="hljs-string">"/{id}"</span> )
+    <span class="hljs-function">User <span class="hljs-title">getById_</span><span class="hljs-params">( @PathVariable Long id )</span>
+    </span>{
+        Optional&lt;User&gt; optional = userRepository.findById( id ) ;
+        <span class="hljs-keyword">return</span> (User) optional.orElse(<span class="hljs-keyword">null</span>);
+    }
+
+    <span class="hljs-meta">@PostMapping</span>( <span class="hljs-string">"add"</span> )
+    <span class="hljs-function"><span class="hljs-keyword">public</span> User <span class="hljs-title">addUser</span><span class="hljs-params">(@RequestBody User user )</span>
+    </span>{ <span class="hljs-keyword">return</span> userRepository.save( user ) ; }
+
+    <span class="hljs-meta">@PutMapping</span>(<span class="hljs-string">"update/{id}"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> User <span class="hljs-title">updateUser</span><span class="hljs-params">(@PathVariable Long id, @RequestBody User user)</span>
+    </span>{
+        user.setId( id ); ;
+        <span class="hljs-keyword">return</span> userRepository.save( user );
+    }
+
+    <span class="hljs-meta">@DeleteMapping</span>(<span class="hljs-string">"delete/{id}"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">deleteUserById</span><span class="hljs-params">(@PathVariable Long id)</span>
+    </span>{
+        userRepository.deleteById(id);
+    }
+}
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

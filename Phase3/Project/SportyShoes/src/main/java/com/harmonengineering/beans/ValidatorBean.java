@@ -16,7 +16,7 @@ public class ValidatorBean
 {
     public boolean isValidText( String s )
     {
-        return  (s != null && !s.isBlank()) ;
+        return  (s != null && !s.equals("")) ;
     }
     public boolean isValidNumber( String s )
     {
@@ -53,7 +53,7 @@ public class ValidatorBean
     public boolean isValidDouble( String s )
     {
         boolean return_value = true ;
-        if (s != null && !s.isBlank()) {
+        if (s != null && !s.equals("")) {
             try {
                 Double n = Double.parseDouble(s);
             } catch (NumberFormatException e)

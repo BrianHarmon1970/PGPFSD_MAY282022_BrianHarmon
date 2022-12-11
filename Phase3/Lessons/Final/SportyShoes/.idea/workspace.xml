@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e199ff58-3728-4df8-a916-d0f936d075df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/src/main/webapp/WEB-INF/dummy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonFour/RestApi/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonFour/RestApi/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Docker/DockerSpringMySQL/src/main/java/com/example/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Docker/DockerSpringMySQL/src/main/java/com/example/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Docker/DockerSpringMySQL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Docker/DockerSpringMySQL/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/SeleJenk-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/SeleJenk-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +53,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
+        <option name="localRepository" value="E:\HarmonEngineering\Maven-Repository" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -56,15 +63,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/Lessons/Final/SportyShoes&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;62652c56c8ee346a0e655f5849d84704&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\Final\SportyShoes\src\main\java\com\ecommerce" />
@@ -83,6 +86,7 @@
       <workItem from="1663989054512" duration="391000" />
       <workItem from="1664002247123" duration="1196000" />
       <workItem from="1664025915978" duration="26000" />
+      <workItem from="1670091153815" duration="239000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.4</version>
+		<version>2.7.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.harmonengineering</groupId>
@@ -14,93 +13,230 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SportyShoes</name>
 	<description>SportyShoes</description>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>11</java.version>
-
 	</properties>
+
 	<dependencies>
-	<!--	<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
-		-->
+
+
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter</artifactId>-->
+<!--		</dependency>-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!--<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
-		-->
-		<!-- Tomcat embedded container-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
+
 
 		<!-- JSTL for JSP -->
 		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
+
+
+<!--		<dependency>-->
+<!--			<groupId>org.apache.tomcat</groupId>-->
+<!--			<artifactId>tomcat-catalina-ws</artifactId>-->
+<!--			<version>9.0.14</version>-->
+<!--		</dependency>-->
+		<!-- Tomcat embedded container-->
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+					<scope>provided</scope>
+				</dependency>
 
 		<!-- Need this to compile JSP -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
-			<scope>provided</scope>
-		</dependency>
+			<version>9.0.70</version>
+<!--			<version>8.5.82</version>-->
+			<!--			<version>10.1.2</version>-->
+<!--			<scope>provided</scope>-->
+    	</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.apache.tomcat</groupId>-->
+<!--			<artifactId>tomcat</artifactId>-->
+<!--			<version>10.1.2</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.harmonengineering.apache.tomcat</groupId>-->
+<!--			<artifactId>SportyShoesLib</artifactId>-->
+<!--			<version>9.0.70-SNAPSHOT</version>-->
+<!--		</dependency>-->
 
-		<!-- Need this to compile JSP,
-			tomcat-embed-jasper version is not working, no idea why -->
-<!--		<dependency>
-			<groupId>org.eclipse.jdt.core.compiler</groupId>
-			<artifactId>ecj</artifactId>
-			<version>4.6.1</version>
-			<scope>provided</scope>
-		</dependency>
--->
+
+
+<!--		<dependency>-->
+<!--			<groupId>org.apache.tomcat</groupId>-->
+<!--			<artifactId>tomcat-api</artifactId>-->
+<!--			<scope>system</scope>-->
+<!--			<version>9.0.70</version>-->
+<!--			<systemPath>${basedir}/src/lib/apache-tomcat-9.0.70/lib/tomcat-api.jar</systemPath>-->
+<!--		</dependency>-->
+
+    <!-- Need this to compile JSP,
+        tomcat-embed-jasper version is not working, no idea why &ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>org.eclipse.jdt.core.compiler</groupId>-->
+<!--			<artifactId>ecj</artifactId>-->
+<!--			<version>4.6.1</version>-->
+<!--&lt;!&ndash;			<scope>provided</scope>&ndash;&gt;-->
+<!--		</dependency>-->
+
 		<!-- Optional, test for static content, bootstrap CSS-->
-<!--		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>bootstrap</artifactId>
-			<version>4.6.2</version>
-		</dependency>
-	-->
+<!--		<dependency>-->
+<!--			<groupId>org.webjars</groupId>-->
+<!--			<artifactId>bootstrap</artifactId>-->
+<!--			<version>4.6.2</version>-->
+<!--		</dependency>-->
+
+<!--		<dependency>-->
+<!--			<groupId>com.fasterxml.jackson.jakarta.rs</groupId>-->
+<!--			<artifactId>jackson-jakarta-rs-xml-provider</artifactId>-->
+<!--			<version>2.14.0</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.fasterxml.jackson.core</groupId>-->
+<!--			<artifactId>jackson-databind</artifactId>-->
+<!--			<version>2.14.0</version>-->
+<!--		</dependency>-->
+
+
+
+<!--		<dependency>-->
+<!--			<groupId>jakarta.xml.ws</groupId>-->
+<!--			<artifactId>jakarta.xml.ws-api</artifactId>-->
+<!--			<version>4.0.0</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>jakarta.xml.rpc</groupId>-->
+<!--			<artifactId>jakarta.xml.rpc-api</artifactId>-->
+<!--			<version>1.1.4</version>-->
+<!--		</dependency>		-->
+<!--		<dependency>-->
+<!--			<groupId>jakarta.xml.bind</groupId>-->
+<!--			<artifactId>jakarta.xml.bind-api</artifactId>-->
+<!--			<version>4.0.0</version>-->
+<!--		</dependency>-->
+<!--		&lt;!&ndash; API, java.xml.bind module &ndash;&gt;-->
+<!--		&lt;!&ndash; Runtime, com.sun.xml.bind module &ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>org.glassfish.jaxb</groupId>-->
+<!--			<artifactId>jaxb-runtime</artifactId>-->
+<!--			<version>4.0.0</version>-->
+<!--		</dependency>-->
+
+
+<!--		<dependency>-->
+<!--			<groupId>org.jboss.spec.jakarta.xml.ws</groupId>-->
+<!--			<artifactId>jboss-jakarta-xml-ws-api_4.0_spec</artifactId>-->
+<!--			<version>1.0.0.Final</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.jboss.spec.jakarta.xml.ws</groupId>-->
+<!--			<artifactId>jboss-jakarta-xml-ws-api_3.0_spec</artifactId>-->
+<!--			<version>1.0.0.Final</version>-->
+<!--		</dependency>-->
+
+
+
+		<!-- Spring javax.xml.bind ?? -->
+<!--		<dependency>-->
+<!--			<groupId>javax.xml.bind</groupId>-->
+<!--			<artifactId>jaxb-api</artifactId>-->
+<!--&lt;!&ndash;			<version>2.4.0-b180830.0359</version>&ndash;&gt;-->
+<!--		</dependency>-->
+
+
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	<!--	<dependency>
-			<groupId>javax.servlet.jsp.jstl</groupId>
-			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
-			<version>1.2.2</version>
-		</dependency>
--->
-
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-test</artifactId>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-	<!--	<dependency>
-			<groupId>javax.persistence</groupId>
-			<artifactId>persistence-api</artifactId>
-			<version>2.2.3</version>
-		</dependency>-->
+		</dependency>
+		<dependency>
+			<groupId>com.harmonengineering.apache.tomcat</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>9.0.70</version>
+		</dependency>
+		<dependency>
+			<groupId>com.harmonengineering.apache.tomcat</groupId>
+			<artifactId>tomcat-juli</artifactId>
+			<version>9.0.70</version>
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.harmonengineering.apache.tomcat</groupId>-->
+<!--			<artifactId>commons-daemon</artifactId>-->
+<!--			<version>9.0.70</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.apache.juddi.bootstrap</groupId>-->
+<!--			<artifactId>apache-tomcat</artifactId>-->
+<!--			<version>6.0.26</version>-->
+<!--		</dependency>-->
+		<!--		<dependency>-->
+<!--			<groupId>com.fasterxml.jackson.core</groupId>-->
+<!--			<artifactId>jackson-core</artifactId>-->
+<!--&lt;!&ndash;			<version>2.14.0</version>&ndash;&gt;-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.fasterxml.jackson.core</groupId>-->
+<!--			<artifactId>jackson-annotations</artifactId>-->
+<!--&lt;!&ndash;			<version>2.14.0</version>&ndash;&gt;-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.fasterxml.jackson.datatype</groupId>-->
+<!--			<artifactId>jackson-datatype-jsr310</artifactId>-->
+<!--&lt;!&ndash;			<version>2.14.0</version>&ndash;&gt;-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.fasterxml.jackson.dataformat</groupId>-->
+<!--			<artifactId>jackson-dataformat-xml</artifactId>-->
+<!--&lt;!&ndash;			<version>2.14.0</version>&ndash;&gt;-->
+<!--		</dependency>-->
+
+		<!--		<dependency>-->
+<!--			<groupId>org.springframework</groupId>-->
+<!--			<artifactId>spring-webmvc</artifactId>-->
+<!--			<scope>compile</scope>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework</groupId>-->
+<!--			<artifactId>spring-context</artifactId>-->
+<!--		</dependency>-->
 	</dependencies>
 
 	<build>

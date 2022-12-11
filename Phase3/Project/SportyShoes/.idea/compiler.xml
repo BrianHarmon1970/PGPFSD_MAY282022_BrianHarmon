@@ -10,12 +10,20 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SportyShoes" target="11" />
+      <module name="SportyShoes (1)" target="11" />
+      <module name="SportyShoes (2)" target="11" />
+      <module name="SportyShoes-embedded-tomcat" target="1.5" />
+      <module name="SportyShoesApp" target="11" />
+      <module name="SportyShoesLib" target="11" />
+      <module name="SportyShoesProject" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SportyShoes" options="-parameters" />
+      <module name="SportyShoes (1)" options="-parameters" />
+      <module name="SportyShoes (2)" options="-parameters" />
+      <module name="SportyShoesApp" options="-parameters" />
     </option>
   </component>
 </project>

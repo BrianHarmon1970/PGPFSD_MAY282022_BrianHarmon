@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ProductController.java</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../../../../../../doc-style.css" />
+  <script src="../../../../../../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../../../../../../";
+    var thisFile = "src\\main\\java\\com\\harmonengineering\\controller\\ProductController.java";
+    var defaultSidebar = true;
+  </script>
+  <script src="../../../../../../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>ProductController.java</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java"><span class="hljs-keyword">package</span> com.harmonengineering.controller;
+
+<span class="hljs-keyword">import</span> com.harmonengineering.beans.ValidatorBean;
+<span class="hljs-keyword">import</span> com.harmonengineering.entity.OrderItem;
+<span class="hljs-keyword">import</span> com.harmonengineering.entity.OrderItemRepository;
+<span class="hljs-keyword">import</span> com.harmonengineering.entity.Product;
+<span class="hljs-keyword">import</span> com.harmonengineering.entity.ProductRepository;
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>import org.springframework.beans.factory.annotation.Autowired;</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java"><span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.*;
+
+<span class="hljs-keyword">import</span> javax.persistence.PersistenceContext;
+<span class="hljs-keyword">import</span> javax.persistence.TypedQuery;
+<span class="hljs-keyword">import</span> javax.persistence.criteria.*;
+<span class="hljs-keyword">import</span> javax.persistence.EntityManager ;
+
+<span class="hljs-keyword">import</span> java.text.ParseException;
+<span class="hljs-keyword">import</span> java.text.SimpleDateFormat;
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@RequestMapping</span>(value=<span class="hljs-string">"product"</span> )
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ProductController</span>
+</span>{
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-3" id="section-3"></a>
+</div>
+<p>@Autowired</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">    ProductRepository productRepository ;
+    OrderItemRepository orderItemRepository ;
+    <span class="hljs-meta">@PersistenceContext</span> <span class="hljs-keyword">private</span> EntityManager entityManager;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ValidatorBean validatorBean ;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ProductController</span><span class="hljs-params">( ProductRepository repo,
+                              OrderItemRepository oiRepo,
+                              ValidatorBean validator)</span>
+    </span>{
+        productRepository = repo ;
+        orderItemRepository = oiRepo ;
+        validatorBean = validator ;
+    }
+
+    <span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">"listall"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span> )
+    <span class="hljs-function">List&lt;Product&gt; <span class="hljs-title">listAll</span><span class="hljs-params">( )</span>
+    </span>{
+        <span class="hljs-keyword">return</span> (List&lt;Product&gt;)productRepository.findAll();
+    }
+
+    <span class="hljs-meta">@GetMapping</span>( value=<span class="hljs-string">"getById/{id}"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span> )
+    <span class="hljs-function">Product <span class="hljs-title">getById</span><span class="hljs-params">( @PathVariable Long id )</span>
+    </span>{
+        Optional&lt;Product&gt; optional = productRepository.findById( id ) ;
+        <span class="hljs-keyword">return</span> optional.orElse(<span class="hljs-keyword">null</span>);
+    }
+    <span class="hljs-meta">@GetMapping</span>( value=<span class="hljs-string">"/{id}"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span> )
+    <span class="hljs-function">Product <span class="hljs-title">getById_</span><span class="hljs-params">( @PathVariable Long id )</span>
+    </span>{
+        Optional&lt;Product&gt; optional = productRepository.findById( id ) ;
+        <span class="hljs-keyword">return</span> optional.orElse(<span class="hljs-keyword">null</span>);
+    }
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-4" id="section-4"></a>
+</div>
+<p>@GetMapping( value=&quot;key/{key_name}/{key_value}&quot;)
+List<Product> getByKeyValue(@PathVariable String key_name, @PathVariable String key_value )
+{
+System.out.println( &quot;getByKeyValue() -&gt; Key:(&quot; + key_name + &quot;, &quot; + key_value + &quot;) &quot;);
+return null ;
+}
+@GetMapping( value=&quot;search/id/{id}/name/{name}/season/{season}/brand/{brand}/category/{category}/price/{price}/color/{color}/date/{date}&quot;)</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java"><span class="hljs-meta">@GetMapping</span>( value=<span class="hljs-string">"search/{id}/{name}/{season}/{brand}/{category}/{price}/{color}/{date}"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span>)
+    <span class="hljs-function">List&lt;Product&gt; <span class="hljs-title">criteriaSelect</span><span class="hljs-params">(@PathVariable String id,
+                                 @PathVariable String name,
+                                 @PathVariable String season,
+                                 @PathVariable String brand,
+                                 @PathVariable String category,
+                                 @PathVariable String price,
+                                 @PathVariable String color,
+                                 @PathVariable String date )</span>
+    </span>{
+        System.out.println(<span class="hljs-string">"criteriaSelect(): -&gt; "</span>  ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): id -&gt; "</span> +  id ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): name -&gt; "</span> + name ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): season -&gt; "</span> + season ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): brand -&gt; "</span> + brand ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): category -&gt; "</span> + category ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): price -&gt; "</span> + price ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): color -&gt; "</span> + color ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): date -&gt; "</span> + date ) ;
+
+        Long longID = validatorBean.isValidLong(id) ? Long.parseLong(id) : <span class="hljs-keyword">null</span>  ;
+        Double doublePrice = validatorBean.isValidDouble(price) ? Double.parseDouble(price) : <span class="hljs-keyword">null</span> ;
+        Date dateDate ;
+        <span class="hljs-keyword">if</span>(validatorBean.isValidText(date))
+        {
+            SimpleDateFormat formatter = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">"E MMM dd HH:mm:ss z yyyy"</span>, Locale.ENGLISH) ;
+            <span class="hljs-keyword">try</span> { dateDate = formatter.parse( date ); } <span class="hljs-keyword">catch</span> ( ParseException pe ) { dateDate = <span class="hljs-keyword">null</span> ; }
+        }
+        <span class="hljs-keyword">else</span> dateDate = <span class="hljs-keyword">null</span> ;
+        CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder() ;
+
+        CriteriaQuery&lt;Product&gt; criteriaQuery = criteriaBuilder.createQuery(Product<span class="hljs-class">.<span class="hljs-keyword">class</span>)</span>;
+        Root&lt;Product&gt; productRoot = criteriaQuery.from(Product<span class="hljs-class">.<span class="hljs-keyword">class</span>)</span>;
+        ArrayList&lt;Predicate&gt; predicates = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;() ;
+        criteriaQuery.select(productRoot);
+        <span class="hljs-keyword">if</span>( longID != <span class="hljs-keyword">null</span> )
+            predicates.add(  criteriaBuilder.equal( productRoot.get(<span class="hljs-string">"id"</span>), longID )) ;
+
+        <span class="hljs-keyword">if</span>( dateDate != <span class="hljs-keyword">null</span> )
+            predicates.add(  criteriaBuilder.greaterThan( productRoot.get(<span class="hljs-string">"dateAdded"</span>), dateDate )) ;
+
+        <span class="hljs-keyword">if</span>( doublePrice != <span class="hljs-keyword">null</span> )
+            predicates.add(  criteriaBuilder.lessThanOrEqualTo( productRoot.get(<span class="hljs-string">"price"</span>),doublePrice)) ;
+
+        <span class="hljs-keyword">if</span>( !name.equals(<span class="hljs-string">"null"</span>))     predicates.add( criteriaBuilder.equal( productRoot.get(<span class="hljs-string">"description"</span>), name )) ;
+        <span class="hljs-keyword">if</span>( !season.equals(<span class="hljs-string">"null"</span>))   predicates.add( criteriaBuilder.equal( productRoot.get(<span class="hljs-string">"season"</span>), season )) ;
+        <span class="hljs-keyword">if</span>( !brand.equals(<span class="hljs-string">"null"</span>))    predicates.add( criteriaBuilder.equal( productRoot.get(<span class="hljs-string">"brand"</span>), brand )) ;
+        <span class="hljs-keyword">if</span>( !category.equals(<span class="hljs-string">"null"</span>)) predicates.add( criteriaBuilder.equal( productRoot.get(<span class="hljs-string">"category"</span>), category )) ;
+        <span class="hljs-keyword">if</span>( !color.equals(<span class="hljs-string">"null"</span>))    predicates.add( criteriaBuilder.equal( productRoot.get(<span class="hljs-string">"color"</span>), color )) ;
+
+
+        System.out.println( <span class="hljs-string">"predicates.size(): "</span> + predicates.size() ) ;
+        <span class="hljs-keyword">switch</span>( predicates.size() )
+        {
+            <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>: <span class="hljs-comment">//criteriaQuery.where( predicates.get(0) ,predicates.get(1)  ) ;</span>
+                <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ) ;  <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ,predicates.get(<span class="hljs-number">1</span>)  ) ; <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ,predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>)  ) ; <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ,predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>), predicates.get(<span class="hljs-number">3</span>) ) ; <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">5</span>:  criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ,predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>),
+                    predicates.get(<span class="hljs-number">3</span>),
+                    predicates.get(<span class="hljs-number">4</span>)) ;
+            <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">6</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ,predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>), predicates.get(<span class="hljs-number">3</span>),
+                    predicates.get(<span class="hljs-number">4</span>),
+                    predicates.get(<span class="hljs-number">5</span>)) ;
+            <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">7</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ,predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>), predicates.get(<span class="hljs-number">3</span>),
+                    predicates.get(<span class="hljs-number">4</span>), predicates.get(<span class="hljs-number">5</span>),
+                    predicates.get(<span class="hljs-number">6</span>)) ;
+            <span class="hljs-keyword">break</span> ;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">8</span>: criteriaQuery.where( predicates.get(<span class="hljs-number">0</span>) ,predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>),
+                    predicates.get(<span class="hljs-number">3</span>), predicates.get(<span class="hljs-number">4</span>), predicates.get(<span class="hljs-number">5</span>), predicates.get(<span class="hljs-number">6</span>),
+                    predicates.get(<span class="hljs-number">7</span>)) ;
+            <span class="hljs-keyword">break</span> ;
+        }
+
+        TypedQuery&lt;Product&gt; typedQuery = entityManager.createQuery( criteriaQuery );
+        <span class="hljs-keyword">return</span> typedQuery.getResultList() ;
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-5" id="section-5"></a>
+</div>
+<p>return list ;</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">
+    }
+    <span class="hljs-meta">@GetMapping</span>(value=<span class="hljs-string">"purchase"</span> ,  produces = <span class="hljs-string">"application/json; charset=UTF-8"</span>)
+    <span class="hljs-function">List&lt;Product&gt; <span class="hljs-title">purchaseOrder</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> productRepository.getProductPurchases();
+    }
+
+    <span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">"purchases"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span>)
+    <span class="hljs-function">List&lt;OrderItem&gt; <span class="hljs-title">ProductPurchases</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> (List&lt;OrderItem&gt;)orderItemRepository.findAll();
+    }
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-6" id="section-6"></a>
+</div>
+<p>@GetMapping(
+&quot;search/purchases/orderid/{orderid}/productid/{productid}/name/{name}/season/{season}&quot;+
+&quot;/brand/{brand}/category/{category}/color/{color}/begin_date/{begin_date}/end_date/{end_date}&quot;)</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">    <span class="hljs-meta">@GetMapping</span>( value=<span class="hljs-string">"search/purchases/{orderid}/{productid}/{name}/{season}"</span>+
+            <span class="hljs-string">"/{brand}/{category}/{color}/{begin_date}/{end_date}"</span>, produces = <span class="hljs-string">"application/json; charset=UTF-8"</span>)
+
+            <span class="hljs-function">List&lt;OrderItem&gt; <span class="hljs-title">searchPurchases</span><span class="hljs-params">(
+                                @PathVariable String orderid,
+                                @PathVariable String productid,
+                                @PathVariable String name ,
+                                @PathVariable String season,
+                                @PathVariable String brand,
+                                @PathVariable String category,
+                                @PathVariable String color ,
+                                @PathVariable String begin_date,
+                                @PathVariable String end_date )</span>
+    </span>{
+        System.out.println(<span class="hljs-string">"criteriaSelect(): -&gt; "</span>  ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): orderid -&gt; "</span> +  orderid ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): productid -&gt; "</span> +  productid ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): name -&gt; "</span> + name ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): season -&gt; "</span> + season ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): brand -&gt; "</span> + brand ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): category -&gt; "</span> + category ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): color -&gt; "</span> + color ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): begin_date -&gt; "</span> + begin_date ) ;
+        System.out.println(<span class="hljs-string">"criteriaSelect(): end_date -&gt; "</span> + end_date ) ;
+
+
+        Long longOrderID = validatorBean.isValidLong(orderid) ? Long.parseLong(orderid) : <span class="hljs-keyword">null</span>  ;
+        Long longProductID = validatorBean.isValidLong(productid) ? Long.parseLong(productid) : <span class="hljs-keyword">null</span>  ;
+
+
+        SimpleDateFormat formatter = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">"E MMM dd HH:mm:ss z yyyy"</span>, Locale.ENGLISH) ;
+        Date dateBeginDate ; Date dateEndDate ;
+        <span class="hljs-keyword">if</span>(validatorBean.isValidText(begin_date))
+        {
+            <span class="hljs-keyword">try</span> { dateBeginDate = formatter.parse( begin_date ); } <span class="hljs-keyword">catch</span> ( ParseException pe ) { dateBeginDate = <span class="hljs-keyword">null</span> ; }
+        } <span class="hljs-keyword">else</span> dateBeginDate = <span class="hljs-keyword">null</span> ;
+
+        <span class="hljs-keyword">if</span>(validatorBean.isValidText(end_date))
+        {
+            <span class="hljs-keyword">try</span> { dateEndDate = formatter.parse( end_date ); } <span class="hljs-keyword">catch</span> ( ParseException pe ) { dateEndDate = <span class="hljs-keyword">null</span> ; }
+        } <span class="hljs-keyword">else</span> dateEndDate = <span class="hljs-keyword">null</span> ;
+
+        CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder() ;
+
+        CriteriaQuery&lt;OrderItem&gt; criteriaQuery = criteriaBuilder.createQuery(OrderItem<span class="hljs-class">.<span class="hljs-keyword">class</span>)</span>;
+        Root&lt;OrderItem&gt; itemRoot = criteriaQuery.from(OrderItem<span class="hljs-class">.<span class="hljs-keyword">class</span>)</span>;
+        ArrayList&lt;Predicate&gt; predicates = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;() ;
+        criteriaQuery.select(itemRoot);<span class="hljs-comment">//.where( criteriaBuilder.isNotNull( productRoot )) ;</span>
+        <span class="hljs-keyword">if</span>( longOrderID != <span class="hljs-keyword">null</span> )
+            predicates.add(  criteriaBuilder.equal( itemRoot.get(<span class="hljs-string">"orderId"</span>), longOrderID )) ;
+
+        <span class="hljs-keyword">if</span>( longProductID != <span class="hljs-keyword">null</span> )
+            predicates.add(  criteriaBuilder.equal( itemRoot.get(<span class="hljs-string">"productId"</span>), longProductID )) ;
+        <span class="hljs-keyword">if</span>( dateBeginDate != <span class="hljs-keyword">null</span> )
+            predicates.add(  criteriaBuilder.greaterThanOrEqualTo( itemRoot.get(<span class="hljs-string">"order"</span>).get(<span class="hljs-string">"orderDate"</span>), dateBeginDate )) ;
+        <span class="hljs-keyword">if</span>( dateBeginDate != <span class="hljs-keyword">null</span> )
+            predicates.add(  criteriaBuilder.lessThanOrEqualTo( itemRoot.get(<span class="hljs-string">"order"</span>).get(<span class="hljs-string">"orderDate"</span>), dateEndDate)) ;
+
+
+        <span class="hljs-keyword">if</span>( !name.equals(<span class="hljs-string">"null"</span>))     predicates.add( criteriaBuilder.equal( itemRoot.get(<span class="hljs-string">"product"</span>).get(<span class="hljs-string">"description"</span>), name )) ;
+        <span class="hljs-keyword">if</span>( !season.equals(<span class="hljs-string">"null"</span>))   predicates.add( criteriaBuilder.equal( itemRoot.get(<span class="hljs-string">"product"</span>).get(<span class="hljs-string">"season"</span>), season )) ;
+        <span class="hljs-keyword">if</span>( !brand.equals(<span class="hljs-string">"null"</span>))    predicates.add( criteriaBuilder.equal( itemRoot.get(<span class="hljs-string">"product"</span>).get(<span class="hljs-string">"brand"</span>), brand )) ;
+        <span class="hljs-keyword">if</span>( !category.equals(<span class="hljs-string">"null"</span>)) predicates.add( criteriaBuilder.equal( itemRoot.get(<span class="hljs-string">"product"</span>).get(<span class="hljs-string">"category"</span>), category )) ;
+        <span class="hljs-keyword">if</span>( !color.equals(<span class="hljs-string">"null"</span>))    predicates.add( criteriaBuilder.equal( itemRoot.get(<span class="hljs-string">"product"</span>).get(<span class="hljs-string">"color"</span>), color )) ;
+
+
+        System.out.println( <span class="hljs-string">"predicates.size(): "</span> + predicates.size() ) ;
+        <span class="hljs-keyword">switch</span>( predicates.size() ) {
+            <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>: <span class="hljs-comment">//criteriaQuery.where( predicates.get(0) ,predicates.get(1)  ) ;</span>
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+                criteriaQuery.where(predicates.get(<span class="hljs-number">0</span>));
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+                criteriaQuery.where(predicates.get(<span class="hljs-number">0</span>), predicates.get(<span class="hljs-number">1</span>));
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+                criteriaQuery.where(predicates.get(<span class="hljs-number">0</span>), predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>));
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>:
+                criteriaQuery.where(predicates.get(<span class="hljs-number">0</span>), predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>), predicates.get(<span class="hljs-number">3</span>));
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">5</span>:
+                criteriaQuery.where(predicates.get(<span class="hljs-number">0</span>), predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>), predicates.get(<span class="hljs-number">3</span>),
+                        predicates.get(<span class="hljs-number">4</span>));
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">6</span>:
+                criteriaQuery.where(predicates.get(<span class="hljs-number">0</span>), predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>), predicates.get(<span class="hljs-number">3</span>),
+                        predicates.get(<span class="hljs-number">4</span>), predicates.get(<span class="hljs-number">5</span>));
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">7</span>:
+                criteriaQuery.where(predicates.get(<span class="hljs-number">0</span>), predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>), predicates.get(<span class="hljs-number">3</span>),
+                        predicates.get(<span class="hljs-number">4</span>), predicates.get(<span class="hljs-number">5</span>), predicates.get(<span class="hljs-number">6</span>));
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">8</span>:
+                criteriaQuery.where(predicates.get(<span class="hljs-number">0</span>), predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>), predicates.get(<span class="hljs-number">3</span>),
+                        predicates.get(<span class="hljs-number">4</span>), predicates.get(<span class="hljs-number">5</span>), predicates.get(<span class="hljs-number">6</span>), predicates.get(<span class="hljs-number">7</span>));
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">9</span>:
+                criteriaQuery.where(predicates.get(<span class="hljs-number">0</span>), predicates.get(<span class="hljs-number">1</span>), predicates.get(<span class="hljs-number">2</span>), predicates.get(<span class="hljs-number">3</span>),
+                        predicates.get(<span class="hljs-number">4</span>), predicates.get(<span class="hljs-number">5</span>), predicates.get(<span class="hljs-number">6</span>), predicates.get(<span class="hljs-number">7</span>),predicates.get(<span class="hljs-number">8</span>));
+                <span class="hljs-keyword">break</span>;
+        }
+        TypedQuery&lt;OrderItem&gt; typedQuery = entityManager.createQuery( criteriaQuery );
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-7" id="section-7"></a>
+</div>
+<p>List<OrderItem> list = typedQuery.getResultList() ;
+return list ;</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">        <span class="hljs-keyword">return</span> typedQuery.getResultList() ;
+    }
+
+    <span class="hljs-meta">@PostMapping</span>( value=<span class="hljs-string">"add"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Product <span class="hljs-title">addProduct</span><span class="hljs-params">(@RequestBody Product product )</span>
+    </span>{ <span class="hljs-keyword">return</span> productRepository.save( product ) ; }
+
+    <span class="hljs-meta">@PutMapping</span>(value = <span class="hljs-string">"update/{id}"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Product <span class="hljs-title">updateProduct</span><span class="hljs-params">(@PathVariable Long id, @RequestBody Product product )</span>
+    </span>{
+        product.setId( id );
+        <span class="hljs-keyword">return</span> productRepository.save( product );
+    }
+
+    <span class="hljs-meta">@DeleteMapping</span>(value = <span class="hljs-string">"delete/{id}"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">deleteProduct</span><span class="hljs-params">(@PathVariable Long id)</span>
+    </span>{
+        productRepository.deleteById(id);
+    }
+}
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

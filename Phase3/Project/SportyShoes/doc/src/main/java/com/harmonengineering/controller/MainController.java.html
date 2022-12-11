@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MainController.java</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../../../../../../doc-style.css" />
+  <script src="../../../../../../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../../../../../../";
+    var thisFile = "src\\main\\java\\com\\harmonengineering\\controller\\MainController.java";
+    var defaultSidebar = true;
+  </script>
+  <script src="../../../../../../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>MainController.java</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java"><span class="hljs-keyword">package</span> com.harmonengineering.controller;
+
+<span class="hljs-keyword">import</span> com.harmonengineering.beans.ConfiguredPortNumberBean;
+<span class="hljs-keyword">import</span> com.harmonengineering.beans.ReportCriteriaBean;
+<span class="hljs-keyword">import</span> com.harmonengineering.beans.ValidatorBean;
+<span class="hljs-keyword">import</span> com.harmonengineering.entity.*;
+<span class="hljs-keyword">import</span> com.harmonengineering.service.ProductService;
+<span class="hljs-keyword">import</span> com.harmonengineering.service.UserService;
+<span class="hljs-keyword">import</span> org.springframework.stereotype.Controller;
+<span class="hljs-keyword">import</span> org.springframework.ui.Model;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.PostMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;
+<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RestController;
+
+
+<span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;
+<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="hljs-keyword">import</span> java.text.ParseException;
+<span class="hljs-keyword">import</span> java.text.SimpleDateFormat;
+<span class="hljs-keyword">import</span> java.util.*;
+
+
+<span class="hljs-meta">@Controller</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainController</span> </span>{
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>@Bean</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ConfiguredPortNumberBean portNumberBean = <span class="hljs-keyword">new</span> ConfiguredPortNumberBean() ;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> UserCart userCart = <span class="hljs-keyword">new</span> UserCart();
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> ProductService productService = <span class="hljs-keyword">new</span> ProductService();
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> UserService userService = <span class="hljs-keyword">new</span> UserService( portNumberBean ) ;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> ValidatorBean validatorBean; <span class="hljs-comment">//= new ValidatorBean() ;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ReportCriteriaBean reportCriteriaBean;
+
+    MainController(ValidatorBean vb, ReportCriteriaBean rcb) {
+        validatorBean = vb;
+        reportCriteriaBean = rcb;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"/"</span>)
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">main</span><span class="hljs-params">(Model model)</span> </span>{
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-3" id="section-3"></a>
+</div>
+<p>model.addAttribute(&quot;books&quot;, bookService.getBooks());</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">        <span class="hljs-keyword">return</span> <span class="hljs-string">"home"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"addProductForm"</span>)
+    <span class="hljs-function">String <span class="hljs-title">AddProductForm</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"ProductForm"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"viewProducts"</span>)
+    <span class="hljs-function">String <span class="hljs-title">viewProducts</span><span class="hljs-params">(Model model)</span> </span>{
+        List&lt;Product&gt; list = productService.getProductList();
+        model.addAttribute(<span class="hljs-string">"list"</span>, list);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"listProducts"</span>;
+
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"getProductList"</span>)
+    <span class="hljs-function">String <span class="hljs-title">getProducts</span><span class="hljs-params">(Model model)</span> </span>{
+        List&lt;Product&gt; list = productService.getProductList();
+        model.addAttribute(<span class="hljs-string">"list"</span>, list);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"listProducts"</span>;
+    }
+
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"viewUsers"</span>)
+    <span class="hljs-function">String <span class="hljs-title">ViewUsers</span><span class="hljs-params">(Model model)</span> </span>{
+        List&lt;User&gt; list = userService.getUserList();;
+       list = list.subList( <span class="hljs-number">0</span>, <span class="hljs-number">1</span>) ; <span class="hljs-comment">// initially show only the first user</span>
+        model.addAttribute(<span class="hljs-string">"list"</span>, list);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"UsersView"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"searchUsers"</span>)
+    <span class="hljs-function">String <span class="hljs-title">searchUsers</span><span class="hljs-params">(Model model, HttpServletRequest request)</span> </span>{
+        User u = <span class="hljs-keyword">new</span> User();
+
+        String str;
+        str = request.getParameter(<span class="hljs-string">"user_id"</span>);
+        Long user_id = validatorBean.isValidLong(str) ? Long.parseLong(str) : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"user_name"</span>);
+        String user_name = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"first_name"</span>);
+        String first_name = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"last_name"</span>);
+        String last_name = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        u.setId(user_id);
+        u.setUserName( user_name );
+        u.setFirstName(first_name);
+        u.setLastName(last_name);
+
+        List&lt;User&gt; list = userService.getSearchResultList(u);
+        model.addAttribute(<span class="hljs-string">"list"</span>, list);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"UsersView"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"searchProduct"</span>)
+    <span class="hljs-function">String <span class="hljs-title">searchProduct</span><span class="hljs-params">(Model model, HttpServletRequest request)</span>
+            <span class="hljs-keyword">throws</span> ParseException </span>{
+        Product p = <span class="hljs-keyword">new</span> Product();
+
+        String str;
+        str = request.getParameter(<span class="hljs-string">"product_id"</span>);
+        Long product_id = validatorBean.isValidLong(str) ? Long.parseLong(str) : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_price"</span>);
+        Double product_price = validatorBean.isValidDouble(str) ? Double.parseDouble(str) : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_description"</span>);
+        String product_description = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_category"</span>);
+        String product_category = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_season"</span>);
+        String product_season = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_brand"</span>);
+        String product_brand = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_color"</span>);
+        String product_color = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_date_added"</span>);
+        Date product_date_added = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">if</span> (validatorBean.isValidText(str)) {
+            SimpleDateFormat formatter = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">"yyyy-MM-dd"</span>, Locale.ENGLISH);
+            product_date_added = formatter.parse(request.getParameter(<span class="hljs-string">"product_date_added"</span>));
+        }
+
+        p.setId(product_id);
+        p.setDescription(product_description);
+        p.setPrice(product_price);
+        p.setCategory(product_category);
+        p.setSeason(product_season);
+        p.setBrand(product_brand);
+        p.setColor(product_color);
+        p.setDateAdded(product_date_added);
+
+        List&lt;Product&gt; list = productService.getSearchResultList(p);
+        model.addAttribute(<span class="hljs-string">"list"</span>, list);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"listProducts"</span>;
+    }
+
+    <span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">"addProduct"</span>)
+    <span class="hljs-function">String <span class="hljs-title">createProduct</span><span class="hljs-params">(Model model, javax.servlet.http.HttpServletRequest request)</span> </span>{
+        String str = request.getParameter(<span class="hljs-string">"product_discount"</span>);
+        Double discount = validatorBean.isValidDouble(str) ? Double.parseDouble(str) : <span class="hljs-number">0.00</span>d;
+
+        Product p = <span class="hljs-keyword">new</span> Product();
+        p.setDescription(request.getParameter(<span class="hljs-string">"product_description"</span>));
+        p.setPrice(Double.parseDouble(request.getParameter(<span class="hljs-string">"product_price"</span>)));
+        p.setCategory(request.getParameter(<span class="hljs-string">"product_category"</span>));
+        p.setSeason(request.getParameter(<span class="hljs-string">"product_season"</span>));
+        p.setBrand(request.getParameter(<span class="hljs-string">"product_brand"</span>));
+        p.setColor(request.getParameter(<span class="hljs-string">"product_color"</span>));
+        p.setDiscount(discount);
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-4" id="section-4"></a>
+</div>
+<p>p.setCategory(&quot;CAT5&quot;) ;</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">        p.setDateAdded(<span class="hljs-keyword">new</span> Date());
+        p.setDateModified(<span class="hljs-keyword">new</span> Date());
+
+        productService.addProduct(p);
+
+        model.addAttribute(<span class="hljs-string">"Message"</span>, <span class="hljs-string">"&lt;h1&gt;Product created.&lt;/h1&gt;"</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"Message"</span>;
+    }
+
+    <span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">"updateProduct"</span>)
+    <span class="hljs-function">String <span class="hljs-title">updateProduct</span><span class="hljs-params">(Model model, HttpServletRequest request)</span>
+            <span class="hljs-keyword">throws</span> ParseException, IOException </span>{
+        Product p = <span class="hljs-keyword">new</span> Product();
+        Long Id = Long.parseLong(request.getParameter(<span class="hljs-string">"product_id"</span>));
+        String Message = <span class="hljs-keyword">null</span>;
+        String str;
+        str = request.getParameter(<span class="hljs-string">"product_discount_"</span> + Id);
+        Double discount = validatorBean.isValidDouble(str) ? Double.parseDouble(str) : <span class="hljs-number">0.00</span>d;
+        str = request.getParameter(<span class="hljs-string">"product_price_"</span> + Id);
+        Double doublePrice = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">if</span> (validatorBean.isValidDouble(str))
+            doublePrice = Double.parseDouble(str);
+        <span class="hljs-keyword">else</span> {
+            Message = <span class="hljs-string">"Data invalid or out of range - &lt;br&gt;price: "</span> + doublePrice;
+            model.addAttribute(<span class="hljs-string">"Message"</span>, Message);
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"Message"</span>;
+        }
+        <span class="hljs-keyword">if</span> (!validatorBean.isValidDecimal(discount, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>) ||
+                !validatorBean.isValidDecimal(doublePrice, <span class="hljs-number">10</span>, <span class="hljs-number">2</span>)) {
+            Message = <span class="hljs-string">"Data invalid or out of range - &lt;br&gt;price: "</span> + doublePrice + <span class="hljs-string">"&lt;br&gt;discount: "</span> + discount;
+            model.addAttribute(<span class="hljs-string">"Message"</span>, Message);
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"Message"</span>;
+        }
+
+        p.setId(Id);
+        p.setDescription(request.getParameter(<span class="hljs-string">"product_description_"</span> + Id));
+        p.setPrice(Double.parseDouble(request.getParameter(<span class="hljs-string">"product_price_"</span> + Id)));
+        p.setCategory(request.getParameter(<span class="hljs-string">"product_category_"</span> + Id));
+        p.setSeason(request.getParameter(<span class="hljs-string">"product_season_"</span> + Id));
+        p.setBrand(request.getParameter(<span class="hljs-string">"product_brand_"</span> + Id));
+        p.setDiscount(discount);
+        p.setColor(request.getParameter(<span class="hljs-string">"product_color_"</span> + Id));
+
+        SimpleDateFormat formatter = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">"yyyy-MM-dd"</span>, Locale.ENGLISH);
+        p.setDateAdded(formatter.parse(request.getParameter(<span class="hljs-string">"product_date_added_"</span> + Id)));
+        p.setDateModified(<span class="hljs-keyword">new</span> Date());
+
+        productService.updateProduct(p);
+
+        List&lt;Product&gt; list = productService.getProductList();
+        model.addAttribute(<span class="hljs-string">"list"</span>, list);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"listProducts"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"deleteProduct"</span>)
+    <span class="hljs-function">String <span class="hljs-title">deleteProduct</span><span class="hljs-params">(Model model, javax.servlet.http.HttpServletRequest request)</span>
+    </span>{
+        Long Id = Long.parseLong(request.getParameter(<span class="hljs-string">"del_product_id"</span>));
+        productService.deleteProduct(Id);
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-5" id="section-5"></a>
+</div>
+<div class="dox">
+<div class="summary">
+<p>Product p = new Product() ;
+// Alternate method ( Assuming a product is already created )
+p.setId( Id ); ;
+productService.deleteProduct( p );</p>
+</div>
+<div class="body">
+</div>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">
+        List&lt;Product&gt; list = productService.getProductList();
+        model.addAttribute(<span class="hljs-string">"list"</span>, list);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"listProducts"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"addCartItem"</span>)
+    <span class="hljs-function">String <span class="hljs-title">AddToCart</span><span class="hljs-params">(Model model, HttpServletRequest req)</span> </span>{
+        String strPID = req.getParameter(<span class="hljs-string">"add_button"</span>);
+
+        Product p = productService.getProductById(Long.parseLong(strPID));
+        userCart.add(p, <span class="hljs-number">1L</span>);
+        model.addAttribute(<span class="hljs-string">"cartItems"</span>, userCart.getItems());
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"CartView"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"submitCart"</span>)
+    <span class="hljs-function">String <span class="hljs-title">SubmitCart</span><span class="hljs-params">(Model model)</span> </span>{
+        <span class="hljs-keyword">if</span> (!userCart.getItems().isEmpty()) {
+            UserOrder newOrder = <span class="hljs-keyword">new</span> UserOrder();
+            newOrder.setUserId(userCart.getUserId());
+            newOrder.setOrderDate(<span class="hljs-keyword">new</span> Date());
+            UserOrder responseOrder = userService.saveUserOrder(newOrder);
+            OrderItem lineItem = <span class="hljs-keyword">new</span> OrderItem();
+            Iterator&lt;CartItem&gt; iterator = userCart.getItems().iterator();
+            <span class="hljs-keyword">while</span> (iterator.hasNext()) {
+                CartItem cartItem = iterator.next();
+                lineItem.setOrderId(responseOrder.getID());
+                lineItem.setProductId(cartItem.getProduct().getId());
+                lineItem.setQuantity(cartItem.getQuantity());
+                userService.saveOrderItem(lineItem);
+            }
+            userCart.getItems().clear();
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"CartView"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"emptyCart"</span>)
+    <span class="hljs-function">String <span class="hljs-title">EmptyCart</span><span class="hljs-params">(Model model)</span> </span>{
+        userCart.getItems().clear();
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"CartView"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"viewCart"</span>)
+    <span class="hljs-function">String <span class="hljs-title">ViewCart</span><span class="hljs-params">(Model model)</span> </span>{
+        model.addAttribute(<span class="hljs-string">"cartItems"</span>, userCart.getItems());
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"CartView"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"updateUserPassword"</span>)
+    <span class="hljs-function">String <span class="hljs-title">updatePass</span><span class="hljs-params">(Model model, HttpServletRequest request)</span> </span>{
+        String Message;
+        String password = request.getParameter(<span class="hljs-string">"password"</span>);
+        <span class="hljs-keyword">long</span> userId;
+        String str = request.getParameter(<span class="hljs-string">"user_id"</span>);
+        <span class="hljs-keyword">if</span> (validatorBean.isValidLong(str) &amp;&amp; validatorBean.isValidText(password)) {
+            userId = Long.parseLong(str);
+            User u = userService.getUserById(userId);
+            u.setUserPass(password);
+            userService.updateUser(u);
+            Message = <span class="hljs-string">"User: "</span> + u.getUserName() + <span class="hljs-string">" updated successfully."</span>;
+        } <span class="hljs-keyword">else</span> Message = <span class="hljs-string">"Error validating user for update."</span>;
+        model.addAttribute(<span class="hljs-string">"Message"</span>, Message);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"Message"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"viewCatalog"</span>)
+    <span class="hljs-function">String <span class="hljs-title">ViewCatalog</span><span class="hljs-params">(Model model)</span> </span>{
+        List&lt;Product&gt; products = productService.getProductList();
+        model.addAttribute(<span class="hljs-string">"productList"</span>, products);
+
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"CatalogView"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"viewOrders"</span>)
+    <span class="hljs-function">String <span class="hljs-title">ViewOrders</span><span class="hljs-params">(Model model)</span> </span>{
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-6" id="section-6"></a>
+</div>
+<p>List<UserOrder> orderList = userService.getOrders() ;
+model.addAttribute( &quot;orderlist&quot;, orderList ) ;</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-7" id="section-7"></a>
+</div>
+<p>return &quot;OrdersView&quot; ;</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">        <span class="hljs-keyword">return</span> <span class="hljs-string">"ReportCriteriaView"</span>;
+    }
+
+    <span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">"dispatchReport"</span>)
+    <span class="hljs-function">String <span class="hljs-title">Report</span><span class="hljs-params">(Model model, HttpServletRequest request)</span> </span>{
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-8" id="section-8"></a>
+</div>
+<p>set Session Attributes</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java">        SimpleDateFormat formatter = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">"E MMM dd HH:mm:ss z yyyy"</span>, Locale.ENGLISH) ;
+        SimpleDateFormat format2 = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">"yyyy-MM-dd"</span>, Locale.ENGLISH);
+        Date beginDate;
+        Date endDate;
+        String strDate = <span class="hljs-keyword">null</span> ;
+        <span class="hljs-keyword">try</span> {
+            strDate = request.getParameter(<span class="hljs-string">"begin_date"</span>);
+            System.out.println(strDate);
+            <span class="hljs-keyword">if</span> (validatorBean.isValidText(strDate))
+                beginDate = formatter.parse(strDate);
+            <span class="hljs-keyword">else</span> beginDate = <span class="hljs-keyword">null</span>;
+        } <span class="hljs-keyword">catch</span> (ParseException pe) {
+            <span class="hljs-keyword">try</span> { beginDate = format2.parse(strDate); }
+            <span class="hljs-keyword">catch</span> (ParseException pe2 ) { beginDate = <span class="hljs-keyword">null</span>; }
+        }
+        <span class="hljs-keyword">try</span> {
+            strDate = request.getParameter(<span class="hljs-string">"end_date"</span>);
+            System.out.println(strDate);
+            <span class="hljs-keyword">if</span> (validatorBean.isValidText(strDate))
+                endDate = formatter.parse(strDate);
+            <span class="hljs-keyword">else</span> endDate = <span class="hljs-keyword">new</span> Date(); <span class="hljs-comment">// now</span>
+        } <span class="hljs-keyword">catch</span> (ParseException pe) {
+            <span class="hljs-keyword">try</span> { endDate = format2.parse(strDate); }
+            <span class="hljs-keyword">catch</span> (ParseException pe2 ) { endDate = <span class="hljs-keyword">new</span> Date(); }
+        }
+        OrderItem I = <span class="hljs-keyword">new</span> OrderItem();
+
+        String str;
+        str = request.getParameter(<span class="hljs-string">"order_id"</span>);
+        Long order_id = validatorBean.isValidLong(str) ? Long.parseLong(str) : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_id"</span>);
+        Long product_id = validatorBean.isValidLong(str) ? Long.parseLong(str) : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_description"</span>);
+        String product_description = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_category"</span>);
+        String product_category = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_season"</span>);
+        String product_season = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_brand"</span>);
+        String product_brand = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        str = request.getParameter(<span class="hljs-string">"product_color"</span>);
+        String product_color = validatorBean.isValidText(str) ? str : <span class="hljs-keyword">null</span>;
+
+        UserOrder o = <span class="hljs-keyword">new</span> UserOrder();
+        Product p = <span class="hljs-keyword">new</span> Product();
+        I.setOrderId(order_id);
+        I.setProductId(product_id);
+
+        p.setDescription(product_description);
+
+        p.setCategory(product_category);
+        p.setSeason(product_season);
+        p.setBrand(product_brand);
+        p.setColor(product_color);
+        I.setProduct(p);
+        I.setOrder(o);
+
+        String strReportType = request.getParameter(<span class="hljs-string">"report_type"</span>);
+        System.out.println(<span class="hljs-string">"Radio value: "</span> + strReportType);
+
+        reportCriteriaBean.setReportType(strReportType);
+        reportCriteriaBean.setBeginDate(beginDate);
+        reportCriteriaBean.setEndDate(endDate);
+        model.addAttribute(<span class="hljs-string">"reportCriteriaBean"</span>, reportCriteriaBean ) ;
+
+        <span class="hljs-keyword">if</span> (strReportType.equals(<span class="hljs-string">"purchase_order"</span>)) {
+            ArrayList&lt;PurchaseOrderContainer&gt; purchaseOrders = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+            List&lt;UserOrder&gt; orderList = userService.getOrders();
+            Iterator&lt;UserOrder&gt; iter = orderList.iterator();
+            <span class="hljs-keyword">while</span> (iter.hasNext()) {
+                UserOrder userOrder = iter.next();
+                I.setOrderId( userOrder.getID()) ;
+                List&lt;OrderItem&gt; list = productService.getSearchPurchasesResultList(I, reportCriteriaBean);
+                <span class="hljs-keyword">if</span>( list.size() &gt; <span class="hljs-number">0</span> )
+                    purchaseOrders.add( <span class="hljs-keyword">new</span> PurchaseOrderContainer( userOrder, list) ) ;
+            }
+            model.addAttribute(<span class="hljs-string">"orderlist"</span>, purchaseOrders);
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"OrdersView"</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (strReportType.equals(<span class="hljs-string">"product_purchase"</span>))
+        {
+            List&lt;OrderItem&gt; list = productService.getSearchPurchasesResultList(I, reportCriteriaBean);
+            model.addAttribute(<span class="hljs-string">"purchaseList"</span>, list);
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"PurchasesView"</span> ;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> <span class="hljs-string">"home"</span>;
+    }
+}
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ValidatorBean.java</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../../../../../../doc-style.css" />
+  <script src="../../../../../../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../../../../../../";
+    var thisFile = "src\\main\\java\\com\\harmonengineering\\beans\\ValidatorBean.java";
+    var defaultSidebar = true;
+  </script>
+  <script src="../../../../../../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>ValidatorBean.java</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+<div class="dox">
+<div class="summary">
+<hr>
+<p>ValidatorBean.java</p>
+</div>
+<div class="body">
+</div>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="java"><span class="hljs-keyword">package</span> com.harmonengineering.beans;
+
+<span class="hljs-keyword">import</span> org.springframework.context.annotation.Bean;
+
+<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="hljs-keyword">import</span> java.io.StringReader;
+<span class="hljs-keyword">import</span> java.math.BigDecimal;
+
+<span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> java.lang.String.valueOf;
+<span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> java.lang.System.out;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ValidatorBean</span>
+</span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidText</span><span class="hljs-params">( String s )</span>
+    </span>{
+        <span class="hljs-keyword">return</span>  (s != <span class="hljs-keyword">null</span> &amp;&amp; !s.isBlank()) ;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidNumber</span><span class="hljs-params">( String s )</span>
+    </span>{
+        <span class="hljs-keyword">return</span> isValidInteger(s) ||
+                isValidLong(s)||
+                isValidDouble(s);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidInteger</span><span class="hljs-params">( String s )</span>
+    </span>{
+        <span class="hljs-keyword">boolean</span> return_value = <span class="hljs-keyword">true</span> ;
+        <span class="hljs-keyword">if</span> ( isValidText( s )) {
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-keyword">int</span> n = Integer.parseInt(s);
+            } <span class="hljs-keyword">catch</span> (NumberFormatException e)
+            {
+                return_value = <span class="hljs-keyword">false</span>;
+            }
+        } <span class="hljs-keyword">else</span> return_value = <span class="hljs-keyword">false</span> ;
+        <span class="hljs-keyword">return</span> return_value ;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidLong</span><span class="hljs-params">( String s )</span>
+    </span>{
+        <span class="hljs-keyword">boolean</span> return_value = <span class="hljs-keyword">true</span> ;
+        <span class="hljs-keyword">if</span> ( isValidText( s )) {
+            <span class="hljs-keyword">try</span> {
+                Long n = Long.parseLong(s) ;
+            } <span class="hljs-keyword">catch</span> (NumberFormatException e)
+            {
+                return_value = <span class="hljs-keyword">false</span>;
+            }
+        } <span class="hljs-keyword">else</span> return_value = <span class="hljs-keyword">false</span> ;
+        <span class="hljs-keyword">return</span> return_value ;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidDouble</span><span class="hljs-params">( String s )</span>
+    </span>{
+        <span class="hljs-keyword">boolean</span> return_value = <span class="hljs-keyword">true</span> ;
+        <span class="hljs-keyword">if</span> (s != <span class="hljs-keyword">null</span> &amp;&amp; !s.isBlank()) {
+            <span class="hljs-keyword">try</span> {
+                Double n = Double.parseDouble(s);
+            } <span class="hljs-keyword">catch</span> (NumberFormatException e)
+            {
+                return_value = <span class="hljs-keyword">false</span>;
+            }
+        } <span class="hljs-keyword">else</span> return_value = <span class="hljs-keyword">false</span> ;
+        <span class="hljs-keyword">return</span> return_value ;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidDecimal</span><span class="hljs-params">(<span class="hljs-keyword">double</span> doubleNumber, <span class="hljs-keyword">int</span> wholePartLength, <span class="hljs-keyword">int</span> decimalLength )</span>
+            <span class="hljs-keyword">throws</span> IOException
+    </span>{
+        String str = valueOf(doubleNumber) ;
+        System.out.println(doubleNumber + <span class="hljs-string">" -&gt; "</span> + str ); ;
+        <span class="hljs-keyword">char</span>[] bytes = <span class="hljs-keyword">new</span> <span class="hljs-keyword">char</span>[<span class="hljs-number">1024</span>] ; <span class="hljs-keyword">int</span> length ;
+        StringReader strReader = <span class="hljs-keyword">new</span> StringReader( str ) ;
+        length = strReader.read(bytes) ;
+        <span class="hljs-keyword">int</span> i ;
+        <span class="hljs-keyword">for</span> ( i = <span class="hljs-number">0</span> ; i &lt; length ; ++i )
+        {
+            <span class="hljs-keyword">if</span> ( bytes[i] == <span class="hljs-string">'.'</span> )
+                <span class="hljs-keyword">break</span> ;
+            out.print(bytes[i]);
+        }
+        <span class="hljs-keyword">int</span> wpart = i ;
+        <span class="hljs-keyword">int</span> dpart = length-(i+<span class="hljs-number">1</span>) ;
+        System.out.println( <span class="hljs-string">"wpart&gt; "</span> + wpart + <span class="hljs-string">" dpart&gt; "</span> + dpart ) ;
+        <span class="hljs-keyword">return</span> ( (wpart &lt;= (wholePartLength-decimalLength)) &amp;&amp; (dpart &lt;= decimalLength) ) ;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"ValidatorBean"</span>+<span class="hljs-keyword">this</span>.hashCode();
+    }
+}
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

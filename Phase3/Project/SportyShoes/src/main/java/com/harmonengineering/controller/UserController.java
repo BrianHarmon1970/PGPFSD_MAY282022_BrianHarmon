@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping(value = "user", produces = "application/json; charset=UTF-8")
 public class UserController
 {
     //@Autowired
@@ -38,14 +38,14 @@ public class UserController
         validatorBean = validator ;
     }
 
-    @GetMapping("orders")
+    @GetMapping(value = "orders", produces = "application/json; charset=UTF-8" )
     List<UserOrder> getOrders()
     {
         List<UserOrder> orders = (List<UserOrder> )userOrderRepository.findAll() ;
         return orders ;
     }
 
-    @GetMapping("orders/{user_id}")
+    @GetMapping(value = "orders/{user_id}", produces = "application/json; charset=UTF-8")
     List<UserOrder>
     getUserOrders( @PathVariable Long user_id )
     {
@@ -57,7 +57,7 @@ public class UserController
     public UserOrder addOrder(@RequestBody UserOrder order )
     { return userOrderRepository.save( order ) ; }
 
-    @GetMapping("orderitems")
+    @GetMapping(value = "orderitems", produces = "application/json; charset=UTF-8")
     List<OrderItem>
     getAllOrderItems()
     {
@@ -65,7 +65,7 @@ public class UserController
         return orderitems ;
     }
 
-    @GetMapping("orderitems/{order_id}")
+    @GetMapping(value = "orderitems/{order_id}", produces = "application/json; charset=UTF-8")
     List<OrderItem>
     getOrderItemsByOrderId( @PathVariable Long order_id )
     {
@@ -76,13 +76,13 @@ public class UserController
     public OrderItem addOrderItem(@RequestBody OrderItem item )
     { return orderItemRepository.save( item ) ; }
 
-    @GetMapping("listall")
+    @GetMapping(value = "listall", produces = "application/json; charset=UTF-8")
     List<User> listAllUsers( )
     {
         List<User> users = (List<User>)userRepository.findAll() ;
         return users ;
     }
-    @GetMapping("search/{id}/{user_name}/{first_name}/{last_name}")
+    @GetMapping(value = "search/{id}/{user_name}/{first_name}/{last_name}", produces = "application/json; charset=UTF-8")
     List<User> userSearchQuery(@PathVariable String id,
                                @PathVariable String user_name,
                                @PathVariable String first_name,
@@ -124,7 +124,7 @@ public class UserController
         return list ;
     }
 
-    @GetMapping( value="/getById/{id}" )
+    @GetMapping( value="/getById/{id}", produces = "application/json; charset=UTF-8" )
     User getById( @PathVariable Long id )
     {
         Optional<User> optional = userRepository.findById( id ) ;

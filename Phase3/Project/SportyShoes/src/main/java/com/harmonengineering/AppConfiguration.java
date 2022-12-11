@@ -1,5 +1,6 @@
 package com.harmonengineering;
 
+import com.harmonengineering.beans.ConfiguredPortNumberBean;
 import com.harmonengineering.beans.ReportCriteriaBean;
 import com.harmonengineering.beans.ValidatorBean;
 import org.springframework.context.annotation.Bean;
@@ -14,4 +15,5 @@ public class AppConfiguration
         return new ValidatorBean() ;
     }
     @Bean public ReportCriteriaBean newReportCriteriaBean() { return new ReportCriteriaBean() ; }
+    @Bean public ConfiguredPortNumberBean newConfiguredPortNumberBean() { return new ConfiguredPortNumberBean() ; }
 }
