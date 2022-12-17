@@ -3,11 +3,9 @@
  */
 package com.harmonengineering.beans;
 
-import org.springframework.context.annotation.Bean;
-
 import java.io.IOException;
 import java.io.StringReader;
-import java.math.BigDecimal;
+
 
 import static java.lang.String.valueOf;
 import static java.lang.System.out;

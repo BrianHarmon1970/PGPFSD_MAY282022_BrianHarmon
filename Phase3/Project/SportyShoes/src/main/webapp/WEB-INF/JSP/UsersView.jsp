@@ -33,7 +33,7 @@
 <h1>Users.</h1>
 
 <form>
-<table style="border: solid; border-width: medium; align-items: center; ">
+<table style="border: medium solid;align-items: center; ">
   <thead><tr>
     <td>userName</td>
     <td>firstName</td>
@@ -45,24 +45,24 @@
     <tr>
       <c:if test="${user.userType == 'ADMIN'}">
         <td>${user.userName}</td>
-        <td></td>
+
         <tr><td>
           <label for="id_admin_password">Admin password:</label>
           <input id="id_admin_password" type="password" name="password" value="${user.userPass}">
           <input name="user_id" hidden value="${user.id}">
           <button type="submit" formmethod="get" formaction="updateUserPassword">Update</button>
         </td></tr>
+
       </c:if>
       <c:if test="${user.userType != 'ADMIN'}">
-        <td>${user.userName}</td>
-        <td>${user.firstName}</td>
-        <td>${user.lastName}</td>
-        <td>${user.emailAddress}</td>
-        <td>${user.phoneNumber}</td>
+        <tr>
+          <td>${user.userName}</td>
+          <td>${user.firstName}</td>
+          <td>${user.lastName}</td>
+          <td>${user.emailAddress}</td>
+          <td>${user.phoneNumber}</td>
+        </tr>
       </c:if>
-
-      </tr>
-
   </c:forEach>
 </table>
 </form>

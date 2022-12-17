@@ -11,8 +11,17 @@ import java.util.List;
 
 public class ProductService
 {
-    public static final String productResourceUrl = "http://localhost:8080/product" ;
+    //public static final String productResourceUrl = "http://localhost:8080/product" ;
+    public static  String serviceUrl = "/product" ;
+    public static String hostString = "http://localhost:" ;
+    public static String productResourceUrl ;
+
     static final RestTemplate restTemplate = new RestTemplate() ;
+
+    public ProductService( String serverPort )
+    {
+        productResourceUrl = hostString + serverPort + serviceUrl ;
+    }
 
     public List<Product> getProductList( )
     {

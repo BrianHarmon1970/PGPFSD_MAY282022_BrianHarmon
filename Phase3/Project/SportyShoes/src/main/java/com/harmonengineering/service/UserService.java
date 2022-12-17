@@ -4,43 +4,57 @@ import com.harmonengineering.beans.ConfiguredPortNumberBean;
 import com.harmonengineering.entity.OrderItem;
 import com.harmonengineering.entity.User;
 import com.harmonengineering.entity.UserOrder;
-import org.apache.catalina.Server;
+//import org.apache.catalina.Server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.web.ServerProperties;
+import org.springframework.core.env.Environment;
 import org.springframework.http.*;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
+//@Service
 public class UserService
 {
+//    @Value(value = "${server.port}")
+//    public static String serverPort  ;
 
 
-    static private int serverPort  ;
+    //@Autowired
+    //public static ConfiguredPortNumberBean portNumberBean ;
+    //public static String userResourceUrl ;
+    public static  String serviceUrl = "/user" ;
+    public static String hostString = "http://localhost:" ;
+    public static String userResourceUrl ;
 
-    @Autowired
-    //private ServerProperties serverProperties;
-
-    //public static final String userResourceUrl = "http://localhost:"+serverPort+"/user" ;
-    public static  String userResourceUrl = "/user" ;
-    public static ConfiguredPortNumberBean portNumberBean ;
     static final RestTemplate restTemplate = new RestTemplate() ;
 
+    //@Autowired
+    //Environment environment;
 
-    public UserService( ConfiguredPortNumberBean portBean )
+    public UserService( String serverPort  )
     {
-        this.portNumberBean = portBean ;
-        serverPort = portBean.serverPort ;
-        serverPort = 8080 ;
+        //this.portNumberBean = portBean ;
+        //serverPort = portNumberBean.getServerPort() ;
+        //serverPort = env.getProperty("server.port") ;
+        //serverPort = "8080" ;
+        //serverPort = environment.getProperty("server.port" ) ;
+        //serverPort = portNumberBean.getServerPort() ;
+
+        userResourceUrl = hostString + serverPort + serviceUrl ;
+        //userResourceUrl = "http://localhost:"+portNumberBean.getServerPort()+"/user" ;
+        //userResourceUrl = "http://localhost:"+serverPort+"/user" ;
+
     }
-    public String hostName()
-    {
-
-       // return "http://localhost:"+System.getProperty( "${server.port}","8787" ) ; }
-        return "http://localhost:"+ serverPort ; }
+//    public String hostName()
+//    {
+//
+ //      // return "http://localhost:"+System.getProperty( "${server.port}","8787" ) ; }
+ //       return "http://localhost:"+ serverPort ; }
 //    public UserService()
 //    {
 //        //System.out.println( "name:" + hostName() );
@@ -49,10 +63,10 @@ public class UserService
     public List<User> getUserList( )
     {
         System.out.println( userResourceUrl );
-        System.out.println( hostName() );
+        //System.out.println( hostName() );
 
         ResponseEntity<User[]> userList =
-                restTemplate.getForEntity(hostName()+userResourceUrl + "/listall",
+                restTemplate.getForEntity(userResourceUrl + "/listall",
                         User[].class);
 
         return Arrays.asList( userList.getBody() ) ;

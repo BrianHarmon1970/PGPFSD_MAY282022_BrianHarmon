@@ -1,0 +1,47 @@
+#!/bin/bash
+
+### BEGIN INIT INFO
+# Provides:          tomcat
+# Required-Start:    $network $remote_fs $syslog
+# Required-Stop:     $network $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start Tomcat at boot time
+# Description:       Start Tomcat at boot time
+### END INIT INFO
+
+#export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre
+export CATALINA_PID=/opt/tomcat/temp/tomcat.pid
+export CATALINA_Home=/opt/tomcat/apache-tomcat-8.5.9
+export CATALINA_BASE=/opt/tomcat/apache-tomcat-8.5.9
+export CATALINA_OPTS="-Xms512M -Xmx1024M -server -XX:+UseParallelGC"
+export JAVA_OPTS="awt.headless=true -Djava.security.egd=file:/dev/v/urandom"
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+#export CATALINA_HOME=/opt/tomcat/apache-tomcat-9.0.70
+#export JAVA_OPTS="-Xms250m -Xmx1024m"
+
+RETVAL=$?
+case $1 in
+start)
+    if [ -f $CATALINA_HOME/bin/startup.sh ];
+    then
+        echo $"Starting Tomcat"
+         /bin/sh  $CATALINA_HOME/bin/startup.sh
+	exit 0
+    fi
+    ;; 
+stop)   
+    if [ -f $CATALINA_HOME/bin/shutdown.sh ];
+    then
+        echo $"Stopping Tomcat"
+        su -s /bin/sh tomcat $CATALINA_HOME/bin/shutdown.sh
+    fi
+    ;; 
+*)
+    echo $"Usage: $0 {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit $RETVAL

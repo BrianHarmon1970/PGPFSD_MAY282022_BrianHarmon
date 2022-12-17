@@ -14,6 +14,10 @@ public class AppConfiguration
     {
         return new ValidatorBean() ;
     }
-    @Bean public ReportCriteriaBean newReportCriteriaBean() { return new ReportCriteriaBean() ; }
-    @Bean public ConfiguredPortNumberBean newConfiguredPortNumberBean() { return new ConfiguredPortNumberBean() ; }
+    @Bean public ReportCriteriaBean newReportCriteriaBean()
+    {  return new ReportCriteriaBean() ; }
+    @Bean public ConfiguredPortNumberBean newConfiguredPortNumberBean()
+    {
+        ConfiguredPortNumberBean portNumberBean = new ConfiguredPortNumberBean();
+        return portNumberBean; }
 }

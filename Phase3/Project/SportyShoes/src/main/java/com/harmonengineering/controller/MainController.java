@@ -6,6 +6,9 @@ import com.harmonengineering.beans.ValidatorBean;
 import com.harmonengineering.entity.*;
 import com.harmonengineering.service.ProductService;
 import com.harmonengineering.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,18 +27,28 @@ import java.util.*;
 @Controller
 public class MainController {
 
-    //@Bean
-    private static final ConfiguredPortNumberBean portNumberBean = new ConfiguredPortNumberBean() ;
-    private static final UserCart userCart = new UserCart();
-    private static final ProductService productService = new ProductService();
-    private static final UserService userService = new UserService( portNumberBean ) ;
+    //@Value(value = "${server.port}")
+    public static String serverPort  ;
 
+
+    private static final UserCart userCart = new UserCart();
+    private static ProductService productService ; // = new ProductService();
+    //private Environment environment ;
+    private static UserService userService ;//= new UserService( ) ;
+
+    
     private static ValidatorBean validatorBean; //= new ValidatorBean() ;
     private final ReportCriteriaBean reportCriteriaBean;
+    private static ConfiguredPortNumberBean portBean ;
 
-    MainController(ValidatorBean vb, ReportCriteriaBean rcb) {
+    MainController(ValidatorBean vb, ReportCriteriaBean rcb, ConfiguredPortNumberBean portBean ) {
         validatorBean = vb;
         reportCriteriaBean = rcb;
+        this.serverPort = portBean.getServerPort() ;
+        this.portBean = portBean ;
+        System.out.println( "Port Number: " + serverPort ) ;
+        userService = new UserService( this.serverPort ) ;
+        productService = new ProductService( this.serverPort ) ;
     }
 
     @RequestMapping("/")

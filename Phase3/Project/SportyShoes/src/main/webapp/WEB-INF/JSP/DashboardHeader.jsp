@@ -7,9 +7,8 @@
     <title>Dashboard</title>
 </head>
 <body>
-<H1>HELLO4</H1>
-<div style="flow-from: left; border: blue; border-style: solid ">
-    <div><h2>&lt;&lt; SportyShoes - D A S  H  B  O  A R D - SportyShoes  &gt;&gt;</h2></b>
+<div style="flow-from: left; border: solid blue;">
+    <div><h2><b>&lt;&lt; SportyShoes - D A S  H  B  O  A R D - SportyShoes  &gt;&gt;</b></h2>
         <form method="GET">
             <button disabled type="submit" formaction="LoginUser">Login</button>
             <button disabled type="submit" formaction="RegisterUser"  >Register</button>

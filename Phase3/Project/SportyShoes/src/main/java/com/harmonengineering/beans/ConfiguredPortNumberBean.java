@@ -4,9 +4,16 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class ConfiguredPortNumberBean
 {
-    @Value("${server.port}")
-    public int serverPort ;
-    public ConfiguredPortNumberBean() {} ;
+    @Value(value = "${server.port}")
+    private String serverPort;
+
+    //public void setServerPort( String port ) { serverPort = port ; }
+//    public ConfiguredPortNumberBean(String serverPort) {
+//        this.serverPort = serverPort;
+//    } ;
+    public ConfiguredPortNumberBean() {}
+    public String  getServerPort()
+    { return serverPort ; }
     public String toString() {
         return "ConfiguredPortNumberBean"+this.hashCode();
     }
