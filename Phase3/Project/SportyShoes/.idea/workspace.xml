@@ -12,111 +12,46 @@
   <component name="ChangeListManager">
     <list default="true" id="abcc560d-48ce-4c80-ace1-391b7818de4e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/SportyShoes_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SportyShoes_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/YAGNI/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile-ubuntu" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile-ubuntu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportyShoesApp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/YAGNI/SportyShoesApp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SportyShoesLib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apache-tomcat-8.5.9.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apache-tomcat-9.0.70.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons-daemon.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-build.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/docker-build.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install-jar.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/YAGNI/install-jar.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install-jars.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/YAGNI/install-jars.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom_xml" beforeDir="false" afterPath="$PROJECT_DIR$/YAGNI/pom_xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sporty-shoes.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sporty-shoes.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/annotations-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/catalina-ant.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/catalina-ha.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/catalina-ssi.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/catalina-storeconfig.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/catalina-tribes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/catalina.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ecj-4.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/el-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/jasper-el.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/jasper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/jaspic-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/jsp-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/servlet-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-coyote.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-dbcp.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-i18n-cs.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-i18n-de.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-i18n-es.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-i18n-fr.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-i18n-ja.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-i18n-ko.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-i18n-pt-BR.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-i18n-ru.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-i18n-zh-CN.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-jdbc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-jni.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-util-scan.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-util.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/tomcat-websocket.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/websocket-api.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/AppConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/beans/ConfiguredPortNumberBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/beans/ConfiguredPortNumberBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/beans/ValidatorBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/beans/ValidatorBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/SportyShoesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/SportyShoesApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/CartView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/CatalogView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/DashboardHeader.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/LoginRegister.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Message.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/OrdersView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/ProductForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/PurchasesView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/ReportCriteriaView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/UserLogin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/UsersView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/CartView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/CatalogView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/DashboardHeader.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/LoginRegister.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/Message.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/OrdersView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/ProductForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/PurchasesView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/Register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/ReportCriteriaView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/UserLogin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/UsersView.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/JSP/listProducts.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/dummy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/listProducts.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/CatalogView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/CatalogView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/DashboardHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/DashboardHeader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/UsersView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/JSP/UsersView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dummy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dummy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/harmonengineering/SportyShoesApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/harmonengineering/SportyShoesApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startSportyShoes.sh" beforeDir="false" afterPath="$PROJECT_DIR$/YAGNI/startSportyShoes.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/AppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/AppConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/ValidatorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/ValidatorBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/AppConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/SportyShoesApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/authentication/AuthStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/authentication/Authenticate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/authentication/AuthenticateResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/DateRange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/ReportCriteriaBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/UserData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/ValidatorBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/CartItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/OrderItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/OrderItemRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/PurchaseOrderContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/UserCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/UserOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/UserOrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/ProductList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat-juli.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat.init.service" beforeDir="false" afterPath="$PROJECT_DIR$/YAGNI/tomcat.init.service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat.service" beforeDir="false" afterPath="$PROJECT_DIR$/YAGNI/tomcat.service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tomcat.sh" beforeDir="false" afterPath="$PROJECT_DIR$/YAGNI/tomcat.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,12 +113,12 @@
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/Project/SportyShoes/.mvn/wrapper/maven-wrapper.properties&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/Project/SportyShoes/src/main/resources/static/WEB-INF/JSP&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
@@ -196,6 +131,7 @@
       <recent name="com.harmonengineering.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\resources\static\WEB-INF\JSP" />
       <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\resources\webapp" />
       <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\resources\static" />
     </key>
@@ -327,6 +263,10 @@
       <workItem from="1671074193097" duration="5224000" />
       <workItem from="1671081485468" duration="4695000" />
       <workItem from="1671109745056" duration="21714000" />
+      <workItem from="1671311037189" duration="5706000" />
+      <workItem from="1671329640237" duration="11333000" />
+      <workItem from="1671342805515" duration="1143000" />
+      <workItem from="1671359149109" duration="5384000" />
     </task>
     <servers />
   </component>

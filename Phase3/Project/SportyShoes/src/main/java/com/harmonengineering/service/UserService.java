@@ -33,6 +33,7 @@ public class UserService
 
     static final RestTemplate restTemplate = new RestTemplate() ;
 
+
     //@Autowired
     //Environment environment;
 

@@ -2,10 +2,12 @@ com\harmonengineering\entity\PurchaseOrderContainer.class
 com\harmonengineering\SportyShoesApplication.class
 com\harmonengineering\beans\UserData.class
 com\harmonengineering\beans\ValidatorBean.class
+com\harmonengineering\WebSecurityConfig.class
 com\harmonengineering\beans\EnvironmentBean.class
 com\harmonengineering\entity\UserRepository.class
 com\harmonengineering\entity\UserOrderRepository.class
 com\harmonengineering\service\ProductList.class
+com\harmonengineering\authentication\ServerSecurityConfig.class
 com\harmonengineering\beans\DateRange.class
 com\harmonengineering\AppConfiguration.class
 com\harmonengineering\controller\LoginController.class
@@ -14,6 +16,7 @@ com\harmonengineering\service\UserService.class
 com\harmonengineering\entity\OrderItemRepository.class
 com\harmonengineering\service\ProductService.class
 com\harmonengineering\entity\CartItem.class
+com\harmonengineering\authentication\OAuthConfiguration.class
 com\harmonengineering\authentication\Authenticate.class
 com\harmonengineering\beans\User.class
 com\harmonengineering\controller\ProductController.class

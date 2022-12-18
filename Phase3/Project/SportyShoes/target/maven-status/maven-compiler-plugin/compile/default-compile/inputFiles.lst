@@ -4,6 +4,7 @@ E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\authentication\AuthStatus.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\entity\UserRepository.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\authentication\AuthenticateResult.java
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\authentication\OAuthConfiguration.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\entity\Product.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\entity\UserOrderRepository.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\entity\ProductRepository.java
@@ -27,5 +28,7 @@ E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\authentication\Authenticate.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\service\UserService.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\entity\OrderItemRepository.java
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\WebSecurityConfig.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\beans\ReportCriteriaBean.java
 E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\controller\MainController.java
+E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Project\SportyShoes\src\main\java\com\harmonengineering\authentication\ServerSecurityConfig.java

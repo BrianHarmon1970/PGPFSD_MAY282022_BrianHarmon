@@ -3,6 +3,7 @@ package com.harmonengineering;
 import org.apache.logging.log4j.util.BiConsumer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
@@ -13,7 +14,7 @@ import java.util.Map;
 
 @EnableJpaRepositories
 //@EnableWebMvc
-@SpringBootApplication(scanBasePackages = "com.harmonengineering")
+@SpringBootApplication(scanBasePackages = "com.harmonengineering", exclude = { SecurityAutoConfiguration.class })
 public class SportyShoesApplication {
 
 	public static void main(String[] args)
