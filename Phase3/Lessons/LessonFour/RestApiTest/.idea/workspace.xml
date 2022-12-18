@@ -5,19 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e69daaf4-301b-4363-afae-59cfbafbcdaf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/src/main/java/com/harmonengineering/tests/AuthenticateNullTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/src/main/java/com/harmonengineering/tests/AuthenticateNullTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/src/main/java/com/harmonengineering/tests/AuthenticateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/src/main/java/com/harmonengineering/tests/AuthenticateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/src/main/java/com/harmonengineering/tests/AuthenticateUserValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/src/main/java/com/harmonengineering/tests/AuthenticateUserValidationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/authentication/AuthStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/authentication/AuthStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/authentication/Authenticate.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/authentication/Authenticate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/authentication/AuthenticateResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/authentication/AuthenticateResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/beans/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/beans/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/beans/UserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/beans/UserData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/tests/AddUserValidationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/tests/AddUserValidationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/tests/AuthenticateNullTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/tests/AuthenticateNullTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/tests/AuthenticateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/tests/AuthenticateTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/tests/AuthenticateUserValidationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/tests/AuthenticateUserValidationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/tests/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/target/classes/com/harmonengineering/tests/TestData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/.idea/artifacts/SportyShoes_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/.idea/artifacts/SportyShoes_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/src/main/java/com/harmonengineering/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/src/main/java/com/harmonengineering/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/src/main/java/com/harmonengineering/SportyShoesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/src/main/java/com/harmonengineering/SportyShoesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/src/main/java/com/harmonengineering/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/src/main/java/com/harmonengineering/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/target/classes/com/harmonengineering/AppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/target/classes/com/harmonengineering/AppConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/target/classes/com/harmonengineering/SportyShoesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/target/classes/com/harmonengineering/SportyShoesApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/target/classes/com/harmonengineering/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/target/classes/com/harmonengineering/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Project/SportyShoes/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Project/SportyShoes/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +75,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "last_opened_file_path": "E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/Lessons/LessonFour/RestApiTest",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "dbaff02a668ca18f3b556764b11ad58e",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -89,6 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662595797459</updated>
       <workItem from="1662595807515" duration="1399000" />
+      <workItem from="1671391896909" duration="80000" />
     </task>
     <servers />
   </component>

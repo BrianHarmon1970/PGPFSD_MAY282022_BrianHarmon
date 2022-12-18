@@ -36,18 +36,6 @@ public class AuthenticateTest
         assert( m_Result.getResultStatus() == AuthStatus.UserAdd_ConfirmationMismatch ) ;
     }
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName( " ADD USER ")
     void AddUserTest()
     {
@@ -63,18 +51,6 @@ public class AuthenticateTest
         assertSame(m_Result.getResultStatus(), AuthStatus.UserAdd_UserExists);
     }
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName( " AUTH USER ")
     void AuthUserTest()
     {
@@ -85,18 +61,6 @@ public class AuthenticateTest
         assert( m_Result.getResultStatus() == AuthStatus.Authenticated ) ;
     }
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName( " DENY USER ")
     void DenyUserTest()
     {
@@ -104,43 +68,13 @@ public class AuthenticateTest
         assert( m_Result.getResultStatus() == AuthStatus.Authenticate_NoUser ) ;
     }
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
-
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
-
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName( " BAD PASSWORD ")
     void AuthUserBadPassTest()
     {
-
         m_Result = m_Authenticator.AddUser( TestData.User4, TestData.userPass4 ) ;
         assert( m_Result.getResultStatus() == AuthStatus.Authenticated ) ;
         TestData.User4.setUserPassword( TestData.wrongPassword);
         m_Result = m_Authenticator.AuthenticateUser( TestData.User4 ) ;
         assert( m_Result.getResultStatus() == AuthStatus.Authenticate_PasswordMismatch ) ;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
 }

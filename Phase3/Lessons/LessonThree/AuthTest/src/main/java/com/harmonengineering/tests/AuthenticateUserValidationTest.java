@@ -37,18 +37,6 @@ public class AuthenticateUserValidationTest
         assert (m_Result.getResultStatus() == AuthStatus.Authenticate_NoUser );
     }
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName( "TCAUTH_02-AddUser - Test1 - normal User")
     void AuthUserTest2()
     {
@@ -62,18 +50,6 @@ public class AuthenticateUserValidationTest
 
     // username
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName("TCAUTH_03-Invalid UserName (blank) ")
     void InvalidUsername1()
     {
@@ -82,18 +58,6 @@ public class AuthenticateUserValidationTest
 
     }
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName("TCAUTH_04-Invalid UserName (null)")
     void InvalidUsername2()
     {
@@ -103,21 +67,6 @@ public class AuthenticateUserValidationTest
 
     // password
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName("TCAUTH_05-Invalid Password (blank) ")
     void InvalidPassword1()
     {
@@ -125,21 +74,6 @@ public class AuthenticateUserValidationTest
         assert( m_Result.getResultStatus() == AuthStatus.BadData_Password ) ;
     }
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName("TCAUTH_06-Invalid Password (null)")
     void InvalidPassword2()
     {
@@ -149,21 +83,6 @@ public class AuthenticateUserValidationTest
 
     // All Bad Data
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName("TCAUTH_07-Invalid ALL (blank")
     void InvalidData1()
     {
@@ -173,18 +92,6 @@ public class AuthenticateUserValidationTest
                 m_Result.getResultStatus() == AuthStatus.BadData_Password) ;
     }
     @Test
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 67dc813 (Phase3 - Lesson 3 Project: Handling User Authentication. (AuthTest))
-=======
-
->>>>>>> f93722c (Practice Project 3 - document only changes)
-=======
-
->>>>>>> 394bdc36e2603a6ff6dbbdae08af50c73e5a8bc6
     @DisplayName("TCAUTH_08-Invalid ALL (null)")
     void InvalidData2()
     {
