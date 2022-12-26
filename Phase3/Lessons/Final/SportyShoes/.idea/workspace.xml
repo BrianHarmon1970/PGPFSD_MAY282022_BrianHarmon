@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e199ff58-3728-4df8-a916-d0f936d075df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Docker/DockerSpringMySQL/src/main/java/com/example/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Docker/DockerSpringMySQL/src/main/java/com/example/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Docker/DockerSpringMySQL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Docker/DockerSpringMySQL/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/SeleJenk-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/SeleJenk-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Phase5/Lessons/Lesson_2/SeleJenk/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LessonThree/AuthTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonThree/AuthTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LessonTwo/FeedbackAPI/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonTwo/FeedbackAPI/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LessonTwo/FeedbackAPI/.idea/dataSources/6da39793-ec21-45fd-9215-2fa9082ae806.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LessonTwo/FeedbackAPI/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonTwo/FeedbackAPI/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LessonTwo/FeedbackAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonTwo/FeedbackAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LessonTwo/SpringRESTClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LessonTwo/SpringRESTClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UserDatabase-SpringMVC/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UserDatabase-SpringMVC/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +62,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/HarmonEngineering/PGPFSD-FullStackWebDev/PGPFSD_MAY282022_BrianHarmon/Phase3/Lessons/LessonOne/UserDatabase-SpringMVC&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;62652c56c8ee346a0e655f5849d84704&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\HarmonEngineering\PGPFSD-FullStackWebDev\PGPFSD_MAY282022_BrianHarmon\Phase3\Lessons\Final\SportyShoes\src\main\java\com\ecommerce" />
@@ -87,6 +89,8 @@
       <workItem from="1664002247123" duration="1196000" />
       <workItem from="1664025915978" duration="26000" />
       <workItem from="1670091153815" duration="239000" />
+      <workItem from="1671485317970" duration="214000" />
+      <workItem from="1671560699295" duration="50000" />
     </task>
     <servers />
   </component>

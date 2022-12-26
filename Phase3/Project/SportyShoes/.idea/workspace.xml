@@ -11,47 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abcc560d-48ce-4c80-ace1-391b7818de4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SportyShoes_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SportyShoes_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/AppConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/SportyShoesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/SportyShoesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harmonengineering/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harmonengineering/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/AppConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/SportyShoesApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/authentication/AuthStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/authentication/Authenticate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/authentication/AuthenticateResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/DateRange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/ReportCriteriaBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/UserData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/beans/ValidatorBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/CartItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/OrderItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/OrderItemRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/PurchaseOrderContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/UserCart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/UserOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/UserOrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/entity/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/ProductList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/harmonengineering/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/Final/SportyShoes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/LessonThree/AuthTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/LessonThree/AuthTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/LessonTwo/FeedbackAPI/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/LessonTwo/FeedbackAPI/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/LessonTwo/FeedbackAPI/.idea/dataSources/6da39793-ec21-45fd-9215-2fa9082ae806.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/LessonTwo/FeedbackAPI/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/LessonTwo/FeedbackAPI/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/LessonTwo/FeedbackAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/LessonTwo/FeedbackAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/LessonTwo/SpringRESTClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/LessonTwo/SpringRESTClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lessons/UserDatabase-SpringMVC/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lessons/UserDatabase-SpringMVC/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,6 +235,7 @@
       <workItem from="1671329640237" duration="11333000" />
       <workItem from="1671342805515" duration="1143000" />
       <workItem from="1671359149109" duration="5384000" />
+      <workItem from="1671560765662" duration="1066000" />
     </task>
     <servers />
   </component>
