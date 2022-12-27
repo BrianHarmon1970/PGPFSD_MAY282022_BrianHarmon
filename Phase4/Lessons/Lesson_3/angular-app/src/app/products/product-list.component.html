@@ -1,1 +1,59 @@
 <h1>Product List Page</h1>
+
+<button mat-raised-button color="red" [attr.disabled]="false"  (click)='toggleImage()'>
+  Show Image
+</button>
+<table>
+  <thead>
+    <tr>
+      <td [hidden]="show">===IMAGE===</td>
+      <td> description</td>
+      <td> code </td>
+      <td> price </td>
+      <td> date available </td>
+      <td> rating </td>
+
+    </tr>
+  </thead>
+  <tr>
+    <td [hidden]="show">===IMAGE===</td>
+    <td [textContent]="p1.description"></td>
+    <td [textContent]="p1.code"></td>
+    <td [textContent]="p1.price"></td>
+    <td [textContent]="p1.date_available"></td>
+    <td [textContent]="p1.rating"></td>
+  </tr>
+  <tr>
+    <td [hidden]="show">===IMAGE===</td>
+    <td [textContent]="p2.description"></td>
+    <td [textContent]="p2.code"></td>
+    <td [textContent]="p2.price"></td>
+    <td [textContent]="p2.date_available"></td>
+    <td [textContent]="p2.rating"></td>
+  </tr>
+  <tr>
+    <td [hidden]="show">===IMAGE===</td>
+    <td [textContent]="p3.description"></td>
+    <td [textContent]="p3.code"></td>
+    <td [textContent]="p3.price"></td>
+    <td [textContent]="p3.date_available"></td>
+    <td [textContent]="p3.rating"></td>
+  </tr>
+  <tr>
+    <td [hidden]="show">===IMAGE===</td>
+    <td [textContent]="p4.description"></td>
+    <td [textContent]="p4.code"></td>
+    <td [textContent]="p4.price"></td>
+    <td [textContent]="p4.date_available"></td>
+    <td [textContent]="p4.rating"></td>
+  </tr>
+  <tr>
+    <td [hidden]="show">===IMAGE===</td>
+    <td [textContent]="p5.description"></td>
+    <td [textContent]="p5.code"></td>
+    <td [textContent]="p5.price"></td>
+    <td [textContent]="p5.date_available"></td>
+    <td [textContent]="p5.rating"></td>
+  </tr>
+</table>
+
