@@ -1,6 +1,6 @@
 <h1>Product List Page</h1>
 
-<button mat-raised-button color="red" [attr.disabled]="false"  (click)='toggleImage()'>
+<button type="button" class="btn btn-primary" [attr.disabled]="true"  (click)='toggleImage()'>
   Show Image
 </button>
 <table>
@@ -9,51 +9,75 @@
       <td [hidden]="show">===IMAGE===</td>
       <td> description</td>
       <td> code </td>
-      <td> price </td>
       <td> date available </td>
+      <td> price </td>
       <td> rating </td>
 
     </tr>
   </thead>
-  <tr>
+  <tr *ngFor="let product of productList">
+
     <td [hidden]="show">===IMAGE===</td>
-    <td [textContent]="p1.description"></td>
-    <td [textContent]="p1.code"></td>
-    <td [textContent]="p1.price"></td>
-    <td [textContent]="p1.date_available"></td>
-    <td [textContent]="p1.rating"></td>
+    <td [style.color]="'#306A9D'" [style.font-weight]="700">
+      {{ product.description }}</td>
+<!--    <td [textContent]="product.code"></td>-->
+    <td [class.inStock]=product.instock>
+      {{ product.code}}
+    </td>
+    <td [textContent]="product.date_available"></td>
+    <td [style.color]="product.price > 20 ? 'red': 'green'"
+        [style.font-size.px]="16"  [style.font-weight]="700">
+      {{ product.price}}
+    </td>
+    <td [textContent]="product.rating"></td>
   </tr>
-  <tr>
-    <td [hidden]="show">===IMAGE===</td>
-    <td [textContent]="p2.description"></td>
-    <td [textContent]="p2.code"></td>
-    <td [textContent]="p2.price"></td>
-    <td [textContent]="p2.date_available"></td>
-    <td [textContent]="p2.rating"></td>
-  </tr>
-  <tr>
-    <td [hidden]="show">===IMAGE===</td>
-    <td [textContent]="p3.description"></td>
-    <td [textContent]="p3.code"></td>
-    <td [textContent]="p3.price"></td>
-    <td [textContent]="p3.date_available"></td>
-    <td [textContent]="p3.rating"></td>
-  </tr>
-  <tr>
-    <td [hidden]="show">===IMAGE===</td>
-    <td [textContent]="p4.description"></td>
-    <td [textContent]="p4.code"></td>
-    <td [textContent]="p4.price"></td>
-    <td [textContent]="p4.date_available"></td>
-    <td [textContent]="p4.rating"></td>
-  </tr>
-  <tr>
-    <td [hidden]="show">===IMAGE===</td>
-    <td [textContent]="p5.description"></td>
-    <td [textContent]="p5.code"></td>
-    <td [textContent]="p5.price"></td>
-    <td [textContent]="p5.date_available"></td>
-    <td [textContent]="p5.rating"></td>
-  </tr>
+<!--    <tr>-->
+<!--    <td [hidden]="show">===IMAGE===</td>-->
+<!--    <td [style.color]="'#306A9D'" [style.font-weight]="700">-->
+<!--      {{ p1.description }}</td>-->
+<!--    <td [textContent]="p1.code"></td>-->
+<!--    <td [class.inStock]="true">-->
+<!--      {{ p1.price}}-->
+<!--    </td>-->
+
+<!--    <td [style.color]="p1.price > 20 ? 'red': 'green'"-->
+<!--        [style.font-size.px]="16"  [style.font-weight]="700">-->
+<!--        {{ p1.price}}-->
+<!--      </td>-->
+<!--    <td [textContent]="p1.date_available"></td>-->
+<!--    <td [textContent]="p1.rating"></td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td [hidden]="show">===IMAGE===</td>-->
+<!--    <td [textContent]="p2.description"></td>-->
+<!--    <td [textContent]="p2.code"></td>-->
+<!--    <td [textContent]="p2.price"></td>-->
+<!--    <td [textContent]="p2.date_available"></td>-->
+<!--    <td [textContent]="p2.rating"></td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td [hidden]="show">===IMAGE===</td>-->
+<!--    <td [textContent]="p3.description"></td>-->
+<!--    <td [textContent]="p3.code"></td>-->
+<!--    <td [textContent]="p3.price"></td>-->
+<!--    <td [textContent]="p3.date_available"></td>-->
+<!--    <td [textContent]="p3.rating"></td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td [hidden]="show">===IMAGE===</td>-->
+<!--    <td [textContent]="p4.description"></td>-->
+<!--    <td [textContent]="p4.code"></td>-->
+<!--    <td [textContent]="p4.price"></td>-->
+<!--    <td [textContent]="p4.date_available"></td>-->
+<!--    <td [textContent]="p4.rating"></td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td [hidden]="show">===IMAGE===</td>-->
+<!--    <td [textContent]="p5.description"></td>-->
+<!--    <td [textContent]="p5.code"></td>-->
+<!--    <td [textContent]="p5.price"></td>-->
+<!--    <td [textContent]="p5.date_available"></td>-->
+<!--    <td [textContent]="p5.rating"></td>-->
+<!--  </tr>-->
 </table>
 
