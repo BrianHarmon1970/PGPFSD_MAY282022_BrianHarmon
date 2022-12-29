@@ -72,7 +72,7 @@ class Product
 
   public image:string ;
   public description:string | undefined ;
-  public code:string | undefined ;
+  public code:string  ;
   public date_available: Date | undefined;
   public price:number  ;
   public rating:number | undefined ;

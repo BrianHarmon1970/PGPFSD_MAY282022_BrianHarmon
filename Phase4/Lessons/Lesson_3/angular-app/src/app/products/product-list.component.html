@@ -18,10 +18,10 @@
   <tr *ngFor="let product of productList">
     <td [hidden]="showImage"><img [src]=product.image [width]=imageWidth></td>
     <td [style.color]="'#306A9D'" [style.font-weight]="700">
-      {{ product.description }}</td>
+      {{ product.description | uppercase }}</td>
 <!--    <td [textContent]="product.code"></td>-->
     <td [class.inStock]=product.instock>
-      {{ product.code}}
+      {{ product.code | convertToSpaces:'-'}}
     </td>
     <td [textContent]="product.date_available"></td>
     <td [style.color]="product.price > 20 ? 'red': 'green'"

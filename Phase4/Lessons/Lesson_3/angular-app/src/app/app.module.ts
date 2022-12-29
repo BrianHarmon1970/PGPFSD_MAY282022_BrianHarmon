@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule} from "@angular/material/button";
 import { ChangeColorDirective } from './ChangeColor.directive';
+import { ConvertToSpacesPipe } from './convert-to-spaces.pipe';
 
 @NgModule({
   declarations: [
     ChangeColorDirective,
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    ConvertToSpacesPipe
     //ProductComponent,
     //MyUpperPipe,
     //DiscountPipe,
