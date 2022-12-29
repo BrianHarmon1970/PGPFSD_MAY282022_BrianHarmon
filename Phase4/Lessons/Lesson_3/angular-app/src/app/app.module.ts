@@ -7,18 +7,27 @@ import { ProductListComponent} from "./products/product-list.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule} from "@angular/material/button";
+import { ChangeColorDirective } from './ChangeColor.directive';
 
 @NgModule({
   declarations: [
+    ChangeColorDirective,
     AppComponent,
     ProductListComponent
+    //ProductComponent,
+    //MyUpperPipe,
+    //DiscountPipe,
+    //ProductSearch,
+    //ProductDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    //SharedModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
