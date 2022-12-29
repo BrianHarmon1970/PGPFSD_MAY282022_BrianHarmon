@@ -1,12 +1,12 @@
 <h1>Product List Page</h1>
 
-<button type="button" class="btn btn-primary" [attr.disabled]="true"  (click)='toggleImage()'>
+<button (click)='toggleImage()' [attr.disabled]="" class="btn btn-primary" type="button">
   Show Image
 </button>
 <table>
   <thead>
     <tr>
-      <td [hidden]="show">===IMAGE===</td>
+      <td [hidden]="showImage"></td>
       <td> description</td>
       <td> code </td>
       <td> date available </td>
@@ -16,8 +16,7 @@
     </tr>
   </thead>
   <tr *ngFor="let product of productList">
-
-    <td [hidden]="show">===IMAGE===</td>
+    <td [hidden]="showImage"><img [src]=product.image [width]=imageWidth></td>
     <td [style.color]="'#306A9D'" [style.font-weight]="700">
       {{ product.description }}</td>
 <!--    <td [textContent]="product.code"></td>-->

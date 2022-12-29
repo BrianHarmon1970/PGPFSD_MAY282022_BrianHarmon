@@ -8,7 +8,9 @@ import {Component} from "@angular/core";
 export class ProductListComponent {
   pageTitle: string = "Product List Page" ;
   productList:Array<Product> = new Array<Product>() ;
-  show:boolean = true ;
+  showImage:boolean = true ;
+  imageWidth:number = 80 ;
+  imageMargin:number = 10 ;
 
   constructor() {
     this.addProduct(this.p1) ;
@@ -19,7 +21,7 @@ export class ProductListComponent {
   }
   toggleImage()
   {
-    this.show = this.show==true ? false : true ;
+    this.showImage = this.showImage==true ? false : true ;
   }
 
 
@@ -28,33 +30,38 @@ export class ProductListComponent {
                                       new Date("3/16/2019"),
                                   19.95,
                                   3.5,
-        true ) ;
+        true,
+    "./assets/images/5021919_2000x2000.jpg") ;
   p2:Product = new Product("Garden Cart",
       "GDN-0023",
           new Date("3/16/2019"),
       32.99,
       4.2,
-    true ) ;
+    true,
+    "./assets/images/yellow-wheelbarrow-isolated-white-background-3d-render_531308-741.jpg") ;
 
   p3:Product = new Product("Hammer",
       "TBX-0048",
             new Date("5/21/2019"),
       11.90,
       4.8,
-      false ) ;
+      false,
+    "./assets/images/hammer.jpg" ) ;
 
   p4:Product = new Product("Saw",
       "TBX-0022",
             new Date("5/15/2019"),
       8.56,
       3.7,
-    false ) ;
+    false,
+    "./assets/images/image_13172.jpg") ;
   p5:Product = new Product("Video Game Controller",
       "GMG-0042",
             new Date("10/15/2018"),
       35.95,
       4.6,
-      true ) ;
+      true,
+    "./assets/images/F310 Gamepad - Console Style - Logitech Gaming.png") ;
   addProduct( product:Product )
   {
     this.productList.push( product ) ;
@@ -63,6 +70,7 @@ export class ProductListComponent {
 class Product
 {
 
+  public image:string ;
   public description:string | undefined ;
   public code:string | undefined ;
   public date_available: Date | undefined;
@@ -75,7 +83,8 @@ class Product
            date_available:Date,
            price:number,
            rating:number ,
-          instock:boolean )
+          instock:boolean,
+               image:string )
   {
 
     this.description = description;
@@ -85,6 +94,7 @@ class Product
     this.price = price ;
     this.rating = rating ;
     this.instock = instock ;
+    this.image = image ;
   }
 
 }

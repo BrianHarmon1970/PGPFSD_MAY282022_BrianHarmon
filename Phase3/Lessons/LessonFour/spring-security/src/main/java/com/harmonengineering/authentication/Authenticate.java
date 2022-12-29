@@ -50,6 +50,7 @@ public class Authenticate
             result = new AuthenticateResult( AuthStatus.BadData_ConfirmationPassword, user ) ;
         return result ;
     }
+
     private AuthenticateResult ValidUserInput( User userInput )
     {
         AuthenticateResult result ;
