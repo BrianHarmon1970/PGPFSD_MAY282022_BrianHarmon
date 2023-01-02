@@ -1,0 +1,10 @@
+<div style="margin: 0em; height: 90px; background-color:blueviolet;"></div>
+<div *ngIf="navContext=='app'"> 
+  <app-app-navbar></app-app-navbar>
+</div>
+<div *ngIf="navContext=='main'">
+  <main-navbar></main-navbar>  
+</div> 
+
+<router-outlet></router-outlet>
+<app-app-copyright></app-app-copyright>
